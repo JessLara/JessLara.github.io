@@ -1,0 +1,445 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+/*----------HERO--------------*/
+.hero {
+  background: linear-gradient(0deg, rgba(0, 36, 77, 0.4), rgba(0, 36, 77, 0.8)), url("../images/Desktop/hero.png") no-repeat center;
+  background-size: cover;
+  background-color: #004CA4;
+  position: relative;
+  height: 65vh;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.logo img {
+  height: auto;
+  width: 7rem;
+}
+
+.logo {
+  padding: 1.6rem;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+  width: 100vw;
+}
+
+.nav-list {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-list, .navlist a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: .3rem;
+  padding: 0 .5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.burger, .burgerDark {
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+}
+
+.burger div {
+  background-color: #fff;
+  cursor: pointer;
+  height: .3rem;
+  margin: .5rem;
+  width: 2.5rem;
+}
+
+.HeroText {
+  align-items: center;
+  left: 50%;
+  position: relative;
+  text-align: center;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  }
+
+.HeroText h1 h2 p {
+  position: relative;
+}
+
+.HeroText h1 {
+  font-size: 5rem;
+  letter-spacing: 0.2em;
+  font-family: 'Lobster', cursive;
+  color: #FFFFFF;
+  padding-bottom: 4rem;
+}
+
+.HeroText h2 {
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 2rem 5rem;
+}
+
+.HeroText p {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  padding: 1rem 7rem 6rem;
+  text-align: center;
+}
+
+.HeroText a {
+  color: #FF8C4D;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/*----------PROJECT SECTION--------------*/
+.Projects {
+  position: relative;
+  width: 100vw;
+}
+
+.ByteSpace, .ProjectName, .ProjectName2 {
+  padding-bottom: 5rem;
+}
+
+.ByteSpace {
+  background-color: #E8F8F4;
+}
+
+.projectdescription p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 3rem 4.6rem 7rem;
+}
+
+.projectdescription img {
+  align-items: center;
+  height: auto;
+  left: 50%;
+  padding: 3rem 0 4rem;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, 0%);
+  width: 30rem;
+}
+
+.ByteSpace h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  left: 4.6rem;
+  position: relative;
+  text-transform: uppercase;
+  top: 27rem;
+}
+
+button {
+  align-items: center;
+  background-color: #E98C00;
+  border: none;
+  border-radius: .3rem;
+  bottom-margin: 5rem;
+  color: #fff;
+  display: inline-block;
+  font: 1.8rem 'Rubik', sans-serif;
+  font-weight: 500;
+  left: 50%;
+  padding: 1.5rem 3rem;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ProjectName {
+  background: #fff;
+}
+
+.ProjectName h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  left: 4.6rem;
+  position: relative;
+  text-transform: uppercase;
+  top: 27rem;
+}
+
+.ProjectName2 {
+  background: #E8F8F4;
+}
+
+.ProjectName2 h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  left: 4.6rem;
+  position: relative;
+  text-transform: uppercase;
+  top: 27rem;
+}
+
+/*----------FOOTER--------------*/
+.Footer {
+  background-color: #174351;
+  height: 16rem;
+  position: relative;
+  width: 100vw;
+}
+
+.fcontainer {
+  align-items: center;
+  left: 50%;
+  position: relative;
+  text-align: center;
+  top: 45%;
+  transform: translate(-50%, -45%);
+}
+
+.footerlogo img {
+  height: 6rem;
+  width: auto;
+}
+
+.footerlist {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.footerlist li {
+  list-style: none;
+}
+
+.footerlist a {
+  color: #fff;
+  font: 1.4rem 'Rubik', sans-serif;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*****************CASE STUDY*************/
+.navlist {
+  display: flex;
+  height: 20vh;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.burgerDark div {
+  background-color: #000;
+  cursor: pointer;
+  height: .3rem;
+  margin: .5rem;
+  width: 2.5rem;
+}
+
+.bytespaceheader {
+  height: 60vh;
+  width: 100vw;
+  }
+
+.HeroTextCS {
+  align-items: center;
+  left: 50%;
+  margin-bottom: 2rem;
+  position: relative;
+  text-align: center;
+  width: 100vw;
+  transform: translate(-50%);
+}
+
+.HeroTextCS h1 {
+  color: #00765A;
+  font-family: 'Lobster', cursive;
+  font-size: 5rem;
+  letter-spacing: 0.1em;
+  padding: 3.5rem 0 4rem;
+}
+
+.HeroTextCS p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0 4rem 4rem;
+  text-transform: uppercase;
+}
+
+.bytespacecompimg {
+  padding-bottom: 3.5rem;
+}
+
+.bytespacecompimg img {
+  height: auto;
+  width: 25rem;
+}
+
+.protobutton {
+  align-items: center;
+  background-color: #E98C00;
+  border: none;
+  border-radius: .3rem;
+  color: #fff;
+  display: inline-block;
+  font: 1.2rem 'Rubik', sans-serif;
+  font-weight: 400;
+  padding: .7rem 1.5rem;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.role-description {
+  background-color: #E8F8F4;
+  padding: 5rem 3rem 5rem 4.5rem;
+}
+
+.role-description h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.role-description p {
+  font-family: "lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  padding-bottom: 4rem;
+}
+
+.Year p {
+  padding-bottom: 0;
+}
+
+.Problem-Solution, .Research, .Branding, .Conclusion {
+  margin: 0rem 3.3rem 0rem;
+}
+
+.mainsection {
+  padding-top: 8rem;
+}
+
+.sectionline {
+  align-items: center;
+  background-color: #E98C00;
+  display: inline-flex;
+  height: .3rem;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.sectionline h2, h3 {
+  background: #FFF;
+  padding-right: 1rem;
+}
+
+.mainsection p {
+  font-family: 'Lato', sans-serif;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding-top: 3rem;
+}
+
+.mainsection h2 {
+  color: #E98C00;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.mainsection h3 {
+  color: #5E5E5E;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 5rem;
+  text-transform: uppercase;
+}
+
+.mainsection img {
+  height: auto;
+  padding-top: 4rem;
+  width: 100%;
+}
+
+.colors{
+  padding-bottom: 8rem;
+}
+
+.Conclusion{
+  background-color: #E8F8F4;
+  margin: 0;
+  padding: 0rem 3.3rem 0rem;
+}
+
+.Conclusion .sectionline h2{
+  background: #E8F8F4;
+  color: #000;
+  padding-right: 1rem;
+}
+
+.Conclusion .sectionline {
+  align-items: center;
+  background-color: #000;
+  display: inline-flex;
+  height: .3rem;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.Conclusion p {
+  line-height: 2.4rem;
+  padding-bottom: 8rem;
+}
+
+/*Media Queries*/
+@media screen and (min-width: 375px) {
+  .nav-list, .navlist {
+    display: none;
+  }
+}
+
+/*
+
+/*.ByteSpace , .ProjectName , .ProjectName2 {
+  Padding: 0rem 11.2rem 7.5rem 9.3rem;
+}*/
