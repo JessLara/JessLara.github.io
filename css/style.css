@@ -127,7 +127,7 @@ li {
 }
 
 .ByteSpace, .ProjectName, .ProjectName2 {
-  padding-bottom: 5rem;
+  padding: 4rem 2.8rem 5rem 4.6rem;
 }
 
 .ByteSpace {
@@ -138,29 +138,26 @@ li {
   font-family: 'Lato', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  padding: 3rem 4.6rem 7rem;
+  padding-bottom: 7rem;
 }
 
 .projectdescription img {
   align-items: center;
   height: auto;
-  left: 50%;
-  padding: 3rem 0 4rem;
+  left: 40%;
   position: relative;
-  text-align: center;
   top: 50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-45%, 0%);
   width: 30rem;
+  padding-bottom: 2rem;
 }
 
-.ByteSpace h1 {
+.projectdescription h1 {
   font-family: 'Rubik', sans-serif;
   font-size: 2rem;
   font-weight: 500;
-  left: 4.6rem;
-  position: relative;
   text-transform: uppercase;
-  top: 27rem;
+  padding-bottom: 2.2rem;
 }
 
 button {
@@ -174,7 +171,7 @@ button {
   font: 1.8rem 'Rubik', sans-serif;
   font-weight: 500;
   left: 50%;
-  padding: 1.5rem 3rem;
+  padding: 1.1rem 2rem;
   position: relative;
   text-align: center;
   text-transform: uppercase;
@@ -186,28 +183,8 @@ button {
   background: #fff;
 }
 
-.ProjectName h1 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 2rem;
-  font-weight: 500;
-  left: 4.6rem;
-  position: relative;
-  text-transform: uppercase;
-  top: 27rem;
-}
-
 .ProjectName2 {
   background: #E8F8F4;
-}
-
-.ProjectName2 h1 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 2rem;
-  font-weight: 500;
-  left: 4.6rem;
-  position: relative;
-  text-transform: uppercase;
-  top: 27rem;
 }
 
 /*----------FOOTER--------------*/
