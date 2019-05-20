@@ -36,25 +36,42 @@ html {
   width: 100vw;
 }
 
-.nav-list {
-  display: flex;
-  height: 100vh;
-  justify-content: space-around;
-  width: 100%;
-}
-
-li {
+li{
   list-style: none;
 }
 
-.nav-list, .navlist a {
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: .3rem;
-  padding: 0 .5rem;
+.navlist , .navlistindex{
+  width: 40%;
+  position: absolute;
+  left: 75%;
+  top: 50%;
+  transform: translate(-50%, -0%);
+  justify-content: space-around;
+  display: flex;
+}
+
+.navlist a{
+  color: #000;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: .1rem;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.navlistindex a{
+  color: #FFF;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#notactive{
+  color: #5E5E5E;
 }
 
 .burger, .burgerDark {
@@ -107,7 +124,7 @@ li {
   color: #fff;
   font-family: 'Lato', sans-serif;
   font-size: 1.8rem;
-  font-weight: lighter;
+  font-weight: 300;
   padding: 1rem 7rem 6rem;
   text-align: center;
 }
@@ -168,7 +185,7 @@ button {
   bottom-margin: 5rem;
   color: #fff;
   display: inline-block;
-  font: 1.8rem 'Rubik', sans-serif;
+  font: 1.6rem 'Rubik', sans-serif;
   font-weight: 500;
   left: 50%;
   padding: 1.1rem 2rem;
@@ -252,36 +269,39 @@ button {
 .HeroTextCS {
   align-items: center;
   left: 50%;
-  margin-bottom: 2rem;
   position: relative;
   text-align: center;
   width: 100vw;
   transform: translate(-50%);
 }
 
-.HeroTextCS h1 {
+.HeroTextCS , .HeroTextAM h1 {
   color: #00765A;
   font-family: 'Lobster', cursive;
-  font-size: 5rem;
+  font-size: 4rem;
   letter-spacing: 0.1em;
-  padding: 3.5rem 0 4rem;
+  padding: 3rem 0 4rem 0;
 }
 
 .HeroTextCS p {
   font-family: 'Lato', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  padding: 0 4rem 4rem;
+  padding: 4rem 4rem;
   text-transform: uppercase;
 }
 
 .bytespacecompimg {
-  padding-bottom: 3.5rem;
+  padding-bottom: .8rem;
 }
 
 .bytespacecompimg img {
   height: auto;
   width: 25rem;
+}
+
+.HeroTextCS a{
+  text-decoration: none;
 }
 
 .protobutton {
@@ -290,7 +310,6 @@ button {
   border: none;
   border-radius: .3rem;
   color: #fff;
-  display: inline-block;
   font: 1.2rem 'Rubik', sans-serif;
   font-weight: 400;
   padding: .7rem 1.5rem;
@@ -306,6 +325,7 @@ button {
 
 .role-description h2 {
   font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
   font-weight: 500;
   padding-bottom: 1.5rem;
   text-transform: uppercase;
@@ -313,7 +333,7 @@ button {
 
 .role-description p {
   font-family: "lato", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: .1rem;
   padding-bottom: 4rem;
@@ -358,7 +378,6 @@ button {
   font-family: 'Rubik', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
-  font-size: 1.5rem;
   position: relative;
   text-transform: uppercase;
 }
@@ -408,15 +427,840 @@ button {
   padding-bottom: 8rem;
 }
 
-/*Media Queries*/
-@media screen and (min-width: 375px) {
-  .nav-list, .navlist {
-    display: none;
+
+/*****************About Me*************/
+.aboutmeheader{
+  width: 100vw;
+  height: 85vh;
+}
+
+.HeroTextAM img, h1{
+align-items: center;
+left: 50%;
+position: relative;
+text-align: center;
+width: 100vw;
+transform: translate(-50%);
+}
+
+.HeroTextAM h1{
+  padding-bottom: 4rem;
+}
+.HeroTextAM img{
+  border-radius:50%;
+  height: 25rem;
+  width: 24rem;
+}
+
+.HeroTextAM p{
+  font-family: 'Lato', sans-serif;
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  Padding: 7rem 3.8rem 5.0rem 3.5rem;
+  text-align: center;
+}
+
+.orange {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #E98C00;
+}
+
+.bio , .questions{
+  padding: 4.5rem;
+  width: 100vw;
+}
+
+.bio{
+  background-color: #E8F8F4;
+  font-family: 'Lato', sans-serif;
+  line-height: 2.4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.questions h2{
+  color: #E98C00;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.questions p{
+  font-family: 'Lato', sans-serif;
+  line-height: 2.4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding-bottom: 5rem;
+}
+
+
+/******Media Queries*******/
+
+/*MOBILE*/
+
+@media screen and (max-width: 374px) {
+  .burger, .burgerDark{
+    display:none;
   }
 }
 
-/*
+@media screen and (min-width: 375px) {
+  .navlist , .navlistindex {
+    display: none;
+  }
 
-/*.ByteSpace , .ProjectName , .ProjectName2 {
-  Padding: 0rem 11.2rem 7.5rem 9.3rem;
-}*/
+}
+
+
+/*TABLETS*/
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media screen and (min-width: 768px) {
+
+  .burger , .burgerDark{
+    display:none;
+  }
+
+  .logo{
+    padding: 4rem;
+  }
+
+  .logo img{
+    height: auto;
+    width: 9rem;
+  }
+
+  .navlist, .navlistindex{
+    width: 40%;
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-20%, -0%);
+    justify-content: space-around;
+    display: flex;
+  }
+
+  .navlist a{
+    font-size: 1.8rem;
+  }
+/******** Homepage **********/
+  .hero{
+    height: 55vh;
+  }
+
+  .HeroText{
+    top: 28%;
+  }
+
+  .HeroText h1{
+    font-size: 6.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .HeroText h2{
+    font-size: 2.2rem;
+  }
+
+  .HeroText p{
+    font-size: 2.2rem;
+    padding: 1.5rem 10rem 3.5rem 10rem;
+  }
+
+  .HeroText a{
+    font-size: 2.3rem;
+  }
+
+  /*PROJECT SECTION*/
+
+  .ByteSpace , .ProjectName, .ProjectName2{
+    width: 100vw;
+    height: 35vh;
+    position: relative;
+  }
+
+  .projectdescription img{
+    width: 40vw;
+    width: 34rem;
+    height: auto;
+    top: 30%;
+    left: 60%;
+    transform: translate(-10%, -20%);
+    position: absolute;
+  }
+
+  .projectdescription h1{
+    width: 50vw;
+    font-size: 2.2rem;
+    text-align: left;
+    top: 25%;
+    Left: 15%;
+    transform: translate(-17%,-25%);
+    position: absolute;
+    display: flex;
+  }
+
+  .projectdescription p{
+    width: 42vw;
+    font-size: 1.8rem;
+    top: 60%;
+    Left: 15%;
+    transform: translate(-20%, -50%);
+    position: absolute;
+  }
+
+  .Projects button{
+    top: 75%;
+    Left: 16%;
+    transform: translate(-40%, -30%);
+    border-radius: .5rem;
+    padding: 1rem 1.8rem;
+    font-size: 1.8rem;
+    position: absolute;
+  }
+
+/******** Casestudy **********/
+
+  .bytespaceheader {
+    height: 70vh;
+    }
+
+  .HeroTextCS{
+    padding:0;
+  }
+
+
+  .HeroTextCS p{
+    padding: 5rem 8rem;
+  }
+
+  .bytespacecompimg img {
+    height: auto;
+    width: 38rem;
+  }
+
+  .bytespacecompimg {
+    padding-bottom: 1rem;
+  }
+
+  .protobutton {
+    border-radius: .3rem;
+    color: #fff;
+    font: 1.4rem 'Rubik', sans-serif;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .role-description {
+    padding: 5rem 9rem;
+  }
+
+  .role-description h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-bottom: 2.4rem;
+    text-transform: uppercase;
+  }
+
+  .role-description p {
+    font-family: "lato", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    padding-bottom: 4rem;
+  }
+
+  .Year p {
+    padding-bottom: 0;
+  }
+
+  .Problem-Solution, .Research, .Branding, .Conclusion {
+    margin: 0rem 9rem 0rem;
+  }
+
+  .mainsection {
+    padding-top: 6rem;
+  }
+
+  .mainsection p {
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-top: 3rem;
+  }
+
+  .mainsection h2 {
+    font-size: 2rem;
+  }
+
+  .mainsection h3 {
+    color: #5E5E5E;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-top: 5rem;
+    text-transform: uppercase;
+  }
+
+  .mainsection img {
+    height: auto;
+    padding-top: 6rem;
+    width:70vw;
+    left: 20%;
+    transform: translate(10%);
+  }
+
+  .personas{
+    left: 10%;
+    transform: translate(-5%);
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .personas img{
+    width: 30rem;
+    height: 50rem;
+  }
+
+  .userstories {
+    width: 80vw;
+    left: 20%;
+    transform: translate(-5%);
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .userstories img{
+    width: 30rem;
+    height: auto;
+  }
+
+  .userstories img:last-child{
+    display: none;
+  }
+
+  .lowfid_img{
+    left: 10%;
+    transform: translate(-4%);
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .lowfid_img img{
+    width: 20rem;
+    height: 60rem;
+  }
+  .lowfid_img  img:last-child{
+    width: 27rem;
+    height: 50rem;
+  }
+
+  .Highfid_img{
+    left: 10%;
+    transform: translate(-4%);
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Highfid_img img{
+    width: 20rem;
+    height: 60rem;
+  }
+  .Highfid_img  img:last-child{
+    width: 27rem;
+    height: 50rem;
+  }
+
+.Conclusion{
+    background-color: #E8F8F4;
+    margin: 0;
+    padding: 0rem 9rem  0 9rem;
+  }
+
+  .Conclusion .sectionline h2{
+    background: #E8F8F4;
+    color: #000;
+    padding-right: 1rem;
+  }
+
+
+/******** About Me **********/
+
+  .aboutmeheader{
+    height: 50vh;
+    width: 100vw;
+    margin-right: 4rem;
+  }
+
+  .HeroTextAM img{
+    float:left;
+    position: absolute;
+    left: 22%;
+    top: 22%;
+    height: 28rem;
+    width: 26rem;
+  }
+
+  .HeroTextAM h1 {
+    width: 55vw;
+    font-size: 7rem;
+    padding-bottom: 3rem;
+    top: 30%;
+    position: relative;
+    left: 55%;
+    transform: translate(-25%,-15%);
+    text-align: left;
+  }
+
+  .HeroTextAM p{
+    padding-bottom: 3rem;
+    width: 55vw;
+    padding: 0 5rem 0 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: left;
+    left: 55%;
+    top: 10%;
+    transform: translate( 75%,-15%);
+    line-height: 3rem;
+  }
+
+  .orange {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #E98C00;
+  }
+
+  .bio , .questions{
+    padding: 5rem;
+  }
+
+  .bio{
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+
+  .questions h2{
+    font-size: 2.8rem;
+  }
+
+  .questions p{
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+
+  .Footer{
+    height: 18rem;
+  }
+
+  .footerlogo img{
+    height: 6rem;
+    width: auto;
+  }
+
+  .footerlist{
+    padding-top: 4rem;
+  }
+
+  .footerlist a{
+    font-size: 1.6rem;
+  }
+
+}
+
+/*
+            Device = Desktops
+*/
+
+@media screen and (min-width: 1224px) {
+
+
+    .burger , .burgerDark{
+      display:none;
+    }
+
+    .logo{
+      padding: 5rem 8rem;
+    }
+
+    .logo img{
+      height: auto;
+      width: 12rem;
+    }
+
+    .navlist, .navlistindex{
+      width: 50%;
+      position: absolute;
+      left: 60%;
+      top: 50%;
+      transform: translate(-20%, -0%);
+      justify-content: space-around;
+      display: flex;
+    }
+
+    .navlist a{
+      font-size: 2.4rem;
+    }
+
+    /******** Homepage **********/
+      .hero{
+        height: 70vh;
+      }
+
+      .HeroText{
+        top: 30%;
+      }
+
+      .HeroText h1{
+        font-size: 8rem;
+      }
+
+      .HeroText h2{
+        font-size: 2.2rem;
+        padding-top: 6rem;
+      }
+
+      .HeroText p{
+        font-size: 2.2rem;
+        padding: 2rem 40rem 5rem 40rem;
+      }
+
+      .HeroText a{
+        font-size: 2.3rem;
+      }
+
+    /*PROJECT SECTION*/
+
+    .ByteSpace , .ProjectName, .ProjectName2{
+      width: 100vw;
+      height: 45vh;
+      position: relative;
+    }
+
+    .projectdescription img{
+      width: 40vw;
+      width: 50rem;
+      height: auto;
+      top: 50%;
+      left: 60%;
+      transform: translate(-10%, 0%);
+      position: relative;
+    }
+
+    .projectdescription h1{
+      width: 50vw;
+      font-size: 3.5rem;
+      text-align: left;
+      top: 25%;
+      Left: 15%;
+      transform: translate(-19%,-25%);
+      position: absolute;
+      display: flex;
+    }
+
+    .projectdescription p{
+      width: 47vw;
+      font-size: 2.6rem;
+      top: 60%;
+      Left: 15%;
+      transform: translate(-20%, -70%);
+      position: absolute;
+      padding-bottom: 1rem;
+    }
+
+    .Projects button{
+      top: 85%;
+      Left: 15%;
+      transform: translate(-50%, -60%);
+      border-radius: .5rem;
+      padding: 1.6rem 3rem;
+      font-size: 1.8rem;
+      position: absolute;
+    }
+
+    /**********CASE STUDY***********/
+
+      .bytespaceheader {
+        height: 85vh;
+        }
+
+      .HeroTextCS{
+        padding:0;
+      }
+      .HeroTextCS h1{
+        font-size: 8rem;
+        padding-top: 4rem;
+      }
+
+
+
+      .HeroTextCS p{
+        padding: 8rem 10rem 5rem 10rem;
+        font-size: 3rem;
+      }
+
+      .bytespacecompimg img {
+        height: auto;
+        width: 40rem;
+      }
+
+      .bytespacecompimg {
+        padding-bottom: 1rem;
+      }
+
+      .protobutton {
+        border-radius: .3rem;
+        color: #fff;
+        font: 1.5rem 'Rubik', sans-serif;
+        font-weight: 400;
+        padding: 1rem 2rem;
+        position: relative;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .role-description {
+        padding: 5rem 13rem;
+      }
+
+      .role-description h2 {
+        font-family: "Rubik", sans-serif;
+        font-size: 2.4rem;
+        font-weight: 500;
+        padding-bottom: 2.4rem;
+        text-transform: uppercase;
+      }
+
+      .role-description p {
+        font-family: "lato", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: .1rem;
+        padding-bottom: 4rem;
+      }
+
+      .Year p {
+        padding-bottom: 0;
+      }
+
+      .Problem-Solution, .Research, .Branding, .Conclusion {
+        margin: 0rem 13rem 0rem;
+      }
+
+      .mainsection {
+        padding-top: 8rem;
+      }
+
+      .mainsection p {
+        line-height: 3rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+        padding-top: 3rem;
+      }
+
+      .mainsection h2 {
+        font-size: 2.4rem;
+      }
+
+      .mainsection h3 {
+        color: #5E5E5E;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding-top: 5rem;
+        text-transform: uppercase;
+      }
+
+      .mainsection img {
+        height: auto;
+        padding-top: 6rem;
+        width:65vw;
+        left: 20%;
+        transform: translate(10%);
+      }
+
+      .personas{
+        left: 10%;
+        transform: translate(-5%);
+        width: 80vw;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 3rem;
+      }
+
+      .personas img{
+        width: 45rem;
+        height: 70rem;
+      }
+
+      .userstories {
+        width: 60vw;
+        left: 40%;
+        transform: translate(10%);
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 3rem;
+      }
+
+      .userstories img{
+        width: 30rem;
+        height: auto;
+      }
+
+      .userstories img:last-child{
+        display: none;
+      }
+
+      .lowfid_img{
+        left: 10%;
+        transform: translate(-3%);
+        width: 80vw;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 3rem;
+      }
+
+      .lowfid_img img{
+        width: 30rem;
+        height: 70rem;
+      }
+      .lowfid_img  img:last-child{
+        width: 32rem;
+        height: 50rem;
+      }
+
+      .Highfid_img{
+        left: 10%;
+        transform: translate(-3%);
+        width: 80vw;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 3rem;
+      }
+
+      .Highfid_img img{
+        width: 30rem;
+        height: 70rem;
+      }
+      .Highfid_img  img:last-child{
+        width: 30rem;
+        height: 50rem;
+      }
+
+    .Conclusion{
+        background-color: #E8F8F4;
+        margin: 0;
+        padding: 0rem 13rem  0 13rem;
+      }
+
+      .Conclusion .sectionline h2{
+        background: #E8F8F4;
+        color: #000;
+        padding-right: 1rem;
+      }
+
+
+
+
+    /******** About Me **********/
+
+
+    .aboutmeheader{
+      height: 60vh;
+      width: 100vw;
+      margin-right: 4rem;
+    }
+
+    .HeroTextAM img{
+      float:left;
+      position: absolute;
+      left: 22%;
+      top: 30%;
+      height: 38rem;
+      width: 36rem;
+    }
+
+    .HeroTextAM h1 {
+      width: 55vw;
+      font-size: 8rem;
+      padding-bottom: 10rem;
+      top: 35%;
+      position: relative;
+      left: 55%;
+      transform: translate(-25%,10%);
+      text-align: left;
+    }
+
+    .HeroTextAM p{
+      padding-bottom: 4rem;
+      width: 55vw;
+      padding: 0 5rem 0 0;
+      font-size: 2.4rem;
+      font-weight: 400;
+      text-align: left;
+      left: 55%;
+      top: 10%;
+      transform: translate( 75%,-15%);
+      line-height: 4rem;
+    }
+
+    .orange {
+      font-family: 'Lato', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #E98C00;
+    }
+
+    .bio , .questions{
+      padding: 8rem 12rem;
+    }
+
+    .bio{
+      font-size: 2.4rem;
+      line-height: 3.8rem;
+    }
+
+    .questions h2{
+      font-size: 3.5rem;
+      padding-bottom: 3rem;
+    }
+
+    .questions p{
+      font-size: 2.4rem;
+      line-height: 3.8rem;
+      padding-bottom: 7rem;
+    }
+
+    .Footer{
+      height: 26rem;
+    }
+
+    .footerlogo img{
+      height: 6.5rem;
+      width: auto;
+    }
+
+    .footerlist{
+      padding-top: 8rem;
+    }
+
+    .footerlist a{
+      font-size: 1.8rem;
+    }
+
+
+}
