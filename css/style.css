@@ -270,7 +270,7 @@ button {
 }
 
 .bytespaceheader {
-  height: 100vh;
+  height: 66vh;
   width: 100vw;
   }
 
@@ -642,13 +642,13 @@ transform: translate(-50%);
 /******** Casestudy **********/
 
   .bytespaceheader {
-    height: 70vh;
+    height: 75vh;
+    weight: 100vw;
     }
 
   .HeroTextCS{
     padding:0;
   }
-
 
   .HeroTextCS p{
     padding: 5rem 8rem;
@@ -1013,20 +1013,18 @@ transform: translate(-50%);
     /**********CASE STUDY***********/
 
       .bytespaceheader {
-        height: 85vh;
+        height: 90vh;
+        width: 100vw;
         }
 
-      .HeroTextCS{
-        padding:0;
-      }
       .HeroTextCS h1{
-        font-size: 8rem;
-        padding-top: 4rem;
+        font-size: 7.5rem;
+        top: 30%;
       }
 
       .HeroTextCS p{
-        padding: 8rem 10rem 5rem 10rem;
-        font-size: 3rem;
+        padding: 7rem 15rem 4rem 15rem;
+        font-size: 2.8rem;
       }
 
       .bytespacecompimg img {
@@ -1035,7 +1033,7 @@ transform: translate(-50%);
       }
 
       .bytespacecompimg {
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
       }
 
       .protobutton {
