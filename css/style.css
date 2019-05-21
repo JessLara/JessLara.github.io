@@ -107,7 +107,7 @@ li{
   color: #FFFFFF;
   top: 25%;
   position: relative;
-  transform: translate(-50%, -50%);
+  transform: translate(0%, -50%);
 }
 
 .HeroText h2 {
