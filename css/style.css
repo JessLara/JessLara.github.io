@@ -465,7 +465,8 @@ button {
 
 /*----------FOOTER--------------*/
 .Footer {
-  background-color: #174351;
+  background: rgb(1,80,83);
+background: linear-gradient(0deg, rgba(1,80,83,1) 0%, rgba(41,125,139,1) 100%);
   height: 16rem;
   position: relative;
   width: 100vw;
@@ -1010,11 +1011,11 @@ button {
   }
 
   .HeroTextCS h1 {
-    top: 10%;
+    top: 8%;
   }
 
   .HeroTextCS p {
-    top: 20%;
+    top: 25%;
     padding: 0 15rem;
   }
 
@@ -1032,7 +1033,7 @@ button {
   }
 
   .pbutton {
-    top: 27%;
+    top: 33%;
   }
 
   .protobutton {
@@ -1386,13 +1387,13 @@ button {
 
   .HeroTextCS h1 {
     font-size: 7.5rem;
-    top: 15%;
+    top: 8%;
   }
 
   .HeroTextCS p {
     padding: 0rem 15rem;
     font-size: 2.8rem;
-    top: 30%;
+    top: 35%;
   }
 
   .bytespacecompimg img {
@@ -1401,11 +1402,11 @@ button {
   }
 
   .bytespacecompimg {
-    top: 50%;
+    top: 54%;
   }
 
   .pbutton {
-    top: 40%;
+    top: 48%;
   }
 
   .protobutton {
