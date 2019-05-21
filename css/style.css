@@ -73,21 +73,262 @@ li{
 #notactive{
   color: #5E5E5E;
 }
-
-.burger, .burgerDark {
-  cursor: pointer;
-  position: absolute;
+/*----------Burger--------------*/
+.menu-wrap , .menu-wrapdark {
+  position: fixed;
+  top: 0;
   right: 5%;
-  top: 50%;
-  transform: translate(-5%, -50%);
+  z-index: 1;
 }
 
-.burger div {
-  background-color: #fff;
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
   cursor: pointer;
-  height: .3rem;
-  margin: .5rem;
-  width: 2.5rem;
+  width: 5rem;
+  height: 5rem;
+  opacity: 0;
+}
+.menu-wrapdark .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 5.5rem;
+  height: 6rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrapdark .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 5.5rem;
+  height: 6rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: .2rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+.menu-wrapdark .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: .2rem;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+.menu-wrapdark .hamburger > div::before,
+.menu-wrapdark .hamburger > div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* Moves Line Down */
+.menu-wrap .hamburger > div::after {
+  top: 10px;
+}
+.menu-wrapdark .hamburger > div::after {
+  top: 10px;
+}
+
+/* Toggler Animation */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+.menu-wrapdark .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turns Lines Into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+.menu-wrapdark .toggler:checked + .hamburger > div:before,
+.menu-wrapdark .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+.menu-wrapdark .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Show Menu */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+.menu-wrapdark .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+.menu-wrapdark .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition:  opacity 0.4s ease 0.4s;
+}
+.menu-wrapdark .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition:  opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrapdark .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background: rgba(0,32,64,0.90);
+  border-radius: 70%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrapdark .menu > div {
+  background: rgba(0,32,64,0.85);
+  border-radius: 50%;
+  width: 200vw;
+  height: 215vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrapdark .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-wrapdark .menu > div > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.menu-wrapdark .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
 }
 
 .HeroText {
@@ -537,21 +778,22 @@ button {
 
 /*MOBILE*/
 
-@media screen and (max-width: 374px) and (max-height: 811px){
-  .burger, .burgerDark{
-    display:none;
+@media screen and (min-width: 767px){
+  .menu-wrap , .menu-wrapdark {
+    display: none;
   }
 
 }
 
 @media screen and (max-height: 811px){
 
-  /*About ME*/
+  /*_______________About ME_______________*/
+
   .HeroTextAM h1{
     font-size: 4rem;
     left: 50%;
-    top: 7%;
-    transform: translate(-50%, 10%);
+    top: 5%;
+    transform: translate(-50%, 0%);
     position: absolute;
   }
 
@@ -560,7 +802,7 @@ button {
     height: 25rem;
     width: 25rem;
     top: 40%;
-    transform: translate(0%, 50%);
+    transform: translate(0%, 45%);
     positiong: relative;
   }
 
@@ -572,7 +814,7 @@ button {
     Padding: 3rem 3.5rem;
     text-align: center;
     top: 65%;
-    transform: translate(0%, 45%);
+    transform: translate(0%, 40%);
     positiong: relative;
   }
 
@@ -599,7 +841,7 @@ button {
     font-size: 4.5rem;
     letter-spacing: 0.1em;
     left: 50%;
-    top: 7%;
+    top: 6.5%;
     position: absolute;
     transform: translate(-50%, 0%);
   }
@@ -610,16 +852,16 @@ button {
     line-height: 2.5rem;
     font-weight: 400;
     text-transform: uppercase;
-    top: 28%;
+    top: 27%;
     position: relative;
     transform: translate(0%, -50%);
     padding: 0 4rem;
   }
 
   .bytespacecompimg {
-    top: 40%;
+    top: 38%;
     position: relative;
-    transform: translate(0%, -50%);
+    transform: translate(0%, -40%);
   }
 
   .bytespacecompimg img {
