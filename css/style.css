@@ -126,11 +126,11 @@ li{
   font-family: 'Lato', sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  text-align: center;
-  top: 60%;
-  padding: 0 4rem;
-  top: 55%;
-  transform: translate(0%, -50%);
+  width: 70vw;
+  left: 50%;
+  top: 58%;
+  padding: 0 -3rem;
+  transform: translate(-50%, -50%);
   position: absolute;
 }
 
@@ -140,7 +140,7 @@ li{
   font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase;
-  top: 70%;
+  top: 75%;
   transform: translate(-50%, -50%);
   position: absolute;
 }
@@ -562,29 +562,33 @@ transform: translate(-50%);
   }
 /******** Homepage **********/
   .hero{
-    height: 55vh;
+    height: 80vh;
   }
 
   .HeroText{
-    top: 28%;
+    width: 100vw;
+    height: 100vh;
   }
 
   .HeroText h1{
-    font-size: 6.5rem;
-    padding-bottom: 1rem;
+    font-size: 6rem;
+    top: 10%;
   }
 
   .HeroText h2{
     font-size: 2.2rem;
+    top: 15%;
   }
 
   .HeroText p{
     font-size: 2.2rem;
-    padding: 1.5rem 10rem 3.5rem 10rem;
+    padding: 0 3rem;
+    top: 37%;
   }
 
   .HeroText a{
     font-size: 2.3rem;
+    top: 50%;
   }
 
   /*PROJECT SECTION*/
@@ -809,29 +813,29 @@ transform: translate(-50%);
 /******** About Me **********/
 
   .aboutmeheader{
-    height: 50vh;
+    height: 60vh;
     width: 100vw;
-    margin-right: 4rem;
   }
 
   .HeroTextAM img{
     float:left;
-    position: absolute;
-    left: 22%;
-    top: 22%;
+    left: 15%;
+    top: 35%;
     height: 28rem;
     width: 26rem;
+    transform: translate(-28%,-25%);
+    position: absolute;
   }
 
   .HeroTextAM h1 {
     width: 55vw;
     font-size: 7rem;
     padding-bottom: 3rem;
-    top: 30%;
-    position: relative;
+    top: 20%;
     left: 55%;
-    transform: translate(-25%,-15%);
+    transform: translate(-20%,-25%);
     text-align: left;
+    position: absolute;
   }
 
   .HeroTextAM p{
@@ -841,10 +845,11 @@ transform: translate(-50%);
     font-size: 1.8rem;
     font-weight: 400;
     text-align: left;
-    left: 55%;
-    top: 10%;
-    transform: translate( 75%,-15%);
+    left: 60%;
+    top: 35%;
+    transform: translate( -30%,-10%);
     line-height: 3rem;
+    position: absolute;
   }
 
   .orange {
@@ -926,31 +931,35 @@ transform: translate(-50%);
     }
 
     /******** Homepage **********/
-      .hero{
-        height: 70vh;
-      }
+    .hero{
+      height: 80vh;
+    }
 
-      .HeroText{
-        top: 30%;
-      }
+    .HeroText{
+      width: 100vw;
+      height: 100vh;
+    }
 
-      .HeroText h1{
-        font-size: 8rem;
-      }
+    .HeroText h1{
+      font-size: 8rem;
+      top: 8%;
+    }
 
-      .HeroText h2{
-        font-size: 2.2rem;
-        padding-top: 6rem;
-      }
+    .HeroText h2{
+      font-size: 2.2rem;
+      top: 12%;
+    }
 
-      .HeroText p{
-        font-size: 2.2rem;
-        padding: 2rem 40rem 5rem 40rem;
-      }
+    .HeroText p{
+      font-size: 2.2rem;
+      padding: 0 3rem;
+      top: 35%;
+    }
 
-      .HeroText a{
-        font-size: 2.3rem;
-      }
+    .HeroText a{
+      font-size: 2.3rem;
+      top: 45%;
+    }
 
     /*PROJECT SECTION*/
 
@@ -1014,8 +1023,6 @@ transform: translate(-50%);
         font-size: 8rem;
         padding-top: 4rem;
       }
-
-
 
       .HeroTextCS p{
         padding: 8rem 10rem 5rem 10rem;
@@ -1181,50 +1188,43 @@ transform: translate(-50%);
         padding-right: 1rem;
       }
 
-
-
-
     /******** About Me **********/
+      .aboutmeheader{
+        height: 70vh;
+        width: 100vw;
+      }
 
+        .HeroTextAM img{
+          left: 20%;
+          top: 40%;
+          height: 32rem;
+          width: 33rem;
+          transform: translate(-30%,-10%);
+          position: absolute;
+        }
 
-    .aboutmeheader{
-      height: 60vh;
-      width: 100vw;
-      margin-right: 4rem;
-    }
+        .HeroTextAM h1 {
+          width: 55vw;
+          font-size: 8rem;
+          padding-bottom: 3rem;
+          top: 35%;
+          left: 55%;
+          transform: translate(-20%,-20%);
+          text-align: left;
+          position: absolute;
+        }
 
-    .HeroTextAM img{
-      float:left;
-      position: absolute;
-      left: 22%;
-      top: 30%;
-      height: 38rem;
-      width: 36rem;
-    }
-
-    .HeroTextAM h1 {
-      width: 55vw;
-      font-size: 8rem;
-      padding-bottom: 10rem;
-      top: 35%;
-      position: relative;
-      left: 55%;
-      transform: translate(-25%,10%);
-      text-align: left;
-    }
-
-    .HeroTextAM p{
-      padding-bottom: 4rem;
-      width: 55vw;
-      padding: 0 5rem 0 0;
-      font-size: 2.4rem;
-      font-weight: 400;
-      text-align: left;
-      left: 55%;
-      top: 10%;
-      transform: translate( 75%,-15%);
-      line-height: 4rem;
-    }
+        .HeroTextAM p{
+          padding: 0 5rem 0 0;
+          font-size: 2.2rem;
+          font-weight: 400;
+          text-align: left;
+          left: 60%;
+          top: 55%;
+          transform: translate( -30%,-10%);
+          line-height: 3rem;
+          position: absolute;
+        }
 
     .orange {
       font-family: 'Lato', sans-serif;
@@ -1239,7 +1239,7 @@ transform: translate(-50%);
 
     .bio{
       font-size: 2.4rem;
-      line-height: 3.8rem;
+      line-height: 4rem;
     }
 
     .questions h2{
