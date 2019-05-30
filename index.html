@@ -11,10 +11,10 @@
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
 <body>
-
   <section class="hero">
     <nav class="header">
       <div class="logo">
@@ -26,15 +26,19 @@
         <li><a href="aboutme.html">About Me</a></li>
       </ul>
 
+
       <div class="menu-wrap">
         <input type="checkbox" class="toggler">
-        <div class="hamburger"><div></div></div>
+        <div class="hamburger">
+          <div></div>
+        </div>
         <div class="menu">
           <div>
             <div>
               <ul>
-                <li><a href="project.html">Works</a></li>
+                <li><a href="index.html#works">Works</a></li>
                 <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="mailto:lara.jessenia@gmail.com? Subject=Hello%20Jess">Contact Me</a></li>
               </ul>
             </div>
           </div>
@@ -42,67 +46,78 @@
       </div>
     </nav>
 
+
     <!------------Hero Section--------->
 
-    <div class="HeroText">
+    <div class="herotext">
       <h1>Hello!</h1>
       <h2>I'm Jess, a designer based in Connecticut.</h2>
-      <p>I'm passionate about user-centered design with a focus in social justice</p>
-
-      <a href="mailto:lara.jessenia@gmail.com? Subject=Hello%20Jess">contact me</a>
+      <p>I'm passionate about <span class="orange">user-centered</span> design with a focus in <span class="orange">social justice</span></p>
+      <div class="pbutton">
+        <a href="mailto:lara.jessenia@gmail.com? Subject=Hello%20Jess" alt="bytespace prototype" class="protobutton">Contact Me</a>
+      </div>
     </div>
   </section>
 
   <!------------Projects Section--------->
-  <section class="Projects" id="works">
+  <section class="projects" id="works">
     <!----ByteSpace-------->
-    <div class="ByteSpace">
+    </a><div class="bytespace">
       <div class="projectdescription">
-        <img src="images/Desktop/Desktopbytespace.png" alt="ByteSpace"></a>
-        <h1>ByteSpace</h1>
+        <img src="images/Desktop/Desktopbytespace.png" alt="bytespace"></a>
+        <h3>ByteSpace</h3>
         <p>Bytespace is a collaborative tool that allows users to create and share content, with storage capabilities.</p>
       </div>
       <a href="project.html"><button type="button" name="button">view case study</button></a>
     </div>
 
-    <div class="ProjectName">
+    <div class="projectname">
       <div class="projectdescription">
-        <img src="images/Desktop/Desktopbytespace.png" alt="ByteSpace"></a>
-        <h1>ByteSpace</h1>
+        <img src="images/Desktop/Desktopbytespace.png" alt="bytespace"></a>
+        <h3>ByteSpace</h3>
         <p>Bytespace is a collaborative tool that allows users to create and share content, with storage capabilities.</p>
       </div>
-      <button type="button" name="button">view case study</button>
+      <a href="project.html"><button type="button" name="button">view case study</button></a>
     </div>
 
-    <div class="ProjectName2">
+    <div class="projectname2">
       <div class="projectdescription">
-        <img src="images/Desktop/Desktopbytespace.png" alt="ByteSpace"></a>
-        <h1>ByteSpace</h1>
+        <img src="images/Desktop/Desktopbytespace.png" alt="bytespace"></a>
+        <h3>ByteSpace</h3>
         <p>Bytespace is a collaborative tool that allows users to create and share content, with storage capabilities.</p>
       </div>
-      <button type="button" name="button">view case study</button>
+      <a href="project.html"><button type="button" name="button">view case study</button></a>
     </div>
   </section>
 
   <!------------Projects Section--------->
-  <Section class="Footer">
+  <section class="footer">
     <div class="fcontainer">
       <div class="footerlogo">
         <img href="index.html" src="images/LogoLight.png" alt="Jess Lara">
       </div>
 
-      <ul class="footerlist">
-        <li><a href="mailto:lara.jessenia@gmail.com? Subject=Hello%20Jess">Email</a></li>
-        <li><a href="#!">Dribble</a></li>
-        <li><a href="https://www.linkedin.com/in/jessenialara/">Linkedin</a></li>
-      </ul>
+      <div class="footlist">
+        <ul class="footerlist">
+          <li>
+            <ul><i class="far fa-envelope"></i></ul>
+            <ul><a href="mailto:lara.jessenia@gmail.com? Subject=Hello%20Jess"></ul>
+            Email</a>
+          </li>
+
+          <li>
+            <ul><i class="fab fa-linkedin"></i></ul>
+            <ul><a href="https://www.linkedin.com/in/jessenialara/">Linkedin</a></ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
+
   <!--------------------------JAVASCRIPT------------------------->
   <script src="app.js"></script>
 
-
-<!--------------------------GOOGLE ANALYTICS------------------------->
+  <!--------------------------GOOGLE ANALYTICS-------------------->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140507213-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -114,8 +129,6 @@
 
     gtag('config', 'UA-140507213-1');
   </script>
-
-
 </body>
 
 </html>
