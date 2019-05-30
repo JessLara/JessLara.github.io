@@ -1773,7 +1773,7 @@ li > ul:nth-child(1){
             Device = Desktops
 */
 
-@media only screen and (min-width: 1224px) and (min-height: 882px) {
+@media only screen and (min-width: 1224px) {
   .menu-wrap, .menu-wrapdark {
     display: none;
   }
