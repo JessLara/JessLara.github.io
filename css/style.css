@@ -664,13 +664,15 @@ li > ul:nth-child(1){
 .mainsection h2 {
   color: #E98C00;
   font: 1.5rem 'Rubik', sans-serif;
+  letter-spacing: .1rem;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 .mainsection h3 {
-  color: #5E5E5E;
+  color: #DA8300;
   font: 1.4rem 'Rubik', sans-serif;
+  letter-spacing: .1rem;
   font-weight: 400;
   padding-top: 5rem;
   text-transform: uppercase;
