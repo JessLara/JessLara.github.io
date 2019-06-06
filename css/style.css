@@ -670,7 +670,7 @@ li > ul:nth-child(1){
 }
 
 .mainsection h3 {
-  color: #DA8300;
+  color: #FF7A00;
   font: 1.4rem 'Rubik', sans-serif;
   letter-spacing: .1rem;
   font-weight: 400;
@@ -1773,7 +1773,7 @@ li > ul:nth-child(1){
             Device = Desktops
 */
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 1224px){
   .menu-wrap, .menu-wrapdark {
     display: none;
   }
@@ -1802,13 +1802,8 @@ li > ul:nth-child(1){
   }
 
   /******** Homepage **********/
-  .hero {
-    height: 80vh;
-  }
-
   .herotext {
     width: 100vw;
-    height: 100vh;
   }
 
   .herotext h1 {
@@ -1819,6 +1814,9 @@ li > ul:nth-child(1){
   .herotext h2 {
     font-size: 2.8rem;
     top: 25%;
+    text-shadow: 0 0 15px black;
+    left:50%;
+    transform: translate(-50%);
   }
 
   .herotext p {
@@ -1827,7 +1825,7 @@ li > ul:nth-child(1){
     top: 33%;
   }
 
-  .herotext > .pbutton{
+.pbutton{
     font-size: 2.3rem;
     top: 43%;
   }
@@ -1843,7 +1841,7 @@ li > ul:nth-child(1){
     width: 40rem;
     height: auto;
     top: 30%;
-    left: 60%;
+    left: 65%;
     transform: translate(-10%, -20%);
     position: absolute;
   }
@@ -1853,7 +1851,7 @@ li > ul:nth-child(1){
     font-size: 2.6rem;
     text-align: left;
     top: 25%;
-    Left: 15%;
+    Left: 20%;
     transform: translate(-17%, -25%);
     position: absolute;
     display: flex;
@@ -1863,21 +1861,25 @@ li > ul:nth-child(1){
     width: 42vw;
     font-size: 2rem;
     top: 53%;
-    Left: 15%;
+    Left: 20%;
     transform: translate(-20%, -50%);
     position: absolute;
   }
 
   .projects button {
     top: 78%;
-    Left: 13%;
-    transform: translate(-40%, -30%);
+    Left: 16%;
+    transform: translate(-40%,0;
     border-radius: .5rem;
     padding: 1rem 1.8rem;
     font-size: 1.8rem;
     position: absolute;
   }
 
+  .footerlogo img {
+    opacity: 0.5;
+  }
+  
   /******** Casestudy **********/
   .bytespaceheader {
     height: 80vh;
