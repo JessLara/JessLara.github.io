@@ -12,7 +12,7 @@ html {
 
 /*_____HERO____*/
 .hero {
-  background: linear-gradient(0deg, rgba(0, 36, 77, 0.4), rgba(0, 36, 77, 0.8)), url("../images/Desktop/IMG_1387.png") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 36, 77, 0.4), rgba(0, 36, 77, 0.8)), url("../images/Desktop/heroimg.png") no-repeat center;
   background-size: cover;
   background-color: #004CA4;
   position: relative;
@@ -1879,7 +1879,7 @@ li > ul:nth-child(1){
   .footerlogo img {
     opacity: 0.5;
   }
-  
+
   /******** Casestudy **********/
   .bytespaceheader {
     height: 80vh;
