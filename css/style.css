@@ -986,7 +986,7 @@ li > ul:nth-child(1){
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
-@media only screen and (min-width: 768px) and (min-height: 882px) {
+@media only screen and (min-width: 768px){
   .menu-wrap, .menu-wrapdark, .toggle-button{
     display: none;
   }
@@ -1039,12 +1039,16 @@ li > ul:nth-child(1){
   .herotext h2 {
     font-size: 2.2rem;
     top: 25%;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .herotext p {
     font-size: 2.2rem;
     padding: 0 3rem;
     top: 33%;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .herotext > .pbutton{
@@ -1414,12 +1418,16 @@ li > ul:nth-child(1){
   .herotext h2 {
     font-size: 2.2rem;
     top: 25%;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .herotext p {
     font-size: 2.2rem;
     padding: 0 3rem;
     top: 33%;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .herotext > .pbutton{
@@ -1786,6 +1794,8 @@ li > ul:nth-child(1){
     font-size: 2.5rem;
     padding: 0 3rem;
     top: 33%;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .pbutton{
@@ -1888,7 +1898,7 @@ li > ul:nth-child(1){
   }
 
   .role-description {
-    padding: 8rem 12rem;
+    padding: 8rem 18rem;
   }
 
   .role-description h2 {
@@ -1910,7 +1920,7 @@ li > ul:nth-child(1){
   }
 
   .problem-solution, .research, .branding, .conclusion {
-    margin: 0rem 12rem 0rem;
+    margin: 0rem 18rem 0rem;
   }
 
   .mainsection {
@@ -1941,17 +1951,49 @@ li > ul:nth-child(1){
     height: auto;
     vertical-align: middle;
     align-items: center;
-    width: 100%;
+    width: 80%;
     padding-bottom: 5rem;
   }
 
-  .highfid_img , .iterations_img, .lowfid_img, .userstories, .personas {
+  .highfid_img , .iterations_img, .lowfid_img, .userstories, .personas, {
     left: 50%;
     transform: translate(0%);
-    width: 80vw;
+    width: 75vw;
     display: flex;
     justify-content: space-around;
   }
+
+  .researchdata img{
+    left: 50%;
+    transform: translate(25%);
+    width: 65%;
+    height: auto;
+  }
+
+  .researchdata img:nth-child(1) {
+    padding: 10rem;
+  }
+
+  .userflows img{
+    left: 50%;
+    transform: translate(15%);
+    width: 65%;
+    height: auto;
+  }
+
+  .userflows img:nth-child(1) {
+    padding: 5rem;
+    width: 60%;
+    height: auto;
+  }
+
+  .sketches img{
+    left: 50%;
+    transform: translate(8%);
+    width: 85%;
+    height: auto;
+  }
+
   .personas img {
     width: 40rem;
     height: 65rem;
@@ -2002,7 +2044,7 @@ li > ul:nth-child(1){
   .typeface img {
     align-items: center;
     left: 50%;
-    transform: translate(20%);
+    transform: translate(35%);
     width: 70rem;
     height: auto;
   }
@@ -2010,7 +2052,7 @@ li > ul:nth-child(1){
   .colors img {
     align-items: center;
     left: 50%;
-    transform: translate(20%);
+    transform: translate(45%);
     width: 70rem;
     height: auto;
   }
