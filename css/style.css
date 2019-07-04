@@ -6,6 +6,7 @@
 
 html {
   font-size: 10px;
+  background-color: #fff;
 }
 
 /*--------------------------INDEX-----------------------*/
@@ -19,20 +20,19 @@ html {
 }
 
 .bckimg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  left: 30%;
-  position: absolute;
-  width: 70%;
-
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+left: 30%;
+position: absolute;
+width: 70%;
 }
 
 .bckimg img{
   width: auto;
-  height: auto;
-  opacity: 0.7;
+height: auto;
+opacity: 0.7;
 }
 
 /*_____NAVBAR____*/
@@ -402,24 +402,27 @@ li {
 }
 
 /*----------------------PROJECTS-----------------------*/
-.projects {
-  background-color: #000;
-  width: 100vw;
+.portfolio_works{
+  margin-left: 3rem;
+  margin-right: 2rem;
+  padding-top: 2rem;
+  background-color: #fff;
 }
-
+/*
 .sectionlabel {
-  background-color: #232323;
-  margin: 2rem 21rem 2rem 0;
-  padding: 4.5rem 0 0 0;
+  background-color: #B7CACE;
+  margin: 2.5rem;
+  padding: .01;
   align-items: center;
   align-content: center;
   vertical-align: middle;
-  position: relative;
+
 }
 
-.sectionlabel h3{
+.sectionlabel > div{
   vertical-align: middle;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   font: 2rem 'Libre Franklin', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -428,7 +431,8 @@ li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+  width: 20%;
+}*/
 
 .project{
   align-items: center;
@@ -438,6 +442,7 @@ li {
   width: 100%;
   height: 50vh;
   display: flex;
+  margin-bottom: 2rem;
 }
 
 .project img{
@@ -537,7 +542,7 @@ background-color: rgba(0, 118, 90, 0.90);
 
 /*----------FOOTER--------------*/
 .footer {
-  background-color: #0C0C0C;
+  background-color: #B7CACE;
   height: 10vh;
   width: 100vw;
   position: relative;
@@ -598,7 +603,6 @@ background-color: rgba(0, 118, 90, 0.90);
 }
 
 .footlist li {
-  color: #fff;
   font: 1.4rem 'lato', sans-serif;
   letter-spacing: .12rem;
   font-weight: 400;
@@ -611,7 +615,7 @@ background-color: rgba(0, 118, 90, 0.90);
 }
 
 .footlist a {
-  color: #fff;
+  color: #000;
   font: 1.4rem 'Rubik', sans-serif;
   letter-spacing: .12rem;
   font-weight: 400;
