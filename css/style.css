@@ -25,19 +25,20 @@ body {
 }
 
 .bckimg {
-justify-content: right;
-align-items: right;
-overflow: hidden;
-left: 35%;
-position: absolute;
-width: 100%;
+  position: absolute;
+  justify-content: right;
+  align-items: right;
+  overflow: hidden;
+  left: 25%;
+  position: absolute;
+  width: 50%;
+  height: 100vh;
 }
 
 .bckimg img{
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   opacity: 0.7;
-  object-fit: contain;
 }
 
 /*_____NAVBAR____*/
@@ -1206,20 +1207,6 @@ background-color: rgba(0, 118, 90, 0.90);
     font-size: 1.6rem;
   }
 
-  .bckimg {
-    justify-content: right;
-    align-items: right;
-    overflow: hidden;
-    left: 35%;
-    position: absolute;
-    width: 100%;
-  }
-
-  .bckimg img{
-    width: 100%;
-    height: auto;
-  }
-
   .footer{
     height: 12vh;
     border: 0 none #000;
@@ -1364,19 +1351,6 @@ background-color: rgba(0, 118, 90, 0.90);
     font-size: 1.6rem;
   }
 
-  .bckimg {
-    justify-content: right;
-    align-items: right;
-    overflow: hidden;
-    left: 35%;
-    position: absolute;
-    width: 100%;
-  }
-
-  .bckimg img{
-    width: 100%;
-    height: auto;
-  }
 
   .footer{
     height: 12vh;
