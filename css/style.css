@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  margin-right: 5%;
+  margin-right: 8%;
   margin-left: 8%;
 }
 
@@ -25,19 +25,19 @@ body {
 }
 
 .bckimg {
-display: flex;
-justify-content: center;
-align-items: center;
+justify-content: right;
+align-items: right;
 overflow: hidden;
-left: 30%;
+left: 35%;
 position: absolute;
 width: 100%;
 }
 
 .bckimg img{
-  width: auto;
-height: auto;
-opacity: 0.7;
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+  object-fit: contain;
 }
 
 /*_____NAVBAR____*/
@@ -398,6 +398,7 @@ li {
 .cmbutton:hover {
   background-color: #fff;
   color: #000;
+  border: 2px solid #000;
 }
 
 /*----------------------PROJECTS-----------------------*/
@@ -557,8 +558,9 @@ background-color: rgba(0, 118, 90, 0.90);
 }
 
 .pbutton:hover {
-  background-color: orange;
+  background-color: #000;
   color: #fff;
+  opacity: 0.8;
 }
 
 /*----------FOOTER--------------*/
@@ -583,29 +585,30 @@ background-color: rgba(0, 118, 90, 0.90);
 }
 
 .footerlogo{
-  padding-left: 15%;
+  padding-left: 2%;
   width: 25vw;
   display: flex;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -0%);
-  -ms-transform: translate(-50%, -0%);
-  transform: translate(-50%, -0%);
+  -webkit-transform: translate(-50%, 30%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -10%);
 }
 
 .footerlogo img {
   height: 4rem;
   width: auto;
+  opacity: .9;
 }
 
 .footlist {
-  width: 50vw;
+  width: 40vw;
   display: flex;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 50%);
-  -ms-transform: translate(-50%, 50%);
-  transform: translate(-50%, 50%);
+  left: 90%;
+  -webkit-transform: translate(-20%, -50%);
+  -ms-transform: translate(-20%, -50%);
+  transform: translate(-20%, -50%);
 }
 
 .footlist ul{
@@ -635,12 +638,21 @@ background-color: rgba(0, 118, 90, 0.90);
 
 .footlist a {
   color: #000;
-  font: 1.4rem 'Rubik', sans-serif;
+  font: 1.2rem 'Rubik', sans-serif;
   letter-spacing: .12rem;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.footer{
+  height: 12vh;
+  border: 0 none #000;
+  border-top: 2px solid #000;
+  border-radius: 0;
+}
+
+
 
 
 
@@ -977,7 +989,6 @@ background-color: rgba(0, 118, 90, 0.90);
 
   .logo {
     top: 10%;
-    left: 10%;
   }
 
   .logo img {
@@ -1043,7 +1054,7 @@ background-color: rgba(0, 118, 90, 0.90);
     width: 45%;
     position: absolute;
     top: 12.5%;
-    left: 75%;
+    left: 80%;
     transform: translate(-50%, -50%);
     justify-content: space-around;
     display: flex;
@@ -1063,16 +1074,25 @@ background-color: rgba(0, 118, 90, 0.90);
 */
 
 
-@media (min-width: 1025px){
-.viewcs{
-  display: none;
-}
+@media (min-width: 1025px) and (max-width: 1280px){
+  body {
+    margin-right: 15%;
+    margin-left: 12%;
+  }
+
+  .viewcs{
+    display: none;
+  }
+
+  .overlay{
+    display: display;
+  }
 
   .navlist, .navlistindex {
-    width: 45%;
+    width: 40%;
     position: absolute;
-    top: 12.5%;
-    left: 75%;
+    top: 15%;
+    left: 80%;
     transform: translate(-50%, -50%);
     justify-content: space-around;
     display: flex;
@@ -1086,7 +1106,7 @@ background-color: rgba(0, 118, 90, 0.90);
   }
 
   .menu-wrap, .menu-wrapdark {
-  display: none;
+    display: none;
   }
 
   .hero{
@@ -1094,18 +1114,11 @@ background-color: rgba(0, 118, 90, 0.90);
   }
 
   .logo {
-  top: 12%;
-  left: 15%;
+    top: 12%;
   }
 
   .logo img {
     width: 10rem;
-  }
-
-  .navlist, .navlistindex {
-    width: 30%;
-    top: 18%;
-    left: 73%;
   }
 
   .navlist, .navlistindex a {
@@ -1118,23 +1131,20 @@ background-color: rgba(0, 118, 90, 0.90);
   }
 
   .herotext h1{
-    font-size: 11rem;
-    padding-left: 5%;
+    font-size: 10rem;
     font-weight: 900;
   }
 
   .herotext h2{
-    font-size: 3rem;
+    font-size: 2.8rem;
     top: 20%;
-    padding-left: 5%;
     padding-right: 45%;
     line-height: 1.5;
   }
 
   .herotext p{
-    padding-left: 5%;
     top: 35%;
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-right: 20%;
     line-height: 1.5;
   }
@@ -1143,7 +1153,6 @@ background-color: rgba(0, 118, 90, 0.90);
     padding: 1.8rem 1.8rem;
     font-size: 1.8rem;
     top: 50%;
-    left: 15%;
   }
 
   .sectionlabel{
@@ -1152,20 +1161,15 @@ background-color: rgba(0, 118, 90, 0.90);
   }
 
   .portfolio_works{
+    width: 100%;
     display: flex;
-    margin-left: 15%;
-    margin-right: 15%;
     justify-content: space-between center;
-    padding-bottom: 2.5%;
+    padding-top: 5%;
+    padding-bottom: 10%;
   }
 
   .houndwatch{
     margin-right: 5rem;
-  }
-
-  .footer {
-    height: 12vh;
-    background-color: #232323;
   }
 
   .dark{
@@ -1173,41 +1177,215 @@ background-color: rgba(0, 118, 90, 0.90);
   }
 
   .footerlogo{
-    padding-left: 25%;
+    padding-left: 1%;
+    width: 25vw;
+    display: flex;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-0%, -0%);
+    -ms-transform: translate(-50%, -0%);
+    transform: translate(-50%, 0%);
   }
 
   .footerlogo img {
-    height: 5.5rem;
+    height: 4.5rem;
   }
 
   .footlist {
-    width: 30vw;
+    width: 20vw;
+    display: flex;
+    top: 50%;
+    left: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate( 28%, 50%);
   }
 
   .footlist a {
-    color: #fff;
-    font-size: 2rem;
+    color: #000;
+    font-size: 1.6rem;
   }
 
   .bckimg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
     overflow: hidden;
-    left: 34%;
+    left: 35%;
     position: absolute;
-    padding-right: 10%;
-    width: 50%;
+    width: 100%;
   }
 
   .bckimg img{
-    width: auto;
+    width: 100%;
     height: auto;
   }
+
+  .footer{
+    height: 12vh;
+    border: 0 none #000;
+    border-top: 2px solid #000;
+    border-radius: 0;
+  }
+
 
 
 }
 
+
+@media (min-width: 1281px) {
+  body {
+    margin-right: 15%;
+    margin-left: 12%;
+  }
+
+  .viewcs{
+    display: none;
+  }
+
+  .overlay{
+    display: display;
+  }
+
+  .navlist, .navlistindex {
+    width: 40%;
+    position: absolute;
+    top: 15%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    justify-content: space-around;
+    display: flex;
+  }
+
+  .navlist, .navlistindex a {
+    font: 1.6rem 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+  }
+
+  .menu-wrap, .menu-wrapdark {
+    display: none;
+  }
+
+  .hero{
+    height: 100vh;
+  }
+
+  .logo {
+    top: 12%;
+  }
+
+  .logo img {
+    width: 10rem;
+  }
+
+  .navlist, .navlistindex a {
+    font: 2rem 'Libre Franklin', sans-serif;
+    letter-spacing: .15rem;
+  }
+
+  .herotext{
+    top: 35%;
+  }
+
+  .herotext h1{
+    font-size: 10rem;
+    font-weight: 900;
+  }
+
+  .herotext h2{
+    font-size: 2.8rem;
+    top: 20%;
+    padding-right: 45%;
+    line-height: 1.5;
+  }
+
+  .herotext p{
+    top: 35%;
+    font-size: 2.8rem;
+    margin-right: 20%;
+    line-height: 1.5;
+  }
+
+  .cmbutton {
+    padding: 1.8rem 1.8rem;
+    font-size: 1.8rem;
+    top: 50%;
+  }
+
+  .sectionlabel{
+    margin-left: 15%;
+    width: 20%;
+  }
+
+  .portfolio_works{
+    width: 100%;
+    display: flex;
+    justify-content: space-between center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .houndwatch{
+    margin-right: 5rem;
+  }
+
+  .dark{
+    display: none;
+  }
+
+  .footerlogo{
+    padding-left: 1%;
+    width: 25vw;
+    display: flex;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-0%, -0%);
+    -ms-transform: translate(-50%, -0%);
+    transform: translate(-50%, 0%);
+  }
+
+  .footerlogo img {
+    height: 4.5rem;
+  }
+
+  .footlist {
+    width: 20vw;
+    display: flex;
+    top: 50%;
+    left: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate( 28%, 50%);
+  }
+
+  .footlist a {
+    color: #000;
+    font-size: 1.6rem;
+  }
+
+  .bckimg {
+    justify-content: right;
+    align-items: right;
+    overflow: hidden;
+    left: 35%;
+    position: absolute;
+    width: 100%;
+  }
+
+  .bckimg img{
+    width: 100%;
+    height: auto;
+  }
+
+  .footer{
+    height: 12vh;
+    border: 0 none #000;
+    border-top: 2px solid #000;
+    border-radius: 0;
+  }
+
+}
 
 
 
