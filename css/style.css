@@ -9,6 +9,11 @@ html {
   background-color: #fff;
 }
 
+body {
+  margin-right: 5%;
+  margin-left: 8%;
+}
+
 /*--------------------------INDEX-----------------------*/
 
 /*_____HERO____*/
@@ -16,7 +21,7 @@ html {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
 }
 
 .bckimg {
@@ -26,7 +31,7 @@ align-items: center;
 overflow: hidden;
 left: 30%;
 position: absolute;
-width: 70%;
+width: 100%;
 }
 
 .bckimg img{
@@ -41,15 +46,12 @@ opacity: 0.7;
 }
 
 .header {
-  margin-left: 3.5rem;
-  align-items: center;
   width: 100%;
 }
 
 .logo{
   top: 3%;
   position: absolute;
-  transform: translate(-5%);
 }
 
 .logo a{
@@ -91,8 +93,8 @@ li {
 
 .menu-wrap, .menu-wrapdark {
   position: absolute;
-  top: 1.2rem;
-  right: 8rem;
+  top: 1.5%;
+  left: 85%;
   z-index: 1;
 }
 
@@ -343,9 +345,8 @@ li {
   text-align: left;
   height: 100%;
   position: relative;
-  top: 25%;
+  top: 20%;
   width: 100%;
-  padding-left: 10%;
 }
 
 .herotext h1 {
@@ -363,7 +364,6 @@ li {
   line-height: 3.5rem;
   position: absolute;
   top: 15%;
-  padding-right: 15%;
 }
 
 .herotext p {
@@ -374,7 +374,6 @@ li {
   font-weight: 300;
   position: absolute;
   top: 30%;
-  padding-right: 15%;
 }
 
 .herotext strong {
@@ -393,7 +392,7 @@ li {
   text-transform: uppercase;
   cursor: pointer;
   position: absolute;
-  top: 55%;
+  top: 58%;
 }
 
 .cmbutton:hover {
@@ -403,8 +402,6 @@ li {
 
 /*----------------------PROJECTS-----------------------*/
 .portfolio_works{
-  margin-left: 3rem;
-  margin-right: 2rem;
   padding-top: 2rem;
   background-color: #fff;
 }
@@ -443,6 +440,28 @@ li {
   height: 50vh;
   display: flex;
   margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.viewcs{
+  position: absolute;
+  bottom: 0;
+  padding: 2rem 4rem 0 0;
+  background-color: #0C0C0C;
+}
+
+.viewcs h3{
+  font: 1.4rem 'Lato', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate( 15%, -50%);
+
 }
 
 .project img{
@@ -484,10 +503,12 @@ li {
 
 .hwoverlay {
 background-color: rgba(62, 104, 197, 0.90);
+
 }
 
 .bsoverlay {
 background-color: rgba(0, 118, 90, 0.90);
+
 }
 
 .houndwatch:hover .overlay {
@@ -542,11 +563,9 @@ background-color: rgba(0, 118, 90, 0.90);
 
 /*----------FOOTER--------------*/
 .footer {
-  background-color: #B7CACE;
+  background-color: #fff;
   height: 10vh;
-  width: 100vw;
   position: relative;
-  opacity: 0.55;
 }
 
 .fcontainer {
@@ -902,9 +921,11 @@ background-color: rgba(0, 118, 90, 0.90);
 /*---------Mobile---------
 */
 @media (min-width: 320px) and (max-width: 480px){
-  .navlistindex , .navlist {
+  .navlistindex , .navlist, .overlay {
     display: none;
   }
+
+
 
 }
 
@@ -1043,6 +1064,10 @@ background-color: rgba(0, 118, 90, 0.90);
 
 
 @media (min-width: 1025px){
+.viewcs{
+  display: none;
+}
+
   .navlist, .navlistindex {
     width: 45%;
     position: absolute;
@@ -1092,7 +1117,6 @@ background-color: rgba(0, 118, 90, 0.90);
     top: 35%;
   }
 
-
   .herotext h1{
     font-size: 11rem;
     padding-left: 5%;
@@ -1125,10 +1149,6 @@ background-color: rgba(0, 118, 90, 0.90);
   .sectionlabel{
     margin-left: 15%;
     width: 20%;
-  }
-
-  .test{
-    height: 100vh;
   }
 
   .portfolio_works{
@@ -1174,15 +1194,15 @@ background-color: rgba(0, 118, 90, 0.90);
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    left: 46%;
-    right: 16%;
+    left: 34%;
     position: absolute;
+    padding-right: 10%;
+    width: 50%;
   }
 
   .bckimg img{
     width: auto;
     height: auto;
-    opacity: 0.7;
   }
 
 
