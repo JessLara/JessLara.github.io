@@ -16,7 +16,7 @@ html {
   height: 100vh;
   overflow: hidden;
   width: 100%;
-  background: url("../images/Desktop/hero.jpg") no-repeat center ;
+  background: url("../images/Desktop/heroimg.jpg") no-repeat center ;
   background-size: cover;
 }
 
@@ -366,6 +366,7 @@ li {
   line-height: 3.5rem;
   position: absolute;
   top: 12%;
+  padding-right: 10rem;
 }
 
 .herotext p {
