@@ -16,7 +16,7 @@ html {
   height: 100vh;
   overflow: hidden;
   width: 100%;
-  background: url("../images/Desktop/heroimg.png") no-repeat fixed center ;
+  background: url("../images/Desktop/hero.jpg") no-repeat center ;
   background-size: cover;
 }
 
