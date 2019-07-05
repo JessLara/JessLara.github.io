@@ -16,12 +16,12 @@ html {
   height: 100vh;
   overflow: hidden;
   width: 100%;
+  background-size: cover;
 }
 
 .hero::after {
   content: "";
   background: url("../images/Desktop/heroimg.png") no-repeat fixed center;
-  background-size: cover;
   opacity: 0.6;
   top: 0;
   left: 0;
