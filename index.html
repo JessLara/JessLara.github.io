@@ -12,115 +12,100 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-
-  <section class="hero">
-    <nav class="header">
-      <div class="logo">
-        <a href="index.html" name="Home"><img src="images/LogoDark.png" alt="Jess Lara"></a>
-      </div>
-
-      <ul class="navlistindex">
-        <li><a href="index.html#works">Works</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-      </ul>
-
-      <div class="menu-wrapdark">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-          <div></div>
+  <div class="container">
+    <section class="hero">
+      <header>
+        <nav class= "nav">
+          <a href="index.html" class="logo" name="Home"><img src="images/LogoDark.png" alt="Jess Lara"></a>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="menu">
+            <li><a href="#port">Works</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+      </header>
+<!--Hero Text Section---->
+        <div class="herotext" id="startchange">
+          <article>
+            <h1>Jess Lara</h1>
+            <p><strong>UX /UI designer</strong> with a shared understanding of front-end development based in <strong>Connecticut</strong>.</p>
+            <p>I'm passionate about <strong> user-centered</strong> design with a focus in <strong>social justice</strong>.</p>
+            <a href="mailto:lara.jessenia@gmail.com? Subject=Hello%20Jess" alt="contact me" class="cmbutton">Contact Me</a>
+          </article>
         </div>
-        <div class="menu">
-          <div>
-            <div>
-              <ul>
-                <li><a href="index.html/#works">Works</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="mailto:lara.jessenia@gmail.com? Subject=Hello%20Jess">Contact Me</a></li>
-              </ul>
-            </div>
+    </section>
+
+<!--Projects / Works Section----->
+<div class="sectionlabel">
+  <h1>Works</h1></div>
+    <section class="portfolio_works" id="works">
+
+
+<!---Hound Watch-------->
+      <div class="houndwatch project">
+        <a href="houndwatch.html"><img src="images/Desktop/HW Welcome Screen.png" alt="welcome screen">
+          <div class="viewcs">
+            <h3>view casestudy</h3>
+          </div>
+        </a>
+        <div class="overlay hwoverlay">
+          <div class="text">
+            <h3>Hound Watch</h3>
+            <p>Hound Watch is an application that connects people with dogs that are in need of temporary home.</p>
+            <a href="bystespace.html" class="pbutton">view case study</a>
           </div>
         </div>
       </div>
 
-    </nav>
-    <!------------Hero Section--------->
-
-    <div class="herotext">
-      <h1>Jess Lara</h1>
-      <h2>UX /UI designer based in <strong>Connecticut</strong>.</h2>
-      <p>I'm passionate about <strong> user-centered</strong> design with a focus in <strong>social justice</strong>.</p>
-      <a href="mailto:lara.jessenia@gmail.com? Subject=Hello%20Jess" alt="bytespace prototype" class="cmbutton">Contact Me</a>
-    </div>
-  </section>
-
-  <!--  <div class="sectionlabel" >
-      <div>works</div>
-  </div>-->
-
-  <!------------Projects Section--------->
-  <section class="portfolio_works" id="works">
-
-    <!----Hound Watch-------->
-
-    <div class="houndwatch project">
-      <a href="#"><img src="images/Desktop/HW Welcome Screen.png" alt="welcome screen">
-        <div class="viewcs">
-          <h3>view casestudy</h>
-        </div>
-      </a>
-      <div class="overlay hwoverlay">
-        <div class="text">
-          <h3>ByteSpace</h3>
-          <p>Bytespace is a collaborative tool that allows users to create and share content, with storage capabilities.</p>
-          <a href="project.html" class="pbutton">view case study</a>
+      <div class="bytespace project">
+        <a href="bytespace.html">
+          <img src="images/CaseStudy/ByteSpaceComputer.png" alt="bytespace">
+          <div class="viewcs">
+            <h3>view casestudy</h3>
+          </div>
+        </a>
+        <div class="overlay bsoverlay">
+          <div class="text">
+            <h3>ByteSpace</h3>
+            <p>Bytespace is a collaborative tool that allows users to create and share content, with storage capabilities.</p>
+            <a href="bytespace.html" class="pbutton">view case study</a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="bytespace project">
-      <a href="project.html">
-        <img src="images/Desktop/Desktopbytespace.png" alt="bytespace">
-        <div class="viewcs">
-          <h3>view casestudy</h>
-        </div>
-      </a>
-      <div class="overlay bsoverlay">
-        <div class="text">
-          <h3>ByteSpace</h3>
-          <p>Bytespace is a collaborative tool that allows users to create and share content, with storage capabilities.</p>
-          <a href="project.html" class="pbutton">view case study</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!------------Projects Section--------->
-  <section class="footer">
-    <div class="fcontainer">
-      <div class="footerlogo">
-        <a href="#">
+<!---Projects Section--------->
+    <footer>
+      <div class="fcontainer">
+        <div class="footerlogo">
           <a href="#">
-            <img href="index.html" src="images/LogoDark.png" alt="Jess Lara">
-          </a>
+            <a href="#">
+              <img href="index.html" src="images/LogoDark.png" alt="Jess Lara">
+            </a>
+        </div>
+
+        <div class="footlist">
+          <ul>
+            <li><a href="mailto:lara.jessenia@gmail.com? Subject=Hello%20Jess">
+                Email</a></li>
+            <li><a href="https://www.linkedin.com/in/jessenialara/">Linkedin</a></li>
+          </ul>
+        </div>
       </div>
+    </footer>
+  </div>
 
-      <div class="footlist">
-        <ul>
-          <li><a href="mailto:lara.jessenia@gmail.com? Subject=Hello%20Jess">
-              Email</a></li>
-          <li><a href="https://www.linkedin.com/in/jessenialara/">Linkedin</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<!---JAVASCRIPT------------------------->
+<script src="app.js"></script>
 
-  <!--------------------------JAVASCRIPT------------------------->
-  <script src="app.js"></script>
 
-  <!--------------------------GOOGLE ANALYTICS-------------------->
+<!---GOOGLE ANALYTICS------------------->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140507213-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -132,6 +117,7 @@
 
     gtag('config', 'UA-140507213-1');
   </script>
+
 </body>
 
 </html>
