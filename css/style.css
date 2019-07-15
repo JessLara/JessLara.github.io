@@ -687,7 +687,7 @@ canvas{
 }
 
 @media (min-width: 320px){
-  .overlay,  {
+  .overlay, .sectionlabel  {
     display: none;
   }
 }
@@ -746,7 +746,7 @@ canvas{
 */
 @media (min-width: 481px) and (max-width: 768px) and (orientation:
  portrait){
-  .overlay {
+  .overlay , .sectionlabel{
      display: none;
    }
 
