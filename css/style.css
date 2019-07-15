@@ -4,11 +4,11 @@
   padding: 0;
   font-size: 10px;
   list-style: none;
- text-decoration: none;
+  text-decoration: none;
 }
 
 /*---Headings*/
-h1{
+h1 {
   font: 5rem 'Lato', cursive;
   color: #000;
   text-transform: uppercase;
@@ -22,13 +22,13 @@ h2 {
   color: #232323;
 }
 
-h3{
+h3 {
   font: 1.6rem 'Libre Franklin', sans-serif;
   font-weight: 400;
   color: #232323;
 }
 
-p{
+p {
   font: 1.6rem 'Libre Franklin', sans-serif;
   font-weight: 300;
   color: #232323;
@@ -36,8 +36,7 @@ p{
 }
 
 /*----------------Home Page-----------------------*/
-
-.container{
+.container {
   background-color: #fff;
 }
 
@@ -46,13 +45,11 @@ p{
   height: 100vh;
   overflow: hidden;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(256,257,256,.83), rgba(226,197,177, 0.20)), url("../images/Desktop/heroimg.png") no-repeat center ;
+  background: linear-gradient(to bottom, rgba(256, 257, 256, .83), rgba(226, 197, 177, 0.20)), url("../images/Desktop/heroimg.png") no-repeat center;
   background-size: cover;
 }
 
-
 /*_____NAVBAR____*/
-
 /* header */
 .nav {
   background-color: transparent;
@@ -71,7 +68,7 @@ p{
 
 .nav li a {
   font: 1.6rem 'Libre Franklin', cursive;
-  color: #000 ;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: .2rem;
   font-weight: 400;
@@ -87,13 +84,12 @@ p{
   text-decoration: none;
 }
 
-.nav img{
+.nav img {
   width: 6rem;
   height: auto;
 }
 
 /* menu */
-
 .nav .menu {
   clear: both;
   max-height: 0;
@@ -101,7 +97,6 @@ p{
 }
 
 /* menu icon */
-
 .nav .menu-icon {
   cursor: pointer;
   display: inline-block;
@@ -140,29 +135,28 @@ p{
 }
 
 /* menu btn */
-
 .nav .menu-btn {
   display: none;
 }
 
-.nav .menu-btn:checked ~ .menu {
+.nav .menu-btn:checked~.menu {
   max-height: 24rem;
 }
 
-.nav .menu-btn:checked ~ .menu-icon .navicon {
+.nav .menu-btn:checked~.menu-icon .navicon {
   background: transparent;
 }
 
-.nav .menu-btn:checked ~ .menu-icon .navicon:before {
+.nav .menu-btn:checked~.menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.nav .menu-btn:checked ~ .menu-icon .navicon:after {
+.nav .menu-btn:checked~.menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
@@ -195,10 +189,11 @@ strong {
   letter-spacing: .05rem;
 }
 
-article > p:first-child{
+article>p:first-child {
   padding-bottom: 0;
 }
-article > p:nth-child(3){
+
+article>p:nth-child(3) {
   padding-bottom: 10vh;
 }
 
@@ -239,7 +234,7 @@ article > p:nth-child(3){
 }
 
 .viewcs {
-  float:left;
+  float: left;
   bottom: 0;
   position: absolute;
   padding: 1.5rem 2rem;
@@ -265,13 +260,13 @@ article > p:nth-child(3){
 }
 
 .houndwatch img {
-  width: 30%;
-  height: auto;
+  height: 60%;
+  width: auto;
   overflow: hidden;
 }
 
 .bytespace img {
-  width: 70%;
+  width: 80%;
   height: auto;
   overflow: hidden;
 }
@@ -283,13 +278,16 @@ article > p:nth-child(3){
 
 .bytespace {
   background-color: rgb(0, 118, 90);
+  cursor: pointer;
 }
 
 /*----------FOOTER--------------*/
 footer {
   background-color: #fff;
-  height: 7vh;
+  height: 9vh;
   width: 100vw;
+  border-top: .15rem solid #232323;
+  border-radius: 0;
 }
 
 .fcontainer {
@@ -298,6 +296,7 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 2rem;
 }
 
 .footerlogo {
@@ -307,8 +306,7 @@ footer {
   left: 1%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-100%,-15%);
-
+  transform: translate(-100%, -15%);
 }
 
 .footerlogo img {
@@ -326,15 +324,14 @@ footer {
   left: 50%;
   -webkit-transform: translate(50%, -50%);
   -ms-transform: translate(50%, -50%);
-  transform: translate(30%, -25%);
-
+  transform: translate(35%, -50%);
 }
 
 .footlist ul {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   -webkit-justify-content: space-around;
   -moz--justify-content: space-around;
   justify-content: space-around;
@@ -361,9 +358,7 @@ footer {
   text-transform: uppercase;
 }
 
-
 /*-----------------------CASE STUDY-----------------*/
-
 .casestudyheader {
   width: 100vw;
   height: 100vh;
@@ -408,27 +403,25 @@ footer {
   width: 30rem;
 }
 
-.csbutton{
-background-color: #0C0C0C;
-border: .2rem solid #fff;
-padding: 1.5rem 2.5rem;
-color: #fff;
-font: 1.6rem 'Lato', sans-serif;
-letter-spacing: .1rem;
-text-decoration: none;
-text-transform: uppercase;
-cursor: pointer;
+.csbutton {
+  background-color: #0C0C0C;
+  border: .2rem solid #fff;
+  padding: 1.5rem 2.5rem;
+  color: #fff;
+  font: 1.6rem 'Lato', sans-serif;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-.protobutton{
+.protobutton {
   left: 50%;
   top: 85%;
   position: absolute;
   transform: translate(-50%);
   width: 85%;
 }
-
-
 
 /*_______ROLE____*/
 .role-description {
@@ -454,74 +447,68 @@ cursor: pointer;
 .year p {
   padding-bottom: 0;
 }
+
 /*-------Sections------*/
 .problem-solution, .research, .branding, .conclusion {
   margin: 0rem;
   position: relative;
 }
 
-.researchdata{
+.researchdata {
   position: relative;
   margin-left: 2.5rem;
   margin-right: 2rem;
 }
 
-.table{
+.table {
   height: 100%;
   padding-left: 3rem;
   padding-right: 3rem;
 }
 
-tr{
+tr {
   padding: .5rem;
   width: 50%;
 }
 
-td{
+td {
   text-emphasis: left;
   padding: 1rem;
   font: 1.2rem 'Libre Franklin', sans-serif;
 }
 
- .charttitle {
-    position: relative;
-    width: 100%;
-  }
-
-  .chartitle h1{
-    width: 100%;
-    position: absolute;
-    color: #000;
-    -ms-align-items: center;
-    align-items: center;
-    top: 2.2%;
-    left: 50%;
-    transform: translate(-25%, -50%);
-    padding-bottom: 2rem;
-    font: 1.4rem 'Libre Franklin', sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-  }
-
-
-canvas{
-  margin-top: 4rem ;
+.charttitle {
+  position: relative;
+  width: 100%;
 }
 
+.chartitle h1 {
+  width: 100%;
+  position: absolute;
+  color: #000;
+  -ms-align-items: center;
+  align-items: center;
+  top: 2.2%;
+  left: 50%;
+  transform: translate(-25%, -50%);
+  padding-bottom: 2rem;
+  font: 1.4rem 'Libre Franklin', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
 
-
-
-
-
-
+canvas {
+  margin-top: 4rem;
+}
 
 .mainsection {
   padding-top: 2rem;
 }
 
-.mainsection p{
+.mainsection p {
   padding: 2rem 2rem 3.5rem 3.5rem;
 }
+
 .mainsection>h2 {
   overflow: hidden;
 }
@@ -535,7 +522,7 @@ canvas{
   position: relative;
 }
 
-.projectsectionlabel h2{
+.projectsectionlabel h2 {
   vertical-align: middle;
   color: #fff;
   font: 2rem 'Libre Franklin', sans-serif;
@@ -584,13 +571,11 @@ canvas{
 .conclusion {
   background-color: #F5F5F5;
   margin: 0;
-
 }
 
 .conclusion h2 {
   color: #fff;
 }
-
 
 .conclusion p {
   line-height: 2.4rem;
@@ -679,143 +664,132 @@ canvas{
 /*____________________________MEDIA QUERIES__________________________*/
 /*---------Mobile---------
 */
-
-
-@media (max-width: 319px){
-  .overlay, .sectionlabel {
-    display: none;
-  }
-}
-
-@media (min-width: 320px){
-  .overlay, .sectionlabel  {
+@media (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
+  .sectionlabel, .overlay {
     display: none;
   }
 }
 
 /*---------Mobile Landscape---------*/
-@media (min-width: 320px) and (max-width:812px) and (orientation:
- landscape) {
-
-   .overlay, .sectionlabel {
+@media (min-width: 320px) and (max-width:812px) and (orientation: landscape) {
+  .overlay, .sectionlabel {
     display: none;
   }
 
-    .logo img {
-      padding: 1rem;
-      height: auto;
-      width: 7rem;
-    }
+  .viewcs {
+    display: block;
+  }
 
-    .nav li a{
-      width: 5%;
-      font-size: 1.2rem;
-    }
-    .herotext{
-      padding: 12% 4%;
-    }
-    article h1 {
-      padding-top: 0;
-      font-size: 3rem;
-    }
+  .logo img {
+    padding: 1rem;
+    height: auto;
+    width: 7rem;
+  }
 
-    article p{
-      padding-top: 2%;
-      font-size: 1.6rem;
-    }
+  .menu {
+    width: 5%;
+  }
 
-    article > p:nth-child(3){
-      padding-top: .5%;
-      padding-bottom: 3.5%;
-    }
+  .menu li {
+    width: 20%;
+  }
 
-    strong{
-      font-size: 1.6rem;
-      font-weight: 600;
-    }
+  .menu li a {
+    width: 40%;
+    font-size: 1.2rem;
+  }
 
-    .cmbutton {
-      padding: 1rem 1rem;
-      font-size: 1.4rem;
-      top: 45%;
-    }
+  .herotext {
+    padding: 20% 5%;
+  }
 
+  article h1 {
+    padding-top: 0;
+    font-size: 3rem;
+  }
+
+  article p {
+    padding-top: 2%;
+    font-size: 1.6rem;
+  }
+
+  article>p:nth-child(3) {
+    padding-top: .5%;
+    padding-bottom: 3.5%;
+  }
+
+  strong {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .cmbutton {
+    padding: 1rem 1rem;
+    font-size: 1.4rem;
+    top: 45%;
+  }
+
+  .bytespace img {
+    height: 70%;
+    width: auto;
+  }
 }
 
 /*
   ##Device = Tablets, Ipads (portrait)
 */
-@media (min-width: 481px) and (max-width: 768px) and (orientation:
- portrait){
-  .overlay , .sectionlabel{
-     display: none;
-   }
-
-  .logo img {
-    height: auto;
-    width: 6rem;
-  }
-
-  .nav li a{
-    font-size: 1.4rem;
-  }
-
-}
-
-
 /*_____------------_Grid Layout_-----------______*/
-
-@media (min-width: 768px) {
-
-  .container{
+/* ##Device = Tablets, Ipads ---- Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 813px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .container {
     width: 100vw;
     height: 100%;
     overflow: hidden;
-    display:grid;
+    display: grid;
     grid-template-columns: 3rem 1fr 1fr 3rem;
-    grid-auto-rows: auto 1fr auto auto ;
+    grid-auto-rows: auto 1fr auto auto;
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
-
   }
 
   .hero {
     overflow: hidden;
     grid-column: 1/5;
-    grid-row:1/2;
+    grid-row: 1/2;
     height: 100vh;
     width: 100vw;
   }
 
-    .sectionlabel{
-      grid-column: 1/3;
-      grid-row: 2/3;
-    }
+  .sectionlabel {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
 
-  .portfolio_works{
-    height: 60vh;
+  .portfolio_works {
+    width: 100%;
+    height: 50vh;
     grid-area: portfolio_works;
     grid-column: 2/4;
     grid-row: 3/4;
   }
 
-  .houndwatch{
-    width: 45vw;
+  .houndwatch {
+    width: 50vw;
     grid-column: 2/3;
     grid-row: 3/4;
     grid-area: portfolio_works;
   }
 
-  .bytespace{
-    width: 45vw;
+  .bytespace {
+    width: 50vw;
     grid-column: 3/4;
     grid-row: 3/4;
     grid-area: portfolio_works;
   }
 
-  footer{
+  footer {
     width: 100vw;
-    height: 8vh;
+    height: 10vh;
     grid-column: 1/5;
     grid-row: 4/5;
     padding-top: 2rem;
@@ -824,68 +798,42 @@ canvas{
     border-radius: 0;
   }
 
-  .nav .logo{
-    padding-left: 6rem;
+  .footerlogo {
+    transform: translate(-100%, -50%);
   }
 
-  .logo img{
+  .footlist {
+    padding-bottom: 1rem;
+    justify-content: space-around;
+  }
+
+  .footlist li {
+    width: 20%;
+    justify-content: space-around;
+  }
+
+  .nav .logo {
+    padding-left: 4rem;
+  }
+
+  .logo img {
     width: 8rem;
   }
 
-  .menu{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-  }
 
-  .nav .menu-icon {
-    padding: 10rem 2.0rem;
-    }
-
-  .nav .menu-icon .navicon {
-      width: 5rem;
-  }
-
-  .nav li {
-    justify-content: right;
-  }
-
-  .nav li a {
-    width: 14rem;
-    justify-content: space-around;
-    padding: 3.5rem .5rem;
-    font: 1.8rem;
-    font-weight: 400;
-    letter-spacing: .2rem;
-    border-right: none;
-  }
-
-  .nav  .menu {
-    width: 60%;
-    background-color: transparent;
-    clear: none;
-    float: right;
-    max-height: none;
-    overflow: hidden;
-  }
-
-  .nav .menu-icon {
-    display: none;
-  }
-
-  .project{
+  .project {
     width: 100%;
     height: 100%;
   }
 
   .houndwatch img {
-    width: 30%;
-    height: auto;
+    height: 60%;
+    width: auto;
     overflow: hidden;
   }
 
   .bytespace img {
-    width: 75%;
+    width: 65%;
     height: auto;
     overflow: hidden;
   }
@@ -899,7 +847,7 @@ canvas{
     margin-top: 3rem;
   }
 
-  .sectionlabel h1{
+  .sectionlabel h1 {
     vertical-align: middle;
     color: #fff;
     font: 2rem 'Libre Franklin', sans-serif;
@@ -911,25 +859,373 @@ canvas{
     transform: translate(-50%, -50%);
     position: absolute;
   }
+
   .portfolio_works {
     width: 100%;
     display: flex;
     justify-content: space-between center;
     margin-top: 3%;
-    margin-bottom: 1%;
+    margin-bottom: 6%;
   }
 
-  .houndwatch, .bytespace{
+  .houndwatch, .bytespace {
     width: 100%;
   }
 
-  .houndwatch {
-    margin-right: 5rem;
+  .overlay {
+    display: none;
   }
 
-.viewcs{
-  display:none;
+  .houndwatch {
+    margin-right: 5%;
+  }
 }
+
+/* tablet - Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .overlay, .sectionlabel {
+    display: none;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 3rem 1fr 1fr 3rem;
+    grid-auto-rows: auto 1fr auto auto;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+
+  .hero {
+    overflow: hidden;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .sectionlabel {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .portfolio_works {
+    width: 100%;
+    height: 50vh;
+    grid-area: portfolio_works;
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+
+  .houndwatch {
+    width: 50vw;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-right: 5%;
+  }
+
+  .bytespace {
+    width: 50vw;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    grid-area: portfolio_works;
+  }
+
+  footer {
+    width: 100vw;
+    height: 10vh;
+    grid-column: 1/5;
+    grid-row: 4/5;
+    padding-top: 2rem;
+    border: 1px none #232323;
+    border-top: 2px solid #232323;
+    border-radius: 0;
+  }
+
+  .footerlogo {
+    transform: translate(-100%, -50%);
+  }
+
+  .footlist {
+    padding-bottom: 1rem;
+    justify-content: space-around;
+  }
+
+  .footlist li {
+    width: 20%;
+    justify-content: space-around;
+  }
+
+  .nav .logo {
+    padding-left: 4rem;
+  }
+
+  .logo img {
+    width: 8rem;
+  }
+
+  .project {
+    width: 100%;
+    height: 100%;
+  }
+
+  .houndwatch img {
+    height: 60%;
+    width: auto;
+    overflow: hidden;
+  }
+
+  .bytespace img {
+    width: 65%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .sectionlabel {
+    background-color: #232323;
+    padding: 2rem 2rem;
+    width: 70%;
+    display: block;
+    position: relative;
+    margin-top: 3rem;
+  }
+
+  .sectionlabel h1 {
+    vertical-align: middle;
+    color: #fff;
+    font: 2rem 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+
+  .portfolio_works {
+    width: 100%;
+    display: flex;
+    justify-content: space-between center;
+    margin-top: 3%;
+    margin-bottom: 6%;
+  }
+
+  .houndwatch, .bytespace {
+    width: 100%;
+  }
+}
+
+/*-----------Laptops, Desktops---------------*/
+@media screen and (min-device-width: 1025px) and (max-device-width: 2000px) and (-webkit-min-device-pixel-ratio: 1) {
+  .container {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 3rem 1fr 1fr 3rem;
+    grid-auto-rows: auto 1fr auto auto;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+
+  .hero {
+    overflow: hidden;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    height: 60vh;
+    width: 100vw;
+  }
+
+  .nav .logo {
+    padding-left: 10%;
+    padding-top: 5rem;
+  }
+
+  .nav .logo img {
+    width: 8rem;
+  }
+
+  .menu{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+  }
+
+  .nav li {
+    width: 50%;
+    padding: 0;
+    justify-content: right;
+  }
+
+  .nav li a{
+    font: 1.8rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    border-right: none;
+  }
+
+  .nav  .menu {
+    padding-top: 5rem;
+    width: 40%;
+    background-color: transparent;
+    clear: none;
+    float: right;
+    max-height: none;
+    overflow: hidden;
+  }
+
+  .nav .menu-icon {
+    display: none;
+  }
+
+  .menu li:nth-child(3){
+    display: none;
+    width: 25%;
+  }
+
+  .herotext {
+    padding: 5% 10%;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  article p {
+    font-size: 2rem;
+    width: 85%;
+    padding-top: 2vh;
+  }
+
+  article p:nth-child(3) {
+    padding-bottom: 5vh;
+  }
+
+  .sectionlabel {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .portfolio_works {
+    width: 100%;
+    height: 50vh;
+    grid-area: portfolio_works;
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+
+  .houndwatch {
+    width: 50vw;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    grid-area: portfolio_works;
+  }
+
+  .bytespace {
+    width: 50vw;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    grid-area: portfolio_works;
+  }
+
+  footer {
+    width: 100vw;
+    height: 10vh;
+    grid-column: 1/5;
+    grid-row: 4/5;
+    padding-top: 2rem;
+    border: 1px none #232323;
+    border-top: 2px solid #232323;
+    border-radius: 0;
+  }
+
+  .footerlogo {
+    transform: translate(-100%, -50%);
+  }
+
+  .footlist {
+    padding-bottom: 1rem;
+    justify-content: space-around;
+  }
+
+  .footlist li {
+    width: 20%;
+    justify-content: space-around;
+  }
+
+  .nav .logo {
+    padding-left: 6rem;
+  }
+
+  .logo img {
+    width: 8rem;
+  }
+
+  .project {
+    width: 100%;
+    height: 100%;
+  }
+
+  .houndwatch img {
+    height: 60%;
+    width: auto;
+    overflow: hidden;
+  }
+
+  .bytespace img {
+    width: 65%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .sectionlabel {
+    background-color: #232323;
+    padding: 3rem 2rem;
+    width: 70%;
+    display: block;
+    position: relative;
+    margin-top: 3rem;
+  }
+
+  .sectionlabel h1 {
+    vertical-align: middle;
+    color: #fff;
+    font: 2rem 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+
+  .portfolio_works {
+    width: 100%;
+    display: flex;
+    justify-content: space-between center;
+    margin-top: 3%;
+    margin-bottom: 6%;
+  }
+
+  .houndwatch, .bytespace {
+    width: 100%;
+  }
+
+  .viewcs {
+    display: none;
+  }
+
+  .houndwatch {
+    margin-right: 5%;
+  }
+
+
   .text {
     width: 80%;
     color: #fff;
@@ -944,6 +1240,7 @@ canvas{
 
   .text h3 {
     font: 2.5rem 'Libre Franklin', sans-serif;
+    color: #fff;
     font-weight: 500;
     text-transform: uppercase;
     padding-bottom: 3rem;
@@ -952,6 +1249,7 @@ canvas{
 
   .text p {
     font: 1.8rem 'Libre Franklin', sans-serif;
+    color: #fff;
     font-weight: 300;
     padding-bottom: 5rem;
   }
@@ -975,7 +1273,7 @@ canvas{
 
   .overlay {
     position: absolute;
-    top: 0rem;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -993,33 +1291,75 @@ canvas{
     background-color: rgba(0, 118, 90, 0.90);
   }
 
-  .houndwatch:hover .overlay {
+  .project:hover .overlay {
     opacity: 1;
   }
 
-  .bytespace:hover .overlay {
-    opacity: 1;
+  footer {
+    height: 10vh;
   }
 
+  .fcontainer {
+    padding-top: 1rem;
+  }
 
+  .footerlogo {
+    transform: translate(-175%, -25%);
+  }
 
+  .footerlogo img {
+    width: 7.5rem;
+    height: auto;
+  }
 
+  .footlist {
+    width: 20%;
+    right: 0;
+    transform: translateX(105%);
+  }
+
+  .footlist a {
+    font-size: 1.6rem;
+  }
+
+  .menu-btn {
+    display: none;
+  }/*
 }
 
+/*
+@media screen and (min-device-width: 1200px) and (max-device-width: 2000px) and (-webkit-min-device-pixel-ratio: 1) {
+  .houndwatch img {
+    max-height: 70%;
+    width: auto;
+  }
 
+  .bytespace img {
+    max-height: 60%;
+    width: auto;
+  }
+}
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 2000px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .houndwatch img {
+    max-height: 70%;
+    width: auto;
+  }
 
+  .bytespace img {
+    max-height: 70%;
+    width: auto;
+  }
+}
+}
 
-  Laptops, Desktops
-
-@media (min-width: 1025px){
+/*
   .houndwatch img{
-    width: 10%;
-    height: auto;
+    max-height: 35%;
+    max-width: 40%;
     overflow: hidden;
   }
-}
-/*
+
 
   .nav{
     padding-top: 3rem;
@@ -1096,7 +1436,7 @@ canvas{
     font-size: 1.8rem;
     top: 50%;
   }
-/*
+
   .sectionlabel {
     background-color: #000;
     padding: 1.5%;
