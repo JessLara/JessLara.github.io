@@ -166,7 +166,7 @@ p {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 20% 8%;
+  padding: 10vh 8vw;
 }
 
 article h1 {
@@ -1013,12 +1013,8 @@ canvas {
     font-size: 1.2rem;
   }
 
-  .herotext {
-    padding: 20% 5%;
-  }
-
   article h1 {
-    padding-top: 0;
+    padding-top: 10rem;
     font-size: 3rem;
   }
 
@@ -1054,7 +1050,8 @@ canvas {
 */
 /*_____------------_Grid Layout_-----------______*/
 /* ##Device = Tablets, Ipads ---- Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 813px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
+ {
   .container {
     width: 100vw;
     height: 100%;
@@ -1073,6 +1070,10 @@ canvas {
     height: 100vh;
     width: 100vw;
   }
+
+  .herotext h1 {
+    padding-top: 0;
+}
 
   .sectionlabel {
     grid-column: 1/3;
@@ -1134,6 +1135,9 @@ canvas {
     width: 8rem;
   }
 
+.herotext{
+  padding-top: 12rem;
+}
 
   .project {
     width: 100%;
@@ -1219,6 +1223,7 @@ canvas {
     height: 100vh;
     width: 100vw;
   }
+
 
   .sectionlabel {
     grid-column: 1/3;
