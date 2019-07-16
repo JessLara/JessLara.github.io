@@ -776,8 +776,8 @@ canvas {
   .lowfid_img img,
   .highfid_img img,
   .iterations_img img{
-    width: 33%;
-    height: auto;
+    width: auto;
+    height: 30%;
   }
 
   .iterations_img{
