@@ -1426,7 +1426,7 @@ canvas {
     .colorpalette h3{
       transform: translate(-20%,100%)
     }
-  
+
 }
 
 /* tablet - Portrait*/
@@ -1564,6 +1564,48 @@ canvas {
   .houndwatch, .bytespace {
     width: 100%;
   }
+
+
+    /*----------bytespace------*/
+
+    .casestudyheader{
+      height: 70vh;
+    }
+    /*.main{
+      dislay:grid;
+      grid-template-columns: 1fr auto;
+      grid-template-rows: auto auto;
+    }
+
+    .projectsectionlabel{
+      grid-column: 1/2;
+      grid-row: 1/2
+      width: 20%;
+    }
+
+     .content{
+      grid-column: 2/3;
+      grid-row: 1/2
+      width: 60%;
+    }*/
+
+    .content{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .content p{
+      padding:  0rem 5rem;
+    }
+
+    .projectsectionlabel {
+      padding: 2.5%;
+      width: 25%;
+    }
+
+
+
+
 }
 
 /*-----------Laptops, Desktops---------------*/
