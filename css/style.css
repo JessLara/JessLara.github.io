@@ -754,29 +754,46 @@ canvas {
     margin-bottom: 4rem;
   }
 
+/*sketches*/
   .bytespacesketches{
-    margin:0;
-    width: 100%;
-    height: 15rem;
+    width: 95%;
+    height: 40rem;
     background: url("../images/CaseStudy/ByteSpace/BS Sketches.png") no-repeat center;
     background-size: cover;
-    opacity: 1;
+    margin-left: .5rem;
     margin-top: .5rem;
     margin-bottom: 4rem;
   }
 
-  .lowfid_img,
-  .highfid_img,
+  .lowfid_img{
+    width: 100%;
+    height: 31rem;
+    background: url("../images/CaseStudy/ByteSpace/BS LF.png") no-repeat center;
+    background-size: cover;
+    margin-top: .5rem;
+    margin-bottom: 4rem;
+  }
+  .highfid_img{
+    width: 100%;
+    height: 31rem;
+    background: url("../images/CaseStudy/ByteSpace/BS HF.png") no-repeat center;
+    background-size: cover;
+    margin-top: .5rem;
+    margin-bottom: 4rem;
+  }
   .iterations_img{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
+    height: 31rem;
+    background: url("../images/CaseStudy/ByteSpace/iterations.png") no-repeat center;
+    background-size: cover;
+    margin-top: .5rem;
+    margin-bottom: 4rem;
   }
 
   .lowfid_img img,
   .highfid_img img,
   .iterations_img img{
-    width: auto;
+    width: 40%;
     height: 30%;
   }
 
