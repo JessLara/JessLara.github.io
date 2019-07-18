@@ -17,19 +17,19 @@ h1 {
 }
 
 h2 {
-  font: 1.8rem 'Libre Franklin', sans-serif;
+  font: 3rem 'Libre Franklin', sans-serif;
   font-weight: 400;
   color: #232323;
 }
 
 h3 {
-  font: 1.6rem 'Libre Franklin', sans-serif;
+  font: 2.5rem 'Libre Franklin', sans-serif;
   font-weight: 400;
   color: #232323;
 }
 
 p {
-  font: 1.6rem 'Libre Franklin', sans-serif;
+  font: 1.8rem 'Libre Franklin', sans-serif;
   font-weight: 300;
   color: #232323;
   line-height: 3.5rem;
@@ -39,6 +39,7 @@ p {
 .container {
   background-color: #fff;
   overflow: hidden;
+  width: 100%;
 }
 
 /*_____HERO____*/
@@ -64,11 +65,10 @@ p {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #f9f9fb;
 }
 
 .nav li a {
-  font: 1.6rem 'Libre Franklin', cursive;
+  font: 1.4rem 'Libre Franklin', cursive;
   color: #000;
   text-transform: uppercase;
   letter-spacing: .2rem;
@@ -81,13 +81,13 @@ p {
 .nav .logo {
   display: block;
   float: left;
-  padding: 2rem 2rem;
+  padding: 3.5% 8%;
   text-decoration: none;
 }
 
 .nav img {
-  width: 6rem;
-  height: auto;
+  height: 10vw;
+  width: auto;
 }
 
 /* menu */
@@ -102,7 +102,7 @@ p {
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 3rem 2.0rem;
+  padding: 8% 5%;
   position: relative;
   user-select: none;
 }
@@ -113,7 +113,7 @@ p {
   height: .2rem;
   position: relative;
   transition: background .2s ease-out;
-  width: 2.5rem;
+  width: 6.5vw;
 }
 
 .nav .menu-icon .navicon:before,
@@ -167,25 +167,24 @@ p {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 10vh 8vw;
+  padding: 40% 10%;
+  width: 90vw;
 }
 
 article h1 {
   width: 100vw;
-  padding-top: 15vh;
 }
 
 article p {
-  padding-top: 5vh;
+  padding-top: 4vh;
   color: #232323;
-  font: 1.8rem 'Libre Franklin', sans-serif;
   font-weight: 300;
   line-height: 3.5rem;
   font-weight: 300;
 }
 
 strong {
-  font: 1.8rem 'Libre Franklin', sans-serif;
+  font: 1.9rem 'Libre Franklin', sans-serif;
   font-weight: 800;
   letter-spacing: .05rem;
 }
@@ -195,13 +194,14 @@ article>p:first-child {
 }
 
 article>p:nth-child(3) {
-  padding-bottom: 10vh;
+  padding-bottom: 7vh;
 }
 
 .cmbutton {
-  background-color: #0C0C0C;
+  width: 5vw;
+  background-color: #232323;
   border: .2rem solid #fff;
-  padding: 1.5rem 2.5rem;
+  padding: 4.5% 6%;
   color: #fff;
   font: 1.6rem 'Lato', sans-serif;
   letter-spacing: .1rem;
@@ -218,8 +218,7 @@ article>p:nth-child(3) {
 
 /*----PROJECTS------*/
 .portfolio_works {
-  padding-top: 2rem;
-  background-color: #fff;
+  padding-top: 5%;
 }
 
 .project {
@@ -230,7 +229,7 @@ article>p:nth-child(3) {
   width: 100%;
   height: 50vh;
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 5%;
   cursor: pointer;
 }
 
@@ -261,14 +260,14 @@ article>p:nth-child(3) {
 }
 
 .houndwatch img {
-  height: 60%;
+  max-height: 70%;
   width: auto;
   overflow: hidden;
 }
 
 .bytespace img {
-  width: 80%;
-  height: auto;
+  max-width: 85%;
+  max-height: 65%;
   overflow: hidden;
 }
 
@@ -283,74 +282,42 @@ article>p:nth-child(3) {
 }
 
 /*----------FOOTER--------------*/
-footer {
-  background-color: #fff;
-  height: 9vh;
-  width: 100vw;
-  border-top: .15rem solid #232323;
-  border-radius: 0;
-}
 
 .fcontainer {
+  height: 10vh;
+  width: 100%
+  background-color: #F2F2F2;
+  border-top: .15rem solid rgba(48,48,48, .5);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding-top: 2rem;
-}
-
-.footerlogo {
-  width: 15vw;
-  align-items: center;
-  top: 50%;
-  left: 1%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-100%, -15%);
-}
-
-.footerlogo img {
-  height: 3.5rem;
-  width: auto;
-  justify-content: center;
-  align-self: center;
-}
-
-.footlist {
-  display: flex;
-  width: 50vw;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(50%, -50%);
-  -ms-transform: translate(50%, -50%);
-  transform: translate(35%, -50%);
-}
-
-.footlist ul {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-justify-content: space-around;
-  -moz--justify-content: space-around;
   justify-content: space-around;
 }
 
-.footlist li {
-  font: 1.4rem 'lato', sans-serif;
-  letter-spacing: .1rem;
-  font-weight: 400;
-  text-decoration: none;
-  text-transform: uppercase;
-  list-style: none;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.footerlogo{
+  float: left;
+  padding-right: 20%;
 }
 
-.footlist a {
+.footerlogo img{
+  height: 5vh;
+}
+
+.footlist{
+  float: right;
+  right: 0;
+}
+
+.footlist ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footlist li{
+  padding-left: 1rem;
+}
+.footlist li a{
   color: #000;
   font: 1.2rem ' Lato', sans-serif;
   letter-spacing: .12rem;
@@ -358,6 +325,8 @@ footer {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+
 
 /*-----------CASE STUDY: ByteSpace-----------------*/
 .casestudyheader {
@@ -953,28 +922,50 @@ canvas {
 /*____________________________MEDIA QUERIES__________________________*/
 /*---------Mobile---------
 */
-@media (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
-  .sectionlabel, .overlay {
+@media (min-width: 0px)  {
+   .sectionlabel , .overlay{
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+   .overlay{
     display: none;
   }
 }
 
 /*---------Mobile Landscape---------*/
-@media (min-width: 320px) and (max-width:812px) and (orientation: landscape) {
+@media (min-width: 375px) and (max-width:812px) and (orientation: landscape) {
+
+  .hero{
+    height: 100vh;
+  }
+
+  .nav .logo {
+    padding: 1% 5%;
+  }
+
+  .nav .menu-icon {
+      padding: 5% 4%;
+  }
+
+  .nav .menu-icon .navicon {
+    width: 5vw;
+  }
+
   .overlay, .sectionlabel {
     display: none;
   }
 
-  .viewcs {
-    display: block;
-  }
-
   .logo img {
-    padding: 1rem;
     height: auto;
-    width: 7rem;
+    width: 8vw;
   }
 
+.nav .logo {
+    padding: 2% 8%;
+
+}
   .menu {
     width: 100%;
   }
@@ -988,35 +979,27 @@ canvas {
     font-size: 1.2rem;
   }
 
+  .herotext{
+    padding: 28vh 8vw;
+  }
+
   article h1 {
-    padding-top: 10rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   article p {
-    padding-top: 2%;
-    font-size: 1.6rem;
+    padding-top: 2vh;
+    font-size: 1.5rem;
   }
 
-  article>p:nth-child(3) {
-    padding-top: .5%;
-    padding-bottom: 3.5%;
-  }
-
-  strong {
+  article strong {
     font-size: 1.6rem;
     font-weight: 600;
   }
 
   .cmbutton {
-    padding: 1rem 1rem;
-    font-size: 1.4rem;
-    top: 45%;
-  }
-
-  .bytespace img {
-    height: 70%;
-    width: auto;
+      padding: 2% 3%;
+      font-size: 1.2rem;
   }
 
   /*------bytespace------*/
@@ -1106,118 +1089,65 @@ canvas {
 
 /*_____------------_Grid Layout_-----------______*/
 /* ##Device = Tablets, Ipads ---- Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  .container {
-    width: 100vw;
-    height: 100%;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 3rem 1fr 1fr 3rem;
-    grid-auto-rows: auto 1fr auto auto;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-  }
+@media only screen and (min-device-width: 813px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){
 
-  .hero {
-    overflow: hidden;
-    grid-column: 1/5;
-    grid-row: 1/2;
-    height: 70vh;
-    width: 100vw;
-  }
-
-  .herotext h1 {
-    padding-top: 0;
-  }
-
-  .sectionlabel {
-    grid-column: 1/3;
-    grid-row: 2/3;
-  }
-
-  .portfolio_works {
-    width: 100%;
-    height: 50vh;
-    grid-area: portfolio_works;
-    grid-column: 2/4;
-    grid-row: 3/4;
-  }
-
-  .houndwatch {
-    width: 50vw;
-    grid-column: 2/3;
-    grid-row: 3/4;
-    grid-area: portfolio_works;
-  }
-
-  .bytespace {
-    width: 50vw;
-    grid-column: 3/4;
-    grid-row: 3/4;
-    grid-area: portfolio_works;
-  }
-
-  footer {
-    width: 100vw;
-    height: 10vh;
-    grid-column: 1/5;
-    grid-row: 4/5;
-    padding-top: 2rem;
-    border: 1px none #232323;
-    border-top: 2px solid #232323;
-    border-radius: 0;
-  }
-
-  .footerlogo {
-    transform: translate(-100%, -50%);
-  }
-
-  .footlist {
-    padding-bottom: 1rem;
-    justify-content: space-around;
-  }
-
-  .footlist li {
-    width: 20%;
-    justify-content: space-around;
+  .hero{
+    height: 80vh;
   }
 
   .nav .logo {
-    padding-left: 4rem;
+    padding: 1% 5%;
+  }
+
+  .nav .menu-icon {
+    padding: 4% 4%;
+  }
+
+  .nav .menu-icon .navicon {
+    width: 4vw;
+  }
+
+  .overlay {
+    display: none;
   }
 
   .logo img {
+    padding: 1rem;
+    height: auto;
     width: 8rem;
   }
 
-  .herotext {
-    padding-top: 12rem;
+  .herotext{
+    padding: 28vh 7vw;
   }
 
-  .project {
-    width: 100%;
-    height: 100%;
+  article h1 {
+    font-size: 5rem;
   }
 
-  .houndwatch img {
-    height: 60%;
-    width: auto;
-    overflow: hidden;
+  article p {
+    padding-top: 2vh;
+    font-size: 1.5rem;
   }
 
-  .bytespace img {
-    width: 65%;
-    height: auto;
-    overflow: hidden;
+  article strong {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+
+  .cmbutton {
+      padding: 2% 3%;
+      font-size: 1.2rem;
   }
 
   .sectionlabel {
     background-color: #232323;
-    padding: 2rem 2rem;
-    width: 70%;
+    padding: 2.5% 2.5%;
+    width: 30%;
     display: block;
     position: relative;
-    margin-top: 3rem;
+    margin-top: 5%;
   }
 
   .sectionlabel h1 {
@@ -1233,25 +1163,24 @@ canvas {
     position: absolute;
   }
 
-  .portfolio_works {
-    width: 100%;
+  .portfolio_works{
     display: flex;
-    justify-content: space-between center;
-    margin-top: 3%;
-    margin-bottom: 6%;
+    flex-direction: row;
+    margin: 0 5% 5% 5%;
+    justify-content: space-between;
   }
 
-  .houndwatch, .bytespace {
-    width: 100%;
+  .project{
+    margin: 2%;
   }
 
-  .overlay {
-    display: none;
+  .footerlogo{
+    padding-right: 50%;
   }
 
-  .houndwatch {
-    margin-right: 5%;
-  }
+  .footlist li{
+    padding: 2rem;
+    }
 
   /*----------bytespace------*/
   .herotextcs article h1 {
@@ -1424,133 +1353,73 @@ canvas {
 }
 
 /* tablet - Portrait*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2){
   .overlay, .sectionlabel {
     display: none;
   }
 
-  .container {
-    width: 100vw;
-    height: 100%;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 3rem 1fr 1fr 3rem;
-    grid-auto-rows: auto 1fr auto auto;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+  .hero{
+    height: 70vh;
   }
-
-  .hero {
-    overflow: hidden;
-    grid-column: 1/5;
-    grid-row: 1/2;
-    height: 60vh;
-    width: 100vw;
-  }
-
   .herotext {
-    padding-top: 5%;
+  padding-top:  30%;
+
   }
 
-  .herotext p {
-    padding-top: 5%;
-    ;
+
+  article h1 {
+    font-size: 5rem;
   }
 
-  .herotext p:nth-child(3) {
-    padding-bottom: 10%;
+  article p {
+    padding-top: 3vh;
+    font-size: 1.8rem;
   }
 
-  .sectionlabel {
-    grid-column: 1/3;
-    grid-row: 2/3;
+  article strong {
+    font-size: 1.9rem;
+    font-weight: 600;
   }
 
-  .portfolio_works {
-    width: 100%;
-    height: 50vh;
-    grid-area: portfolio_works;
-    grid-column: 2/4;
-    grid-row: 3/4;
+  .cmbutton {
+      padding: 2.5% 4%;
+      font-size: 1.4rem;
   }
 
-  .houndwatch {
-    width: 50vw;
-    grid-column: 2/3;
-    grid-row: 3/4;
-    margin-right: 5%;
+  .nav img {
+    height: 6vw;
   }
 
-  .bytespace {
-    width: 50vw;
-    grid-column: 3/4;
-    grid-row: 3/4;
-    grid-area: portfolio_works;
+  .nav .menu-icon {
+    padding: 6% 5%;
   }
 
-  footer {
-    width: 100vw;
-    height: 10vh;
-    grid-column: 1/5;
-    grid-row: 4/5;
-    padding-top: 2rem;
-    border: 1px none #232323;
-    border-top: 2px solid #232323;
-    border-radius: 0;
+  .nav .menu-icon .navicon {
+    width: 4vw;
   }
 
-  .footerlogo {
-    transform: translate(-100%, -50%);
+
+  .fcontainer{
+    height: 8vh;
   }
 
-  .footlist {
-    padding-bottom: 1rem;
-    justify-content: space-around;
-  }
-
-  .footlist li {
-    width: 20%;
-    justify-content: space-around;
-  }
-
-  .nav .logo {
-    padding-left: 4rem;
-  }
-
-  .logo img {
-    width: 8rem;
-  }
-
-  .project {
-    width: 100%;
-    height: 100%;
-  }
-
-  .houndwatch img {
-    height: 60%;
-    width: auto;
-    overflow: hidden;
-  }
-
-  .bytespace img {
-    width: 65%;
-    height: auto;
-    overflow: hidden;
+  .footerlogo{
+    padding-right: 45%;
   }
 
   .sectionlabel {
     background-color: #232323;
-    padding: 2rem 2rem;
-    width: 70%;
+    padding: 2.5% 2.5%;
+    width: 30%;
     display: block;
     position: relative;
-    margin-top: 3rem;
+    margin-top: 5%;
   }
 
   .sectionlabel h1 {
     vertical-align: middle;
     color: #fff;
-    font: 2rem 'Libre Franklin', sans-serif;
+    font: 1.8rem 'Libre Franklin', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
@@ -1560,17 +1429,18 @@ canvas {
     position: absolute;
   }
 
-  .portfolio_works {
-    width: 100%;
+  .portfolio_works{
     display: flex;
-    justify-content: space-between center;
-    margin-top: 3%;
-    margin-bottom: 6%;
+    flex-direction: row;
+    margin: 0 5% 5% 5%;
+    justify-content: space-between;
   }
 
-  .houndwatch, .bytespace {
-    width: 100%;
+  .project{
+    margin: 2%;
+    height: 35vh;
   }
+
 
   /*----------bytespace------*/
   .casestudyheader {
@@ -1769,29 +1639,185 @@ canvas {
   }
 
 
-
-
 }
 
 /*-----------Laptops, Desktops---------------*/
-@media screen and (min-device-width: 1025px) and (max-device-width: 2000px) and (-webkit-min-device-pixel-ratio: 1) {
-  .container {
-    width: 100vw;
-    height: 100%;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 3rem 1fr 1fr 3rem;
-    grid-auto-rows: auto 1fr auto auto;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+@media screen and (min-device-width: 900px) and (max-device-width: 2000px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+
+  .hero{
+    height: 70vh;
   }
+
+  .nav li {
+   float: left;
+ }
+ .nav li a {
+   font-size: 1.6rem;
+   padding: 2rem 3rem;
+ }
+ .nav .menu {
+   clear: none;
+   float: right;
+   max-height: none;
+   padding-top: 1%;
+   padding-right: 5%;
+ }
+ .nav .menu-icon {
+   display: none;
+ }
+
+   .nav .logo {
+    padding: 1% 5%;
+  }
+
+  .logo img {
+    padding: 1rem;
+    height: auto;
+    width: 9rem;
+  }
+
+.herotext{
+  padding-top: 15%;
+}
+  article h1 {
+    font-size: 8rem;
+  }
+
+  article p {
+    font-size: 2.2rem;
+    padding-right: 5%;
+  }
+
+  article strong {
+    font-size: 2.3rem;
+    font-weight: 600;
+  }
+
+  .cmbutton {
+      padding: 2% 3%;
+      font-size: 1.2rem;
+  }
+
+  .sectionlabel {
+    background-color: #232323;
+    padding: 2.5% 2.5%;
+    width: 30%;
+    display: block;
+    position: relative;
+    margin-top: 5%;
+  }
+
+  .sectionlabel h1 {
+    vertical-align: middle;
+    color: #fff;
+    font: 2rem 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+
+  .portfolio_works{
+    display: flex;
+    flex-direction: row;
+    margin: 0 5% 5% 5%;
+    justify-content: space-between;
+  }
+
+  .project{
+    margin: 2%;
+  }
+
+  .text {
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .text h3 {
+    font: 2.5rem 'Libre Franklin', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+    letter-spacing: .2rem;
+  }
+
+  .text p {
+    font: 1.8rem 'Libre Franklin', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    padding-bottom: 5rem;
+  }
+
+  .pbutton {
+    background-color: #fff;
+    padding: 1.2rem 2rem;
+    color: #000;
+    font: 1.6rem 'Lato', sans-serif;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .pbutton:hover {
+    background-color: #000;
+    color: #fff;
+    opacity: 0.8;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+  }
+
+  .hwoverlay {
+    background-color: rgba(62, 104, 197, 0.90);
+  }
+
+  .bsoverlay {
+    background-color: rgba(0, 118, 90, 0.90);
+  }
+
+  .project:hover .overlay {
+    opacity: 1;
+  }
+
+  .footerlogo{
+    padding-right: 50%;
+  }
+
+  .footlist li{
+    padding: 2rem;
+    }
+
+    .footlist li a{
+      font-size: 1.6rem;      }
+
+    }
+
+/*
 
   .hero {
     overflow: hidden;
-    grid-column: 1/5;
-    grid-row: 1/2;
     height: 60vh;
-    width: 100vw;
   }
 
   .nav .logo {
@@ -1980,74 +2006,7 @@ canvas {
     margin-right: 5%;
   }
 
-  .text {
-    width: 80%;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
 
-  .text h3 {
-    font: 2.5rem 'Libre Franklin', sans-serif;
-    color: #fff;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding-bottom: 3rem;
-    letter-spacing: .2rem;
-  }
-
-  .text p {
-    font: 1.8rem 'Libre Franklin', sans-serif;
-    color: #fff;
-    font-weight: 300;
-    padding-bottom: 5rem;
-  }
-
-  .pbutton {
-    background-color: #fff;
-    padding: 1.2rem 2rem;
-    color: #000;
-    font: 1.6rem 'Lato', sans-serif;
-    letter-spacing: .1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-
-  .pbutton:hover {
-    background-color: #000;
-    color: #fff;
-    opacity: 0.8;
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-  }
-
-  .hwoverlay {
-    background-color: rgba(62, 104, 197, 0.90);
-  }
-
-  .bsoverlay {
-    background-color: rgba(0, 118, 90, 0.90);
-  }
-
-  .project:hover .overlay {
-    opacity: 1;
-  }
 
   footer {
     height: 10vh;
