@@ -86,8 +86,8 @@ p {
 }
 
 .nav img {
-  height: 10vw;
-  width: auto;
+  width: 14vw;
+  height: auto;
 }
 
 /* menu */
@@ -922,20 +922,16 @@ canvas {
 /*____________________________MEDIA QUERIES__________________________*/
 /*---------Mobile---------
 */
-@media (min-width: 0px)  {
-   .sectionlabel , .overlay{
+@media (min-width: 0px) and (orientation: landscape)  {
+   .sectionlabel{
     display: none;
   }
 }
 
-@media (max-width: 1024px) and (orientation: portrait) {
-   .overlay{
-    display: none;
-  }
-}
 
 /*---------Mobile Landscape---------*/
-@media (min-width: 375px) and (max-width:812px) and (orientation: landscape) {
+@media (min-width:375px)
+ and (orientation: landscape) {
 
   .hero{
     height: 100vh;
@@ -953,7 +949,7 @@ canvas {
     width: 5vw;
   }
 
-  .overlay, .sectionlabel {
+.sectionlabel {
     display: none;
   }
 
@@ -1089,7 +1085,7 @@ canvas {
 
 /*_____------------_Grid Layout_-----------______*/
 /* ##Device = Tablets, Ipads ---- Landscape */
-@media only screen and (min-device-width: 813px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){
+@media only screen and (min-device-width: 812px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){
 
   .hero{
     height: 80vh;
@@ -1105,10 +1101,6 @@ canvas {
 
   .nav .menu-icon .navicon {
     width: 4vw;
-  }
-
-  .overlay {
-    display: none;
   }
 
   .logo img {
@@ -1353,16 +1345,20 @@ canvas {
 }
 
 /* tablet - Portrait*/
-@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2){
-  .overlay, .sectionlabel {
+@media only screen and (min-device-width: 812px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2){
+  .sectionlabel {
     display: none;
   }
 
   .hero{
     height: 70vh;
   }
-  .herotext {
+  .herotext {s
   padding-top:  30%;
+  }
+
+  .nav .logo{
+    padding: 2% 10%;
 
   }
 
@@ -1387,7 +1383,7 @@ canvas {
   }
 
   .nav img {
-    height: 6vw;
+    max-width: 6vw;
   }
 
   .nav .menu-icon {
@@ -1641,27 +1637,52 @@ canvas {
 
 }
 
-/*-----------Laptops, Desktops---------------*/
-@media screen and (min-device-width: 900px) and (max-device-width: 2000px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+@media screen and (max-device-width: 812px){
+  .sectionlabel, .overlay{
+    display: none;
+  }
+
+}
+
+
+@media screen and (min-device-width: 813px) and (max-device-width: 2000px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
 
   .hero{
     height: 70vh;
   }
 
-  .nav li {
-   float: left;
- }
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center space-between;
+    align-content: center;
+  }
+
+  .nav li{
+    width: 31;
+    justify-self: center;
+    align-self: center;
+    padding: .2rem;
+  }
+
  .nav li a {
    font-size: 1.6rem;
-   padding: 2rem 3rem;
+   padding: 0;
+   width: 100%;
+
  }
+
  .nav .menu {
+   width: 30%;
    clear: none;
-   float: right;
    max-height: none;
-   padding-top: 1%;
-   padding-right: 5%;
+   display: flex;
+  margin-left: 45%;
+   justify-content: space-between;
+   align-content: center;
  }
+
+
  .nav .menu-icon {
    display: none;
  }
@@ -1677,19 +1698,19 @@ canvas {
   }
 
 .herotext{
-  padding-top: 15%;
+  padding-top: 14%;
 }
   article h1 {
-    font-size: 8rem;
+    font-size: 6.5rem;
   }
 
   article p {
-    font-size: 2.2rem;
+    font-size: 2rem;
     padding-right: 5%;
   }
 
   article strong {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     font-weight: 600;
   }
 
@@ -1730,6 +1751,11 @@ canvas {
   .project{
     margin: 2%;
   }
+
+  .viewcs{
+    display: none;
+  }
+
 
   .text {
     width: 80%;
@@ -1800,6 +1826,7 @@ canvas {
     opacity: 1;
   }
 
+
   .footerlogo{
     padding-right: 50%;
   }
@@ -1809,9 +1836,13 @@ canvas {
     }
 
     .footlist li a{
-      font-size: 1.6rem;      }
+      font-size: 1.6rem;
 
     }
+
+    }
+
+
 
 /*
 
