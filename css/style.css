@@ -335,7 +335,7 @@ article>p:nth-child(3) {
 /*-----------CASE STUDY: ByteSpace-----------------*/
 .casestudyhero {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
 }
 
 .herotextcs {
