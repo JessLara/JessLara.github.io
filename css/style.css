@@ -335,7 +335,7 @@ article>p:nth-child(3) {
 /*-----------CASE STUDY: ByteSpace-----------------*/
 .casestudyhero {
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
 }
 
 .herotextcs {
@@ -354,18 +354,18 @@ article>p:nth-child(3) {
 }
 
 .herotextcs p {
-  padding: 4rem 5rem;
+  padding: 3.5rem 5rem;
   font: 1.8rem/1.9 'Lato', sans-serif;
   font-weight: 400;
 }
 
 .bytespacecompimg {
-  padding-bottom: 4.5rem;
+  padding-bottom: 3rem;
 }
 
 .bytespacecompimg img{
   height: auto;
-  max-width: 80%;
+  max-width: 75%;
 }
 
 .csbutton {
@@ -587,7 +587,7 @@ canvas {
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: center space-between;
+  justify-content: space-between;
   height: 100%;
 }
 
@@ -600,6 +600,7 @@ canvas {
 .userimg {
   width: 40%;
   float: left;
+  margin-left: 4%;
 }
 
 .userimg img {
@@ -608,9 +609,10 @@ canvas {
 
 .userinfo {
   float: right;
-  width: 60%;
+  width: 55%;
+  padding: 10% 5%;
   font-family: "Lato", sans serif;
-  padding-top: 10%;
+
 }
 
 .userinfo h2 {
@@ -929,6 +931,8 @@ line-height: 2rem;
     height: 100vh;
   }
 
+
+
   .nav .logo {
     padding: 1% 5%;
   }
@@ -967,8 +971,8 @@ line-height: 2rem;
     font-size: 1.2rem;
   }
 
-  .herotext{
-    padding: 28vh 8vw;
+  .herotext {
+  padding-top:  25vh;
   }
 
   article h1 {
@@ -1003,18 +1007,22 @@ line-height: 2rem;
 
   /*------/\/\/\/bytespace\/\/\/\/\/------*/
 
+  .herotextcs{
+    height: 100vh;
+  }
+
   .herotextcs article h1 {
-    padding-top: 12%;
+    padding-top: 1%;
     padding-bottom: 1.5rem;
     font-size: 4rem;
   }
 
   .bytespacecompimg {
-    padding-bottom: 3.5rem;
+    padding-bottom: 2rem;
   }
 
   .bytespacecompimg img {
-    width: 25vw;
+    width: 30vw;
     height: auto;
     flex-direction: row;
   }
@@ -1022,12 +1030,12 @@ line-height: 2rem;
   .herotextcs article p {
     padding-top: 0;
     font-size: 1.4rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
 
   .csbutton {
-    padding: .8rem 1.8rem;
-    font-size: 1.2rem;
+    padding: .7rem 1rem;
+    font-size: 1rem;
   }
 
   /*research data*/
@@ -1106,7 +1114,7 @@ line-height: 2rem;
 @media only screen and (min-device-width: 812px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){
 
   .hero{
-    height: 80vh;
+    height: 90vh;
   }
 
   .nav .logo {
@@ -1127,9 +1135,7 @@ line-height: 2rem;
     width: 8rem;
   }
 
-  .herotext{
-    padding: 28vh 7vw;
-  }
+
 
   article h1 {
     font-size: 5rem;
@@ -1291,7 +1297,6 @@ line-height: 2rem;
   .userinfo{
     width: 85%;
     padding-left: 35%;
-    padding-top: 10%
   }
 
   .userinfo h2{
@@ -1354,9 +1359,9 @@ line-height: 2rem;
   }
 
   .hero{
-    height: 70vh;
+    height: 80vh;
   }
-  .herotext {s
+  .herotext {
   padding-top:  30%;
   }
 
@@ -1371,7 +1376,6 @@ line-height: 2rem;
   }
 
   article p {
-    padding-top: 3vh;
     font-size: 1.8rem;
   }
 
@@ -1446,9 +1450,9 @@ line-height: 2rem;
     width: 100vw;
   }
 
-  .casestudyhero {
-    height: 70vh;
-}
+  .casestudyhero{
+    height: 55vh;
+  }
 
 .herotextcs article h1 {
   padding-top: 15%;
@@ -1577,7 +1581,11 @@ line-height: 2rem;
   }
 
   .userimg {
-  width: 42%
+  width: 45%
+  }
+
+  .userimg img {
+    height: 15vh;
   }
 
   .userinfo{
@@ -1598,6 +1606,55 @@ line-height: 2rem;
     width: 100%;
     padding: 0 5%;
   }
+
+  .lowfid_img{
+    background: url("../images/CaseStudy/ByteSpace/LF2.png") center no-repeat;
+    background-size: contain;
+  }
+
+
+  .highfid_img{
+    background: url("../images/CaseStudy/ByteSpace/HF2.png") center no-repeat;
+    background-size: contain;
+  }
+
+  .iterations_img{
+    background: url("../images/CaseStudy/ByteSpace/iteration2.png") center no-repeat;
+    background-size: contain;
+    margin-bottom: 5rem;
+  }
+
+  .content p{
+    font-size: 1.6rem;
+  }
+
+  .typeface img{
+    width: 70vw;
+    align-items: center;
+    padding-left: 25%;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+  }
+
+  .color-list{
+    margin-top: 8rem;
+    padding: 2% 15%;
+    height: 20rem;
+  }
+
+  .name{
+    font-size: 1.5rem;
+    color: #000;
+  }
+
+  .conclusion .content{
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    padding-top: 5%;
+
+  }
+
 
 
 
@@ -1807,6 +1864,263 @@ line-height: 2rem;
 
 /*BYTESPACE*/
 
+.bytespacecontainer{
+  width: 100vw;
+}
+
+.casestudyhero{
+  height: 85vh;
+}
+
+.herotextcs{
+  height: 100%;
+}
+
+.herotextcs article h1 {
+padding-top: 5%;
+}
+
+.herotextcs article p {
+padding: 2rem 5rem;
+}
+
+.bytespacecompimg{
+  padding-bottom: 2rem;
+}
+
+.bytespacecompimg img{
+height: auto;
+max-width: 30%;
+}
+
+.role-description {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 4rem 0rem;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.role-description div {
+  width: 150%;
+  margin-left: 12%;
+}
+
+.role-description h2 {
+  font-size: 1.8rem;
+}
+
+.role-description p {
+  width: 85%;
+  font-size: 1.6rem;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5rem;
+}
+
+.content p {
+  position: relative;
+  padding: 0 10rem;
+  margin-left: 20%;
+}
+
+.projectsectionlabel {
+  padding: 2%;
+  width: 20%;
+  height: 1.5rem;
+  position: absolute;
+}
+
+.subsectionlabel{
+  margin: 0;
+  width: 15%;
+  height: 1.5rem;
+  position: absolute;
+}
+
+.sketches{
+  padding-top: 5%;
+}
+
+.researchdata {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  align-self: flex-start;
+  height: 60rem;
+}
+
+.surveydata {
+  padding-top: 12%;
+  float: right;
+}
+
+.surveydata table {
+  width: 36rem;
+  height: 26rem;
+  padding: 0;
+  margin-left: 20%;
+  background-color: #fff;
+  border-radius: 2%;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.surveydata table td{
+  font-size: 1.5rem;
+}
+
+.chart {
+  width: 55%;
+  margin-top: 2%;
+  float: left;
+
+}
+
+.chart h1 {
+  padding: 0;
+  padding-bottom: 2%;
+  margin: 0;
+}
+
+.swottable {
+  height: 58rem;
+  margin-bottom: 4rem
+}
+
+.swottable h2 {
+  font-size: 2.4rem;
+  width: 20%;
+}
+
+.swottable td {
+  font-size: 1.6rem;
+  width: 20%;
+}
+
+.swottable table {
+  width: 85%;
+  font-size: 1.6rem;
+  margin-left: 15rem;
+  padding-bottom: 4rem;
+}
+
+.swottable table td {
+  width: 15rem;
+}
+
+.swottable table td:first-child,
+.swottable table tr:first-child td {
+  font-size: 1.8rem;
+}
+
+#personas{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+}
+
+.personas{
+  height: 50rem;
+}
+
+.userimg {
+width: 25%
+}
+
+.userimg img {
+  height: 15vh;
+}
+
+.userinfo{
+  width: 90%;
+  padding-top: 8%;
+}
+
+.mainsection p{
+  padding: 2rem 3rem;
+  font-size: 1.4rem;
+}
+
+.userinfo h2{
+  font-size: 2rem;
+}
+.userflows {
+  height: 60rem;
+  width: 100%;
+  padding: 0;
+  background-size: cover;
+}
+
+.bytespacesketches{
+  height: 46rem;
+  width: 100%;
+  padding: 0 5%;
+}
+
+.lowfid_img{
+  background: url("../images/CaseStudy/ByteSpace/LF2.png") center no-repeat;
+  background-size: contain;
+  height: 40rem;
+}
+
+
+.highfid_img{
+  background: url("../images/CaseStudy/ByteSpace/HF2.png") center no-repeat;
+  background-size: contain;
+  height: 40rem;
+}
+
+.iterations_img{
+  background: url("../images/CaseStudy/ByteSpace/iteration2.png") center no-repeat;
+  background-size: contain;
+  height: 40rem;
+  margin-bottom: 2rem;
+}
+
+.content p{
+  font-size: 1.6rem;
+}
+
+.typeface img{
+  width: 40vw;
+  align-items: center;
+  padding-left: 5%;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+}
+
+.color-list{
+  margin-top: 10rem;
+  padding: 2% 15%;
+  height: 20rem;
+}
+
+.name{
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.conclusion .content{
+  display: flex;
+  flex-direction: column;
+  height: 35rem;
+  padding-top: 5%;
+  flex-overflow: none;
+
+}
+
+.conclusion p{
+  line-height: 3rem;
+  padding: 0 10rem;
+}
+
 .color-list {
   display: flex;
   flex-direction: row;
@@ -1814,12 +2128,13 @@ line-height: 2rem;
 }
 
 .color {
-  flex: 0 0 20%;
+  flex: 0%;
   /*flex-grow | flex-shrink | flex-basis*/
-  box-shadow: 0 0 30px #424242;
+  box-shadow: 0 0 10px #424242;
   padding: 1em;
   color: white;
   transition: flex-basis 0.5s ease-in-out;
+  font-size: 1.6rem;
 }
 .color:hover {
   flex-basis: 40%;
@@ -1829,7 +2144,8 @@ line-height: 2rem;
 }
 
 .name {
-  font-size: 1.2em;
+  font-size: 1.4em;
+  font: 1.5rem "Libre-Franklin", sans-serif;
 }
 
 .details {
@@ -1840,7 +2156,8 @@ line-height: 2rem;
 }
 
 .details li {
-  line-height: 2em;
+  line-height: 5rem;
+  font: 1.5rem "Lato", sans-serif;
 }
 
 
