@@ -8,7 +8,7 @@ $(document).ready(function(){
           $('nav').css('background-color', 'rgba(255,255,255,.95)');
           $('nav').css('box-shadow', '1px 1px 4px 0 rgba(0,0,0,.1)');
        } else {
-          $('nav').css('background-color', 'transparent');
+          $('nav').css('background-color', '#fff');
             $('nav').css('box-shadow', 'none');
        }
    });
