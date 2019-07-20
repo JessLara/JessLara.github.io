@@ -34,7 +34,6 @@ p {
   color: #232323;
   line-height: 3.5rem;
 }
-
 /*----------------Home Page-----------------------*/
 .container {
   background-color: #fff;
@@ -60,8 +59,8 @@ p {
   z-index: 3;
 }
 
-.white_nav{ background-color:#fff;
-
+.white_nav{
+background-color:#fff;
 }
 
 .nav ul {
@@ -289,9 +288,8 @@ article>p:nth-child(3) {
 
 .fcontainer {
   height: 10vh;
-  width: 100%
-  background-color: #F2F2F2;
-  border-top: .15rem solid rgba(48,48,48, .5);
+  width: 100%;
+  background-color: #000;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -322,7 +320,7 @@ article>p:nth-child(3) {
   padding-left: 1rem;
 }
 .footlist li a{
-  color: #000;
+  color: #FFF;
   font: 1.2rem ' Lato', sans-serif;
   letter-spacing: .12rem;
   font-weight: 400;
@@ -478,7 +476,7 @@ canvas {
 }
 
 .projectsectionlabel {
-  background-color: #232323;
+  background-color: #fff;
   padding: 4.5%;
   height: 5%;
   width: 40%;
@@ -554,7 +552,7 @@ canvas {
   width: 97%;
   font: .5rem "Lato", sans-serif;
   font-weight: 400;
-  color: #232323;
+  color: #fff;
   text-align: center;
 }
 
@@ -835,83 +833,97 @@ line-height: 2rem;
 }
 
 /*****************About Me*************/
-.aboutmeheader {
-  width: 100vw;
-  height: 90vh;
-  left: 50%;
-  text-align: center;
-  align-items: center;
-  transform: translate(-50%);
+.am_containeer p{
+  font: 1.4rem "Franklin-Libre", sans-serif;
+font-weight: 300;
+}
+
+/*
+.aboutmeheader{
+  height: 100vh;
+}*/
+
+.herotext_am{
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.herotext_am h1 {
-  color: #00765A;
-  font: 8rem 'Lobster', cursive;
-  left: 50%;
-  top: 3%;
-  transform: translate(-50%);
-  position: absolute;
-  width: 100vw;
+.headerimg{
+  background:url("../images/Jess.png") right no-repeat;
+  background-size: contain;
+  height: 45vh;
 }
 
-.herotext_am img {
-  border-radius: 50%;
-  height: 26rem;
-  width: 26rem;
-  top: 20%;
-  transform: translate(-50%);
-  position: absolute;
-}
-
-.herotext_am p {
-  font-family: 'Lato', sans-serif;
-  line-height: 2.5rem;
-  font-size: 1.6rem;
-  font-weight: 400;
-  Padding: 3rem 4rem;
-  text-align: center;
-  top: 56%;
-  transform: translate(0);
-  position: absolute;
-}
-
-.orange {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #E98C00;
-}
-
-.biotext, .questions {
-  padding: 4.5rem;
-  width: 100vw;
-}
-
-.biotext {
-  background-color: #E8F8F4;
-  font-family: 'Lato', sans-serif;
-  line-height: 2.4rem;
-  font-size: 1.4rem;
-  font-weight: 400;
-}
-
-.questions h2 {
-  color: #E98C00;
-  font: 1.8rem/3.5rem ' Lato', sans-serif;
-  font-weight: 400;
-  position: relative;
+.title h1{
+  font: 3rem "Lato", sans-serif;
   text-transform: uppercase;
-  padding-bottom: 1.2rem;
+  letter-spacing: .2rem;
+  padding-left: 10%;
+  font-weight: 900;
+  border-bottom: 1px solid #000;
+  position: absolute;
+  top: 40%;
 }
 
-.questions p {
-  font-family: 'Lato', sans-serif;
-  line-height: 2.4rem;
-  font-size: 1.4rem;
-  font-weight: 400;
-  padding-bottom: 5rem;
+.title h1 span{
+  color: #fff;
 }
+
+.amintro p{
+  font: 1.4rem "Franklin-Libre", sans-serif;
+  font-weight: 300;
+  padding: 10% 6%;
+  background-color: #f2f2f2;
+  line-height: 2rem;
+}
+
+strong .amintro  {
+  font-weight: 900;
+  font: 1.5rem "Franklin-Libre", sans-serif;
+  text-decoration: underline;
+}
+
+.biography p{
+  padding: 0 10%;
+  font: 1.4rem "Franklin-Libre", sans-serif;
+  font-weight: 300;
+  line-height: 2.2rem;
+}
+
+.biotext{
+  padding: 10% 0%;
+}
+
+.label{
+  width: 100%;
+  vertical-align: middle;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #000;
+  padding: 4%;
+  width: 65%;
+}
+
+.label h2{
+  color: #fff;
+  font: 1.5rem 'Libre Franklin', sans-serif;
+  text-align: left;
+  padding: 0 5%;
+  line-height: 2rem;
+}
+
+.questions p{
+  padding: 8% 10%;
+}
+
+
+
+
+
+
 
 /*____________________________MEDIA QUERIES__________________________*/
 /*---------Mobile---------
@@ -1105,13 +1117,22 @@ line-height: 2rem;
   }
 
   footer {
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
   }
+
+    /*------#####About Me####------*/
+    .aboutmeheader{
+      height: 100vh;
+    }
+
+    .headerimg{
+      height: 100vh;
+    }
 }
 
 /*_____------------_Grid Layout_-----------______*/
 /* ##Device = Tablets, Ipads ---- Landscape */
-@media only screen and (min-device-width: 812px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){
+@media only screen and (min-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){
 
   .hero{
     height: 90vh;
@@ -1137,7 +1158,7 @@ line-height: 2rem;
 
 
 
-  article h1 {
+    .herotext article h1{
     font-size: 5rem;
   }
 
@@ -1158,7 +1179,7 @@ line-height: 2rem;
   }
 
   .sectionlabel {
-    background-color: #232323;
+    background-color: #fff;
     padding: 2.5% 2.5%;
     width: 30%;
     display: block;
@@ -1190,8 +1211,12 @@ line-height: 2rem;
     margin: 2%;
   }
 
+  .fcontainer{
+    padding-bottom: 5%;
+  }
+
   .footerlogo img{
-    height: 6vh;
+    height: 8vh;
   }
 
   .footerlogo{
@@ -1348,6 +1373,34 @@ line-height: 2rem;
     line-height: 3rem;
   }
 
+    /*------#####About Me####------*/
+
+    .title h1{
+      font-size: 5rem;
+    }
+
+    .amintro p{
+      font-size: 2rem;
+      padding: 5% 10%;
+      line-height: 3rem;
+    }
+
+    .label{
+      width: 45%;
+    }
+
+    .label h2{
+      font-size: 2.2rem;
+    }
+
+    .questions p{
+      font-size: 2rem;
+      line-height: 3.5rem;
+      font-weight: 400;
+    }
+
+
+
 
 
 }
@@ -1362,7 +1415,7 @@ line-height: 2rem;
     height: 80vh;
   }
   .herotext {
-  padding-top:  30%;
+  padding-top: 30%;
   }
 
   .nav .logo{
@@ -1411,7 +1464,7 @@ line-height: 2rem;
   }
 
   .sectionlabel {
-    background-color: #232323;
+    background-color: #fff;
     padding: 2.5% 2.5%;
     width: 30%;
     display: block;
@@ -1451,7 +1504,7 @@ line-height: 2rem;
   }
 
   .casestudyhero{
-    height: 55vh;
+    height: 65vh;
   }
 
 .herotextcs article h1 {
@@ -1515,20 +1568,19 @@ line-height: 2rem;
   .researchdata {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center space-between;
     align-items: center;
-    padding: 0;
-    align-self: flex-start;
-    height: 30rem;
+    height: 100%;
   }
 
   .surveydata {
-    padding: 10% 4%;
+    padding: 10% 2%;
   }
 
   .surveydata table {
     width: 35rem;
     padding: 0;
+    box-shadow: 0 8px 6px -6px black;
   }
 
   .chart {
@@ -1539,10 +1591,6 @@ line-height: 2rem;
   .chart h1 {
     padding: 0;
     margin: 0;
-  }
-
-  canvas {
-    width: 30rem;
   }
 
   .swottable {
@@ -1652,23 +1700,47 @@ line-height: 2rem;
     flex-direction: column;
     height: 30rem;
     padding-top: 5%;
-
   }
 
+  /*------#####About Me####------*/
+
+  .title h1{
+    font-size: 5rem;
+  }
+
+  .amintro p{
+    font-size: 2rem;
+    padding: 5% 10%;
+    line-height: 3rem;
+  }
+
+  .label{
+    width: 55%;
+  }
+
+  .label h2{
+    font-size: 2.2rem;
+  }
+
+  .questions p{
+    font-size: 2rem;
+    line-height: 3.5rem;
+    font-weight: 400;
+  }
 
 
 
 }
 
-@media screen and (max-device-width: 812px){
+@media screen and (max-device-width: 1023px){
+
   .sectionlabel, .overlay{
     display: none;
   }
-
 }
 
 
-@media screen and (min-device-width: 813px) and (max-device-width: 2000px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+@media screen and (min-device-width: 1024px) and (max-device-width: 2000px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
 
   .hero{
     height: 70vh;
@@ -1743,7 +1815,7 @@ line-height: 2rem;
   }
 
   .sectionlabel {
-    background-color: #232323;
+    background-color: #fff;
     padding: 2.5% 2.5%;
     width: 30%;
     display: block;
@@ -1849,9 +1921,12 @@ line-height: 2rem;
     opacity: 1;
   }
 
-
   .footerlogo{
     padding-right: 50%;
+  }
+
+  .footerlogo img{
+    height: 6vh;
   }
 
   .footlist li{
@@ -1949,41 +2024,33 @@ max-width: 30%;
 
 .researchdata {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: center space-between;
   align-items: center;
-  padding: 0;
-  align-self: flex-start;
-  height: 60rem;
+  height: 100%;
 }
 
 .surveydata {
-  padding-top: 12%;
-  float: right;
+  width: 50rem;
+  padding: 6% 0;
+
 }
 
 .surveydata table {
-  width: 36rem;
-  height: 26rem;
-  padding: 0;
-  margin-left: 20%;
+
+  height: 25rem;
   background-color: #fff;
   border-radius: 2%;
   box-shadow: 0 8px 6px -6px black;
+  padding-left: 4%;
 }
 
 .surveydata table td{
-  font-size: 1.5rem;
-}
-
-.chart {
-  width: 55%;
-  margin-top: 2%;
-  float: left;
-
+  font-size: 1.8rem;
 }
 
 .chart h1 {
+  font-size: 2rem;
   padding: 0;
   padding-bottom: 2%;
   margin: 0;
@@ -2053,7 +2120,6 @@ width: 25%
 }
 .userflows {
   height: 60rem;
-  width: 100%;
   padding: 0;
   background-size: cover;
 }
@@ -2159,1885 +2225,46 @@ width: 25%
   line-height: 5rem;
   font: 1.5rem "Lato", sans-serif;
 }
+/*------#####About Me####------*/
 
-
-
-
-
-/*
-
-  .hero {
-    overflow: hidden;
-    height: 60vh;
-  }
-
-  .nav .logo {
-    padding-left: 10%;
-    padding-top: 5rem;
-  }
-
-  .nav .logo img {
-    width: 8rem;
-  }
-
-  .menu {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5rem;
-  }
-
-  .nav li {
-    width: 50%;
-    padding: 0;
-    justify-content: right;
-  }
-
-  .nav li a {
-    font: 1.8rem;
-    font-weight: 400;
-    letter-spacing: .2rem;
-    border-right: none;
-  }
-
-  .nav .menu {
-    padding-top: 5rem;
-    width: 40%;
-    background-color: transparent;
-    clear: none;
-    float: right;
-    max-height: none;
-    overflow: hidden;
-  }
-
-  .nav .menu-icon {
-    display: none;
-  }
-
-  .menu li:nth-child(3) {
-    display: none;
-    width: 25%;
-  }
-
-  .herotext {
-    padding: 5% 10%;
-  }
-
-  h1 {
-    font-size: 7rem;
-  }
-
-  article p {
-    font-size: 2rem;
-    width: 85%;
-    padding-top: 2vh;
-  }
-
-  article p:nth-child(3) {
-    padding-bottom: 5vh;
-  }
-
-  .sectionlabel {
-    grid-column: 1/3;
-    grid-row: 2/3;
-  }
-
-  .portfolio_works {
-    width: 100%;
-    height: 50vh;
-    grid-area: portfolio_works;
-    grid-column: 2/4;
-    grid-row: 3/4;
-  }
-
-  .houndwatch {
-    width: 50vw;
-    grid-column: 2/3;
-    grid-row: 3/4;
-    grid-area: portfolio_works;
-  }
-
-  .bytespace {
-    width: 50vw;
-    grid-column: 3/4;
-    grid-row: 3/4;
-    grid-area: portfolio_works;
-  }
-
-  footer {
-    width: 100vw;
-    height: 10vh;
-    grid-column: 1/5;
-    grid-row: 4/5;
-    padding-top: 2rem;
-    border: 1px none #232323;
-    border-top: 2px solid #232323;
-    border-radius: 0;
-  }
-
-  .footerlogo {
-    transform: translate(-100%, -50%);
-  }
-
-  .footlist {
-    padding-bottom: 1rem;
-    justify-content: space-around;
-  }
-
-  .footlist li {
-    width: 20%;
-    justify-content: space-around;
-  }
-
-  .nav .logo {
-    padding-left: 6rem;
-  }
-
-  .logo img {
-    width: 8rem;
-  }
-
-  .project {
-    width: 100%;
-    height: 100%;
-  }
-
-  .houndwatch img {
-    height: 60%;
-    width: auto;
-    overflow: hidden;
-  }
-
-  .bytespace img {
-    width: 65%;
-    height: auto;
-    overflow: hidden;
-  }
-
-  .sectionlabel {
-    background-color: #232323;
-    padding: 3rem 2rem;
-    width: 70%;
-    display: block;
-    position: relative;
-    margin-top: 3rem;
-  }
-
-  .sectionlabel h1 {
-    vertical-align: middle;
-    color: #fff;
-    font: 2rem 'Libre Franklin', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-
-  .portfolio_works {
-    width: 100%;
-    display: flex;
-    justify-content: space-between center;
-    margin-top: 3%;
-    margin-bottom: 6%;
-  }
-
-  .houndwatch, .bytespace {
-    width: 100%;
-  }
-
-  .viewcs {
-    display: none;
-  }
-
-  .houndwatch {
-    margin-right: 5%;
-  }
-
-
-
-  footer {
-    height: 10vh;
-  }
-
-  .fcontainer {
-    padding-top: 1rem;
-  }
-
-  .footerlogo {
-    transform: translate(-175%, -25%);
-  }
-
-  .footerlogo img {
-    width: 7.5rem;
-    height: auto;
-  }
-
-  .footlist {
-    width: 20%;
-    right: 0;
-    transform: translateX(105%);
-  }
-
-  .footlist a {
-    font-size: 1.6rem;
-  }
-
-  .menu-btn {
-    display: none;
-  }
-
-  /*
+.headerimg{
+  height: 70vh;
 }
 
-/*
-@media screen and (min-device-width: 1200px) and (max-device-width: 2000px) and (-webkit-min-device-pixel-ratio: 1) {
-  .houndwatch img {
-    max-height: 70%;
-    width: auto;
-  }
-
-  .bytespace img {
-    max-height: 60%;
-    width: auto;
-  }
+.title h1{
+  top: 30%;
+  font-size: 8rem;
 }
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 2000px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  .houndwatch img {
-    max-height: 70%;
-    width: auto;
-  }
-
-  .bytespace img {
-    max-height: 70%;
-    width: auto;
-  }
-}
+.biotext{
+  padding: 5% 0;
 }
 
-/*
-  .houndwatch img{
-    max-height: 35%;
-    max-width: 40%;
-    overflow: hidden;
-  }
-
-
-  .nav{
-    padding-top: 3rem;
-  }
-
-  .menu{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nav .menu-icon .navicon {
-    width: 5rem;
-  }
-
-  .nav li {
-    justify-content: right;
-  }
-
-  .nav li a {
-    width: 14rem;
-    justify-content: space-around;
-    padding: 3.5rem .5rem;
-    font: 1.8rem;
-    font-weight: 400;
-    letter-spacing: .2rem;
-    border-right: none;
-  }
-
-.nav  .menu {
-    width: 45%;
-    background-color: transparent;
-    clear: none;
-    float: right;
-    max-height: none;
-    overflow: hidden;
-  }
-
-  .nav .menu-icon {
-    display: none;
-  }
-
-
-  .logo img {
-    width: 8.5rem;
-  }
-
-  .navlist a {
-    font: 2rem 'Libre Franklin', sans-serif;
-    letter-spacing: .15rem;
-  }
-
-  article h1 {
-    padding-top: 5vh;
-    font-size: 10rem;
-    font-weight: 900;
-  }
-
- {
-    font-size: 2.8rem;
-    top: 20%;
-    padding-right: 45%;
-    line-height: 1.5;
-  }
-
-  article p {
-    font-size: 2.8rem;
-    margin-right: 20%;
-    line-height: 1.5;
-  }
-
-  .cmbutton {
-    padding: 1.8rem 1.8rem;
-    font-size: 1.8rem;
-    top: 50%;
-  }
-
-  .sectionlabel {
-    background-color: #000;
-    padding: 1.5%;
-    height: 5%;
-    width: 20%;
-    margin-top: 5%;
-    position: relative;
-  }
-
-  .sectionlabel h1{
-    vertical-align: middle;
-    color: #fff;
-    font: 2rem 'Libre Franklin', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-
-
-  .portfolio_works {
-    width: 100%;
-    display: flex;
-    justify-content: space-between center;
-    padding-top: 5%;
-    padding-bottom: 10%;
-  }
-
-  .houndwatch {
-    margin-right: 5rem;
-  }
-
-  .dark {
-    display: none;
-  }
-
-  .footerlogo {
-    padding-left: 1%;
-    width: 25vw;
-    display: flex;
-    top: 40%;
-    left: 50%;
-    -webkit-transform: translate(-90%, 0%);
-    -ms-transform: translate(-90%, 0%);
-    transform: translate(-90%, 0%);
-  }
-
-  .footerlogo img {
-    height: 4.5rem;
-  }
-
-  .footlist {
-    width: 20vw;
-    display: flex;
-    top: 50%;
-    left: 100%;
-    -webkit-transform: translate(70%, 50%);
-    -ms-transform: translate(70%, 50%);
-    transform: translate(70%, 50%);
-  }
-
-  .footlist a {
-    color: #000;
-    font-size: 1.6rem;
-  }
-
-  .footer {
-    height: 12vh;
-    border: 0 none #000;
-    border-top: 2px solid #000;
-    border-radius: 0;
-  }
-
-  .nav, .portfolio_works{
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+.biotext p{
+  font-size: 2rem;
+  line-height: 3.5rem;
+  font-weight: 400;
+  padding-bottom: 2%;
 }
 
-/*
-@media (min-width: 1281px) {
-
-  .viewcs {
-    display: none;
-  }
-
-  .overlay {
-    display: display;
-  }
-
-  .navlist {
-    width: 25%;
-    position: absolute;
-    top: 15%;
-    left: 83%;
-    transform: translate(-50%, -50%);
-    justify-content: space-around;
-    display: flex;
-  }
-
-  .navlist a {
-    font: 1.6rem 'Libre Franklin', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-  }
-
-
-  .hero {
-    height: 100vh;
-  }
-
-  .logo {
-    top: 12%;
-  }
-
-  .logo img {
-    width: 10rem;
-  }
-
-  .herotext {
-    top: 35%;
-  }
-
-  .hero, .portfolio_works{
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
-  .herotext h1 {
-    font-size: 10rem;
-    font-weight: 900;
-  }
-
-  .herotext h2 {
-    font-size: 2.8rem;
-    top: 20%;
-    padding-right: 45%;
-    line-height: 1.5;
-  }
-
-  .herotext p {
-    top: 35%;
-    font-size: 2.8rem;
-    margin-right: 20%;
-    line-height: 1.5;
-  }
-
-  .cmbutton {
-    padding: 1.8rem 1.8rem;
-    font-size: 1.8rem;
-    top: 50%;
-  }
-
-  .sectionlabel {
-    background-color: #000;
-    padding: 1.5%;
-    height: 5%;
-    width: 20%;
-    margin-top: 5%;
-    position: relative;
-  }
-
-  .sectionlabel h1{
-    vertical-align: middle;
-    color: #fff;
-    font: 2rem 'Libre Franklin', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-
-  .portfolio_works {
-    width: 100%;
-    display: flex;
-    justify-content: space-between center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-
-  .houndwatch {
-    margin-right: 5rem;
-  }
-
-  .dark {
-    display: none;
-  }
-
-  .footerlogo {
-    padding-left: 1%;
-    width: 25vw;
-    display: flex;
-    top: 40%;
-    left: 50%;
-    -webkit-transform: translate(-90%, 0%);
-    -ms-transform: translate(-90%, 0%);
-    transform: translate(-90%, 0%);
-  }
-
-  .footerlogo img {
-    height: 4.5rem;
-  }
-
-  .footlist {
-    width: 20vw;
-    display: flex;
-    top: 50%;
-    left: 100%;
-    -webkit-transform: translate(70%, 50%);
-    -ms-transform: translate(70%, 50%);
-    transform: translate(70%, 50%);
-  }
-
-  .footlist a {
-    color: #000;
-    font-size: 1.6rem;
-  }
-
-  .footer {
-    height: 12vh;
-    border: 0 none #000;
-    border-top: 2px solid #000;
-    border-radius: 0;
-  }
+.amintro p{
+  font-size: 2rem;
+  padding: 5% 10%;
+  line-height: 3rem;
 }
 
-/*---------About Me---------s
-
-  .herotext_am h1{
-    font-size: 6.5rem;
-  }
-
-  .aboutmeheader {
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .herotext_am img {
-    top: 19%;
-    height: 23rem;
-    width: 23rem;
-  }
-
-  .herotext_am p {
-    top: 53%;
-  }
+.label{
+  width: 45%;
 }
 
-/*-----------------------CASE STUDY-----------------*/
-  /* Smartphones (landscape) -----------
-@media only screen and (min-width : 667px) and (min-height: 375px){
-  .navlistindex , .navlist {
-    display: none;
-    }
-
-  .aboutmeheader {
-    width: 100vw;
-    display: flex;
-  }
-
-  .herotext_am h1{
-    font-size: 5rem;
-    top: 2%;
-  }
-
-  .herotext_am img {
-    float: left;
-    left: 20%;
-    top: 33%;
-    height: 18rem;
-    width: 18rem;
-  }
-
-  .herotext_am p {
-    top: 22%;
-    float: left;
-    left: 30%;
-    text-align: left;
-  }
-
-  /*-----------CASE STUDY-------
-  .bytespaceheader {
-    width: 100vw;
-    height: 80vh;
-  }
-
-  .herotextcs h1 {
-    font-size: 5.5rem;
-    top: 0;
-  }
-
-  .herotextcs p {
-    width: 100%;
-    top: 25%;
-    padding: 0;
-  }
-
-  .herotextcs > .bytespacecompimg {
-  top: 40%;
+.label h2{
+  font-size: 2.2rem;
 }
 
-  .bytespacecompimg img {
-    height: auto;
-    width: 20rem;
-  }
-
-  .herotextcs > .pbutton  {
-    top: 82%;
-  }
-
-  .personas , .userstories , .lowfid_img, .highfid_img, .iterations_img{
-    display: inline-flex;
-    justify-content: space-around;
-  }
-
-  .admin{
-    display: none;
-  }
-
-  .userflows{
-    align-items: center;
-    justify-content: center;
-    left: 50%;
-    transform: translate(5%);
-  }
-
-  .userflows img{
-    width: 85%;
-    align-items: center;
-  }
-
-  .lowfid_img img , .highfid_img img , .iterations_img img{
-    width: 32%;
-  }
-
-  .typeface img{
-    width: 85%;
-    height: auto;
-    padding-left: 20%;
-  }
-}
-
-
-
-
-
-/* Smartphones (landscape) -----------
-@media only screen and (min-width: 812px) and (min-height: 375px)
-{
-  .navlistindex , .navlist {
-    display: none;
-  }
-
-  /*-----------CASE STUDY-------*
-  .bytespaceheader {
-    width: 100vw;
-    height: 80vh;
-  }
-
-  .herotextcs h1 {
-    font-size: 5.5rem;
-    top: 0;
-  }
-
-  .herotextcs p {
-    width: 100%;
-    top: 25%;
-    padding: 0;
-  }
-
-  .herotextcs > .bytespacecompimg {
-  top: 40%;
-}
-
-  .bytespacecompimg img {
-    height: auto;
-    width: 20rem;
-  }
-
-  .herotextcs > .pbutton  {
-    top: 82%;
-  }
-}
-
-
-/*TABLETS*/
-  /*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-
-@media only screen and (min-width: 768px){
-
-  /*
-
-  /******** Homepage *********
-  .hero {
-    height: 80vh;
-  }
-
-  .herotext {
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .herotext h1 {
-    font-size: 6rem;
-    top: 10%;
-  }
-
-  .herotext h2 {
-    font-size: 2.2rem;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  .herotext p {
-    font-size: 2.2rem;
-    padding: 0 3rem;
-    top: 33%;
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  .herotext > .pbutton{
-    font-size: 2.3rem;
-    top: 43%;
-  }
-
-  /*PROJECT SECTION
-  .bytespace, .projectname, .projectname2 {
-    width: 100vw;
-    height: 35vh;
-    position: relative;
-  }
-
-  .projectdescription img {
-    width: 40vw;
-    width: 34rem;
-    height: auto;
-    top: 30%;
-    left: 55%;
-    transform: translate(-10%, -20%);
-    position: absolute;
-  }
-
-  .projectdescription h3 {
-    width: 50vw;
-    font-size: 2.2rem;
-    text-align: left;
-    top: 25%;
-    Left: 15%;
-    transform: translate(-17%, -25%);
-    position: absolute;
-    display: flex;
-  }
-
-  .projectdescription p {
-    width: 42vw;
-    font-size: 1.8rem;
-    top: 56%;
-    Left: 15%;
-    transform: translate(-20%, -50%);
-    position: absolute;
-  }
-
-  .projects button {
-    top: 78%;
-    Left: 16%;
-    transform: translate(-40%, -30%);
-    border-radius: .5rem;
-    padding: 1rem 1.8rem;
-    font-size: 1.8rem;
-    position: absolute;
-  }
-
-  /******** Casestudy *********
-  .bytespaceheader {
-    height: 80vh;
-    weight: 100vw;
-  }
-
-  .herotextcs h1 {
-    top: 8%;
-  }
-
-  .herotextcs p {
-    top: 25%;
-    padding: 0 15rem;
-  }
-
-  .bytespacecompimg {
-    top: 40%;
-  }
-
-  .bytespacecompimg img {
-    height: auto;
-    width: 38rem;
-  }
-
-  .bytespacecompimg {
-    padding-bottom: 1rem;
-  }
-
-  .pbutton {
-    top: 33%;
-  }
-
-  .protobutton {
-    border-radius: .3rem;
-    color: #fff;
-    font: 1.4rem ' Lato', sans-serif;
-    font-weight: 400;
-    padding: 1rem 2rem;
-    position: relative;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  .role-description {
-    padding: 5rem 9rem;
-  }
-
-  .role-description h2 {
-    font: 1.8rem " Lato", sans-serif;
-    font-weight: 500;
-    padding-bottom: 2.4rem;
-    text-transform: uppercase;
-  }
-
-  .role-description p {
-    font: 1.6rem "lato", sans-serif;
-    font-weight: 400;
-    letter-spacing: .1rem;
-    padding-bottom: 4rem;
-  }
-
-  .year p {
-    padding-bottom: 0;
-  }
-
-  .problem-solution, .research, .branding, .conclusion {
-    margin: 0rem 9rem 0rem;
-  }
-
-  .mainsection {
-    padding-top: 6rem;
-  }
-
-  .mainsection p {
-    line-height: 2.4rem;
-    font-size: 1.6rem;
-    font-weight: 400;
-    padding-top: 3rem;
-  }
-
-  .mainsection h2 {
-    font-size: 2rem;
-  }
-
-  .mainsection h3 {
-    color: #5E5E5E;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 500;
-    padding-top: 5rem;
-    text-transform: uppercase;
-  }
-
-  .mainsection img {
-    height: auto;
-    vertical-align: middle;
-    align-items: center;
-    width: 100%;
-  }
-
-  .highfid_img , .iterations_img, .lowfid_img, .userstories, .personas {
-    left: 50%;
-    transform: translate(5%);
-    width: 70vw;
-    display: flex;
-    justify-content: space-around;
-  }
-  .personas img {
-    width: 28rem;
-    height: 48rem;
-  }
-
-  .userstories img {
-    width: 28rem;
-    height: auto;
-  }
-
-  .userstories img:last-child {
-    display: none;
-  }
-
-  .lowfid_img img {
-    width: 18rem;
-    height: 40rem;
-    padding-right: 1rem;
-  }
-
-  .lowfid_img img:last-child {
-    width: 22rem;
-    height: 35rem;
-  }
-
-  .highfid_img img {
-    width: 18rem;
-    height: 40rem;
-    padding-right: 1rem;
-  }
-
-  .highfid_img img:last-child {
-    width: 22rem;
-    height: 35rem;
-  }
-
-  .iterations_img img {
-    width: 18rem;
-    height: 40rem;
-    padding-right: 1rem;
-  }
-
-  .iterations_img img:last-child {
-    width: 22rem;
-    height: 35rem;
-  }
-
-  .conclusion {
-    background-color: #E8F8F4;
-    margin: 0;
-    padding: 0rem 9rem 0 9rem;
-  }
-
-  /******** About Me *********
-  .aboutmeheader {
-    height:45vh;
-    width: 100vw;
-  }
-
-  .herotext_am img {
-    float: left;
-    left: 8%;
-    top: 15%;
-    height: 28rem;
-    width: 26rem;
-    transform: translate(0%);
-    position: absolute;
-  }
-
-  .herotext_am h1 {
-    width: 55vw;
-    font-size: 6rem;
-    padding-bottom: 3rem;
-    top: 10%;
-    left: 57%;
-    transform: translate(-20%, -25%);
-    text-align: left;
-    position: absolute;
-  }
-
-  .herotext_am p {
-    padding-bottom: 3rem;
-    width: 55vw;
-    padding: 0 5rem 0 0;
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-align: left;
-    right: 10%;
-    left: 62%;
-    top: 33%;
-    transform: translate(-30%, -10%);
-    line-height: 3rem;
-    position: absolute;
-  }
-
-  .orange {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #E98C00;
-  }
-
-  .biotext, .questions {
-    padding: 5rem;
-  }
-
-  .biotext {
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-  }
-
-  .questions h2 {
-    font-size: 2.8rem;
-  }
-
-  .questions p {
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-  }
-
-  .footer {
-    height: 20rem;
-  }
-
-  .footerlogo{
-    padding-top: 2.5rem;
-  }
-
-  .footerlogo img {
-    height: 5rem;
-    width: auto;
-  }
-
-  .footerlist {
-    padding-top: 2.5rem;
-  }
-
-  .footerlist a {
-    font-size: 1.6rem;
-  }
-
-  .fa-envelope , .fa-linkedin {
-  font-size: 4rem;
-}
-
-}
-
-
-@media only screen and (min-width: 667px) and (min-height:882px){
-  .menu-wrap, .menu-wrapdark, .toggle-button {
-    display: none;
-  }
-
-  .aboutmeheader {
-    height:40vh;
-    width: 100vw;
-  }
-}
-
-/*
-            tablet-landscape
-
-@media only screen and (min-width: 882px) and (min-height: 768px) {
-  .menu-wrap, .menu-wrapdark {
-    display: none;
-  }
-
-  .logo {
-    padding: 6rem 4rem;
-  }
-
-  .logo img {
-    height: auto;
-    width: 9rem;
-  }
-
-  .navlist, .navlistindex {
-    width: 35%;
-    position: absolute;
-    left: 65%;
-    top: 50%;
-    transform: translate(-20%, -0%);
-    justify-content: space-around;
-    display: flex;
-  }
-
-  .navlist a {
-    font-size: 1.8rem;
-  }
-
-  /******** Homepage **********
-  .hero {
-    height: 80vh;
-  }
-
-  .herotext {
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .herotext h1 {
-    font-size: 6rem;
-    top: 10%;
-  }
-
-  .herotext h2 {
-    font-size: 2.2rem;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  .herotext p {
-    font-size: 2.2rem;
-    padding: 0 3rem;
-    top: 33%;
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  .herotext > .pbutton{
-    font-size: 2.3rem;
-    top: 43%;
-  }
-
-  /*PROJECT SECTION
-  .bytespace, .projectname, .projectname2 {
-    width: 100vw;
-    height: 35vh;
-    position: relative;
-  }
-
-  .projectdescription img {
-    width: 40vw;
-    width: 34rem;
-    height: auto;
-    top: 30%;
-    left: 55%;
-    transform: translate(-10%, -20%);
-    position: absolute;
-  }
-
-  .projectdescription h3 {
-    width: 50vw;
-    font-size: 2.2rem;
-    text-align: left;
-    top: 25%;
-    Left: 15%;
-    transform: translate(-17%, -25%);
-    position: absolute;
-    display: flex;
-  }
-
-  .projectdescription p {
-    width: 42vw;
-    font-size: 1.8rem;
-    top: 56%;
-    Left: 15%;
-    transform: translate(-20%, -50%);
-    position: absolute;
-  }
-
-  .projects button {
-    top: 78%;
-    Left: 16%;
-    transform: translate(-40%, -30%);
-    border-radius: .5rem;
-    padding: 1rem 1.8rem;
-    font-size: 1.8rem;
-    position: absolute;
-  }
-
-  /******** Casestudy *********
-  .bytespaceheader {
-    height: 80vh;
-    weight: 100vw;
-  }
-
-  .herotextcs h1 {
-    top: 8%;
-  }
-
-  .herotextcs p {
-    top: 25%;
-    padding: 0 15rem;
-  }
-
-  .bytespacecompimg {
-    top: 40%;
-  }
-
-  .bytespacecompimg img {
-    height: auto;
-    width: 38rem;
-  }
-
-  .bytespacecompimg {
-    padding-bottom: 1rem;
-  }
-
-  .pbutton {
-    top: 33%;
-  }
-
-  .protobutton {
-    border-radius: .3rem;
-    color: #fff;
-    font: 1.4rem ' Lato', sans-serif;
-    font-weight: 400;
-    padding: 1rem 2rem;
-    position: relative;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  .role-description {
-    padding: 5rem 9rem;
-  }
-
-  .role-description h2 {
-    font: 1.8rem " Lato", sans-serif;
-    font-weight: 500;
-    padding-bottom: 2.4rem;
-    text-transform: uppercase;
-  }
-
-  .role-description p {
-    font: 1.6rem "lato", sans-serif;
-    font-weight: 400;
-    letter-spacing: .1rem;
-    padding-bottom: 4rem;
-  }
-
-  .year p {
-    padding-bottom: 0;
-  }
-
-  .problem-solution, .research, .branding, .conclusion {
-    margin: 0rem 9rem 0rem;
-  }
-
-  .mainsection {
-    padding-top: 6rem;
-  }
-
-  .mainsection p {
-    line-height: 2.4rem;
-    font-size: 1.6rem;
-    font-weight: 400;
-    padding-top: 3rem;
-  }
-
-  .mainsection h2 {
-    font-size: 2rem;
-  }
-
-  .mainsection h3 {
-    color: #5E5E5E;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 500;
-    padding-top: 5rem;
-    text-transform: uppercase;
-  }
-
-  .mainsection img {
-    height: auto;
-    vertical-align: middle;
-    align-items: center;
-    width: 100%;
-  }
-
-  .highfid_img , .iterations_img, .lowfid_img, .userstories, .personas {
-    left: 50%;
-    transform: translate(5%);
-    width: 70vw;
-    display: flex;
-    justify-content: space-around;
-  }
-  .personas img {
-    width: 28rem;
-    height: 48rem;
-  }
-
-  .userstories img {
-    width: 28rem;
-    height: auto;
-  }
-
-  .userstories img:last-child {
-    display: none;
-  }
-
-  .lowfid_img img {
-    width: 18rem;
-    height: 40rem;
-    padding-right: 1rem;
-  }
-
-  .lowfid_img img:last-child {
-    width: 22rem;
-    height: 35rem;
-  }
-
-  .highfid_img img {
-    width: 18rem;
-    height: 40rem;
-    padding-right: 1rem;
-  }
-
-  .highfid_img img:last-child {
-    width: 22rem;
-    height: 35rem;
-  }
-
-  .iterations_img img {
-    width: 18rem;
-    height: 40rem;
-    padding-right: 1rem;
-  }
-
-  .iterations_img img:last-child {
-    width: 22rem;
-    height: 35rem;
-  }
-
-  .typeface img{
-    padding-left: 10%;
-  }
-
-  .conclusion {
-    background-color: #E8F8F4;
-    margin: 0;
-    padding: 0rem 9rem 0 9rem;
-  }
-
-  /******** About Me *********
-  .aboutmeheader {
-    height:45vh;
-    width: 100vw;
-  }
-
-  .herotext_am img {
-    float: left;
-    left: 8%;
-    top: 15%;
-    height: 28rem;
-    width: 26rem;
-    transform: translate(0%);
-    position: absolute;
-  }
-
-  .herotext_am h1 {
-    width: 55vw;
-    font-size: 6rem;
-    padding-bottom: 3rem;
-    top: 10%;
-    left: 57%;
-    transform: translate(-20%, -25%);
-    text-align: left;
-    position: absolute;
-  }
-
-  .herotext_am p {
-    padding-bottom: 3rem;
-    width: 55vw;
-    padding: 0 5rem 0 0;
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-align: left;
-    right: 10%;
-    left: 62%;
-    top: 33%;
-    transform: translate(-30%, -10%);
-    line-height: 3rem;
-    position: absolute;
-  }
-
-  .orange {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #E98C00;
-  }
-
-  .biotext, .questions {
-    padding: 5rem;
-  }
-
-  .biotext {
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-  }
-
-  .questions h2 {
-    font-size: 2.8rem;
-  }
-
-  .questions p {
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-  }
-
-  .footer {
-    height: 20rem;
-  }
-
-  .footerlogo{
-    padding-top: 2.5rem;
-  }
-
-  .footerlogo img {
-    height: 5rem;
-    width: auto;
-  }
-
-  .footerlist {
-    padding-top: 2.5rem;
-  }
-
-  .footerlist a {
-    font-size: 1.6rem;
-  }
-
-  .fa-envelope , .fa-linkedin {
-  font-size: 4rem;
-  }
-}
-
-
-/*
-            Device = Desktops
-
-
-@media only screen and (min-width: 1224px){
-  .menu-wrap, .menu-wrapdark {
-    display: none;
-  }
-
-  .logo {
-    padding: 7rem 5rem;
-  }
-
-  .logo img {
-    height: auto;
-    width: 10rem;
-  }
-
-  .navlist, .navlistindex {
-    width: 35%;
-    position: absolute;
-    left: 65%;
-    top: 50%;
-    transform: translate(-20%, -0%);
-    justify-content: space-around;
-    display: flex;
-  }
-
-  .navlist a {
-    font-size: 1.8rem;
-  }
-
-  /******** Homepage *********
-  .herotext {
-    width: 100vw;
-  }
-
-  .herotext h1 {
-    font-size: 9rem;
-    top: 5%;
-  }
-
-  .herotext h2 {
-    font-size: 2.8rem;
-    top: 25%;
-    text-shadow: 0 0 15px black;
-    left:50%;
-    transform: translate(-50%);
-  }
-
-  .herotext p {
-    font-size: 2.5rem;
-    padding: 0 3rem;
-    top: 33%;
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  .pbutton{
-    font-size: 2.3rem;
-    top: 43%;
-  }
-
-  /*PROJECT SECTION*
-  .bytespace, .projectname, .projectname2 {
-    width: 100vw;
-    height: 40vh;
-    position: relative;
-  }
-
-  .projectdescription img {
-    width: 40rem;
-    height: auto;
-    top: 30%;
-    left: 65%;
-    transform: translate(-10%, -20%);
-    position: absolute;
-  }
-
-  .projectdescription h3 {
-    width: 50vw;
-    font-size: 2.6rem;
-    text-align: left;
-    top: 25%;
-    Left: 20%;
-    transform: translate(-17%, -25%);
-    position: absolute;
-    display: flex;
-  }
-
-  .projectdescription p {
-    width: 42vw;
-    font-size: 2rem;
-    top: 53%;
-    Left: 20%;
-    transform: translate(-20%, -50%);
-    position: absolute;
-  }
-
-  .projects button{
-    top: 78%;
-    Left: 16%;
-    transform: translate(-40%,0);
-    border-radius: .5rem;
-    padding: 1rem 1.8rem;
-    font-size: 1.8rem;
-    position: absolute;
-  }
-
-  .footerlogo img {
-    opacity: 0.5;
-  }
-
-  .bytespaceheader {
-    height: 80vh;
-    weight: 100vw;
-  }
-
-  .herotextcs h1{
-    top: 5%;
-    font-size: 9rem;
-  }
-
-  .herotextcs p {
-    font-size: 2.5rem;
-    top: 30%;
-    padding: 0 15rem;
-  }
-
-  .herotextcs > .bytespacecompimg  {
-    top: 45%;
-  }
-
-  .bytespacecompimg img {
-    height: auto;
-    width: 38rem;
-  }
-
-  .bytespacecompimg {
-    padding-bottom: 1rem;
-  }
-
-  .pbutton {
-    top: 33%;
-  }
-
-  .protobutton {
-    border-radius: .3rem;
-    color: #fff;
-    font: 1.4rem ' Lato', sans-serif;
-    font-weight: 400;
-    padding: 1rem 2rem;
-    position: relative;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  .role-description {
-    padding: 8rem 18rem;
-  }
-
-  .role-description h2 {
-    font: 2.2rem " Lato", sans-serif;
-    font-weight: 500;
-    padding-bottom: 2.4rem;
-    text-transform: uppercase;
-  }
-
-  .role-description p {
-    font: 1.8rem "lato", sans-serif;
-    font-weight: 400;
-    letter-spacing: .1rem;
-    padding-bottom: 4rem;
-  }
-
-  .year p {
-    padding-bottom: 0;
-  }
-
-  .problem-solution, .research, .branding, .conclusion {
-    margin: 0rem 18rem 0rem;
-  }
-
-  .mainsection {
-    padding-top: 8rem;
-  }
-
-  .mainsection p {
-    line-height: 3rem;
-    font-size: 1.8rem;
-    font-weight: 400;
-    padding-top: 3rem;
-  }
-
-  .mainsection h2 {
-    font-size: 2.2rem;
-  }
-
-  .mainsection h3 {
-    color: #5E5E5E;
-    font-family: 'Lato', sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
-    padding-top: 5rem;
-    text-transform: uppercase;
-  }
-
-  .mainsection img {
-    height: auto;
-    vertical-align: middle;
-    align-items: center;
-    width: 80%;
-    padding-bottom: 5rem;
-  }
-
-  .highfid_img , .iterations_img, .lowfid_img, .userstories, .personas, {
-    left: 50%;
-    transform: translate(0%);
-    width: 75vw;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .researchdata img{
-    left: 50%;
-    transform: translate(25%);
-    width: 65%;
-    height: auto;
-  }
-
-  .researchdata img:nth-child(1) {
-    padding: 10rem;
-  }
-
-  .userflows img{
-    left: 50%;
-    transform: translate(15%);
-    width: 65%;
-    height: auto;
-  }
-
-  .userflows img:nth-child(1) {
-    padding: 5rem;
-    width: 60%;
-    height: auto;
-  }
-
-  .sketches img{
-    left: 50%;
-    transform: translate(8%);
-    width: 85%;
-    height: auto;
-  }
-
-  .personas img {
-    width: 40rem;
-    height: 65rem;
-  }
-
-  .userstories img {
-    width: 40rem;
-    height: auto;
-  }
-
-  .userstories img:last-child {
-    display: none;
-  }
-
-  .lowfid_img img {
-    width: 30rem;
-    height: 65rem;
-    padding-right: 1rem;
-  }
-
-  .lowfid_img img:last-child {
-    width: 30rem;
-    height: 45rem;
-  }
-
-  .highfid_img img {
-    width: 30rem;
-    height: 65rem;
-    padding-right: 1rem;
-  }
-
-  .highfid_img img:last-child {
-    width: 30rem;
-    height: 45rem;
-  }
-
-  .iterations_img img {
-    width: 30rem;
-    height: 65rem;
-    padding-right: 1rem;
-  }
-
-  .iterations_img img:last-child {
-    width: 30rem;
-    height: 45rem;
-  }
-
-  .typeface img {
-    align-items: center;
-    left: 50%;
-    transform: translate(35%);
-    width: 70rem;
-    height: auto;
-  }
-
-  .colors img {
-    align-items: center;
-    left: 50%;
-    transform: translate(45%);
-    width: 70rem;
-    height: auto;
-  }
-
-  .conclusion {
-    background-color: #E8F8F4;
-    margin: 0;
-    padding: 0rem 9rem 0 9rem;
-  }
-
-  /******** About Me *********
-  .aboutmeheader {
-    height:55vh;
-    width: 100vw;
-  }
-
-  .herotext_am img {
-    float: left;
-    left: 12%;
-    top: 25%;
-    height: 30rem;
-    width: 30rem;
-    transform: translate(0%);
-    position: absolute;
-  }
-
-  .herotext_am h1 {
-    width: 55vw;
-    font-size: 7.5rem;
-    padding-bottom: 3rem;
-    top: 15%;
-    left: 53%;
-    transform: translate(-20%, -25%);
-    text-align: left;
-    position: absolute;
-  }
-
-  .herotext_am p {
-    padding-bottom: 3rem;
-    width: 55vw;
-    padding: 0 5rem 0 0;
-    font-size: 2rem;
-    font-weight: 400;
-    text-align: left;
-    width: 50vw;
-    left: 58%;
-    top: 40%;
-    transform: translate(-30%, -10%);
-    line-height: 3rem;
-    position: absolute;
-  }
-
-  .orange {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #E98C00;
-  }
-
-  .biotext, .questions {
-    padding: 8rem 12rem;
-  }
-
-  .biotext {
-    height: 35vh;
-    font-size: 1.8rem;
-    line-height: 3.5rem;
-  }
-
-  .questions h2 {
-    font-size: 2.8rem;
-    padding-bottom: 4rem;
-  }
-
-  .questions p {
-    font-size: 1.8rem;
-    line-height: 3rem;
-  }
-
-  .footer {
-    height: 25rem;
-  }
-
-  .footerlogo{
-    padding-top: 3.5rem;
-  }
-
-  .footerlogo img {
-    height: 6rem;
-    width: auto;
-  }
-
-  .footerlist {
-    padding-top:4rem;
-  }
-
-  .footerlist a {
-    font-size: 1.6rem;
-  }
-
-  .fa-envelope , .fa-linkedin {
-  font-size: 5rem;
+.questions p{
+  font-size: 2rem;
+  line-height: 3.5rem;
+  font-weight: 400;
 }
 
 }

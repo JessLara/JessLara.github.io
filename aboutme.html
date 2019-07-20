@@ -6,51 +6,42 @@
     <title> Jess Lara | About Me</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
 <body>
   <!----Navigation Bar---->
-  <nav class="header">
-    <div class="logo">
-      <a href="index.html" name="Home"><img src="images/LogoDark.png" alt="Jess Lara"></a>
-    </div>
+  <div class="am_container">
+    <section class="aboutmeheader">
+      <header>
+        <nav class="nav white_nav">
+          <a href="index.html" class="logo" name="Home"><img src="images/LogoDark.png" alt="Jess Lara"></a>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="menu">
+            <li><a href="index.html#works">Works</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
 
-    <ul class="navlist">
-      <li><a href="index.html#works">Works</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-    </ul>
+          </ul>
+        </nav>
+      </header>
+<!--About Me - Hero Section------------->
 
-
-    <div class="menu-wrapdark">
-      <input type="checkbox" class="toggler">
-      <div class="hamburger">
-        <div></div>
-      </div>
-      <div class="menu">
-        <div>
-          <div>
-            <ul>
-              <li><a href="index.html">Works</a></li>
-              <li><a href="aboutme.html">About Me</a></li>
-              <li><a href="mailto:lara.jessenia@gmail.com? Subject=Hello%20Jess">Contact Me</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-<!--------------------About Me - Hero Section------------->
-<section class="aboutmeheader">
   <div class="herotext_am">
-    <h1>About Me</h1>
-    <img src="images/aboutme.JPG" alt="Jess">
-      <p>With a focus on <span class="orange">symbolistic design</span>, I want to use UX/UI as a means to create user-centered designs. I want to use design to reach a wider audience in different spectrums; politics, the medical field, or students in a classroom. Designing a user interface that can transcend the <span class="orange">language barrier</span> is my ultimate goal as a designer. I'm driven to solve problems people face everyday.
-      </p>
+    <div class="headerimg"></div>
+    <div class="title">
+      <h1>About Me</h1>
+    </div>
+    <div class="amtext">
+      <div class="amintro">
+      <p>With a focus on <strong>symbolistic design</strong>, I want to use UX/UI as a means to create user-centered designs. I want to use design to reach a wider audience in different spectrums; politics, the medical field, or students in a classroom. Designing a user interface that can transcend the <strong>language barrier</strong> is my ultimate goal as a designer. I'm driven to solve problems people face everyday.
+      </p></div>
+    </div>
+
   </div>
 </section>
 
@@ -61,42 +52,49 @@
     </div>
 
     <div class="questions">
-      <h2>what introduced you to design?</h2>
+      <div class="label">
+        <h2>Introduction to Design</h2>
+      </div>
       <p>My mom is a seamstress and when I was young she taught me the basics of crochet.  The first chance I had, I went to the library and found crocheting books, full of designs and all with different patterns. I went from teaching myself crochet to knitting, embroidery, watercolor, and many other skills I was driven to learn about. Design is something that I have always been passionate about and I feel lucky to be able to apply this in my future career. I’ve always been fascinated with human interactions; it was the reason I pursued a B.A. in Sociology. UX/UI Design is the perfect crossroads to my passion, it emcompasses designing, learning, and creating with the user always in mind.</p>
 
-      <h2>why is design important to you?</h2>
+
+      <div class="label">
+        <h2>the importance of design</h2>
+      </div>
       <p>Immigrating to the New York city at a young age, immersed me into a vastly different multi-cultural diaspora. My mom wasn’t able to understand English in the crotchet design books, but she was able to understand the patterns and designs. We could both work on the same items and not be hindered by the language barrier of the books being in English. The patterns are universal. Patterns and symbolism in design can transcend languages. This is what love about design. Design has the ability to reach everyone. I graduated college with a BA in Sociology because I was passionate about learning how humans interact in society, learning about human patterns, cultures, and how they function in an everyday world. My passion in Sociology aids in my knowledge in UX/UI and creating designs that everyone can use.
       </p>
     </div>
+  </div>
   </section>
 
-  <!--------------------------------Footer Section---------------->
-  <section class="footer">
-    <div class="fcontainer">
+  <!---Footer Section--------->
+  <footer class="fcontainer">
       <div class="footerlogo">
-        <img href="index.html" src="images/LogoLight.png" alt="Jess Lara">
+        <a href="index.html">
+          <img href="index.html" src="images/LogoLight.png" alt="Jess Lara">
+        </a>
       </div>
 
       <div class="footlist">
-      <ul class="footerlist">
-        <li>
-          <ul><i class="far fa-envelope"></i></ul>
-          <ul><a href="mailto:lara.jessenia@gmail.com? Subject=Hello%20Jess"></ul>
-          Email</a>
-        </li>
-
-        <li>
-          <ul><i class="fab fa-linkedin"></i></ul>
-          <ul><a href="https://www.linkedin.com/in/jessenialara/">Linkedin</a></ul>
-        </li>
-      </ul>
+        <ul>
+          <li><a href="mailto:lara.jessenia@gmail.com? Subject=Hello%20Jess">
+              Email</a></li>
+          <li><a href="https://www.linkedin.com/in/jessenialara/">Linkedin</a></li>
+        </ul>
       </div>
-    </div>
-  </section>
-  <!--------------------------JAVASCRIPT------------------------->
+
+  </footer>
+  </div>
+
+  <!---JAVASCRIPT------------------------->
+  <script src="app.js"></script>
+
+
+</div>
+  <!--JAVASCRIPT------------------------->
       <script src="app.js"></script>
 
-  <!--------------------------GOOGLE ANALYTICS-------------------->
+  <!--GOOGLE ANALYTICS-------------------->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140507213-1"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
