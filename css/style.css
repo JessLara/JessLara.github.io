@@ -29,11 +29,12 @@ h3 {
 }
 
 p {
-  font: 1.8rem 'Libre Franklin', sans-serif;
+  font: 1.9rem 'Libre Franklin', sans-serif;
   font-weight: 300;
   color: #232323;
   line-height: 3.5rem;
 }
+
 /*----------------Home Page-----------------------*/
 .container {
   background-color: #fff;
@@ -46,21 +47,23 @@ p {
   height: 100vh;
   overflow: hidden;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(256, 257, 256, .83), rgba(226, 197, 177, 0.20)), url("../images/Desktop/heroimg.png") no-repeat center;
+    background: linear-gradient(rgba(100, 100, 100, 1), rgba(200, 200, 200, .5)), url("../images/IMG_3476.JPG") no-repeat center;
   background-size: cover;
+  background-position: 45%;
 }
 
 /*_____NAVBAR____*/
 /* header */
 .nav {
-  background-color: transparent ;
+  background-color: transparent;
   position: fixed;
   width: 100%;
   z-index: 3;
 }
 
-.white_nav{
-background-color:#fff;
+.navdark{
+  background-color: rgba(255,255,255, .95);
+
 }
 
 .nav ul {
@@ -72,13 +75,18 @@ background-color:#fff;
 
 .nav li a {
   font: 1.4rem 'Libre Franklin', cursive;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: .2rem;
   font-weight: 400;
   display: block;
-  padding: 2rem 2rem;
+  padding: 2rem 5rem;
   text-decoration: none;
+  text-align: right;
+}
+.navdark li a{
+  color: #000;
+
 }
 
 .nav .logo {
@@ -95,9 +103,15 @@ background-color:#fff;
 
 /* menu */
 .nav .menu {
+  background-color: rgba(112,112,112, .9);
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
+  z-index: 1;
+}
+
+.navdark .menu{
+  background-color: rgba(255,255,255, .95);
 }
 
 /* menu icon */
@@ -111,7 +125,7 @@ background-color:#fff;
 }
 
 .nav .menu-icon .navicon {
-  background: #333;
+  background: #fff;
   display: block;
   height: .2rem;
   position: relative;
@@ -119,15 +133,24 @@ background-color:#fff;
   width: 6.5vw;
 }
 
+.navdark .menu-icon .navicon {
+  background: #000;
+}
+
 .nav .menu-icon .navicon:before,
 .nav .menu-icon .navicon:after {
-  background: #333;
+  background: #fff;
   content: '';
   display: block;
   height: 100%;
   position: absolute;
   transition: all .2s ease-out;
   width: 100%;
+}
+
+.navdark .menu-icon .navicon:before,
+.navdark .menu-icon .navicon:after {
+  background: #000;
 }
 
 .nav .menu-icon .navicon:before {
@@ -165,131 +188,178 @@ background-color:#fff;
 }
 
 /*_HERO TEXT_*/
+
+
 .herotext {
   overflow: hidden;
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
   flex-direction: column;
-  padding: 40% 10%;
-  width: 90vw;
+  justify-content: center;
+  align-content: center;
+  width: 80%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .9);
+  margin: 40% 0 10% 10%;
+  position: relative;
+  padding: 10%;
 }
 
-article h1 {
-  width: 100vw;
+.herotext:after{
+  content: '';
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    bottom: 3%;
+    right: 3%;
+    border: 1px #232323 solid ;
 }
 
-article p {
-  padding-top: 4vh;
-  color: #232323;
-  font-weight: 300;
-  line-height: 3.5rem;
-  font-weight: 300;
+
+.herotext p {
+  font: 1.9rem 'Lato', sans-serif;
+  position: relative;
+  padding: 10% 1%;
+  font-weight: 400;
 }
 
-strong {
-  font: 1.9rem 'Libre Franklin', sans-serif;
-  font-weight: 800;
-  letter-spacing: .05rem;
-}
-
-article>p:first-child {
-  padding-bottom: 0;
-}
-
-article>p:nth-child(3) {
-  padding-bottom: 7vh;
+.herotext strong {
+  font-weight: 900;
+  font-size: 1.9rem;
 }
 
 .cmbutton {
-  width: 5vw;
-  background-color: #232323;
-  border: .2rem solid #fff;
-  padding: 4.5% 6%;
+  background-color: #fff;
+  border: .2rem solid #232323;
+  padding: 4.5% 8%;
   color: #fff;
   font: 1.6rem 'Lato', sans-serif;
   letter-spacing: .1rem;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  width: 70%;
+  align-self: center;
+  color: #000;
 }
 
 .cmbutton:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #232323;
+  color: #fff;
   border: 2px solid #000;
+}
+
+.herotext h1 {
+  width: 100%;
+  font-family: 'Alex Brush', cursive;
+  text-transform: inherit;
+  font-size: 5rem;
+  position: relative;
+  padding: 20% 0 0%;
+  margin: 0 auto;
+  border-bottom: .2rem solid #000;
+}
+
+.sectionlabel {
+  display: none;
+}
+
+.overlay {
+  display: none;
 }
 
 /*----PROJECTS------*/
 .portfolio_works {
-  padding-top: 5%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: space-between;
 }
 
 .project {
-  align-items: center;
-  align-content: center;
   text-align: center;
-  position: relative;
   width: 100%;
-  height: 50vh;
-  display: flex;
-  margin-bottom: 5%;
-  cursor: pointer;
+  padding: 5% 5%;
 }
 
-.viewcs {
-  float: left;
-  bottom: 0;
-  position: absolute;
-  padding: 1.5rem 2rem;
-  background-color: #0C0C0C;
-}
-
-.viewcs h3 {
-  text-align: center;
-  font: 1.4rem 'Lato', sans-serif;
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
+.projectimg {
+  background-color: #232323;
+  margin: 0 auto;
+  padding: 10% 0;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  height: 40vh;
 }
 
-.project img {
+.projectimg img {
+  height: 30vh;
+  width: auto;
   position: absolute;
-  top: 50%;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.houndwatch img {
-  max-height: 70%;
-  width: auto;
-  overflow: hidden;
+.bsimg img {
+  width: 65vw;
+  height: auto;
 }
 
-.bytespace img {
-  max-width: 85%;
-  max-height: 65%;
-  overflow: hidden;
+.mobilewrap {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 5% 6%;
+  position: relative;
 }
 
-.houndwatch {
-  background-color: rgb(62, 104, 197);
-  cursor: pointer;
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 5%;
 }
 
-.bytespace {
-  background-color: rgb(0, 118, 90);
-  cursor: pointer;
+.text h2 {
+  color: #000;
+  text-align: left;
+  padding-bottom: 5%;
+  font-size: 1.8rem;
+  letter-spacing: .1rem;
+  font-weight: 600;
 }
+
+.text p {
+  color: #000;
+  text-align: left;
+  line-height: normal;
+  font-size: 1.4rem;
+  padding-bottom: 7%;
+  font-weight: 400;
+}
+
+.mobilebutton {
+  color: #000;
+  width: 55%;
+  padding: 3% 4%;
+  background-color: #fff;
+  font: 1.2rem 'Lato', cursive;
+  text-transform: uppercase;
+  border: 2px solid #000;
+  font-weight: 500;
+}
+
+.mobilebutton:hover {
+  color: #fff;
+  background-color: #000;
+}
+
 
 /*----------FOOTER--------------*/
-
 .fcontainer {
   height: 10vh;
   width: 100%;
-  background-color: #000;
+  background-color: #232323;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -297,30 +367,32 @@ article>p:nth-child(3) {
   justify-content: space-around;
 }
 
-.footerlogo{
+.footerlogo {
   float: left;
   padding-right: 20%;
 }
 
-.footerlogo img{
+.footerlogo img {
   height: 5vh;
 }
 
-.footlist{
+.footlist {
   float: right;
   right: 0;
 }
 
-.footlist ul{
+.footlist ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.footlist li{
+
+.footlist li {
   padding-left: 1rem;
 }
-.footlist li a{
-  color: #FFF;
+
+.footlist li a {
+  color: #fff;
   font: 1.2rem ' Lato', sans-serif;
   letter-spacing: .12rem;
   font-weight: 400;
@@ -328,12 +400,10 @@ article>p:nth-child(3) {
   text-transform: uppercase;
 }
 
-
-
 /*-----------CASE STUDY: ByteSpace-----------------*/
 .casestudyhero {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
 }
 
 .herotextcs {
@@ -345,29 +415,29 @@ article>p:nth-child(3) {
 }
 
 .herotextcs article h1 {
-  padding-top: 30%;
+  padding-top: 35%;
   font: 6.5rem 'Lobster', cursive;
   text-transform: none;
   color: #00765A;
 }
 
 .herotextcs p {
-  padding: 3.5rem 5rem;
-  font: 1.8rem/1.9 'Lato', sans-serif;
+  padding: 3.5rem 2rem;
+  font: 1.6rem/1.9 'Libre Franklin', sans-serif;
   font-weight: 400;
 }
 
 .bytespacecompimg {
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
-.bytespacecompimg img{
+.bytespacecompimg img {
   height: auto;
   max-width: 75%;
 }
 
 .csbutton {
-  background-color: #0C0C0C;
+  background-color: #fff;
   border: .2rem solid #fff;
   padding: 1rem 2rem;
   color: #fff;
@@ -376,12 +446,21 @@ article>p:nth-child(3) {
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+  border: .15rem solid #000;
+  color: #000;
 }
+
+.csbutton:hover{
+  background-color: #000;
+  color: #fff;
+}
+
 
 /*_______ROLE____*/
 .role-description {
-  background-color: #E2F3EF;
+  background-color: #f2f2f2;
   padding: 2rem 3rem;
+  margin-bottom: 5%;
 }
 
 .role-description h2 {
@@ -414,10 +493,9 @@ article>p:nth-child(3) {
   background-color: #F5F5F5;
 }
 
- .surveydata {
+.surveydata {
   height: 100%;
   padding: 1rem 0;
-
 }
 
 .surveydata tr {
@@ -471,31 +549,38 @@ canvas {
   padding: 2rem 3rem;
 }
 
-.mainsection>h2 {
-  overflow: hidden;
-}
 
 .projectsectionlabel {
-  background-color: #000;
-  padding: 4.5%;
+  background-color: #bbb;
+  padding: 6% 5%;
   height: 5%;
-  width: 40%;
-  margin-top: 1%;
+  width: 45%;
+  margin-top: 4%;
   position: relative;
 }
 
 .projectsectionlabel h2 {
   width: 100%;
   vertical-align: middle;
-  color: #fff;
+  color: #232323;
   font: 2rem 'Libre Franklin', sans-serif;
-  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+  text-align: left;
+}
+
+.projectsectionlabel::after{
+  content: '';
+    position: absolute;
+    top: 8%;
+    bottom: 8%;
+    left: 10%;
+    right: 20%;
+    width: 30%;
+    border-bottom: 2px #232323 solid ;
+    border-top: 2px #232323 solid;
+    padding: 0;
+    margin: 5% 0;
 }
 
 .mainsection p {
@@ -505,31 +590,29 @@ canvas {
 }
 
 .mainsection h2 {
-  color: #FFF;
   font: 1.5rem 'Lato', sans-serif;
   letter-spacing: .1rem;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
 .subsectionlabel {
-  background-color: #C97900;
-  padding: 4.5%;
-  height: 3%;
-  width: 30%;
-  position: relative;
+  background-color: #464646;
+  padding: 4% 3%;
+  width: 37%;
 }
 
-.subsectionlabel h3 {
-  width: 100%;
+.subsectionlabel h2 {
+  text-align: left;
   color: #fff;
-  font: 1.4rem/10 'Libre Franklin', sans-serif;
+  font: 1.4rem 'Libre Franklin', sans-serif;
   font-weight: 400;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+}
+
+.subsectionlabel:after{
+  border-bottom: 1px #fff solid ;
+  border-top: 1px #fff solid;
+  left: 8%;
 }
 
 /*swot analysis*/
@@ -581,7 +664,7 @@ canvas {
   background-color: #F5F5F5;
 }
 
-.userdetails{
+.userdetails {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -610,7 +693,6 @@ canvas {
   width: 55%;
   padding: 10% 5%;
   font-family: "Lato", sans serif;
-
 }
 
 .userinfo h2 {
@@ -621,9 +703,9 @@ canvas {
   padding-bottom: .5rem;
 }
 
-.userinfo h3{
-font: 1.6rem "Lato", sans serif;
-line-height: 2rem;
+.userinfo h3 {
+  font: 1.6rem "Lato", sans serif;
+  line-height: 2rem;
 }
 
 .userinfo strong {
@@ -636,7 +718,6 @@ line-height: 2rem;
   flex-direction: column;
   width: 100%;
   padding: 5% 2%;
-
 }
 
 .bio {
@@ -698,60 +779,43 @@ line-height: 2rem;
 }
 
 /*userflows*/
-.userflows {
-  width: 100%;
-  height: 18rem;
-  background: url("../images/CaseStudy/ByteSpace/userflowimg.png") no-repeat center;
-  background-size: contain;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.userflows img {
+  width: 100vw;
+  height: auto;
 }
+
 
 /*sketches*/
-.bytespacesketches {
-  width: 100%;
-  height: 20rem;
-  background: url("../images/CaseStudy/ByteSpace/BS Sketches.png") no-repeat center;
-  background-size: contain;
-  margin-bottom: 0rem;
+.bytespacesketches img {
+  width: 100vw;
+  height: auto;
 }
 
-.lowfid_img {
-  width: 100%;
-  height: 31rem;
-  background: url("../images/CaseStudy/ByteSpace/wireframes.png") no-repeat center;
-  background-size: contain;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+.lowfid_img img {
+  width: 100vw;
+  height: auto;
 }
 
-.highfid_img {
-  width: 100%;
-  height: 33rem;
-  background: url("../images/CaseStudy/ByteSpace/BS HF.png") no-repeat center;
-  background-size: contain;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+.highfid_img img {
+  width: 100vw;
+  height: auto;
 }
 
-.iterations_img {
-  width: 100%;
-  height: 33rem;
-  background: url("../images/CaseStudy/ByteSpace/BSit.png") no-repeat center;
-  background-size: contain;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+.iterations_img img {
+  width: 100vw;
+  height: auto;
 }
 
-.typefaceimg{
-  background: url("../images/CaseStudy/ByteSpace/Type.png") no-repeat center;
-  background-size: contain;
-  height: 10rem;
-  margin: 10% 0;
-  }
+.typeface{
+
+}
+.typefaceimg img {
+  width: 80vw;
+  height: auto;
+  margin: 10%;
+}
 
 /*.colors*/
-
 .color-list {
   padding: 5% 10%;
   display: flex;
@@ -773,13 +837,13 @@ line-height: 2rem;
 .color:hover {
   flex-basis: 40%;
 }
+
 .color:hover .details {
   opacity: 1;
 }
 
 .name {
-  font-size: 1.4rem;
-  font-weight: 500;
+  font: 1.4rem "Libre Franklin", cursive;
 }
 
 .details {
@@ -791,6 +855,7 @@ line-height: 2rem;
 
 .details li {
   line-height: 2em;
+  font: 1.4rem "Libre Franklin", cursive;
 }
 
 #hippiegreen {
@@ -814,12 +879,13 @@ line-height: 2rem;
 }
 
 /*------*/
-.conclusion .content {
+.conclusion p {
   background-color: #F5F5F5;
+  margin-top: 6%;
 }
 
 .conclusion h2 {
-  color: #fff;
+  color: #232323;
 }
 
 .conclusion p {
@@ -827,30 +893,29 @@ line-height: 2rem;
 }
 
 /*****************About Me*************/
-.am_containeer p{
-  font: 1.4rem "Franklin-Libre", sans-serif;
-font-weight: 300;
+.am_containeer p {
+  font: 1.4rem "Libre Franklin", sans-serif;
+  font-weight: 300;
 }
 
 /*
 .aboutmeheader{
   height: 100vh;
 }*/
-
-.herotext_am{
+.herotext_am {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.headerimg{
-  background:url("../images/Jess.png") right no-repeat;
+.headerimg {
+  background: url("../images/Jess.png") right no-repeat;
   background-size: contain;
   height: 45vh;
 }
 
-.title h1{
+.title h1 {
   font: 3rem "Lato", sans-serif;
   text-transform: uppercase;
   letter-spacing: .2rem;
@@ -861,36 +926,36 @@ font-weight: 300;
   top: 40%;
 }
 
-.title h1 span{
+.title h1 span {
   color: #fff;
 }
 
-.amintro p{
-  font: 1.4rem "Franklin-Libre", sans-serif;
+.amintro p {
+  font: 1.4rem "Libre Franklin", sans-serif;
   font-weight: 300;
   padding: 10% 6%;
   background-color: #f2f2f2;
   line-height: 2rem;
 }
 
-strong .amintro  {
+strong .amintro {
   font-weight: 900;
-  font: 1.5rem "Franklin-Libre", sans-serif;
+  font: 1.5rem "Libre Franklin", sans-serif;
   text-decoration: underline;
 }
 
-.biography p{
+.biography p {
   padding: 0 10%;
-  font: 1.4rem "Franklin-Libre", sans-serif;
+  font: 1.4rem "Libre Franklin", sans-serif;
   font-weight: 300;
   line-height: 2.2rem;
 }
 
-.biotext{
+.biotext {
   padding: 10% 0%;
 }
 
-.label{
+.label {
   width: 100%;
   vertical-align: middle;
   font-weight: 400;
@@ -901,7 +966,7 @@ strong .amintro  {
   width: 65%;
 }
 
-.label h2{
+.label h2 {
   color: #fff;
   font: 1.5rem 'Libre Franklin', sans-serif;
   text-align: left;
@@ -909,221 +974,203 @@ strong .amintro  {
   line-height: 2rem;
 }
 
-.questions p{
+.questions p {
   padding: 8% 10%;
 }
 
-
-
-
-
-
-
 /*____________________________MEDIA QUERIES__________________________*/
-/*---------Mobile---------
-*/
-@media (min-width: 0px) and (orientation: landscape)  {
-   .sectionlabel{
-    display: none;
+@media (min-width: 640px) {
+  .hero {
+    background-position: 40% 0%;
   }
-}
-
-
-/*---------Mobile Landscape---------*/
-@media (min-width:375px)
- and (orientation: landscape) {
-
-  .hero{
-    height: 100vh;
-  }
-
-
 
   .nav .logo {
     padding: 1% 5%;
   }
 
   .nav .menu-icon {
-      padding: 5% 4%;
+    padding: 6% 4%;
   }
 
   .nav .menu-icon .navicon {
-    width: 5vw;
-  }
-
-.sectionlabel {
-    display: none;
+    width: 4vw;
   }
 
   .logo img {
+    padding: 1rem;
     height: auto;
-    width: 8vw;
+    width: 9rem;
   }
 
-.nav .logo {
-    padding: 2% 8%;
-
-}
-  .menu {
-    width: 100%;
-  }
-
-  .menu li {
-    width: 100%;
-  }
-
-  .menu li a {
-    width: 40%;
-    font-size: 1.2rem;
+  .cmbutton {
+    padding: 3% 0;
+    font-size: 1.8rem;
+    margin-top: 2%;
   }
 
   .herotext {
-  padding-top:  25vh;
+    width: 50%;
+    margin: 30% 0 25% 25%;
   }
 
-  article h1 {
-    font-size: 3.5rem;
+  .herotext h1{
+    width: 115%;
   }
 
-  article p {
-    padding-top: 2vh;
-    font-size: 1.5rem;
+  .mobilebutton {
+    width: 35%;
   }
 
-  article strong {
-    font-size: 1.6rem;
-    font-weight: 600;
+  .text {
+    padding-bottom: 0;
   }
 
-  .fcontainer{
-    padding-top: 5%;
-  }
-    .footerlogo img{
-      height: 9vh;
-    }
-
-.footerlogo{
-  padding-right: 50%;
-}
-
-  .cmbutton {
-      padding: 2% 3%;
-      font-size: 1.2rem;
+  .text h2 {
+    padding-bottom: 3%;
   }
 
-  /*------/\/\/\/bytespace\/\/\/\/\/------*/
-
-  .herotextcs{
-    height: 100vh;
+  .text p {
+    padding-bottom: 4%;
   }
 
-  .herotextcs article h1 {
-    padding-top: 1%;
-    padding-bottom: 1.5rem;
-    font-size: 4rem;
+  /*-----Bytespace-----*/
+  .casestudyhero{
+    height: 80vh;
   }
 
-  .bytespacecompimg {
-    padding-bottom: 2rem;
+  .herotextcs article h1{
+    padding-top: 20%;
+    font-size: 7.5rem;
+  }
+
+  .herotextcs p{
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding: 5%;
   }
 
   .bytespacecompimg img {
-    width: 30vw;
     height: auto;
-    flex-direction: row;
-  }
-
-  .herotextcs article p {
-    padding-top: 0;
-    font-size: 1.4rem;
-    padding-bottom: 1rem;
-  }
-
-  .csbutton {
-    padding: .7rem 1rem;
-    font-size: 1rem;
-  }
-
-  /*research data*/
-  .chart {
-    width: 70vw;
-    margin-left: 15%;
-  }
-
-  /*userflows*/
-  .userflows {
-    height: 26rem;
-  }
-
-
-  .userimg {
-    width: 12%;
-  }
-
-  .userinfo{
-    padding: 0;
-    width: 60%;
-    float: none;
-    padding-left: 15%;
-  }
-
-
-  /*sketches*/
-  .bytespacesketches {
-    height: 35rem;
-  }
-
-  .lowfid_img {
-    width: 75%;
-    height: 38rem;
-    left: 25%;
-    transform: translateX(15%);
-  }
-
-  .highfid_img {
-    width: 75%;
-    height: 38rem;
-    left: 25%;
-    transform: translateX(15%);
-  }
-
-  .iterations_img {
-    width: 65%;
-    height: 38rem;
-    left: 25%;
-    transform: translateX(20%);
-  }
-
-  /*typeface*/
-  .typefaceimg {
-    height: 15rem;
-    margin: 5% 0;
-  }
-  /*Color Palette*/
-  .colorpalette h3 {
-    transform: translate(-20%, 100%)
-  }
-
-  footer {
-    padding-bottom: 3rem;
-  }
-
-    /*------#####About Me####------*/
-    .aboutmeheader{
-      height: 100vh;
-    }
-
-    .headerimg{
-      height: 100vh;
-    }
+    max-width: 45%;
 }
 
-/*_____------------_Grid Layout_-----------______*/
-/* ##Device = Tablets, Ipads ---- Landscape */
-@media only screen and (min-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2){
+  .role-description{
+    padding: 5% 8%;
+  }
 
-  .hero{
-    height: 90vh;
+  .role-description h2 {
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+  }
+
+  .role-description p {
+    font-size: 2rem;
+  }
+
+  .projectsectionlabel{
+    width: 35%;
+    padding: 3% 3%;
+  }
+
+  .projectsectionlabel h2{
+    font-size: 1.8rem;
+  }
+
+  .projectsectionlabel::after {
+    left: 8%;
+    margin: 3% 0;
+  }
+
+  .mainsection p{
+    padding: 2% 8%;
+    padding-top: 5%;
+    font-size: 1.6rem;
+  }
+
+  .surveydata table{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+
+    .swottable table{
+      font-size: 1.4rem;
+      width: 95%;
+      padding-left: 25%;
+    }
+
+    .swottable table td:first-child, .swottable table tr:first-child td {
+      font-size: 1.4rem;
+      width: 30%;
+    }
+
+    .userimg{
+      width: 30%;
+    }
+
+    .userinfo{
+      padding: 5% 0%;
+    }
+
+    .userinfo h2{
+      font-size: 2.5rem;
+    }
+
+    .userinfo h3,
+    .userinfo strong{
+      font-size: 1.8rem;
+      line-height: 3rem;
+    }
+
+    .bio h3,
+    .usergoals h3{
+      font-size: 1.9rem;
+    }
+
+    .bio p,
+    .usergoals li{
+      font-size: 1.6rem;
+    }
+
+    .bio p{
+      padding: 5% 5%;
+    }
+
+    .iterations_img img{
+      padding-top: 5%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .herotext {
+    width: 45%;
+    margin: 20% 0 0% 5%;
+    padding: 0;
+  }
+
+  .herotext p {
+    padding: 7% 5% 10%;
+  }
+
+  .herotext h1 {
+    width: 65%;
+    padding: 10% 0 2%;
   }
 
   .nav .logo {
@@ -1141,632 +1188,162 @@ strong .amintro  {
   .logo img {
     padding: 1rem;
     height: auto;
-    width: 8rem;
+    width: 9rem;
   }
-
-
-
-    .herotext article h1{
-    font-size: 5rem;
-  }
-
-  article p {
-    padding-top: 2vh;
-    font-size: 1.5rem;
-  }
-
-  article strong {
-    font-size: 1.6rem;
-    font-weight: 600;
-  }
-
 
   .cmbutton {
-      padding: 2% 3%;
-      font-size: 1.2rem;
+    padding: 3% 0;
+    font-size: 1.8rem;
   }
 
-  .sectionlabel {
-    background-color: #fff;
-    padding: 2.5% 2.5%;
-    width: 30%;
-    display: block;
-    position: relative;
-    margin-top: 5%;
-  }
-
-  .sectionlabel h1 {
-    vertical-align: middle;
-    color: #fff;
-    font: 2rem 'Libre Franklin', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-
-  .portfolio_works{
-    display: flex;
+  .portfolio_works {
     flex-direction: row;
-    margin: 0 5% 5% 5%;
-    justify-content: space-between;
   }
 
-  .project{
-    margin: 2%;
+  .project {
+    height: 50rem;
+    margin-bottom: 10%;
   }
 
-  .fcontainer{
+  .bsimg img{
+    width: 35vw;
+  }
+
+  .text {
+    padding-bottom: 0;
+  }
+
+  .text h2 {
     padding-bottom: 5%;
   }
 
-  .footerlogo img{
-    height: 8vh;
+  .text p {
+    padding-bottom: 8%;
   }
 
-  .footerlogo{
-    padding-right: 50%;
-  }
-
-  .footlist li{
-    padding: 2rem;
-    }
-
-  /*----------bytespace------*/
-
-  .herotextcs article h1 {
-    font-size: 8rem;
-    padding-bottom: 2.5rem;
-  }
-
-  .herotextcs article p {
-    font-size: 2rem;
-    padding-bottom: 4rem;
-  }
-
-  .bytespacecompimg {
-    padding-bottom: 7rem;
-  }
-
-  .bytespacecompimg img {
-    width: 40vw;
-  }
-
-  .role-description {
-    padding: 4rem 8rem;
-  }
-
-  .role-description h2 {
-    font-size: 2.2rem;
-    padding-bottom: 2rem;
-  }
-
-  .role-description p {
-    font-size: 1.8rem;
-  }
-
-  .mainsection p {
-    font-size: 1.8rem;
-    padding: 2rem 8rem;
-  }
-
-  .projectsectionlabel {
-    padding: 2.5%;
-    width: 25%;
-  }
-
-  .projectsectionlabel h2{
-    font-size: 1.8rem;
-    weight: 600;
-    letter-spacing: .2rem;
-  }
-
-  .subsectionlabel{
-    padding: 2%;
-    width: 15%;
-    margin-top: 5%;
-  }
-
-  .subsectionlabel h3{
-    font-size: 1.6rem;
-    letter-spacing: .1rem;
-  }
-
-  .researchdata {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .surveydata {
-    width: 100%;
-    margin-left: 5%;
-  }
-
-  .chart {
-    width: 60%;
-    margin: 0;
-  }
-
-  #personas {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    .background-color: #f5f5f5;
-  }
-
-  /*.personas{
-    height: 55rem;
-  }*/
-
-  .userimg{
-    width: 30%;
-  }
-
-  .userinfo{
-    width: 85%;
-    padding-left: 35%;
-  }
-
-  .userinfo h2{
-    font-size: 1.8rem;
-  }
-
-
-  /*wireframes*/
-  .userflows {
-    height: 40rem;
-  }
-
-  /*sketches*/
-  .bytespacesketches {
-    width: 100%;
-    height: 58rem;
-    margin-top: 4rem;
-  }
-
-  .lowfid_img {
-    width: 85%;
-    height: 70rem;
-    left: 25%;
-    transform: translateX(10%);
-  }
-
-  .highfid_img {
-    width: 85%;
-    height: 70rem;
-    left: 25%;
-    transform: translateX(10%);
-  }
-
-  .iterations_img {
-    width: 85%;
-    height: 70rem;
-    left: 25%;
-    transform: translateX(10%);
-  }
-
-  /*typeface*/
-  .typefaceimg {
-    height: 15rem;
-    margin: 5% 0;
-  }
-
-  .conclusion p{
-    line-height: 3rem;
-  }
-
-    /*------#####About Me####------*/
-
-    .title h1{
-      font-size: 5rem;
-    }
-
-    .amintro p{
-      font-size: 2rem;
-      padding: 5% 10%;
-      line-height: 3rem;
-    }
-
-    .label{
-      width: 45%;
-    }
-
-    .label h2{
-      font-size: 2.2rem;
-    }
-
-    .questions p{
-      font-size: 2rem;
-      line-height: 3.5rem;
-      font-weight: 400;
-    }
-
-
-
-
-
-}
-
-/* tablet - Portrait*/
-@media only screen and (min-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2){
-  .sectionlabel {
-    display: none;
-  }
-
-  .hero{
-    height: 80vh;
-  }
-  .herotext {
-  padding-top: 30%;
-  }
-
-  .nav .logo{
-    padding: 2% 10%;
-
-  }
-
-
-  article h1 {
-    font-size: 5rem;
-  }
-
-  article p {
-    font-size: 1.8rem;
-  }
-
-  article strong {
-    font-size: 1.9rem;
-    font-weight: 600;
-  }
-
-  .cmbutton {
-      padding: 2.5% 4%;
-      font-size: 1.4rem;
-  }
-
-  .nav img {
-    max-width: 8vw;
-  }
-
-  .nav .menu-icon {
-    padding: 4% 5%;
-  }
-
-  .nav .menu-icon .navicon {
-    width: 4vw;
-  }
-
-
-  .fcontainer{
-    height: 8vh;
-  }
-
-  .footerlogo{
-    padding-right: 45%;
-  }
-
-  .sectionlabel {
-    background-color: #fff;
-    padding: 2.5% 2.5%;
-    width: 30%;
-    display: block;
-    position: relative;
-    margin-top: 5%;
-  }
-
-  .sectionlabel h1 {
-    vertical-align: middle;
-    color: #fff;
-    font: 1.8rem 'Libre Franklin', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-
-  .portfolio_works{
-    display: flex;
-    flex-direction: row;
-    margin: 0 5% 5% 5%;
-    justify-content: space-between;
-  }
-
-  .project{
-    margin: 2%;
-    height: 35vh;
-  }
-
-
-  /*----------bytespace------*/
-  .bytespacecontainer{
-    width: 100vw;
-  }
-
-  .casestudyhero{
-    height: 65vh;
-  }
-
-.herotextcs article h1 {
-  padding-top: 15%;
-}
-
-.herotextcs p {
-  padding: 3rem 5rem;
-}
-
-.bytespacecompimg img{
-  height: auto;
-  max-width: 40%;
-}
-
-  .role-description {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 4rem 0rem;
-    justify-content: center;
-    justify-content: space-around;
-  }
-
-  .role-description div {
-    width: 150%;
-    margin-left: 12%;
-  }
-
-  .role-description p {
-    width: 85%;
-  }
-
-  .content {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 5rem;
-  }
-
-  .content p {
-    position: relative;
-    padding: 0 5rem;
-    margin-left: 20%;
-  }
-
-  .projectsectionlabel {
-    padding: 2%;
-    width: 20%;
-    height: 1.5rem;
-    position: absolute;
-  }
-
-  .subsectionlabel{
-    padding: 2%;
-    width: 15%;
-    height: 1.5rem;
-    position: absolute;
-  }
-
-  .researchdata {
-    display: flex;
-    flex-direction: row;
-    justify-content: center space-between;
-    align-items: center;
-    height: 100%;
-  }
-
-  .surveydata {
-    padding: 10% 2%;
-  }
-
-  .surveydata table {
-    width: 35rem;
-    padding: 0;
-    box-shadow: 0 8px 6px -6px black;
-  }
-
-  .chart {
-    width: 45%;
-    margin-top: 5%;
-  }
-
-  .chart h1 {
-    padding: 0;
-    margin: 0;
-  }
-
-  .swottable {
-    height: 55rem;
-    margin-bottom: 4rem
-  }
-
-  .swottable h2 {
-    font-size: 2.4rem;
-  }
-
-  .swottable table {
-    width: 85%;
-    font-size: 1.4rem;
-    margin-left: 10rem;
-    padding-bottom: 4rem;
-  }
-
-  .swottable table td {
-    width: 15rem;
-  }
-
-  .swottable table td:first-child,
-  .swottable table tr:first-child td {
-    font-size: 1.6rem;
-  }
-
-  #personas{
-    display: flex;
-    flex-direction: row;
-    margin-top: 5rem;
-  }
-
-  .personas{
-    height: 52rem;
-  }
-
-  .userimg {
-  width: 45%
-  }
-
-  .userimg img {
-    height: 15vh;
-  }
-
-  .userinfo{
-    width: 50%;
-  }
-
-  .userinfo h2{
-    font-size: 2rem;
-  }
-  .userflows {
-    height: 37rem;
-    width: 100%;
-    padding: 0;
-  }
-
-  .bytespacesketches{
-    height: 46rem;
-    width: 100%;
-    padding: 0 5%;
-  }
-
-  .lowfid_img{
-    background: url("../images/CaseStudy/ByteSpace/LF2.png") center no-repeat;
-    background-size: contain;
-  }
-
-
-  .highfid_img{
-    background: url("../images/CaseStudy/ByteSpace/HF2.png") center no-repeat;
-    background-size: contain;
-  }
-
-  .iterations_img{
-    background: url("../images/CaseStudy/ByteSpace/iteration2.png") center no-repeat;
-    background-size: contain;
-    margin-bottom: 5rem;
-  }
-
-  .content p{
-    font-size: 1.6rem;
-  }
-
-  .typefaceimg {
-    height: 15rem;
-    margin: 5% 0;
-  }
-
-  .color-list{
-    margin-top: 8rem;
-    padding: 2% 15%;
-    height: 20rem;
-  }
-
-  .name{
-    font-size: 1.5rem;
-    color: #000;
-  }
-
-  .conclusion .content{
-    display: flex;
-    flex-direction: column;
-    height: 30rem;
-    padding-top: 5%;
-  }
-
-  /*------#####About Me####------*/
-
-  .title h1{
-    font-size: 5rem;
-  }
-
-  .amintro p{
-    font-size: 2rem;
-    padding: 5% 10%;
-    line-height: 3rem;
-  }
-
-  .label{
+  .mobilebutton {
     width: 55%;
   }
 
-  .label h2{
-    font-size: 2.2rem;
+  /*--------BYTESPACE-------*/
+  .subsectionlabel{
+    width: 25%;
   }
 
-  .questions p{
-    font-size: 2rem;
-    line-height: 3.5rem;
-    font-weight: 400;
+  .subsectionlabel::after{
+    width: 25%;
+    left: 11%;
   }
 
+  .bytespacesketches img{
+    width: 80vh;
+    padding-top: 5%;
+    margin: 0 7%;
+  }
+
+  .lowfid_img img{
+    width: 80vh;
+    padding-top: 5%;
+    margin: 0 7%;
+  }
+
+  .highfid_img img{
+    width: 80vh;
+    padding-top: 5%;
+    margin: 0 7%;
+  }
+
+  .iterations_img img{
+    width: 80vh;
+    padding-top: 5%;
+    margin: 0 7%;
+  }
+
+  .typefaceimg img{
+    width: 60vh;
+    padding-top: 5%;
+    margin: 0 20%;
+  }
 
 
 }
 
-@media screen and (max-device-width: 1023px){
 
-  .sectionlabel, .overlay{
-    display: none;
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+  .container {
+    background-color: #f2f2f2;
   }
-}
 
-
-@media screen and (min-device-width: 1024px) and (max-device-width: 2000px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
-
-  .hero{
+  .hero {
     height: 70vh;
+    background-size: cover;
+    background-position: 10% 0%;
   }
 
-  .nav{
+  .herotext {
+    width: 40%;
+    margin: 15% 0 10% 10%;
+  }
+
+  .herotext p {
+    padding: 5% 5% 5%;
+  }
+
+  .herotext h1 {
+    padding: 5% 0 0%;
+  }
+
+  .cmbutton {
+    padding: 2% 0;
+  }
+
+  .nav {
     display: flex;
     flex-direction: row;
     justify-content: center space-between;
     align-content: center;
   }
 
-  .nav li{
-    width: 31;
+  .nav li {
+    width: 31rem;
     justify-self: center;
     align-self: center;
     padding: .2rem;
   }
 
- .nav li a {
-   font-size: 1.6rem;
-   padding: 0;
-   width: 100%;
+  .nav li a {
+    font-size: 1.6rem;
+    padding: 0;
+    width: 100%;
+  }
 
- }
+  .nav .menu {
+    width: 30%;
+    clear: none;
+    max-height: none;
+    display: flex;
+    margin-left: 35%;
+    justify-content: space-between;
+    align-content: center;
+    background-color: transparent;
+  }
 
- .nav .menu {
-   width: 30%;
-   clear: none;
-   max-height: none;
-   display: flex;
-  margin-left: 45%;
-   justify-content: space-between;
-   align-content: center;
- }
+  .nav .menu-icon {
+    display: none;
+  }
 
-
- .nav .menu-icon {
-   display: none;
- }
-
-   .nav .logo {
+  .nav .logo {
     padding: 1% 7%;
   }
 
@@ -1776,65 +1353,65 @@ strong .amintro  {
     width: 9rem;
   }
 
-.herotext{
-  padding-top: 14%;
-}
-  article h1 {
-    font-size: 6.5rem;
-  }
-
-  article p {
-    font-size: 2rem;
-    padding-right: 5%;
-  }
-
-  article strong {
-    font-size: 2.1rem;
-    font-weight: 600;
+  .nav .logo {
+    padding: 2% 10%;
   }
 
   .cmbutton {
-      padding: 2% 3%;
-      font-size: 1.2rem;
+    width: 40%;
   }
 
   .sectionlabel {
-    background-color: #fff;
-    padding: 2.5% 2.5%;
-    width: 30%;
     display: block;
-    position: relative;
+    background-color: #fff;
+    margin-left: 10%;
+    width: 20%;
+    padding: 4% 0%;
     margin-top: 5%;
+    position: relative;
   }
 
   .sectionlabel h1 {
     vertical-align: middle;
-    color: #fff;
-    font: 2rem 'Libre Franklin', sans-serif;
-    font-weight: 400;
+    color: #000;
+    font: 2.2rem 'Libre Franklin', sans-serif;
+    font-weight: 600;
     text-transform: uppercase;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+    padding: 0;
   }
 
-  .portfolio_works{
+  .sectionlabel::after{
+    content: '';
+      position: absolute;
+      top: 8%;
+      bottom: 8%;
+      left: 25%;
+      right: 30%;
+      width: 25%;
+      border-bottom: 2px #232323 solid ;
+      border-top: 2px #232323 solid;
+      padding: 0;
+      margin: 10% 0;
+  }
+
+  .portfolio_works {
     display: flex;
     flex-direction: row;
-    margin: 0 5% 5% 5%;
+    justify-content: space-between;
+    margin: 0 5%;
+  }
+
+  .project {
+    padding: 0 2%;
+    margin: 4%;
+    height: 40vh;
     justify-content: space-between;
   }
 
-  .project{
-    margin: 2%;
+  .bsimg img{
+    width: 30vw;
   }
-
-  .viewcs{
-    display: none;
-  }
-
 
   .text {
     width: 80%;
@@ -1848,7 +1425,7 @@ strong .amintro  {
     text-align: center;
   }
 
-  .text h3 {
+  .text h2 {
     font: 2.5rem 'Libre Franklin', sans-serif;
     color: #fff;
     font-weight: 500;
@@ -1882,22 +1459,23 @@ strong .amintro  {
   }
 
   .overlay {
+    display: flex;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 100%;
     width: 100%;
+    top: 0;
+    bottom: 0;
+    right:0;
+    left: 0;
     opacity: 0;
-    transition: .5s ease;
+    transition: .7s ease;
+    z-index: 3;
   }
 
-  .hwoverlay {
+  .houndwatchol{
     background-color: rgba(62, 104, 197, 0.90);
   }
-
-  .bsoverlay {
+  .bytespaceol{
     background-color: rgba(0, 118, 90, 0.90);
   }
 
@@ -1905,353 +1483,359 @@ strong .amintro  {
     opacity: 1;
   }
 
-  .footerlogo{
+  .mobilewrap{
+    display: none;
+  }
+
+  .footerlogo {
     padding-right: 50%;
   }
 
-  .footerlogo img{
-    height: 6vh;
+  .footerlogo img {
+    height: 4vh;
   }
 
-  .footlist li{
+  .footlist li {
     padding: 2rem;
-    }
+  }
 
-    .footlist li a{
-      font-size: 1.6rem;
-    }
+  .footlist li a {
+    font-size: 1.6rem;
+  }
 
-/*BYTESPACE*/
+  /*-----------BYTESPACE*/
 
-.bytespacecontainer{
-  width: 100vw;
-}
 
-.casestudyhero{
-  height: 85vh;
-}
+  .casestudyhero{
+    height: 85vh;
+  }
 
-.herotextcs{
-  height: 100%;
-}
-
-.herotextcs article h1 {
-padding-top: 5%;
-}
-
-.herotextcs article p {
-padding: 2rem 5rem;
-}
-
-.bytespacecompimg{
-  padding-bottom: 2rem;
-}
-
-.bytespacecompimg img{
-height: auto;
-max-width: 30%;
-}
-
-.role-description {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding: 4rem 0rem;
-  justify-content: center;
-  justify-content: space-around;
-}
-
-.role-description div {
-  width: 150%;
-  margin-left: 12%;
-}
-
-.role-description h2 {
-  font-size: 1.8rem;
-}
-
-.role-description p {
-  width: 85%;
-  font-size: 1.6rem;
-}
-
-.content {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 5rem;
-}
-
-.mainsection p {
-  position: relative;
-  padding: 0 10rem;
-  margin-left: 20%;
-  font-size: 1.4rem;
-}
-
-.projectsectionlabel {
-  padding: 2%;
-  width: 20%;
-  height: 1.5rem;
-  position: absolute;
-}
-
-.subsectionlabel{
-  margin: 0;
-  width: 15%;
-  height: 1.5rem;
-  position: absolute;
-}
-
-.sketches{
+  .herotextcs article h1 {
   padding-top: 5%;
-}
+  }
 
-.researchdata {
-  display: flex;
-  flex-direction: column;
-  justify-content: center space-between;
-  align-items: center;
-  height: 100%;
-}
+  .herotextcs article p {
+  padding: 2rem 5rem;
+  }
 
-.surveydata {
-  width: 50rem;
-  padding: 6% 0;
+  .bytespacecompimg{
+    padding-bottom: 2rem;
+  }
 
-}
+  .bytespacecompimg img{
+  height: auto;
+  max-width: 30%;
+  }
 
-.surveydata table {
+  .role-description {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 0rem;
+    justify-content: center;
+    justify-content: space-around;
+  }
 
-  height: 25rem;
-  background-color: #fff;
-  border-radius: 2%;
-  box-shadow: 0 8px 6px -6px black;
-  padding-left: 4%;
-}
+  .role-description div {
+    width: 150%;
+    margin-left: 12%;
+  }
 
-.surveydata table td{
-  font-size: 1.8rem;
-}
+  .role-description h2 {
+    font-size: 1.8rem;
+  }
 
-.chart h1 {
-  font-size: 2rem;
-  padding: 0;
-  padding-bottom: 2%;
-  margin: 0;
-}
+  .role-description p {
+    width: 85%;
+    font-size: 1.6rem;
+  }
 
-.swottable {
-  height: 58rem;
-  margin-bottom: 4rem
-}
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5rem;
+  }
 
-.swottable h2 {
-  font-size: 2.4rem;
-  width: 20%;
-}
+  .mainsection p {
+    position: relative;
+    padding: 0 10rem;
+    margin-left: 20%;
+    font-size: 1.4rem;
+  }
 
-.swottable td {
-  font-size: 1.6rem;
-  width: 20%;
-}
+  .projectsectionlabel {
+    padding: 5%;
+    width: 20%;
+    position: absolute;
+  }
 
-.swottable table {
-  width: 85%;
-  font-size: 1.6rem;
-  margin-left: 15rem;
-  padding-bottom: 4rem;
-}
+  /* .subsectionlabel{
+    margin: 0;
+    width: 15%;
+    height: 2rem;
+    position: absolute;
+  } */
 
-.swottable table td {
-  width: 15rem;
-}
+  /* .sketches{
+    padding-top: 5%;
+  } */
 
-.swottable table td:first-child,
-.swottable table tr:first-child td {
-  font-size: 1.8rem;
-}
+  /* .researchdata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center space-between;
+    align-items: center;
+    height: 100%;
+  }
 
-#personas{
-  display: flex;
-  flex-direction: row;
-  margin-top: 5rem;
-}
+  .surveydata {
+    width: 50rem;
+    padding: 6% 0;
+
+  } */
+
+  /* .surveydata table {
+    height: 25rem;
+    background-color: #fff;
+    border-radius: 2%;
+    box-shadow: 0 8px 6px -6px black;
+    padding-left: 4%;
+  }
+
+  .surveydata table td{
+    font-size: 1.8rem;
+  } */
+
+  .chart h1 {
+    font-size: 2rem;
+    padding: 0;
+    padding-bottom: 2%;
+    margin: 0;
+  }
+
+  /* .swottable {
+    height: 58rem;
+    margin-bottom: 4rem
+  }
+
+  .swottable h2 {
+    font-size: 2.4rem;
+    width: 20%;
+  }
+
+  .swottable td {
+    font-size: 1.6rem;
+    width: 20%;
+  }
+
+  .swottable table {
+    width: 85%;
+    font-size: 1.6rem;
+    margin-left: 15rem;
+    padding-bottom: 4rem;
+  }
+
+  .swottable table td {
+    width: 15rem;
+  }
+
+  .swottable table td:first-child,
+  .swottable table tr:first-child td {
+    font-size: 1.8rem;
+  } */
+
+  #personas{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+  }
 
 .userimg {
-width: 25%
-}
+  width: 25%
+  }
 
-.bio p{
-  padding: 5% 4%;
-  margin: 0
-}
+  .bio p{
+    padding: 5% 4%;
+    margin: 0
+  }
 
-.userimg img {
-  height: 15vh;
-}
+  .userimg img {
+    height: 15vh;
+  }
 
-.userinfo{
-  width: 90%;
-  padding-top: 8%;
-}
+  .userinfo{
+    width: 90%;
+    padding-top: 8%;
+  }
 
-.userinfo h2{
-  font-size: 2rem;
-}
-.userflows {
-  height: 60rem;
-  padding: 0;
-  background-size: contain;
-}
+  .userinfo h2{
+    font-size: 2rem;
+  }
+  .userflows {
+    height: 60rem;
+    padding: 0;
+    background-size: contain;
+  }
 
-.projectsectionlabel{
-  margin-top: 0%;
-}
+  /* .projectsectionlabel{
+    margin-top: 0%;
+  } */
 
-.bytespacesketches{
-  height: 46rem;
-  width: 100%;
-  padding: 0 5%;
-}
+  /* .bytespacesketches{
+    height: 46rem;
+    width: 100%;
+    padding: 0 5%;
+  }
 
-.lowfid_img{
-  background: url("../images/CaseStudy/ByteSpace/LF2.png") center no-repeat;
-  background-size: contain;
-  height: 40rem;
-}
-
-
-.highfid_img{
-  background: url("../images/CaseStudy/ByteSpace/HF2.png") center no-repeat;
-  background-size: contain;
-  height: 40rem;
-}
-
-.iterations_img{
-  background: url("../images/CaseStudy/ByteSpace/iteration2.png") center no-repeat;
-  background-size: contain;
-  height: 40rem;
-  margin-bottom: 2rem;
-}
-
-.content p{
-  font-size: 1.6rem;
-}
-
-
-
-.typefaceimg{
-  background: url("../images/CaseStudy/ByteSpace/Type.png") no-repeat center;
-  background-size: contain;
-  height: 15rem;
+  .lowfid_img{
+    background: url("../images/CaseStudy/ByteSpace/LF2.png") center no-repeat;
+    background-size: contain;
+    height: 40rem;
   }
 
 
-.color-list{
-  margin-top: 10rem;
-  padding: 2% 10%;
-  height: 20rem;
-  flex-wrap: nowrap;
+  .highfid_img{
+    background: url("../images/CaseStudy/ByteSpace/HF2.png") center no-repeat;
+    background-size: contain;
+    height: 40rem;
+  }
+
+  .iterations_img{
+    background: url("../images/CaseStudy/ByteSpace/iteration2.png") center no-repeat;
+    background-size: contain;
+    height: 40rem;
+    margin-bottom: 2rem;
+  } */
+
+  .content p{
+    font-size: 1.6rem;
+  }
+
+
+
+  /* .typefaceimg{
+    background: url("../images/CaseStudy/ByteSpace/Type.png") no-repeat center;
+    background-size: contain;
+    height: 15rem;
+    } */
+
+
+  .color-list{
+    margin-top: 10rem;
+    padding: 2% 10%;
+    height: 20rem;
+    flex-wrap: nowrap;
+  }
+
+  .name{
+    font-size: 1.5rem;
+    color: #000;
+  }
+
+  .conclusion .content{
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+    padding-top: 5%;
+    flex-overflow: none;
+
+  }
+
+  .conclusion p{
+    line-height: 3rem;
+    padding: 0 10rem;
+  }
+
+  .color-list {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+  }
+
+  .color {
+    flex: 0%;
+    /*flex-grow | flex-shrink | flex-basis*/
+    box-shadow: 0 0 10px #424242;
+    padding: 1em;
+    color: white;
+    transition: flex-basis 0.5s ease-in-out;
+    font-size: 1.6rem;
+  }
+  .color:hover {
+    flex-basis: 40%;
+  }
+  .color:hover .details {
+    opacity: 1;
+  }
+
+  .name {
+    font-size: 1.4em;
+    font: 1.5rem "Libre-Franklin", sans-serif;
+  }
+
+  .details {
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+  }
+
+  .details li {
+    line-height: 5rem;
+    font: 1.5rem "Lato", sans-serif;
+  }
+
+
+
+  .subsectionlabel {
+
+    height: 0;
+  }
+
+
+
+
+
+
+
+
 }
 
-.name{
-  font-size: 1.5rem;
-  color: #000;
-}
 
-.conclusion .content{
-  display: flex;
-  flex-direction: column;
-  height: 35rem;
-  padding-top: 5%;
-  flex-overflow: none;
 
-}
 
-.conclusion p{
-  line-height: 3rem;
-  padding: 0 10rem;
-}
 
-.color-list {
-  display: flex;
-  flex-direction: row;
-  height: 50vh;
-}
 
-.color {
-  flex: 0%;
-  /*flex-grow | flex-shrink | flex-basis*/
-  box-shadow: 0 0 10px #424242;
-  padding: 1em;
-  color: white;
-  transition: flex-basis 0.5s ease-in-out;
-  font-size: 1.6rem;
-}
-.color:hover {
-  flex-basis: 40%;
-}
-.color:hover .details {
-  opacity: 1;
-}
 
-.name {
-  font-size: 1.4em;
-  font: 1.5rem "Libre-Franklin", sans-serif;
-}
 
-.details {
-  padding: 0;
-  list-style: none;
-  opacity: 0;
-  transition: opacity 500ms ease-in-out;
-}
 
-.details li {
-  line-height: 5rem;
-  font: 1.5rem "Lato", sans-serif;
-}
-/*------#####About Me####------*/
 
-.headerimg{
-  height: 70vh;
-}
 
-.title h1{
-  top: 30%;
-  font-size: 8rem;
-}
 
-.biotext{
-  padding: 5% 0;
-}
 
-.biotext p{
-  font-size: 2rem;
-  line-height: 3.5rem;
-  font-weight: 400;
-  padding-bottom: 2%;
-}
 
-.amintro p{
-  font-size: 2rem;
-  padding: 5% 10%;
-  line-height: 3rem;
-}
 
-.label{
-  width: 45%;
-}
+@media (min-width: 1200px) {
+  .hero{
+    height: 70vh;
+    background-position: -40% 70%;
+  }
 
-.label h2{
-  font-size: 2.2rem;
-}
+  .herotext{
+    width: 35%;
+    padding: 0;
+    margin: 10% 0 10% 10%;
+  }
 
-.questions p{
-  font-size: 2rem;
-  line-height: 3.5rem;
-  font-weight: 400;
-}
+  .sectionlabel{
+    width: 15%;
+    padding: 3% 0;
+  }
+
+  .sectionlabel::after{
+    margin: 2rem 0;
+  }
+
 
 }

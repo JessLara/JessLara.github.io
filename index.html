@@ -12,15 +12,16 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Alex+Brush&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" id="startchangedark">
     <section class="hero">
       <header>
         <nav class="nav">
-          <a href="index.html" class="logo" name="Home"><img src="images/LogoDark.png" alt="Jess Lara"></a>
+          <a href="index.html" class="logo" name="Home"><img src="images/LogoLight.png" alt="Jess Lara"></a>
           <input class="menu-btn" type="checkbox" id="menu-btn" />
           <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
           <ul class="menu">
@@ -31,13 +32,15 @@
         </nav>
       </header>
       <!--Hero Text Section---->
+
       <div class="herotext" id="startchange">
-        <article>
-          <h1>Jess Lara</h1>
-          <p><strong>UX/UI designer</strong> with a shared understanding of front-end development based in <strong>Connecticut</strong>.</p>
-          <p>I'm passionate about <strong> user-centered</strong> design with a focus in <strong>social justice</strong>.</p>
-          <a href="mailto:lara.jessenia@gmail.com? Subject=Hello%20Jess" alt="contact me" class="cmbutton">Contact Me</a>
-        </article>
+        <h1>Jess Lara</h1>
+        <p><strong>UX/UI designer</strong> based in <strong>Connecticut</strong>.</br></br>
+
+          I'm passionate about <strong> user-centered</strong> design with a focus in <strong>social change</strong>.</p>
+
+        <a href="mailto:lara.jessenia@gmail.com? Subject=Hello%20Jess" alt="contact me" class="cmbutton">Contact Me</a>
+
       </div>
     </section>
 
@@ -46,53 +49,69 @@
       <h1>Works</h1>
     </div>
     <section class="portfolio_works" id="works">
-
-
       <!---Hound Watch-------->
-
       <a href="houndwatch.html">
         <div class="houndwatch project">
-
-          <img src="HW Welcome Screen.png" alt="welcome screen">
-          <div class="viewcs">
-            <h3>view casestudy</h3>
-          </div>
-
-
-          <div class="overlay hwoverlay">
-            <div class="text">
-              <h3>Hound Watch</h3>
-              <p>Hound Watch is an application that connects people with dogs that are in need of temporary home.</p>
-              <a href="houndwatch.html" class="pbutton">view case study</a>
+          <div class="projectimg hwimg">
+            <img src="HW Welcome Screen.png" alt="Houndwatch project image">
+            <div class="overlay houndwatchol">
+              <div class="text">
+                <h2>HoundWatch</h2>
+                <p>
+                  Hound Watch is an application that connects people with dogs that are in need of temporary home.</p>
+                <a href="houndwatch.html" class="pbutton">
+                  view case study
+                </a>
+              </div>
             </div>
           </div>
+          <div class="mobilewrap">
+            <div class="text mobilecs">
+              <h2>HoundWatch</h2>
+              <p>
+                Hound Watch is an application that connects people with dogs that are in need of temporary home.</p>
+              <a href="houndwatch.html" class="mobilebutton">
+                view case study
+              </a>
+            </div>
+          </div>
+
         </div>
       </a>
 
-      <!---ByteSpace-------->
+      <!---ByteSpace------>
       <a href="bytespace.html">
         <div class="bytespace project">
-
+          <div class="projectimg bsimg">
           <img src="../images/CaseStudy/ByteSpace/ByteSpaceComputer.png" alt="bytespace">
-          <div class="viewcs">
-            <h3>view casestudy</h3>
+          <div class="overlay bytespaceol">
+            <div class="text">
+              <h2>ByteSpace</h2>
+              <p>
+                Bytespace is a collaborative tool that allows users to create and share content, with storage capabilities.
+              </p>
+              <a href="bytespace.html" class="pbutton">view case study
+              </a>
+            </div>
           </div>
-      </a>
+        </div>
 
-
-      <div class="overlay bsoverlay">
+    <div class="mobilewrap">
         <div class="text">
-          <h3>ByteSpace</h3>
-          <p>Bytespace is a collaborative tool that allows users to create and share content, with storage capabilities.</p>
-          <a href="bytespace.html" class="pbutton">view case study</a>
+          <h2>ByteSpace</h2>
+          <p>
+            Bytespace is a collaborative tool that allows users to create and share content, with storage capabilities.
+          </p>
+          <a href="bytespace.html" class="mobilebutton">view case study
+          </a>
         </div>
       </div>
   </div>
   </a>
-  </section>
+    </section>
 
-  <!---Footer Section--------->
-  <footer class="fcontainer">
+    <!---Footer Section--------->
+    <footer class="fcontainer">
       <div class="footerlogo">
         <a href="index.html">
           <img href="index.html" src="images/LogoLight.png" alt="Jess Lara">
@@ -107,7 +126,7 @@
         </ul>
       </div>
 
-  </footer>
+    </footer>
   </div>
 
   <!---JAVASCRIPT------------------------->
