@@ -47,7 +47,7 @@ p {
   height: 100vh;
   overflow: hidden;
   width: 100%;
-    background: linear-gradient(rgba(100, 100, 100, 1), rgba(200, 200, 200, .5)), url("../images/IMG_3476.JPG") no-repeat center;
+  background: linear-gradient(rgba(100, 100, 100, 1), rgba(200, 200, 200, .5)), url("../images/IMG_3476.JPG") no-repeat center;
   background-size: cover;
   background-position: 45%;
 }
@@ -61,9 +61,8 @@ p {
   z-index: 3;
 }
 
-.navdark{
-  background-color: rgba(255,255,255, .95);
-
+.navdark {
+  background-color: rgba(255, 255, 255, .95);
 }
 
 .nav ul {
@@ -84,9 +83,9 @@ p {
   text-decoration: none;
   text-align: right;
 }
-.navdark li a{
-  color: #000;
 
+.navdark li a {
+  color: #000;
 }
 
 .nav .logo {
@@ -103,15 +102,15 @@ p {
 
 /* menu */
 .nav .menu {
-  background-color: rgba(112,112,112, .9);
+  background-color: rgba(112, 112, 112, .9);
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
   z-index: 1;
 }
 
-.navdark .menu{
-  background-color: rgba(255,255,255, .95);
+.navdark .menu {
+  background-color: rgba(255, 255, 255, .95);
 }
 
 /* menu icon */
@@ -119,7 +118,7 @@ p {
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 8% 5%;
+  padding: 8% 6%;
   position: relative;
   user-select: none;
 }
@@ -188,8 +187,6 @@ p {
 }
 
 /*_HERO TEXT_*/
-
-
 .herotext {
   overflow: hidden;
   display: flex;
@@ -205,16 +202,15 @@ p {
   padding: 5%;
 }
 
-.herotext:after{
+.herotext:after {
   content: '';
-    position: absolute;
-    top: 3%;
-    left: 3%;
-    bottom: 3%;
-    right: 3%;
-    border: 1px #232323 solid ;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  bottom: 3%;
+  right: 3%;
+  border: 1px #232323 solid;
 }
-
 
 .herotext p {
   font: 1.9rem 'Lato', sans-serif;
@@ -291,6 +287,7 @@ p {
   padding: 10% 0;
   position: relative;
   height: 40vh;
+  border-radius: 5% 5% 0% 0%;
 }
 
 .projectimg img {
@@ -311,6 +308,7 @@ p {
   background-color: rgba(255, 255, 255, 1);
   padding: 5% 6%;
   position: relative;
+  border-radius: 0% 0% 5% 5%;
 }
 
 .text {
@@ -353,7 +351,6 @@ p {
   color: #fff;
   background-color: #000;
 }
-
 
 /*----------FOOTER--------------*/
 .fcontainer {
@@ -450,11 +447,10 @@ p {
   color: #000;
 }
 
-.csbutton:hover{
+.csbutton:hover {
   background-color: #000;
   color: #fff;
 }
-
 
 /*_______ROLE____*/
 .role-description {
@@ -549,7 +545,6 @@ canvas {
   padding: 2rem 3rem;
 }
 
-
 .projectsectionlabel {
   background-color: #bbb;
   padding: 6% 5%;
@@ -569,18 +564,18 @@ canvas {
   text-align: left;
 }
 
-.projectsectionlabel::after{
+.projectsectionlabel::after {
   content: '';
-    position: absolute;
-    top: 8%;
-    bottom: 8%;
-    left: 10%;
-    right: 20%;
-    width: 30%;
-    border-bottom: 2px #232323 solid ;
-    border-top: 2px #232323 solid;
-    padding: 0;
-    margin: 5% 0;
+  position: absolute;
+  top: 8%;
+  bottom: 8%;
+  left: 10%;
+  right: 20%;
+  width: 30%;
+  border-bottom: 2px #232323 solid;
+  border-top: 2px #232323 solid;
+  padding: 0;
+  margin: 5% 0;
 }
 
 .mainsection p {
@@ -609,8 +604,8 @@ canvas {
   font-weight: 400;
 }
 
-.subsectionlabel:after{
-  border-bottom: 1px #fff solid ;
+.subsectionlabel:after {
+  border-bottom: 1px #fff solid;
   border-top: 1px #fff solid;
   left: 8%;
 }
@@ -654,34 +649,37 @@ canvas {
 
 /*Personas*/
 .personas {
-  display: flex;
-  flex-direction: column;
-  -ms-align-items: center;
-  align-items: center;
-  width: 100%;
-  align-items: center;
-  align-self: center;
   background-color: #F5F5F5;
-}
-
-.userdetails {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.user1, .user2 {
-  padding-top: 5%;
+  border-radius: 5%;
+  margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
 }
 
+.userdetail {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.userinfo {
+  align-items: center;
+  font-family: "Lato", sans serif;
+}
+
+.user1, .user2 {
+  padding: 5% 5%;
+  display: flex;
+  flex-direction: column;
+}
+
 .userimg {
-  width: 40%;
-  float: left;
-  margin-left: 4%;
+  margin: 0 30%;
+  padding-bottom: 5%;
 }
 
 .userimg img {
@@ -689,10 +687,8 @@ canvas {
 }
 
 .userinfo {
-  float: right;
-  width: 55%;
-  padding: 10% 5%;
-  font-family: "Lato", sans serif;
+  text-align: center;
+  margin-bottom: 5%;
 }
 
 .userinfo h2 {
@@ -710,7 +706,7 @@ canvas {
 
 .userinfo strong {
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .userbio {
@@ -784,7 +780,6 @@ canvas {
   height: auto;
 }
 
-
 /*sketches*/
 .bytespacesketches img {
   width: 100vw;
@@ -806,9 +801,8 @@ canvas {
   height: auto;
 }
 
-.typeface{
+.typeface {}
 
-}
 .typefaceimg img {
   width: 80vw;
   height: auto;
@@ -988,9 +982,10 @@ strong .amintro {
     padding: 1% 5%;
   }
 
-  .nav .menu-icon {
-    padding: 6% 4%;
+  .nav .menu-icon{
+    padding: 5%
   }
+
 
   .nav .menu-icon .navicon {
     width: 4vw;
@@ -1013,7 +1008,7 @@ strong .amintro {
     margin: 30% 0 25% 25%;
   }
 
-  .herotext h1{
+  .herotext h1 {
     width: 115%;
   }
 
@@ -1034,27 +1029,52 @@ strong .amintro {
   }
 
   /*-----Bytespace-----*/
-  .casestudyhero{
+  .casestudyhero {
     height: 80vh;
   }
 
-  .herotextcs article h1{
-    padding-top: 20%;
+  .herotextcs article h1 {
+    padding-top: 15%;
     font-size: 7.5rem;
   }
 
-  .herotextcs p{
+  .herotextcs p {
     font-size: 2.2rem;
     font-weight: 400;
-    padding: 5%;
+    padding: 2.5%;
   }
 
   .bytespacecompimg img {
     height: auto;
     max-width: 45%;
-}
+  }
 
-  .role-description{
+  .userdetail {
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .userimg {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .userimg img {
+    margin: 0 auto;
+  }
+
+  .userinfo {
+    margin: 0 auto;
+    padding: 1% 0;
+  }
+
+  .userbio {
+    padding: 0;
+  }
+
+  .role-description {
     padding: 5% 8%;
   }
 
@@ -1067,12 +1087,12 @@ strong .amintro {
     font-size: 2rem;
   }
 
-  .projectsectionlabel{
+  .projectsectionlabel {
     width: 35%;
     padding: 3% 3%;
   }
 
-  .projectsectionlabel h2{
+  .projectsectionlabel h2 {
     font-size: 1.8rem;
   }
 
@@ -1081,77 +1101,69 @@ strong .amintro {
     margin: 3% 0;
   }
 
-  .mainsection p{
+  .mainsection p {
     padding: 2% 8%;
     padding-top: 5%;
     font-size: 1.6rem;
   }
 
-  .surveydata table{
+  .subsectionlabel {
+    width: 23%;
+  }
+
+  .surveydata table {
     width: 80%;
     margin: 0 auto;
     padding-top: 5%;
   }
 
-    .swottable table{
-      font-size: 1.4rem;
-      width: 95%;
-      padding-left: 25%;
-    }
+  .swottable table {
+    font-size: 1.4rem;
+    width: 95%;
+    padding-left: 25%;
+  }
 
-    .swottable table td:first-child, .swottable table tr:first-child td {
-      font-size: 1.4rem;
-      width: 30%;
-    }
+  .swottable table td:first-child, .swottable table tr:first-child td {
+    font-size: 1.4rem;
+    width: 30%;
+  }
 
-    .userimg{
-      width: 30%;
-    }
+  .userimg {
+    width: 30%;
+  }
 
-    .userinfo{
-      padding: 5% 0%;
-    }
+  .userinfo {
+    padding: 5% 0%;
+  }
 
-    .userinfo h2{
-      font-size: 2.5rem;
-    }
+  .userinfo h2 {
+    font-size: 2.5rem;
+  }
 
-    .userinfo h3,
-    .userinfo strong{
-      font-size: 1.8rem;
-      line-height: 3rem;
-    }
+  .userinfo h3,
+  .userinfo strong {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
 
-    .bio h3,
-    .usergoals h3{
-      font-size: 1.9rem;
-    }
+  .bio h3,
+  .usergoals h3 {
+    font-size: 1.9rem;
+  }
 
-    .bio p,
-    .usergoals li{
-      font-size: 1.6rem;
-    }
+  .bio p,
+  .usergoals li {
+    font-size: 1.6rem;
+  }
 
-    .bio p{
-      padding: 5% 5%;
-    }
+  .bio p {
+    padding: 5% 5%;
+  }
 
-    .iterations_img img{
-      padding-top: 5%;
-    }
-
+  .iterations_img img {
+    padding-top: 5%;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 768px) {
   .hero {
@@ -1160,7 +1172,7 @@ strong .amintro {
 
   .herotext {
     width: 45%;
-    margin: 20% 0 0% 5%;
+    margin: 15% 0 0% 5%;
     padding: 0;
   }
 
@@ -1177,8 +1189,8 @@ strong .amintro {
     padding: 1% 5%;
   }
 
-  .nav .menu-icon {
-    padding: 4% 4%;
+  .nav .menu-icon{
+    padding: 5%
   }
 
   .nav .menu-icon .navicon {
@@ -1205,7 +1217,7 @@ strong .amintro {
     margin-bottom: 10%;
   }
 
-  .bsimg img{
+  .bsimg img {
     width: 35vw;
   }
 
@@ -1226,53 +1238,117 @@ strong .amintro {
   }
 
   /*--------BYTESPACE-------*/
-  .subsectionlabel{
+  .herotextcs article h1 {
+    padding-top: 15%;
+  }
+
+  .herotextcs p {
+    padding: 4% 5%;
+  }
+
+  .bytespacecompimg img {
+    height: auto;
+    max-width: 40%;
+  }
+
+  .subsectionlabel {
     width: 25%;
   }
 
-  .subsectionlabel::after{
+  .subsectionlabel::after {
     width: 25%;
     left: 11%;
   }
 
-  .bytespacesketches img{
-    width: 80vh;
-    padding-top: 5%;
-    margin: 0 7%;
+  .researchdata {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
   }
 
-  .lowfid_img img{
-    width: 80vh;
-    padding-top: 5%;
-    margin: 0 7%;
+  .surveydata {
+    align-self: center;
+    padding-left: 5%;
   }
 
-  .highfid_img img{
-    width: 80vh;
-    padding-top: 5%;
-    margin: 0 7%;
+  .surveydata table {
+    width: 100%;
   }
 
-  .iterations_img img{
-    width: 80vh;
-    padding-top: 5%;
-    margin: 0 7%;
+  .chart {
+    width: 55%;
+    padding: 0%;
   }
 
-  .typefaceimg img{
+  #personas {
+    display: flex;
+  }
+
+  .personas {
+    margin: 1%;
+    width: 50%;
+  }
+
+  .userdetail {
+    margin: 0 auto;
+  }
+
+  .userimg {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .userflows {
+    padding: 0% 5%;
+  }
+
+  .userflows img {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .bytespacesketches {
+    padding: 5% 8%;
+  }
+
+  .bytespacesketches img {
+    width: 85vw;
+  }
+
+  .lowfid_img {
+    padding: 5% 8%;
+  }
+
+  .lowfid_img img {
+    width: 80vw;
+  }
+
+  .highfid_img {
+    padding: 5% 8%;
+  }
+
+  .highfid_img img {
+    width: 80vw;
+  }
+
+  .iterations_img {
+    padding: 0% 8%;
+  }
+
+  .iterations_img img {
+    width: 80vh;
+  }
+
+  .typefaceimg {
+    padding: 0% 15%;
+  }
+
+  .typefaceimg img {
     width: 60vh;
-    padding-top: 5%;
-    margin: 0 20%;
   }
-
-
 }
-
-
-
-
-
-
 
 
 
@@ -1313,19 +1389,30 @@ strong .amintro {
     flex-direction: row;
     justify-content: center space-between;
     align-content: center;
+    justify-content: center;
+    height: 10%;
+    width: 100vw;
+    padding-top: 1.5%;
   }
 
   .nav li {
-    width: 31rem;
+    width: 35%;
     justify-self: center;
     align-self: center;
     padding: .2rem;
+    text-align: left;
   }
 
   .nav li a {
     font-size: 1.6rem;
     padding: 0;
     width: 100%;
+    text-align: center;
+  }
+
+  .nav li {
+    justify-content: space-between;
+    margin-left: 7%;
   }
 
   .nav .menu {
@@ -1333,28 +1420,30 @@ strong .amintro {
     clear: none;
     max-height: none;
     display: flex;
-    margin-left: 35%;
-    justify-content: space-between;
     align-content: center;
     background-color: transparent;
+    align-items: flex-end;
+    margin-left: 45%;
   }
 
   .nav .menu-icon {
     display: none;
   }
 
-  .nav .logo {
-    padding: 1% 7%;
-  }
-
   .logo img {
-    padding: 1rem;
     height: auto;
     width: 9rem;
   }
 
   .nav .logo {
-    padding: 2% 10%;
+    padding: 0;
+    align-self: flex-start;
+
+  }
+
+  #currentpage {
+    border-bottom: 2px solid #232323;
+    width: 70%;
   }
 
   .cmbutton {
@@ -1381,18 +1470,18 @@ strong .amintro {
     padding: 0;
   }
 
-  .sectionlabel::after{
+  .sectionlabel::after {
     content: '';
-      position: absolute;
-      top: 8%;
-      bottom: 8%;
-      left: 25%;
-      right: 30%;
-      width: 25%;
-      border-bottom: 2px #232323 solid ;
-      border-top: 2px #232323 solid;
-      padding: 0;
-      margin: 10% 0;
+    position: absolute;
+    top: 8%;
+    bottom: 8%;
+    left: 25%;
+    right: 30%;
+    width: 25%;
+    border-bottom: 2px #232323 solid;
+    border-top: 2px #232323 solid;
+    padding: 0;
+    margin: 10% 0;
   }
 
   .portfolio_works {
@@ -1409,7 +1498,7 @@ strong .amintro {
     justify-content: space-between;
   }
 
-  .bsimg img{
+  .bsimg img {
     width: 30vw;
   }
 
@@ -1465,17 +1554,18 @@ strong .amintro {
     width: 100%;
     top: 0;
     bottom: 0;
-    right:0;
+    right: 0;
     left: 0;
     opacity: 0;
     transition: .7s ease;
     z-index: 3;
   }
 
-  .houndwatchol{
+  .houndwatchol {
     background-color: rgba(62, 104, 197, 0.90);
   }
-  .bytespaceol{
+
+  .bytespaceol {
     background-color: rgba(0, 118, 90, 0.90);
   }
 
@@ -1483,7 +1573,7 @@ strong .amintro {
     opacity: 1;
   }
 
-  .mobilewrap{
+  .mobilewrap {
     display: none;
   }
 
@@ -1504,41 +1594,47 @@ strong .amintro {
   }
 
   /*-----------BYTESPACE*/
-
-
-  .casestudyhero{
+  .casestudyhero {
     height: 85vh;
   }
 
+  .herotextcs {
+    margin: 0;
+  }
+
   .herotextcs article h1 {
-  padding-top: 5%;
+    padding-top: 15%;
   }
 
-  .herotextcs article p {
-  padding: 2rem 5rem;
+  .herotextcs p {
+    padding: 2% 0 2% 0;
   }
 
-  .bytespacecompimg{
-    padding-bottom: 2rem;
+  .bytespacecompimg {
+    padding-bottom: 3%;
   }
 
-  .bytespacecompimg img{
-  height: auto;
-  max-width: 30%;
+  .bytespacecompimg img {
+    height: auto;
+    max-width: 30%;
+  }
+
+  .problem-solution, .research, .branding  {
+    position: inherit;
   }
 
   .role-description {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 4rem 0rem;
+    padding: 5% 10%;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: center;
   }
 
   .role-description div {
-    width: 150%;
-    margin-left: 12%;
+    align-items: center;
   }
 
   .role-description h2 {
@@ -1550,62 +1646,117 @@ strong .amintro {
     font-size: 1.6rem;
   }
 
+  .main {
+    padding: 5% 15%;
+  }
+
   .content {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding-bottom: 5rem;
+    padding-bottom: 10%;
+    position: relative;
+    top: 0
   }
 
-  .mainsection p {
+  .content p {
+    padding: 0;
+    padding-left: 30%;
     position: relative;
-    padding: 0 10rem;
-    margin-left: 20%;
-    font-size: 1.4rem;
+  }
+
+  .mainsection {
+    padding-top: 0;
   }
 
   .projectsectionlabel {
-    padding: 5%;
     width: 20%;
+    height: 0rem;
     position: absolute;
+    justify-content: center;
+    align-self: center;
+    padding: 5% 3%;
+    margin: 0;
+    top: 0;
   }
 
-  /* .subsectionlabel{
+  .projectsectionlabel h2 {
+    font-size: 1.6rem;
+    padding: 0;
     margin: 0;
-    width: 15%;
-    height: 2rem;
-    position: absolute;
-  } */
+    top: 50%;
+    transform: translate(-3%, -50%);
+  }
 
-  /* .sketches{
-    padding-top: 5%;
-  } */
+  .projectsectionlabel::after {
+    left: 10%;
+    top: 8%;
+    bottom: 8%;
+  }
 
-  /* .researchdata {
-    display: flex;
-    flex-direction: column;
-    justify-content: center space-between;
-    align-items: center;
-    height: 100%;
+  .subsectionlabel {
+    width: 13%;
+    margin-top: 0%;
+    background-color: #fff;
+    padding: 0 3.5%;
+    padding-bottom: 4%;
+    top: 0%;
+    transform: none;
+    margin-left: 8%;
+    margin-top: 2%;
+  }
+
+  .subsectionlabel h2 {
+    color: #232323;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .subsectionlabel::after {
+    display: none;
+  }
+
+  .sketches {
+    margin-top: 15%;
+  }
+
+  .researchcontent {
+    padding-bottom: 5%;
+    position: relative;
+  }
+
+  .researchdata {
+    margin: 0 -21.3%;
+    padding: 0 height: 45%;
+    margin-bottom: 5%;
   }
 
   .surveydata {
-    width: 50rem;
-    padding: 6% 0;
-
-  } */
-
-  /* .surveydata table {
-    height: 25rem;
-    background-color: #fff;
-    border-radius: 2%;
-    box-shadow: 0 8px 6px -6px black;
-    padding-left: 4%;
+    justify-content: center;
+    padding-top: 0;
   }
 
-  .surveydata table td{
-    font-size: 1.8rem;
-  } */
+  .surveydata table {
+    width: 100%;
+  }
+
+  .surveydata table tr {
+    height: 8rem;
+  }
+
+  .surveydata table td {
+    font-size: 1.6rem;
+  }
+
+  .surveydata>table td:first-child {
+    font-size: 3rem;
+  }
+
+  .chart {
+    padding-top: 5%;
+  }
 
   .chart h1 {
     font-size: 2rem;
@@ -1614,157 +1765,171 @@ strong .amintro {
     margin: 0;
   }
 
-  /* .swottable {
-    height: 58rem;
-    margin-bottom: 4rem
+  .swottable {
+    margin: 0 -21.3%;
+    margin-bottom: 10%;
   }
 
   .swottable h2 {
-    font-size: 2.4rem;
-    width: 20%;
-  }
-
-  .swottable td {
-    font-size: 1.6rem;
-    width: 20%;
+    font-weight: 700;
   }
 
   .swottable table {
-    width: 85%;
-    font-size: 1.6rem;
-    margin-left: 15rem;
-    padding-bottom: 4rem;
+    padding-left: 30%;
+    padding-top: 2%;
+    font-size: 5rem;
+    width: 95%;
   }
 
   .swottable table td {
-    width: 15rem;
+    font-size: 1.8rem;
+    padding: 1%;
+    font-weight: 400;
   }
 
   .swottable table td:first-child,
   .swottable table tr:first-child td {
-    font-size: 1.8rem;
-  } */
+    font-size: 2rem;
+  }
 
-  #personas{
+  #personas {
     display: flex;
     flex-direction: row;
-    margin-top: 5rem;
+    margin-top: 15%;
+    justify-content: space-between;
+    margin-bottom: 10%;
   }
 
-.userimg {
-  width: 25%
+  .pesonas {
+    margin: 1%;
   }
 
-  .bio p{
+  .bio p {
     padding: 5% 4%;
     margin: 0
   }
 
-  .userimg img {
-    height: 15vh;
+  .userimg {
+    width: 15%;
+    padding: 0;
+    margin:0 auto;
   }
 
-  .userinfo{
-    width: 90%;
-    padding-top: 8%;
+
+  .userinfo {
+    padding-top: 5%;
+    margin: 0;
   }
 
-  .userinfo h2{
+  .userinfo h2 {
     font-size: 2rem;
   }
-  .userflows {
-    height: 60rem;
+
+  .userflows{
     padding: 0;
-    background-size: contain;
+    margin-top: -6%;
   }
 
-  /* .projectsectionlabel{
-    margin-top: 0%;
-  } */
+  .userflows img {
+    width: 70vw;
+  }
 
-  /* .bytespacesketches{
-    height: 46rem;
-    width: 100%;
-    padding: 0 5%;
+  .sketches{
+    margin-top: 5%;
+  }
+
+  .bytespacesketches{
+    padding: 0;
+    padding-bottom: 10%;
+  }
+
+  .bytespacesketches img {
+    width: 70vw;
   }
 
   .lowfid_img{
-    background: url("../images/CaseStudy/ByteSpace/LF2.png") center no-repeat;
-    background-size: contain;
-    height: 40rem;
+    padding: 0 8%;
+    padding-bottom: 10%;
   }
 
-
-  .highfid_img{
-    background: url("../images/CaseStudy/ByteSpace/HF2.png") center no-repeat;
-    background-size: contain;
-    height: 40rem;
+  .lowfid_img img {
+    width: 65vw;
   }
 
-  .iterations_img{
-    background: url("../images/CaseStudy/ByteSpace/iteration2.png") center no-repeat;
-    background-size: contain;
-    height: 40rem;
-    margin-bottom: 2rem;
-  } */
-
-  .content p{
-    font-size: 1.6rem;
+  .highfid_img {
+    padding-top: 0%;
   }
 
-
-
-  /* .typefaceimg{
-    background: url("../images/CaseStudy/ByteSpace/Type.png") no-repeat center;
-    background-size: contain;
-    height: 15rem;
-    } */
-
-
-  .color-list{
-    margin-top: 10rem;
-    padding: 2% 10%;
-    height: 20rem;
-    flex-wrap: nowrap;
+  .highfid_img img {
+    width: 65vw;
   }
 
-  .name{
-    font-size: 1.5rem;
-    color: #000;
+  .iterations_img {
+    padding-bottom: 5%;
   }
 
-  .conclusion .content{
+  .iterations_img img {
+    width: 65vw;
+  }
+
+  .typeface {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .typefaceimg {
+    margin: 0;
+    padding: 0;
+  }
+
+  .typefaceimg img{
+    width: 25vw;
+    top: 0;
+    left: -25;
+    transform: translate(-80%);
+  }
+
+  .conclusion .content {
     display: flex;
     flex-direction: column;
     height: 35rem;
     padding-top: 5%;
     flex-overflow: none;
-
   }
 
-  .conclusion p{
+  .conclusion p {
+    margin: 0 -21.3%;
+    margin-top: 12%;
     line-height: 3rem;
-    padding: 0 10rem;
+    padding: 5% 15% 5% 15%;
   }
 
-  .color-list {
+  .colors .content{
     display: flex;
     flex-direction: row;
-    height: 50vh;
+    width: 50vw;
   }
 
   .color {
     flex: 0%;
-    /*flex-grow | flex-shrink | flex-basis*/
     box-shadow: 0 0 10px #424242;
-    padding: 1em;
     color: white;
     transition: flex-basis 0.5s ease-in-out;
     font-size: 1.6rem;
+    margin-top: 10%;
   }
+
+    .color-list {
+      flex-wrap: nowrap;
+      overflow: visible;
+      padding: 0;
+      height: 30vh;
+    }
+
   .color:hover {
     flex-basis: 40%;
   }
+
   .color:hover .details {
     opacity: 1;
   }
@@ -1772,6 +1937,16 @@ strong .amintro {
   .name {
     font-size: 1.4em;
     font: 1.5rem "Libre-Franklin", sans-serif;
+  }
+
+  .name {
+    font-size: 1.5rem;
+    color: #000;
+  }
+
+  #twilight,
+  #mercury {
+    color: #232323;
   }
 
   .details {
@@ -1786,19 +1961,22 @@ strong .amintro {
     font: 1.5rem "Lato", sans-serif;
   }
 
-
-
   .subsectionlabel {
-
     height: 0;
   }
 
+  .userimg {
+    width: 40%;
+    margin: 0 auto;
+  }
 
+  .conclusion p{
+    padding-bottom: 8%;
+  }
 
-
-
-
-
+  #currentpage{
+    width: 35%;
+  }
 
 }
 
@@ -1808,34 +1986,188 @@ strong .amintro {
 
 
 
-
-
-
-
-
-
-
-
 @media (min-width: 1200px) {
-  .hero{
+
+
+  .hero {
     height: 70vh;
     background-position: -40% 70%;
   }
 
-  .herotext{
-    width: 35%;
+
+  .nav .logo{
+    padding-left: 0%;
+  }
+
+  .nav .menu{
+    width: 25%;
+    margin-left: 52%;
+  }
+
+  #currentpage{
+    width: relative;
+  }
+
+  .herotext {
     padding: 0;
     margin: 10% 0 10% 10%;
   }
 
-  .sectionlabel{
+  .sectionlabel {
     width: 15%;
     padding: 3% 0;
   }
 
-  .sectionlabel::after{
+  .sectionlabel::after {
     margin: 2rem 0;
   }
+
+  /*-------BYTESPACE------*/
+  .casestudyhero{
+    height: 60vh;
+  }
+  .herotextcs{
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+  }
+
+  .herotextcs article h1{
+    padding-top: 13vh;
+  }
+
+  .herotextcs p{
+    padding: 2% 0 2% 0;
+  }
+
+  .bytespacecompimg img{
+    width: 55vw;
+  }
+
+  .bytespacecompimg{
+    padding-bottom: 2%;
+  }
+
+  .role-description{
+    width: 70%;
+    padding: 5% 10%;
+    margin: 0 15%;
+  }
+
+  .role-description div{
+    padding: 0;
+  }
+  .researchdata{
+    justify-content: space-between;
+    height: 45vh;
+  }
+
+  .surveydata{
+    width: 45%;
+    padding-left: 20%;
+    padding-top: 4%;
+  }
+
+  .chart{
+    width: 35%;
+    left: 0;
+  }
+
+  .swottable{
+    height: 58vh;
+    margin-bottom: 5%;
+  }
+
+  .swottable h2{
+    padding-left: 15%
+  }
+
+  .swottable table{
+    padding-top: 0;
+    padding-left: 25%;
+    width: 80%;
+  }
+
+  #personas{
+    margin-bottom: 0%;
+  }
+
+  .bytespacesketches{
+    padding: 0 30%;
+    padding-bottom: 5%;
+  }
+
+  .bytespacesketches img{
+    width: 40vw;
+  }
+
+  .lowfid_img{
+    padding: 0 30%;
+    padding-bottom: 5%;
+  }
+
+  .lowfid_img img{
+    height: 60vh;
+    width: auto;
+  }
+
+  .highfid_img{
+    padding: 0 30%;
+    padding-bottom: 5%;
+  }
+
+  .highfid_img img{
+    height: 60vh;
+    width: auto;
+  }
+
+  .iterations_img{
+    padding: 0 30%;
+    padding-bottom: 5%;
+  }
+
+  .iterations_img img{
+    height: 60vh;
+    width: auto;
+  }
+
+  .color-list{
+    width: 50vw;
+    height: 45vh;
+    margin-left: 35%;
+  }
+
+  .conclusion p{
+    padding-bottom: 5%;
+  }
+
+  .content p{
+    font-size: 1.8rem;
+  }
+
+  .projectsectionlabel{
+    width: 18%;
+    padding: 3.5% 3%;
+    margin-left: 10%;
+  }
+
+  .projectsectionlabel h2{
+    font-size: 1.8rem;
+    font-weight: 800;
+    transform: translate(-10%, -50%);
+  }
+
+  .subsectionlabel{
+    margin-top: 0;
+    padding-top: 1%;
+  }
+
+
+
+
+
+
+
 
 
 }
