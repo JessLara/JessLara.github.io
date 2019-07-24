@@ -196,13 +196,13 @@ p {
   align-content: center;
   width: 80%;
   text-align: center;
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(255, 255, 255, .75);
   margin: 40% 0 10% 10%;
   position: relative;
   padding: 5%;
 }
 
-.herotext:after {
+/*.herotext:after {
   content: '';
   position: absolute;
   top: 3%;
@@ -210,7 +210,7 @@ p {
   bottom: 3%;
   right: 3%;
   border: 1px #232323 solid;
-}
+}*/
 
 .herotext p {
   font: 1.9rem 'Lato', sans-serif;
@@ -1496,6 +1496,11 @@ strong .amintro {
     margin: 4%;
     height: 40vh;
     justify-content: space-between;
+
+  }
+
+  .projectimg{
+    border-radius: 0;
   }
 
   .bsimg img {
@@ -2005,7 +2010,7 @@ strong .amintro {
   }
 
   #currentpage{
-    width: relative;
+    width: 75%;
   }
 
   .herotext {
