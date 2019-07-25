@@ -400,12 +400,14 @@ p {
 /*-----------CASE STUDY: ByteSpace-----------------*/
 .casestudyhero {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
 }
 
 .herotextcs {
+  max-height: 80%;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
   text-align: center;
@@ -430,7 +432,7 @@ p {
 
 .bytespacecompimg img {
   height: auto;
-  max-width: 75%;
+  max-width: 65%;
 }
 
 .csbutton {
@@ -886,16 +888,115 @@ canvas {
   line-height: 2.4rem;
 }
 
+/*---------Case Study - Hound Watch---------*/
+.herotexthoundwatch{
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 35%;
+}
+
+.herotexthoundwatch  h1 {
+  font-size: 3.5rem;
+}
+
+.houndwatchimg{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  padding: 15% 0;
+  margin: 0 auto;
+}
+
+.houndwatchimg img{
+  height: 20vh;
+  width: auto;
+  padding:  0 1%;
+}
+
+/*-SWOT Analysis-*/
+
+  .swotanalysis strong {
+  font: 1.4rem 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+/*-Personas-*/
+
+.personasimg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.personasimg img{
+  width: 85vw;
+  height: auto;
+  padding: 2%;
+  margin: 0 auto;
+}
+
+/*-User Stories-*/
+
+.userstories p{
+  padding-bottom: 0;
+}
+
+.storieslist{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font: 1.4rem 'Lato', sans-serif;
+}
+
+.storieslist strong{
+  font: 1.4rem 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+/*-User Flows-*/
+
+.userflows{
+  padding: 0 5%;
+  margin: 0 auto;
+}
+
+.userflowlist{
+  padding: 0 8%;
+}
+.userflowlist li{
+  font: 1.4rem 'Lato', sans-serif;
+  font-weight: 600;
+  padding: 1%;
+}
+
+/*-Wireframes-*/
+
+.houndwatchsketches img,
+.lowfid_img img,
+.highfid_img img,
+.iterations_img img{
+  width: 90vw;
+  padding: 0 5% 0 10%;
+}
+
+
+
+
 /*****************About Me*************/
 .am_containeer p {
   font: 1.4rem "Libre Franklin", sans-serif;
   font-weight: 300;
 }
 
-/*
-.aboutmeheader{
-  height: 100vh;
-}*/
 .herotext_am {
   position: relative;
   display: flex;
@@ -926,27 +1027,31 @@ canvas {
 
 .amintro p {
   font: 1.4rem "Libre Franklin", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   padding: 10% 6%;
   background-color: #f2f2f2;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
-strong .amintro {
-  font-weight: 900;
-  font: 1.5rem "Libre Franklin", sans-serif;
-  text-decoration: underline;
+ .amintro p strong {
+  font: 1.4rem "Libre Franklin", sans-serif;
+   font-weight: 700;
 }
 
 .biography p {
   padding: 0 10%;
   font: 1.4rem "Libre Franklin", sans-serif;
   font-weight: 300;
-  line-height: 2.2rem;
+  line-height: 2.5rem;
 }
 
 .biotext {
   padding: 10% 0%;
+}
+
+.biotext p strong{
+  font: 1.4rem "Libre Franklin", sans-serif;
+  font-weight: 600;
 }
 
 .label {
@@ -955,9 +1060,9 @@ strong .amintro {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  background-color: #000;
+  background-color: #232323;
   padding: 4%;
-  width: 65%;
+  width: 45%;
 }
 
 .label h2 {
@@ -971,6 +1076,18 @@ strong .amintro {
 .questions p {
   padding: 8% 10%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*____________________________MEDIA QUERIES__________________________*/
 @media (min-width: 640px) {
@@ -1029,12 +1146,9 @@ strong .amintro {
   }
 
   /*-----Bytespace-----*/
-  .casestudyhero {
-    height: 80vh;
-  }
 
   .herotextcs article h1 {
-    padding-top: 15%;
+    padding-top: 25%;
     font-size: 7.5rem;
   }
 
@@ -1163,7 +1277,48 @@ strong .amintro {
   .iterations_img img {
     padding-top: 5%;
   }
+/*-----About Me-----*/
+  .headerimg{
+    height: 55vh;
+  }
+
+  .title h1{
+    font-size: 3.5rem;
+  }
+
+  .amintro p{
+    font-size: 1.6rem;
+  }
+
+  .amintro p strong{
+    font-size: 1.6rem;
+  }
+
+  .biography p{
+    font-size: 1.6rem;
+  }
+
+  .label h2{
+    font-size: 1.8rem;
+  }
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) {
   .hero {
@@ -1239,16 +1394,20 @@ strong .amintro {
 
   /*--------BYTESPACE-------*/
   .herotextcs article h1 {
-    padding-top: 15%;
+    padding-top: 20%;
   }
 
   .herotextcs p {
-    padding: 4% 5%;
+    padding: 3% 5%;
+  }
+
+  .bytespacecompimg{
+    padding-bottom: 2%;
   }
 
   .bytespacecompimg img {
     height: auto;
-    max-width: 40%;
+    max-width: 35%;
   }
 
   .subsectionlabel {
@@ -1348,6 +1507,17 @@ strong .amintro {
   .typefaceimg img {
     width: 60vh;
   }
+
+  /*-------ABOUT ME------*/
+
+  .headerimg{
+    height: 65vh;
+  }
+
+  .title h1{
+    font-size: 4rem;
+  }
+
 }
 
 
@@ -1441,10 +1611,6 @@ strong .amintro {
 
   }
 
-  #currentpage {
-    border-bottom: 2px solid #232323;
-    width: 70%;
-  }
 
   .cmbutton {
     width: 40%;
@@ -1453,7 +1619,7 @@ strong .amintro {
   .sectionlabel {
     display: block;
     background-color: #fff;
-    margin-left: 10%;
+    margin-left: 5%;
     width: 20%;
     padding: 4% 0%;
     margin-top: 5%;
@@ -1975,13 +2141,83 @@ strong .amintro {
     margin: 0 auto;
   }
 
+  .conclusion
+
   .conclusion p{
     padding-bottom: 8%;
   }
 
   #currentpage{
-    width: 35%;
+    width: 105%;
+    font-weight: 800;
   }
+/*------ABOUT ME-------*/
+
+.headerimg{
+  height: 70vh;
+}
+
+.title h1{
+  top: 30%;
+  font-size: 8rem;
+}
+
+.biography{
+  padding: 0% 15%;
+}
+
+.questions{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-bottom: 10%;
+}
+
+.biotext{
+  padding: 5% -10%;
+}
+
+.biotext p{
+  font-size: 2rem;
+  line-height: 3.5rem;
+  font-weight: 400;
+  padding: 0;
+}
+
+.amintro p{
+  font-size: 2rem;
+  padding: 5% 15%;
+  line-height: 3rem;
+}
+
+.aboutmelabel{
+  width: 20%;
+  padding: 7% 3%;
+  position: absolute;
+}
+
+.aboutmelabel h2{
+  font-size: 2rem;
+  line-height: 2.5rem;
+  width: 10rem;
+}
+
+.questions p{
+  font-size: 2rem;
+  line-height: 3.5rem;
+  font-weight: 400;
+  padding: 0 0 0 25%;
+}
+
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -2009,8 +2245,13 @@ strong .amintro {
     margin-left: 52%;
   }
 
+  .nav li{
+    width: 65%;
+  }
+
   #currentpage{
-    width: 75%;
+    font-weight: 800;
+    width: 85%;
   }
 
   .herotext {
@@ -2167,6 +2408,14 @@ strong .amintro {
     padding-top: 1%;
   }
 
+/*------ABOUT ME------*/
+
+.aboutmelabel{
+  width: 12%;
+  padding: 5% 3%;
+  position: absolute;
+  margin-left: 5%;
+}
 
 
 
