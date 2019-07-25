@@ -5,7 +5,7 @@ $(document).ready(function(){
    $(document).scroll(function() {
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-          $('nav').css('background-color', 'rgba(112,112,112, .7)');
+          $('nav').css('background-color', 'rgba(255,255,255,.8)');
           $('nav').css('box-shadow', '1px 1px 4px 0 rgba(0,0,0,.1)');
        } else {
           $('nav').css('background-color', 'transparent');
