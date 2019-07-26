@@ -1,3 +1,6 @@
+
+
+//-------Navbar-------//
 $(document).ready(function(){
    var scroll_start = 0;
    var startchange = $('#startchange');
@@ -15,16 +18,14 @@ $(document).ready(function(){
 });
 
 
-
-
-
+//-------ByteSpace Chart-------//
 
 
 let ctx = document.getElementById('CloudChart').getContext('2d');
 let labels = ['Cloud User', 'Non Cloud User'];
 let colorHex = ['#FB3640', '#253D5B'];
 
-let myChart = new Chart(ctx, {
+var myChart = new Chart(ctx, {
   type: 'pie',
   data: {
     datasets: [{
@@ -77,4 +78,74 @@ let myChart = new Chart(ctx, {
       }
     }
   }
-})
+});
+
+
+
+
+
+
+
+
+
+//-------ByteSpace Chart-------//
+
+
+let ctx = document.getElementById('HWChart').getContext('2d');
+let labels = ['Cloud User', 'Non Cloud User'];
+let colorHex = ['#FB3640', '#253D5B'];
+
+var myChart = new Chart(ctx, {
+  type: 'pie',
+  data: {
+    datasets: [{
+      data: [24.1, 75.9],
+      backgroundColor: colorHex
+    }],
+    labels: labels
+  },
+  options: {
+    responsive: true,
+    legend: {
+      position: 'bottom',
+    },
+    plugins: {
+      datalabels: {
+        color: '#fff',
+        clamp: true,
+        anchor: 'end',
+        align: 'center',
+        borderWidth: 2.5,
+        borderColor: '#fff',
+        borderRadius: 25,
+        backgroundColor: (context) => {
+          return context.dataset.backgroundColor;
+        },
+        font: {
+          weight: 'bold',
+          size: '12'
+        },
+        formatter: (value) => {
+          return value + ' %';
+        }
+      }
+    },
+    animation: {
+      animateScale: true,
+      animateRotate: true
+    },
+    tooltips: {
+      callbacks: {
+        label: function(tooltipItem, data) {
+          var dataset = data.datasets[tooltipItem.datasetIndex];
+          var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
+            return previousValue + currentValue;
+          });
+          var currentValue = dataset.data[tooltipItem.index];
+          var percentage = Math.floor(((currentValue / total) * 100) + 0.5);
+          return percentage + "%";
+        }
+      }
+    }
+  }
+});
