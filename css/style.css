@@ -44,7 +44,7 @@ p {
 
 /*_____HERO____*/
 .hero {
-  height: 60vh;
+  height: 100vh;
   overflow: hidden;
   width: 100%;
 }
@@ -189,13 +189,13 @@ p {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  height: 60vh;
+  height: 100%;
   position: relative;
 }
 
 .herotext{
   display: block;
-  padding: 25% 7%;
+  padding: 45% 7%;
 }
 
 .herotext h1{
@@ -205,18 +205,18 @@ p {
 }
 
 .herotext h2{
-  padding-top: 10%;
+  padding-top: 20%;
   font-size: 2rem;
   line-height: 1.5;
   color: rgba(0,0,0,.8);
 }
 
 .herotext p{
-  padding-top: 10%;
+  padding-top: 15%;
   font-size: 1.8rem;
   line-height: 1.5;
   font-weight: 400;
-  padding-bottom: 20%;
+  padding-bottom: 25%;
   color: rgba(0,0,0,.8);
 }
 
