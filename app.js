@@ -1,6 +1,4 @@
 
-
-//-------Navbar-------//
 $(document).ready(function(){
    var scroll_start = 0;
    var startchange = $('#startchange');
@@ -18,7 +16,7 @@ $(document).ready(function(){
 });
 
 
-//-------ByteSpace Chart-------//
+
 
 
 let ctx = document.getElementById('CloudChart').getContext('2d');
