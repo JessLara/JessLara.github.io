@@ -1,4 +1,3 @@
-
 if($(window).width() < 1023) {
 $(document).ready(function(){
    var scroll_start = 0;
@@ -18,18 +17,15 @@ $(document).ready(function(){
 };
 
 
-
-//
-//
-let ctx = document.getElementById('CloudChart').getContext('2d');
-let labels = ['Cloud User', 'Non Cloud User'];
-let colorHex = ['#253D5B','#FB3640'];
+let ctx = document.getElementById('HWchart').getContext('2d');
+let labels = ['Yes', 'No', 'Maybe'];
+let colorHex = ['#253D5B','#FB3640', '#FF6B00' ];
 
 var myChart = new Chart(ctx, {
   type: 'pie',
   data: {
     datasets: [{
-      data: [24.1, 75.9],
+      data: [64.3, 7.1, 28.6],
       backgroundColor: colorHex
     }],
     labels: labels

@@ -8,19 +8,18 @@
   <title> Jess Lara | Hound Watch</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,500,700,800,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
   <!--Navigation Bar---->
-  <div class="hwcontainer container">
+  <div class="casestudycontainer">
     <section class="casestudyhero">
       <header>
-        <nav class="nav navdark">
+        <nav class="nav">
           <a href="index.html" class="logo" name="Home"><img src="images/LogoDark.png" alt="Jess Lara"></a>
           <input class="menu-btn" type="checkbox" id="menu-btn" />
           <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -36,7 +35,7 @@
         <article>
           <h1>Hound Watch</h1>
           <div class="houndwatchimg">
-            <img src="images/CaseStudy/HoundWatch/HWCSimg.png" alt="Hound Watch">
+            <img src="images/CaseStudy/HoundWatch/HWCS.png" alt="Hound Watch">
           </div>
           <div class="protobutton">
             <a href="https://invis.io/5RSRDI7MZYJ" target="_blank" alt="Hound Watch Prototype" class="csbutton">view prototype</a>
@@ -45,8 +44,8 @@
       </div>
     </section>
     <!---Role Section------------------------>
-    <div class="main">
-      <section class="role-description">
+    <section class="rolesection">
+      <div class="role-description">
         <div class="role">
           <h2>Role:</h2>
           <p>UX/UI Design | Research| Branding | Prototyping</p>
@@ -59,44 +58,47 @@
           <h2>Year:</h2>
           <p>2019</p>
         </div>
-      </section>
+      </div>
+    </section>
 
       <!---Problem and Solution Section------------------------>
+    <div class="main">
       <section class="problem-solution">
-        <div class="mainsection">
-          <div class="content">
+          <div class="subsection sub1">
             <div class="projectsectionlabel">
               <h2>Problem</h2>
             </div>
-
-            <p>There are many people who are interested in fostering a dog but there is a lack of information surrounding the fostering process, and therefore opportunities are limited. The commonly used pet finding applications are focused on
-              adopting animals and there is not a dedicated space for fostering.</p>
+            <div class="content">
+            <p>There are many people who are interested in fostering a dog but there is a lack of information surrounding the fostering process, and therefore opportunities are limited. The commonly used pet finding applications are focused on adopting animals and there is not a dedicated space for fostering.
+            </p>
           </div>
-        </div>
+          </div>
 
-        <div class="mainsection">
-          <div class="content">
+          <div class="subsection sub2">
             <div class="projectsectionlabel">
               <h2>Solution</h2>
             </div>
+            <div class="content">
             <p>Rescue organizations rely heavily on volunteerism and assistance from the community. Fostering is one of the biggest support systems; it helps a dog adjust to a new place, provides them with a safe and loving home and it aides in
               reducing overcrowding in shelters and kennels. <br> <br>
               Hound Watch was created to connect people with dogs that are in need of a temporary home. With Hound Watch individuals can find a dog that matches their need and requirements.
-              .</p>
+            </p>
           </div>
         </div>
       </section>
       <!---Research Section------------------------->
       <section class="research">
-        <div class="mainsection">
-          <div class="content">
-            <div class="projectsectionlabel">
-              <h2>Research</h2>
+
+          <div class="subsection">
+              <div class="projectsectionlabel">
+                <h2>Research</h2>
+              </div>
+              <div class="content content_research">
+              <p>As a UX Designer I conducted user research to learn if people were interested in fostering dogs. Based on that initial data I developed an application that showcases available dogs that are looking for foster homes. People can connect
+                with the sponsoring rescue group and apply to foster the dog within the application.
+              </p>
             </div>
-            <p>As a UX Designer I conducted user research to learn if people were interested in fostering dogs. Based on that initial data I developed an application that showcases available dogs that are looking for foster homes. People can connect
-              with the sponsoring rescue group and apply to foster the dog within the application.
-            </p>
-          </div>
+
           <!---Survey Section---->
           <div class="researchdata">
             <div class="surveydata">
@@ -124,17 +126,20 @@
             </div>
 
             <div class="chart">
-              <h1>-------</h1>
-              <canvas id="HWChart"></canvas>
+              <h1>Would you be interested in a phone application dedicated to fostering dogs?</h1>
+              <canvas id="HWchart"></canvas>
             </div>
           </div>
         </div>
+
+
         <!---SWOT Analysis Section---->
-        <div class="mainsection">
-          <div class="content swotanalysis">
-            <div class="projectsectionlabel">
+        <div class="subsection">
+            <div class="subsectionlabel">
               <h2>SWOT Analysis</h2>
             </div>
+            <div class="swotanalysisflex">
+            <div class="content">
             <p>A SWOT analysis was completed with three competitors. <br> <br>
               <strong>Adopt a Pet | Petfinder | The Humane Society </strong> <br> <br>
               The analysis indicated that there was an untapped market within the three competitors that provided an opportunity for us and Hound Watch. All of the competitors have no specifics or focus when it comes to fostering a pet.</p>
@@ -199,119 +204,106 @@
               </tr>
             </table>
           </div>
+          </div>
         </div>
+
+
+
         <!---User Personas Section---->
-        <div class="mainsection">
-          <div class="content">
-          <div class="projectsectionlabel">
+        <div class="subsection">
+          <div class="subsectionlabel floatright">
             <h2>User Personas</h2>
           </div>
-          <div class="mainsection" id="personas">
-            <div class="personas">
-              <div class="user1">
-                <div class="userdetail">
-                  <div class="userimg">
-                    <img src="images/CaseStudy/user1.png" alt="user 1">
-                  </div>
-                  <div class="userinfo">
-                    <h2>Anne C.</h2>
-                    <h3><strong>Age</strong>: 42</h3>
-                    <h3><strong>Occupation</strong>: Mother</h3>
-                  </div>
-                </div>
-                <div class="userbio">
-                  <div class="bio">
-                    <h3>Bio</h3>
-                    <p>Anne is a wife and a mother of two young girls. For the past few years her husband and her have discussed the possibilities of owning a dog. Her husband is not sure about the idea, he doesn’t believe the girls are ready for the responsibilities.</p>
-                  </div>
 
-                  <div class="usergoals">
-                    <h3>Goals</h3>
-                    <ul>
-                      <li>Fostering a dog that gets along with small children</li>
-                      <li>Learning if a dog would fit into their busy lifestyle</li>
-                      <li>Helping an animal in neede</li>
-                    </ul>
-                  </div>
+        <div class="personas">
+          <div class="user user1">
+            <div class="userimage">
+                <h2>Anne</h2>
+            </div>
+            <div class="usercontent">
+              <div class="biography">
+                <h2><span>Age:</span> 42</h2>
+                <h2><span>Occupation:</span> Mother</h2>
+                </div>
+                <h3>Bio</h3>
+                <p>
+                  Anne is a wife and a mother of two young girls. For the past few years her husband and her have discussed the possibilities of owning a dog. Her husband is not sure about the idea, he doesn’t believe the girls are ready for the responsibilities.
+                </p>
+              </div>
+              <div class="goals">
+                <h3>Goals</h3>
+                <div class="goalslist">
+                  <ul>
+                    <li>Fostering a dog that gets along with small children</li>
+                    <li>Learning if a dog would fit into their busy lifestyle</li>
+                    <li>Helping an animal in neede</li>
+                  </ul>
                 </div>
               </div>
             </div>
 
-            <div class="personas">
-              <div class="user2">
-                <div class="userdetail">
-                  <div class="userimg">
-                    <img src="images/CaseStudy/user2.png" alt="user 1">
-                  </div>
-                  <div class="userinfo">
-                    <h2>Jake D.</h2>
-                    <h3><strong>Age</strong>: 33</h3>
-                    <h3><strong>Occupation</strong>: Software Engineer</h3>
-                  </div>
+          <div class="user user2">
+            <div class="userimage">
+                <h2>Jake</h2>
+            </div>
+            <div class="usercontent">
+              <div class="biography">
+                <h2><span>Age:</span> 33</h2>
+                <h2><span>Occupation:</span> Software Engineer</h2>
                 </div>
-                <div class="userbio">
-                  <div class="bio">
-                    <h3>Bio</h3>
-                    <p>Jake  is a computer engineer, he lives in an apartment with his wife and dog. He and his wife have been considering adopting another dog, but he’s unsure about the responsibilities that come with owning two dogs.</p>
-                  </div>
-
-                  <div class="usergoals">
-                    <h3>Goals</h3>
-                    <ul>
-                      <li>Fostering a dog that gets along with his dog</li>
-                      <li>Breed Specific restrictions - renting policy</li>
-                      <li>Learning more about fostering and the responsibilities that come with it</li>
-                    </ul>
-                  </div>
+                <h3>Bio</h3>
+                <p>
+                  Jake  is a computer engineer, he lives in an apartment with his wife and dog. He and his wife have been considering adopting another dog, but he’s unsure about the responsibilities that come with owning two dogs.
+                </p>
+              </div>
+              <div class="goals">
+                <h3>Goals</h3>
+                <div class="goalslist">
+                  <ul>
+                    <li>Fostering a dog that gets along with his dog</li>
+                    <li>Breed Specific restrictions - renting policy</li>
+                    <li>Learning more about fostering and the responsibilities that come with it</li>
+                  </ul>
                 </div>
-
               </div>
             </div>
 
-            <div class="personas">
-              <div class="user2">
-                <div class="userdetail">
-                  <div class="userimg">
-                    <img src="images/CaseStudy/HoundWatch/girl.png" alt="user 1">
-                  </div>
-                  <div class="userinfo">
-                    <h2>Carla M.</h2>
-                    <h3><strong>Age</strong>: 35</h3>
-                    <h3><strong>Occupation</strong>: Volunteer</h3>
-                  </div>
-                </div>
-                <div class="userbio">
-                  <div class="bio">
-                    <h3>Bio</h3>
-                    <p>Carla is a volunteer at a local dog rescue. When she’s not at her desk job, she’s volunteering her time as a screening specialist. She is responsible for checking in with applicants who have submitted a dog application.</p>
-                  </div>
 
-                  <div class="usergoals">
-                    <h3>Goals</h3>
-                    <ul>
-                      <li>Getting more dogs adopted </li>
-                      <li>Having more dogs placed in foster homes</li>
-                      <li>Connecting rescue groups with potential fosters and educating them in the importance of fostering and how they can help dogs in need.</li>
-                    </ul>
-                  </div>
+          <div class="user user3">
+            <div class="userimage">
+                <h2>Carla</h2>
+            </div>
+            <div class="usercontent">
+              <div class="biography">
+                <h2><span>Age:</span> 35</h2>
+                <h2><span>Occupation:</span> Volunteer</h2>
                 </div>
-
+                <h3>Bio</h3>
+                <p>
+                  Carla is a volunteer at a local dog rescue. When she’s not at her desk job, she’s volunteering her time as a screening specialist. She is responsible for checking in with applicants who have submitted a dog application.
+                </p>
+              </div>
+              <div class="goals">
+                <h3>Goals</h3>
+                <div class="goalslist">
+                  <ul>
+                    <li>Getting more dogs adopted </li>
+                    <li>Having more dogs placed in foster homes</li>
+                    <li>Connecting rescue groups with potential fosters and educating them in the importance of fostering and how they can help dogs in need.</li>
+                  </ul>
+                </div>
               </div>
             </div>
-
-          </div>
           </div>
         </div>
 
-
-
         <!---User Stories Section---->
-        <div class="mainsection userstories">
-          <div class="content">
-            <div class="projectsectionlabel">
+        <div class="subsection userstories">
+            <div class="subsectionlabel">
               <h2>User Stories</h2>
             </div>
-            <p>
+            <div class="content">
+              <p>
               User stories consisted of three user roles:</p>
               <div class="storieslist">
                 <ul>
@@ -319,59 +311,63 @@
                 <li><strong>Returning user</strong> – Already owns a dog</li>
                 <li><strong>Administrator</strong> – Rescue Volunteer</li>
               </ul>
-              </div>
+            </div>
               <p>The stories were accompanied with the applicable user flows, the page it will belong to, and the priority of the story (low, medium and high). Click
               <a href="https://docs.google.com/spreadsheets/d/1ISgZhKQ_du-nS6ygmet6IROh7NGsoCUGPc9UpGmH5Ks/edit?usp=sharing" target="_blank"> here</a> for a full view of all user stories.
             </p>
           </div>
         </div>
+
+
+
         <!---User Flows Section---->
-        <div class="mainsection">
-          <div class="content">
-            <div class="projectsectionlabel">
+        <div class="subsection">
+            <div class="subsectionlabel floatright">
               <h2>User Flows</h2>
             </div>
+            <div class="content userflows_content">
             <p>With the aid of the user stories, I focused the user flows on the high priority stories.</p>
-
             </div>
           <div class="userflows">
-            <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom lightbox&quot;,&quot;xml&quot;:&quot;&lt;mxfile modified=\&quot;2019-07-25T01:01:18.188Z\&quot; host=\&quot;www.draw.io\&quot; agent=\&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\&quot; etag=\&quot;_0VcsAQLFL1-CpKw7kBg\&quot; version=\&quot;11.0.5\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;XrKwvJGm-OjXP2X3Mev3\&quot; name=\&quot;Creating a new profile - Foster/Rescue Group\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
-
-            <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#FFFFFF&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom lightbox&quot;,&quot;xml&quot;:&quot;&lt;mxfile modified=\&quot;2019-07-25T01:06:40.980Z\&quot; host=\&quot;www.draw.io\&quot; agent=\&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\&quot; etag=\&quot;uJfLGzJYz_F9kct6Zqi0\&quot; version=\&quot;11.0.5\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;ybyy-Ad7254gfkPiWHmQ\&quot; name=\&quot;Filter Option\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+            <img src="images/CaseStudy/HoundWatch/Flow1.png" alt="User Flow">
+            <img src="images/CaseStudy/HoundWatch/Flow2.png" alt="User Flow">
           </div>
+
         </div>
 
         <!---Wireframes Section---->
-        <div class="mainsection">
-          <div class="content">
+        <div class="subsection">
             <div class="projectsectionlabel">
               <h2>Wireframes</h2>
             </div>
-            <p>
-              Wireframes were created with the guidance of the user flows. The wireframes were first created with pen and paper and then were iterated in Figma. The wireframes included the welcome page, sign up pages, login pages, dashboard, dogs
-              profile, and the rescue group profile.
-            </p>
+            <div class="content wireframes_content">
+              <p>
+                Wireframes were created with the guidance of the user flows. The wireframes were first created with pen and paper and then were iterated in Figma. The wireframes included the welcome page, sign up pages, login pages, dashboard, dogs
+                profile, and the rescue group profile.
+              </p>
           </div>
         </div>
 
-        <div class="mainsection">
-          <div class="content sketches">
-            <div class="projectsectionlabel subsectionlabel">
+        <div class="subsection">
+
+            <div class="subsectionlabel floatright">
               <h2>Sketches</h2>
             </div>
-          </div>
-          <div class="houndwatchsketches">
-            <img src="images/CaseStudy/HoundWatch/mobilesketcheshw.png" alt="houndwatch wireframe sketches">
-          </div>
+          <div class="content sketches">
+            <div class="houndwatchsketches">
+              <img src="images/CaseStudy/HoundWatch/mobilesketcheshw.png" alt="houndwatch wireframe sketches">
+            </div>
+        </div>
         </div>
 
 
         <!---Low Fidelity Section---->
-        <div class="mainsection">
-          <div class="content low-fidelity">
-            <div class="projectsectionlabel subsectionlabel">
+        <div class="subsection">
+            <div class="subsectionlabel">
               <h2>Low Fidelity</h2>
             </div>
+          <div class="content_flex">
+            <div class="content low-fidelity_content">
             <p>When creating the sketches keeping the users need in mind was important. Users want a place where they can easily collaborate, create content and share files/content. With that in mind, in the homepage there was a highlight on the
               collaboration aspects as well as testimonials and a login/sign up option. With the dashboard I wanted the user to easily be able to access, upload and view their files.</p>
           </div>
@@ -379,27 +375,31 @@
             <img src="images/CaseStudy/HoundWatch/LFHW.png" alt="Low Fidelity Hound Watch Wireframes">
           </div>
         </div>
+        </div>
 
 
         <!---High Fidelity Section---->
-        <div class="mainsection">
-          <div class="content high-fidelity">
-            <div class="projectsectionlabel subsectionlabel">
+        <div class="subsection">
+            <div class="subsectionlabel floatright">
               <h2>High Fidelity</h2>
             </div>
+            <div class="content_flex_flip">
+            <div class="content high-fidelity_content">
             <p>High Fidelity designs were created with the user in mind, preference testing, along with user testing were conducted on multiple phases of the design process.</p>
           </div>
           <div class="highfid_img">
             <img src="images/CaseStudy/HoundWatch/HFHW.png" alt="high fidelity wireframes">
           </div>
         </div>
+        </div>
 
         <!---Iterations Section---->
-        <div class="mainsection">
-          <div class="content iterations">
-            <div class="projectsectionlabel subsectionlabel">
+        <div class="subsection">
+            <div class="subsectionlabel">
               <h2>Iterations</h2>
             </div>
+            <div class="content_flex">
+            <div class="content iterations_content">
             <p>The initial mockups were created with Figma, these mockups consisted of the welcome pages, login and signup page, dashboard, dog profile page, rescue profile page, and the filter page. The initial mockups were submitted to the daily
               design critique and received valuable feedback. Iterations were made to better assist in the usability, the icon colors, and various design changes were implemented. Alignment and spacing were also updating to create a consistent
               design.</p>
@@ -408,29 +408,32 @@
             <img src="images/CaseStudy/HoundWatch/iterationshw.png" alt="Houndwatch iterations">
           </div>
         </div>
+        </div>
       </section>
 
       <!---Branding Section----------------------->
       <section class="branding">
-        <div class="mainsection">
-          <div class="content">
+            <div class="subsection">
             <div class="projectsectionlabel">
               <h2>Branding</h2>
             </div>
+
+            <div class="content branding_content">
             <p>A typeface was chosen that created a sense of stability and cleanliness. There were two main fonts, one that was focused on main headings, while the secondary font focused on sub-headings and the body. I relied on the same strategy for
               colors, there were chosen primary colors, secondary colors, and a gray palette. The brand identity encompassed a neutral tranquility with a calm boldness.
             </p>
-          </div>
-        </div>
-
-        <!---Typeface Section---->
-        <div class="mainsection typeface">
-          <div class="content">
-            <div class="projectsectionlabel subsectionlabel">
-              <h2>Typography</h2>
             </div>
           </div>
 
+
+        <!---Typeface Section---->
+        <div class="subsection typeface">
+
+            <div class="subsectionlabel floatright">
+              <h2>Typography</h2>
+            </div>
+
+          <div class="content">
           <div class="fonts">
             <h3>Fonts</h3>
             <div class="fontwrap">
@@ -463,15 +466,17 @@
                 </tr>
               </table>
           </div>
+        </div>
 
         </div>
 
         <!---Colors Section---->
-        <div class="colors hwcolors">
-          <div class="content">
-            <div class="projectsectionlabel subsectionlabel">
+        <div class="subsection colors hwcolors">
+
+            <div class="subsectionlabel">
               <h2>Colors</h2>
             </div>
+          <div class="content">
             <!--Primary Colors-->
             <h3>Primary Colors</h3>
             <div class="color-list">
@@ -557,7 +562,6 @@
           </div>
         </div>
       </section>
-      <div
 
       <!---Conclusion Section--------------------->
 
@@ -565,7 +569,7 @@
         <div class="projectsectionlabel">
           <h2>Conclusion</h2>
         </div>
-          <div class="mainsection">
+
           <div class="content">
             <p>Hound Watch creates an environment where people can participate in a valuable cause: they can help provide a temporary home to an animal need. By connecting rescue organizations and possible fosters, Hound Watch is a perfect tool that
               can create great change and aid in the saving of many dogs lives.
@@ -576,9 +580,10 @@
               wide range of users that can help an animal in need.
             </p>
           </div>
-        </div>
       </section>
-    </div>
+  </div>
+
+
     <!---Footer Section---------------->
     <footer class="fcontainer">
       <div class="footerlogo">
@@ -599,12 +604,12 @@
   </div>
 
 
+
   <!--------------------------JAVASCRIPT------------------------->
-  <script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-
-  <script src="app.js"></script>
+  <script src="chart.js"></script>
 
 
   <!--------------------------GOOGLE ANALYTICS-------------------->

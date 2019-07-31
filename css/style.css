@@ -36,8 +36,8 @@ p {
 }
 
 /*----------------Home Page-----------------------*/
-.container {
-  background-color: #fff;
+.indexcontainer {
+  background-color: #f2f2f2;
   overflow: hidden;
   width: 100%;
 }
@@ -47,6 +47,7 @@ p {
   height: 100vh;
   overflow: hidden;
   width: 100%;
+  background-color: #fff;
 }
 
 /*_____NAVBAR____*/
@@ -58,10 +59,6 @@ p {
   z-index: 3;
 }
 
-.navdark {
-  background-color: rgba(255, 255, 255, .95);
-}
-
 .nav ul {
   margin: 0;
   padding: 0;
@@ -71,43 +68,35 @@ p {
 
 .nav li a {
   font: 1.4rem 'Source Sans Pro', cursive;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: .2rem;
   font-weight: 400;
   display: block;
-  padding: 2rem 5rem;
+  padding: 1.8rem 2rem;
   text-decoration: none;
   text-align: right;
 }
 
-.navdark li a {
-  color: #000;
-}
-
-.nav .logo {
+nav .logo {
   display: block;
   float: left;
-  padding: 3.5% 8%;
+  padding: 5% 0 0 5%;
   text-decoration: none;
 }
 
 .nav img {
-  width: 14vw;
+  width: 30%;
   height: auto;
 }
 
 /* menu */
 .nav .menu {
-  background-color: rgba(112, 112, 112, .9);
+  background-color: rgba(255, 255, 255, .8);
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
   z-index: 1;
-}
-
-.navdark .menu {
-  background-color: rgba(255, 255, 255, .95);
 }
 
 /* menu icon */
@@ -115,27 +104,23 @@ p {
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 8% 6%;
+  padding: 8% 5% 0 0;
   position: relative;
   user-select: none;
 }
 
 .nav .menu-icon .navicon {
-  background: #fff;
+  background: #000;
   display: block;
   height: .2rem;
   position: relative;
   transition: background .2s ease-out;
-  width: 6.5vw;
-}
-
-.navdark .menu-icon .navicon {
-  background: #000;
+  width: 5vw;
 }
 
 .nav .menu-icon .navicon:before,
 .nav .menu-icon .navicon:after {
-  background: #fff;
+  background: #000;
   content: '';
   display: block;
   height: 100%;
@@ -163,7 +148,7 @@ p {
 }
 
 .nav .menu-btn:checked~.menu {
-  max-height: 24rem;
+  max-height: 10%;
 }
 
 .nav .menu-btn:checked~.menu-icon .navicon {
@@ -226,8 +211,6 @@ p {
   color: rgba(0,0,0,.9);
 }
 
-
-
 .heroimg {
   width: 90%;
 }
@@ -239,8 +222,6 @@ p {
   object-fit: cover;
   opacity: 0.7;
 }
-
-
 
 .cmbutton {
   background-color: #fff;
@@ -265,8 +246,6 @@ p {
   border: 2px solid #000;
 }
 
-
-
 .sectionlabel {
   display: none;
 }
@@ -277,14 +256,12 @@ p {
 
 /*----PROJECTS------*/
 .portfolio_works {
-   background-color: #D4DAD9;
   display: flex;
   flex-direction: column;
   cursor: pointer;
   justify-content: space-between;
   padding: 5% 5%;
 }
-
 
 .card {
   width: 90vmin;
@@ -296,11 +273,10 @@ p {
   margin-bottom: 5%;
 }
 
-
 .card__img{
   width: 35%;
   height: 100%;
-  background-color:rgba(0, 0, 0, .1) ;
+  background-color:rgba(0, 0, 0, .8) ;
 }
 
 .card__img img{
@@ -354,10 +330,6 @@ p {
 }
 
 
-
-
-
-
 /*----------FOOTER--------------*/
 .fcontainer {
   height: 10vh;
@@ -372,11 +344,12 @@ p {
 
 .footerlogo {
   float: left;
-  padding-right: 20%;
+  padding-right: 5%;
 }
 
 .footerlogo img {
-  height: 5vh;
+  width: 30%;
+  height: auto;
 }
 
 .footlist {
@@ -391,7 +364,7 @@ p {
 }
 
 .footlist li {
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 
 .footlist li a {
@@ -403,42 +376,37 @@ p {
   text-transform: uppercase;
 }
 
-/*-----------CASE STUDY: ByteSpace-----------------*/
-.casestudyhero {
-  width: 100vw;
-  height: 70vh;
+.sectionline{
+  display: none;
 }
 
-.herotextcs {
-  max-height: 80%;
+/*-----------CASE STUDY: Hound Watch-----------------*/
+.casestudyhero {
+  width: 100vw;
+  height: 80vh;
+}
+
+.herotexthoundwatch{
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
   text-align: center;
+  padding-top: 25%;
 }
 
-.herotextcs article h1 {
-  padding-top: 35%;
-  font: 6.5rem 'Lobster', cursive;
-  text-transform: none;
-  color: #00765A;
+.herotexthoundwatch  h1 {
+  font-size: 3.5rem;
 }
 
-.herotextcs p {
-  padding: 3.5rem 2rem;
-  font: 1.6rem/1.9 'Source Sans Pro', sans-serif;
-  font-weight: 400;
+.houndwatchimg{
+  padding: 10% 0 5% 0;
+  margin: 0 auto;
 }
 
-.bytespacecompimg {
-  padding-bottom: 5rem;
-}
-
-.bytespacecompimg img {
-  height: auto;
-  max-width: 65%;
+.houndwatchimg img{
+  height: 70vmin;
+  width: auto;
 }
 
 .csbutton {
@@ -460,10 +428,69 @@ p {
   color: #fff;
 }
 
+/*-------Sections Label------*/
+.projectsectionlabel {
+  background-color: #232323;
+  padding: 2% 4%;
+  width: 40%;
+  margin-top: 4%;
+  position: relative;
+}
+
+.projectsectionlabel h2 {
+  width: 100%;
+  vertical-align: middle;
+  color: #fff;
+  font: 2rem 'Playfair Display', serif;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  text-align: left;
+}
+
+.projectsectionlabel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0%;
+  left: 9%;
+  right: 0%;
+  width: 30%;
+  border-bottom: 2px #fff solid;
+  margin-bottom: 4%;
+}
+
+/*-------Sub-sections Label------*/
+.subsectionlabel {
+  background-color: #fff;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 5% 3%;
+}
+
+.subsectionlabel h2 {
+  text-transform: uppercase;
+  text-align: left;
+  color: rgba(0,0,0,.8);
+  font: 1.4rem 'Source Sans Pro', sans-serif;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0,0,0,.7);
+}
+
+.content p{
+  padding: 3% 8%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/*------------------Sections-------------*/
+
 /*_______ROLE____*/
 .role-description {
   background-color: #f2f2f2;
-  padding: 2rem 3rem;
+  padding: 5% 8%;
   margin-bottom: 5%;
 }
 
@@ -485,11 +512,7 @@ p {
   padding-bottom: 0;
 }
 
-/*-------Sections------*/
-.problem-solution, .research, .branding, .conclusion {
-  position: relative;
-}
-
+ /*_____RESEARCH_______*/
 .researchdata {
   position: relative;
   padding-left: 3rem;
@@ -545,80 +568,12 @@ canvas {
   margin-bottom: 4rem;
 }
 
-.mainsection {
-  padding-top: 3%;
+/*_____SWOT ANALYSIS_____*/
+.swotanalysis strong {
+font: 1.4rem 'Source Sans Pro', sans-serif;
+font-weight: 800;
 }
 
-.mainsection p {
-  padding: 2rem 3rem;
-}
-
-.projectsectionlabel {
-  background-color: #bbb;
-  padding: 6% 5%;
-  height: 5%;
-  width: 45%;
-  margin-top: 4%;
-  position: relative;
-}
-
-.projectsectionlabel h2 {
-  width: 100%;
-  vertical-align: middle;
-  color: #232323;
-  font: 2rem 'Source Sans Pro', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  text-align: left;
-}
-
-.projectsectionlabel::after {
-  content: '';
-  position: absolute;
-  top: 8%;
-  bottom: 8%;
-  left: 10%;
-  right: 20%;
-  width: 30%;
-  border-bottom: 2px #232323 solid;
-  border-top: 2px #232323 solid;
-  padding: 0;
-  margin: 5% 0;
-}
-
-.mainsection p {
-  font: 1.4rem/1.8 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  padding-top: 2.5rem;
-}
-
-.mainsection h2 {
-  font: 1.5rem 'Source Sans Pro', sans-serif;
-  letter-spacing: .1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.subsectionlabel {
-  background-color: #464646;
-  padding: 4% 3%;
-  width: 37%;
-}
-
-.subsectionlabel h2 {
-  text-align: left;
-  color: #fff;
-  font: 1.4rem 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-}
-
-.subsectionlabel:after {
-  border-bottom: 1px #fff solid;
-  border-top: 1px #fff solid;
-  left: 8%;
-}
-
-/*swot analysis*/
 .swottable {
   height: 52rem;
   background-color: #F5F5F5;
@@ -655,118 +610,137 @@ canvas {
   text-align: right;
 }
 
-/*Personas*/
-.personas {
-  background-color: #BFBFBF;
-  border-radius: 3%;
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
+/*_____PERSONAS_____*/
+
+.user{
+  margin: 10% 10%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3rem 4rem -1.5rem rgba(0, 0, 0, 0.7);
+  background-color: #fff;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
+  width: 80vw;
 }
 
-.userdetail {
-  align-items: center;
+.userimage{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,.85) 100%), url("../images/CaseStudy/HoundWatch/user1.jpg") center no-repeat;
+  width: 80vw;
+  height: 25vh;
+  background-size: cover;
+  display: flex;
   justify-content: center;
-  align-content: center;
-  align-self: center;
-  width: 100%;
-  height: 100%;
-  left: 50%;
+  position: relative;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
 }
 
-.userinfo {
-  align-items: center;
-  font-family: "Source Sans Pro", sans serif;
+ .user2 .userimage{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,.85) 100%), url("../images/CaseStudy/HoundWatch/jake.jpg") center no-repeat;
 }
 
-.user1, .user2 {
+.user3 .userimage{
+ background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,.85) 100%), url("../images/CaseStudy/HoundWatch/carla.jpg") center no-repeat;
+}
+
+.userimage h2{
+  color: #fff;
+  font: 6rem "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  position: absolute;
+  left: 1%;
+  top: 70.8%;
+  text-align: left;
+}
+
+.usercontent,
+.goals{
   padding: 5% 5%;
+}
+
+.biography{
   display: flex;
-  flex-direction: column;
+  padding-bottom: 8%;
+  justify-content: space-between;
+  width: 70%;
 }
 
-.userimg {
-  padding-bottom: 3%;
-  left: 50%;
-  transform: translate(32.5%);
-}
-
-.userimg img {
-  height: 15vh;
-}
-
-.userinfo {
-  text-align: center;
-  margin-bottom: 5%;
-}
-
-.userinfo h2 {
-  color: #FFF;
-  text-transform: none;
-  font: 2rem "Source Sans Pro", sans-serif;
-  font-weight: 800;
-  padding-bottom: .5rem;
-}
-
-.userinfo h3 {
-  font: 1.6rem "Source Sans Pro", sans-serif;
-  line-height: 2rem;
-  color: #fbfbfb;
-}
-
-.userinfo strong {
-  font-weight: 600;
-  font-size: 1.6rem;
-}
-
-.userbio {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 5% 2%;
-}
-
-.bio {
-  background-color: rgba(255,255,255,.95);
-  border-radius: 5%;
-}
-
-.bio h3,
-.usergoals h3 {
-  font: 1.5rem "Source Sans Pro", sans serif;
-  font-weight: 800;
-  text-transform: uppercase;
-  padding-top: 1.5rem;
-  padding-left: 3rem;
-}
-
-.bio p {
-  font: 1.4rem "Source Sans Pro", sans serif;
+.biography h2{
+  color: #232323;
+  font-size: 1.4rem;
   font-weight: 400;
+}
+.biography span{
+  text-transform: uppercase;
+  color: #232323;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.usercontent h3,
+.goals h3{
+  color: #232323;
+  letter-spacing: .1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.usercontent h3:after{
+  content: '';
+  display: inline-block;
+  height: 1px;
+  background: #232323;
+  width: 85%;
+  position: relative;
+  vertical-align: middle;
+  margin-left: 3%;
+}
+
+.goals h3:after{
+  content: '';
+  display: inline-block;
+  height: 1px;
+  background: #232323;
+  width: 75%;
+  position: relative;
+  vertical-align: middle;
+  margin-left: 3%;
+}
+
+.usercontent p{
+  padding-top: 4%;
+  font-size: 1.4rem;
   line-height: 1.5;
-  padding-top: 1.2rem;
 }
 
-.usergoals {
-  margin-top: 2rem;
-  height: 50%;
-  background-color: rgba(255,255,255,.95);
-  border-radius: 5%;
-  line-height: 3rem;
+.goalslist ul{
+  padding-top: 5%;
+  padding-left: 5%;
 }
 
-.usergoals li {
+.goalslist li{
   list-style-type: circle;
-  font: 1.4rem "Source Sans Pro", sans serif;
-  padding-left: .5rem;
-  line-height: 2rem;
+  padding-left: 1%;
+  font: 1.4rem "Source Sans Pro", sans serif;;
+  line-height: 1.2;
+  font-weight: 300;
 }
 
-.usergoals ul {
-  padding: 2rem 4rem 2rem 4rem;
+
+/*-User Stories-*/
+.storieslist{
+  padding: 1.8% 8%;
 }
 
-/*user stories*/
+.storieslist li,
+.storieslist li strong{
+  font: 1.5rem 'Source Sans Pro', sans-serif;
+}
+
+.storieslist li strong{
+  font-weight: 700;
+}
+
 .us_link a {
   color: #E59848;
   font-size: inherit;
@@ -784,196 +758,19 @@ canvas {
   font-size: inherit;
 }
 
-/*userflows*/
-.userflows img {
-  width: 100vw;
-  height: auto;
-}
-
-/*sketches*/
-.bytespacesketches img {
-  width: 100vw;
-  height: auto;
-}
-
-.lowfid_img img {
-  width: 100vw;
-  height: auto;
-}
-
-.highfid_img img {
-  width: 100vw;
-  height: auto;
-}
-
-.iterations_img img {
-  width: 100vw;
-  height: auto;
-}
-
-
-.typefaceimg img {
-  width: 80vw;
-  height: auto;
-  margin: 10%;
-}
-
-/*.colors*/
-.color-list {
-  padding: 5% 10%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.color {
-  flex: 0%;
-  /*flex-grow | flex-shrink | flex-basis*/
-  background-color: #424242;
-  padding: 1em;
-  color: white;
-}
-
-.color:hover {
-  flex-basis: 40%;
-}
-
-.color:hover .details {
-  opacity: 1;
-}
-
-.name {
-  font: 1.4rem "Source Sans Pro", cursive;
-}
-
-.details {
-  padding: 0;
-  list-style: none;
-  opacity: 0;
-  transition: opacity 500ms ease-in-out;
-}
-
-.details li {
-  line-height: 2em;
-  font: 1.4rem "Source Sans Pro", cursive;
-}
-
-#hippiegreen {
-  background-color: #488B49;
-}
-
-#corduroy {
-  background-color: #6E7271;
-}
-
-#norway {
-  background-color: #ABC4A1;
-}
-
-#twilight {
-  background-color: #E7D6DA;
-}
-
-#mercury {
-  background-color: #E2E2E2;
-}
-
-/*------*/
-
-.conclusion {
-  height: 100%;
-}
-
-.conclusion .content{
-  margin-bottom: 25%;
-}
-
-.conclusion .content{
-  margin-bottom: 25%;
-}
-
-.bytespacecontainer .conclusion .content{
-  margin-bottom: 3%;
-}
-
-
-
-.conclusion .content p {
-  background-color: #F5F5F5;
-
-}
-
-.conclusion h2 {
-  color: #232323;
-}
-
-.conclusion p {
-  line-height: 2.4rem;
-}
-
-/*---------Case Study - Hound Watch---------*/
-.herotexthoundwatch{
-  max-height: 80%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  padding-top: 35%;
-}
-
-.herotexthoundwatch  h1 {
-  font-size: 3.5rem;
-}
-
-.houndwatchimg{
-  padding: 15% 0 5% 0;
-  margin: 0 auto;
-}
-
-.houndwatchimg img{
-  width: 80vw;
-  height: auto;
-}
-
-/*-SWOT Analysis-*/
-
-  .swotanalysis strong {
-  font: 1.4rem 'Source Sans Pro', sans-serif;
-  font-weight: 900;
-}
-
-/*-Personas-*/
-
-
-/*-User Stories-*/
-
-.userstories p{
-  padding-bottom: 0;
-}
-
-.storieslist{
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  font: 1.4rem 'Source Sans Pro', sans-serif;
-}
-
-.storieslist strong{
-  font: 1.4rem 'Source Sans Pro', sans-serif;
-  font-weight: 900;
-}
-
 /*-User Flows-*/
 
 .userflows{
   padding: 0 5%;
   margin: 0 auto;
+}
+
+.mxgraph{
+  width: 95vw;
+}
+.userflows img {
+  width: 100vw;
+  height: auto;
 }
 
 .userflowlist{
@@ -985,26 +782,48 @@ canvas {
   padding: 1%;
 }
 
+/*-Site Map-*/
+
+.sitemap{
+  background: linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,.6)), url("../images/CaseStudy/HoundWatch/gridbackground.jpg")  center no-repeat;
+  background-size: cover;
+  height: 45rem;
+
+}
+
+.sitemap img{
+  margin: 5% 5%;
+  width: 90vw;
+  height: 60vh;
+}
+
+
+/*-_________DESIGN__________-*/
+
 /*-Wireframes-*/
 
 .houndwatchsketches img,
 .lowfid_img img,
 .highfid_img img,
 .iterations_img img{
-  width: 95vw;
-  padding: 5% 5% 0 10%;
+  width: 100vw;
+  padding: 5% 5% 0 5%;
+}
+
+/*sketches*/
+.bytespacesketches img {
+  width: 100vw;
+  height: auto;
 }
 
 /*-Typeface-*/
 
 .fonts{
   padding: 4% 8%;
-  background-color: #f2f2f2;
 }
 
 .hierarchy{
   padding: 4% 8%;
-  background-color: #f2f2f2;
 }
 
 .fonts h3,
@@ -1083,7 +902,48 @@ canvas {
   color: #5C5C5C;
 }
 
-/*---COLORS*/
+
+/*.colors*/
+.color-list {
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.color {
+  flex: 0%;
+  /*flex-grow | flex-shrink | flex-basis*/
+  padding: 1em;
+  color: white;
+}
+
+.color:hover {
+  flex-basis: 40%;
+}
+
+.color:hover .details {
+  opacity: 1;
+}
+
+.name {
+  font: 1.4rem "Source Sans Pro", cursive;
+}
+
+.details {
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.details li {
+  line-height: 2em;
+  font: 1.4rem "Source Sans Pro", cursive;
+}
 
 .hwcolors h3{
   font-size: 1.4rem;
@@ -1152,25 +1012,82 @@ canvas {
 }
 
 
+/*---CONCLUSION---*/
+
+.conclusion {
+  height: 100%;
+}
+
+.conclusion .content{
+  margin-bottom: 0%;
+}
+
+.conclusion .content p {
+  background-color: #F5F5F5;
+
+}
+
+.conclusion p {
+  line-height: 2.4rem;
+}
+
+/*---------Case Study: ByteSpace---------*/
 
 
+/* .herotextcs {
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
 
+.herotextcs article h1 {
+  padding-top: 35%;
+  font: 6.5rem 'Lobster', cursive;
+  text-transform: none;
+  color: #00765A;
+}
 
+.herotextcs p {
+  padding: 3.5rem 2rem;
+  font: 1.6rem/1.9 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
 
+.bytespacecompimg {
+  padding-bottom: 5rem;
+}
 
+.bytespacecompimg img {
+  height: auto;
+  max-width: 65%;
+}
+*/
 
+/* BYTESPACE COLORS */
 
+#hippiegreen {
+  background-color: #488B49;
+}
 
+#corduroy {
+  background-color: #6E7271;
+}
 
+#norway {
+  background-color: #ABC4A1;
+}
 
+#twilight {
+  background-color: #E7D6DA;
+}
 
-
-
-
-
-
-
-
+#mercury {
+  background-color: #E2E2E2;
+}
 
 
 /*****************About Me*************/
@@ -1275,63 +1192,79 @@ canvas {
 |__________________________________|*/
 
 @media (min-width: 640px) {
-  .hero {
-    background-position: 40% 0%;
+  /*-----Index-----*/
+  .herotext{
+    display: block;
+    padding: 30% 5% 30% 10%;
   }
 
-  .nav .logo {
-    padding: 1% 5%;
+  .herotext h1{
+    font-size: 3.5rem;
   }
 
-  .nav .menu-icon{
-    padding: 5%
+  .herotext h2,
+  .herotext p,
+  .herotext strong{
+    font-size: 2rem;
   }
 
+  /* project section */
 
-  .nav .menu-icon .navicon {
-    width: 4vw;
-  }
-
-  .logo img {
-    padding: 1rem;
-    height: auto;
-    width: 9rem;
-  }
-
-  .cmbutton {
-    padding: 3% 0;
+  .card__content-paragraph {
     font-size: 1.8rem;
-    margin-top: 2%;
+    margin-bottom: 10%;
   }
 
-  .herotext {
-    width: 50%;
-    margin: 30% 0 25% 25%;
+  .card__content-link {
+    font-size: 2.8vmin;
   }
 
-  .herotext h1 {
-    width: 115%;
+  /*-----|_Hound Watch_|-----*/
+  .houndwatchimg{
+    padding: 5% 0 2.5% 0;
+    margin: 0 auto;
   }
 
-  .mobilebutton {
-    width: 35%;
+  .houndwatchimg img{
+    height: 50vmin;
   }
 
-  .text {
-    padding-bottom: 0;
+  /*_____PERSONAS_____*/
+
+  .user,
+  .userimage{
+    width: 65vw;
   }
 
-  .text h2 {
-    padding-bottom: 3%;
+  .user{
+    margin: 10% 17.5%;
   }
 
-  .text p {
-    padding-bottom: 4%;
+  /*_____USERFLOWS_____*/
+
+
+  .houndwatchsketches img{
+    width: 90vw;
+    padding: 0;
+    margin: 0 5%;
   }
+
+    .lowfid_img img{
+      width: 80vw;
+      padding: 0;
+      margin: 0 10%;
+    }
+
+    .highfid_img img,
+    .iterations_img img{
+      width: 80vw;
+      padding: 0;
+      margin: 0 10%;
+    }
 
   /*-----Bytespace-----*/
 
-  .herotextcs article h1 {
+  /* .herotextcs article h1 {
     padding-top: 25%;
     font-size: 7.5rem;
   }
@@ -1460,35 +1393,7 @@ canvas {
 
   .iterations_img img {
     padding-top: 5%;
-  }
-
-
-/*-----HoundWatch-----*/
-
-.herotexthoundwatch{
-  padding-top: 25%;
-}
-.houndwatchimg{
-  padding: 5% 0 5% 0;
-}
-.houndwatchimg img{
-  width: 60vw;
-}
-
-.storieslist ul{
-  padding: 0 15% 0 8%;
-}
-.storieslist strong,
-.storieslist li{
-  font-size: 1.6rem;
-  line-height: 3rem;
-}
-
-.userstories a{
-  color: #FE6B00;
-  text-decoration: none;
-  font: 1.6rem "Source Sans Pro", sans-serif;
-}
+  } */
 
 
 /*-----About Me-----*/
@@ -1538,55 +1443,188 @@ canvas {
 
 
 @media (min-width: 768px) {
-  .hero {
-    height: 80vh;
-  }
-
-  .herotext {
-    width: 45%;
-    margin: 15% 0 0% 5%;
-    padding: 0;
-  }
-
-  .herotext p {
-    padding: 7% 5% 10%;
-  }
-
-  .herotext h1 {
-    width: 65%;
-    padding: 10% 0 2%;
-  }
 
   .nav .logo {
-    padding: 1% 5%;
+    padding: 5% 0 0 10%;
+  }
+
+  .nav img{
+    width: 40%;
   }
 
   .nav .menu-icon{
-    padding: 5%
+    padding: 6% 5% 0 0;
   }
 
-  .nav .menu-icon .navicon {
-    width: 4vw;
+  .herotext{
+    padding: 25% 5% 30% 10%;
   }
 
-  .logo img {
-    padding: 1rem;
+  .herotext h1{
+    font-size: 4rem;
+  }
+
+  .herotext h2,
+  .herotext p,
+  .herotext strong{
+    font-size: 2.5rem;
+  }
+
+  /*-----|_Hound Watch_|-----*/
+  .herotexthoundwatch {
+      padding-top: 15%;
+  }
+
+  .herotexthoundwatch h1 {
+    font-size: 4rem;
+}
+  .houndwatchimg{
+  padding: 2.5% 0 2.5% 0;
+  }
+
+  .houndwatchimg img {
+    width: 40vmin;
     height: auto;
-    width: 9rem;
   }
 
-  .cmbutton {
-    padding: 3% 0;
+  .content p{
     font-size: 1.8rem;
   }
 
-  .portfolio_works {
-  flex-direction: column;
+  .rolesection h2{
+    font-size: 2rem;
+  }
+
+  .rolesection p{
+    font-size: 1.8rem;
+  }
+
+  .projectsectionlabel h2{
+    font-size: 2.5rem;
+  }
+
+  .projectsectionlabel{
+    width: 35%;
+  }
+
+  .projectsectionlabel::after{
+    width: 20%;
+    left: 12%;
+  }
+
+  .subsectionlabel h2{
+    font-size: 2rem;
+    font-family:
+  }
+
+    /*_____PERSONAS_____*/
+
+  .personas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 5% 2%;
+  }
+
+  .user{
+    margin: 0;
+    padding: 0;
+  }
+
+  .user,
+  .userimage{
+    width: 30vw;
+  }
+
+  .userimage h2{
+    font-size: 4.5rem;
+    left: 5%;
+    top: 74%;
+  }
+
+  .biography{
+    width: 100%;
+  }
+
+  .biography h2{
+    font-size: 1.2rem;
+  }
+
+  .biography span{
+    font-size: 1.2rem;
+  }
+
+/*-User Stories-*/
+
+  .storieslist li,
+  .storieslist li strong{
+    font: 1.8rem 'Source Sans Pro', sans-serif;
+  }
+
+  .storieslist li strong{
+    font-weight: 700;
+  }
+
+  /*-Typeface-*/
+
+  .fonts h3,
+  .hierarchy h3,
+  .color-list h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgba(0,0,0,.75);
+  }
+
+  .fontwrap{
+    margin: 0 15%;
+  }
+
+  #gothic,
+  #libre{
+    font-size: 3rem;
+  }
+
+  .hierarchy table{
+    width: 60%;
+    margin: 8% 15%;
+  }
+
+  .hierarchy table td:nth-child(2){
+    font-size: 1.4rem;
+  }
+
+
+  /* COLORS */
+
+  .color-list{
+    padding: 0 10% 0 5%;
+    margin: 0 5%;
+    width: 90%;
+  }
+
+  .hwcolors h3{
+    font-size: 1.8rem;
+    color: rgba(0,0,0,.6);
+    font-weight: 600;
+    padding-top: 2%;
   }
 
 
 
-  /*--------BYTESPACE-------*/
+
+
+
+
+
+
+
+
+
+
+
+
+  /*--------BYTESPACE-------
   .herotextcs article h1 {
     padding-top: 20%;
   }
@@ -1700,18 +1738,7 @@ canvas {
 
   .typefaceimg img {
     width: 60vh;
-  }
-/*Houndwatch*/
-.herotexthoundwatch{
-  padding-top: 20%;
-}
-.houndwatchimg{
-  padding: 5% 0 2% 0;
-}
-
-.houndwatchimg img{
-  width: 50vw;
-}
+  } */
 
   /*-------ABOUT ME------*/
 
@@ -1732,147 +1759,163 @@ canvas {
 
 
 @media (min-width: 1024px) {
-  .container {
-    background-color: #D4DAD9;
-  }
-
   .hero {
-    height: 70vh;
-    background-size: cover;
-    background-position: 10% 0%;
+    height: 80vh;
   }
 
-  .herotext {
-    width: 40%;
-    margin: 15% 0 10% 10%;
-  }
 
-  .herotext p {
-    padding: 5% 5% 5%;
-  }
-
-  .herotext h1 {
-    padding: 5% 0 0%;
-  }
-
-  .cmbutton {
-    padding: 2% 0;
-  }
-
-  .nav {
+  .nav{
     display: flex;
-    flex-direction: row;
-    justify-content: center space-between;
     align-content: center;
     justify-content: center;
-    height: 10%;
     width: 100vw;
-    padding-top: 1.5%;
+    padding-top: 3%;
+    margin: 0;
+    position: absolute;
   }
 
-  .nav li {
-    width: 35%;
-    justify-self: center;
-    align-self: center;
-    padding: .2rem;
-    text-align: left;
-  }
-
-  .nav li a {
-    font-size: 1.6rem;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav li {
-    justify-content: space-between;
-    margin-left: 7%;
+  .nav .logo {
+    margin-left: 5%;
+    padding: 0%;
+    float: left;
   }
 
   .nav .menu {
-    width: 30%;
-    clear: none;
-    max-height: none;
+    width: 35%;
     display: flex;
+    flex-direction: row;
+    max-height: none;
     align-content: center;
-    background-color: transparent;
     align-items: flex-end;
-    margin-left: 45%;
+    justify-content: space-around;
+    float: right;
+    margin-left: 35%;
+    background-color: transparent;
   }
+
+  .nav li {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .nav li a {
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 15% 0 15%;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .nav li a:hover{
+  	color:#000;
+  }
+
+  li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 
   .nav .menu-icon {
     display: none;
   }
 
-  .logo img {
-    height: auto;
-    width: 9rem;
-  }
 
-  .nav .logo {
-    padding: 0;
-    align-self: flex-start;
+/* Project Section */
 
-  }
+.herotext{
+  padding: 10% 5% 30% 10%;
+}
 
+.herotext h1{
+  font-size: 5rem;
+}
 
-  .cmbutton {
-    width: 40%;
-  }
+.herotext h2{
+  padding-top: 5%;
+}
 
-  .sectionlabel {
-    display: block;
-    background-color: #fff;
-    margin-left: 5%;
-    width: 15%;
-    padding: 2.5% 0%;
-    margin-top: 5%;
-    position: relative;
-  }
+.herotext p{
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
 
-  .sectionlabel h1 {
-    vertical-align: middle;
-    color: #000;
-    font: 2.2rem 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 0;
-  }
+.heroimg{
+  width: 50%;
+}
 
-  .sectionlabel::after {
-    content: '';
-    position: absolute;
-    top: 8%;
-    bottom: 8%;
-    left: 22%;
-    right: 30%;
-    width: 25%;
-    border-bottom: 2px #232323 solid;
-    border-top: 2px #232323 solid;
-    padding: 0;
-    margin: 10% 0;
-  }
+.cmbutton{
+  padding: 2% 4%;
+}
+
+.sectionline{
+  display: block;
+}
+
+.line-title {
+  margin: 5% 5%;
+  font-size: 2.5rem;
+  text-align: center;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  color: #000;
+}
+.line-title:before, .line-title:after {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  background: #000;
+  width: 50%;
+  position: relative;
+  vertical-align: middle;
+}
+.line-title:before {
+  left: -0.5em;
+  margin-left: -50%;
+}
+.line-title:after {
+  right: -0.5em;
+  margin-right: -50%;
+}
+
 
   .portfolio_works {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-      padding: 2% 10% 0 10%;
+    padding: 0 5% 0 5%;
     margin: 0;
   }
 
   .card{
-    width: 50vmin;
-    height: 35vmin;
+    width: 65vmin;
+    height: 40vmin;
     box-shadow: 0 3rem 4rem -1.5rem rgba(0, 0, 0, 0.8);
   }
 
   .card__img{
     width: 45%;
     height: 100%;
-    background-color:rgba(0, 0, 0, 0.2) ;
   }
 
   .card__img{
@@ -1888,7 +1931,7 @@ canvas {
   }
 
   .card__content-header {
-    font-size: 4.5vmin;
+    font-size: 4vmin;
   }
 
   .card__content-paragraph {
@@ -1899,26 +1942,456 @@ canvas {
     font-size: 1.5vmin;
   }
 
-
+  /* footer */
 
   .footerlogo {
-    padding-right: 50%;
+    padding-right: 35%;
   }
 
   .footerlogo img {
-    height: 4vh;
+    width: 35%;
   }
 
   .footlist li {
-    padding: 2rem;
+    padding-left: 5rem;
   }
 
   .footlist li a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+  }
+  /*_______________Hound Watch______________*/
+
+  .herotexthoundwatch {
+  padding-top: 12%;
   }
 
-  /*-----------BYTESPACE*/
-  .casestudyhero {
+  .role-description {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 3% 10%;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(0,0,0,.8);
+  }
+
+  .role-description div{
+    margin: 0 5%;
+    justify-content: space-between;
+  }
+
+  .role-description h2,
+  .role-description p{
+    color: #fff;
+  }
+
+  .projectsectionlabel{
+    background-color: #fff;
+    padding: 0;
+  }
+
+  .projectsectionlabel h2{
+    font-size: 3rem;
+    color: #BA3428;
+    padding: 0;
+  }
+
+  .projectsectionlabel:after{
+  display: none;
+  }
+
+  .problem-solution{
+    display: flex;
+    padding: 2% 10%;
+    padding-bottom: 6%;
+    box-shadow: 0 2.5px 2px -2px rgba(0,0,0,.7);
+    justify-content: space-between;
+  }
+
+  .sub1{
+    border-right: solid 1px rgba(0,0,0,.3);
+    margin-right: 5%;
+  }
+
+  .sub1{
+    margin-left: 5%;
+  }
+
+  .content p{
+    padding-left: 0;
+    font-size: 2rem;
+  }
+
+  .content strong{
+    font-size: 2rem;
+  }
+
+  .research .projectsectionlabel{
+    padding-left: 10%;
+  }
+
+  .content_research{
+    padding: 0% 10%;
+    margin-bottom: 5%;
+  }
+
+  .subsectionlabel{
+    padding: 10% 0 5% 0;
+    margin: 0 10%;
+  }
+
+  /* SURVEY DATA */
+
+  .researchdata{
+    padding: 5% 0;
+    margin: 0;
+  }
+
+  .surveydata {
+    padding:  0;
+    margin: 0 30%;
+  }
+
+  .surveydata table{
+    width: 40vw;
+    padding: 0;
+  }
+
+  .chart{
+    width: 60vw;
+    margin: 0 auto;
+  }
+
+
+  /* SWOT ANAYLYSIS */
+
+  .swotanalysisflex{
+    display: flex;
+    margin: 0 10%;
+  }
+
+  .swotanalysisflex .content{
+    width: 55%;
+  }
+
+  .swotanalysisflex .content p{
+    padding: 0;
+    margin: 0;
+    margin-right: 8%;
+  }
+
+  .swottable{
+    float: right;
+    width: 40rem;
+  }
+
+  /* Personas */
+
+  .floatright h2{
+    text-align: right;
+  }
+
+  .personas{
+    background-color: #f2f2f2;
+    padding: 5%;
+    width: 100%;
+    margin: 0;
+    margin-top: 2%;
+    justify-content: center
+  }
+
+  .user{
+    margin-left: 2%;
+    justify-content: none;
+  }
+
+  .user,
+  .userimage{
+    width: 30vw;
+  }
+
+  .user .biography{
+    width: 80%;
+  }
+
+  .user1 .biography,
+  .user3 .biography{
+    width: 70%;
+    padding: 0% 0 5% 0%;
+  }
+
+
+    /* User Stories */
+
+    .userstories .content{
+      margin-left: 10%;
+      width: 40%;
+      position: relative;
+    }
+
+    .userstories .content a{
+      color: #BA3428;
+      font: 1.8rem 'Source Sans Pro', sans-serif;
+    }
+
+    .storieslist{
+      position: absolute;
+      top: 5%;
+      left: 100%;
+      width: 100%;
+      padding: 15% 5%;
+      background-color: #f2f2f2;
+    }
+
+    .storieslist ul{
+      margin: 0 10%;
+    }
+
+/* User Stories */
+
+.userflows_content{
+margin: 0 10%;
+margin-bottom: 5%;
+}
+
+.userflows_content p{
+  padding: 0;
+  margin: 0;
+}
+
+    .userflows{
+      padding: 5% 5%;
+      background-color: #f2f2f2;
+      display: flex;
+      margin-bottom: 10%;
+    }
+
+    .userflows img{
+      width: 45vw;
+    }
+
+
+/* Site Map */
+
+.sitemap{
+  height: 60rem;
+  margin-bottom: 10%;
+}
+
+
+.sitemap img{
+  padding: 2% 10%;
+  width: 85vw;
+  height: auto;
+
+}
+
+
+
+/* Wireframes */
+
+.wireframes_content{
+  margin: 0 10%;
+  padding: 0;
+}
+
+/* sketches */
+
+.houndwatchsketches{
+  background: url("../images/CaseStudy/HoundWatch/hwsketchbckg.png") center no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.houndwatchsketches img{
+  display: none;
+}
+
+/* Low Fidelity */
+.content_flex{
+  display: flex;
+  flex-direction: row;
+  margin: 0 10%;
+}
+
+.content_flex_flip{
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 10%;
+}
+
+.low-fidelity_content{
+  padding: 0;
+  width: 50%;
+}
+
+.low-fidelity_content p{
+  padding: 0;
+  margin: 0;
+  padding-right: 20%;
+}
+
+.lowfid_img{
+  width: 60%;
+
+}
+
+.lowfid_img img{
+  width: 45vw;
+  margin: 0;
+}
+
+/* High Fidelity */
+
+.high-fidelity_content{
+  padding: 0;
+  width: 50%;
+}
+
+.high-fidelity_content p{
+  padding: 0;
+  margin: 0;
+  padding-left: 20%;
+  text-align: right;
+}
+
+.highfid_img{
+  width: 60%;
+
+}
+
+.highfid_img img{
+  width: 50vw;
+  margin: 0;
+}
+
+/* Iterations*/
+
+.iterations_content{
+  padding: 0;
+  width: 50%;
+}
+
+.iterations_content p{
+  padding: 0;
+  margin: 0;
+  padding-right: 20%;
+}
+
+.iterations_img{
+  width: 60%;
+}
+
+.iterations_img img{
+  width: 45vw;
+  margin: 0;
+}
+
+/* Branding */
+
+.branding .projectsectionlabel{
+  margin-top: 10%;
+  padding-left: 10%;
+}
+
+.branding_content {
+  padding: 0;
+  margin: 0 10%;
+}
+
+/*---- Fonts ----*/
+
+.fonts,
+.hierarchy{
+  background-color: #f2f2f2;
+  padding: 0;
+  padding: 0 10%;
+}
+
+.fonts{
+  padding-top: 5%;
+}
+
+.hierarchy{
+  padding-bottom: 1%;
+}
+
+/*---- Colors ----*/
+
+.color {
+  flex: 0%;
+  box-shadow: 0 0 12px #424242;
+  color: white;
+  transition: flex-basis 0.5s ease-in-out;
+  font-size: 1.6rem;
+  margin-bottom: 10%;
+}
+
+.color-list {
+  margin: 0 10%;
+  flex-wrap: nowrap;
+  overflow: visible;
+  padding: 0;
+  height: 50vh;
+  width: 80vw;
+}
+
+.color:hover {
+  flex-basis: 40%;
+}
+
+.color:hover .details {
+  opacity: 1;
+}
+
+.details {
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+
+/* CONCLUSION */
+
+.conclusion .projectsectionlabel{
+  margin-left: 10%;
+}
+
+.conclusion .content{
+  margin: 0 10%;
+}
+
+.conclusion .content p{
+  background-color: #fff;
+  padding: 5% 0;
+  padding-bottom: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .casestudyhero {
     height: 85vh;
   }
 
@@ -1947,15 +2420,6 @@ canvas {
     position: inherit;
   }
 
-  .role-description {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 5% 10%;
-    justify-content: center;
-    justify-content: space-between;
-    align-content: center;
-  }
 
   .role-description div {
     align-items: center;
@@ -2234,29 +2698,13 @@ canvas {
     width: 50vw;
   }
 
-  .color {
-    flex: 0%;
-    box-shadow: 0 0 10px #424242;
-    color: white;
-    transition: flex-basis 0.5s ease-in-out;
-    font-size: 1.6rem;
-    margin-top: 10%;
-  }
+  */
+/*
 
-    .color-list {
-      flex-wrap: nowrap;
-      overflow: visible;
-      padding: 0;
-      height: 30vh;
-    }
 
-  .color:hover {
-    flex-basis: 40%;
-  }
 
-  .color:hover .details {
-    opacity: 1;
-  }
+
+
 
   .name {
     font-size: 1.4em;
@@ -2273,12 +2721,7 @@ canvas {
     color: #232323;
   }
 
-  .details {
-    padding: 0;
-    list-style: none;
-    opacity: 0;
-    transition: opacity 500ms ease-in-out;
-  }
+
 
   .details li {
     line-height: 5rem;
@@ -2300,13 +2743,12 @@ canvas {
     padding-bottom: 8%;
   }
 
-  #currentpage{
-    width: 105%;
+  currentpage{
     font-weight: 800;
   }
 
   /*-----HoundWatch-----*/
-  .hwcontainer{
+  /* .hwcontainer{
     background-color: #fff;
   }
 
@@ -2350,9 +2792,9 @@ canvas {
   display: flex;
   flex-direction: column;
   margin: 0 10%;
-}
+} */
 
-.hwcolors .content h3{
+/* .hwcolors .content h3{
 padding-bottom: 1%;
 }
 
@@ -2365,8 +2807,8 @@ padding-bottom: 1%;
 }
 
 .conclusion .content{
-  display: block;
-}
+  display: block; */
+
 
 
 
@@ -2430,7 +2872,6 @@ padding-bottom: 1%;
 }
 
 
-
 }
 
 
@@ -2441,58 +2882,24 @@ padding-bottom: 1%;
 
 @media (min-width: 1200px) {
 
-
-  .hero {
-    height: 70vh;
-    background-position: -40% 70%;
-  }
-
-
-  .nav .logo{
-    padding-left: 0%;
-  }
-
-  .nav .menu{
-    width: 25%;
-    margin-left: 52%;
-  }
-
-  .nav li{
-    width: 65%;
-  }
-
-  #currentpage{
-    font-weight: 800;
-    width: 85%;
-  }
-
-  .herotext {
-    padding: 0;
-    margin: 10% 0 10% 10%;
-  }
-
-  .sectionlabel {
-    width: 10%;
-    padding: 1.5% 0;
-    margin-left: 10%;
-  }
-
-  .sectionlabel::after {
-    margin: 2rem 0;
-    top: 5%;
-    bottom: 5%;
-    left: 25%;
+  .nav .menu {
+    margin-left: 40%;
   }
 
   .portfolio_works {
-    padding: 2% 10% 0 10%;
-    margin: 0;
+    padding: 0 10% 0 10%;
+  }
+
+  .line-title {
+    margin: 5% 8%;
   }
 
   .card{
-    width: 65vmin;
-    height: 45vmin;
+    width: 40vmax;
+    height: 25vmax;
     box-shadow: 0 3rem 4rem -1.5rem rgba(0, 0, 0, 0.8);
+    margin: 1%;
+    margin-bottom: 8%;
   }
 
   .card__img{
@@ -2506,9 +2913,9 @@ padding-bottom: 1%;
   }
 
   #bytespace img{
-    width: 110%;
-    padding: 0;
-    margin-top: 110%;
+    width: 10vw;
+    padding-top: 50%;
+
   }
 
   .card__content-header {
@@ -2528,10 +2935,40 @@ padding-bottom: 1%;
     font-size: 2vmin;
   }
 
+  /*------HoundWatch------*/
+
+  .casestudyhero{
+    height: 100vh;
+  }
+.herotexthoundwatch{
+  padding-top: 12%;
+}
+
+.herotexthoundwatch img{
+  width: 28vw;
+}
+
+.herotexthoundwatch h1{
+  font-size: 5rem;
+}
+
+.houndwatchimg{
+  padding-bottom: 2%;
+}
+
+
+
+
+
+
+/*
+
+
+
 
 
   /*-------BYTESPACE------*/
-  .casestudyhero{
+  /* .casestudyhero{
     height: 60vh;
   }
   .herotextcs{
@@ -2668,18 +3105,9 @@ padding-bottom: 1%;
   .subsectionlabel{
     margin-top: 0;
     padding-top: 1%;
-  }
+  }  */
 
 
-/*------HoundWatch------*/
-
-.herotexthoundwatch{
-  padding-top: 20%;
-}
-  .houndwatchimg img{
-    height:25vh;
-    width: auto;
-  }
 
 
 /*------ABOUT ME------*/
@@ -2690,11 +3118,6 @@ padding-bottom: 1%;
   position: absolute;
   margin-left: 5%;
 }
-
-
-
-
-
 
 
 
