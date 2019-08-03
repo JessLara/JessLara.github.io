@@ -383,7 +383,7 @@ nav .logo {
 /*-----------CASE STUDY: Hound Watch-----------------*/
 .casestudyhero {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
 }
 
 .herotexthoundwatch{
@@ -392,7 +392,7 @@ nav .logo {
   align-content: center;
   justify-content: center;
   text-align: center;
-  padding-top: 25%;
+  padding-top: 30%;
 }
 
 .herotexthoundwatch  h1 {
@@ -400,12 +400,12 @@ nav .logo {
 }
 
 .houndwatchimg{
-  padding: 10% 0 5% 0;
+  padding: 25% 0 15% 0;
   margin: 0 auto;
 }
 
 .houndwatchimg img{
-  height: 70vmin;
+  height: 80vmin;
   width: auto;
 }
 
@@ -441,7 +441,7 @@ nav .logo {
   width: 100%;
   vertical-align: middle;
   color: #fff;
-  font: 2rem 'Playfair Display', serif;
+  font: 2rem 'Montserrat', sans-serif;
   letter-spacing: .1rem;
   font-weight: 600;
   text-transform: capitalize;
@@ -472,7 +472,7 @@ nav .logo {
 .subsectionlabel h2 {
   text-transform: uppercase;
   text-align: left;
-  color: rgba(0,0,0,.8);
+  color: #232323;
   font: 1.4rem 'Source Sans Pro', sans-serif;
   letter-spacing: .1rem;
   font-weight: 600;
@@ -765,11 +765,9 @@ font-weight: 800;
   margin: 0 auto;
 }
 
-.mxgraph{
-  width: 95vw;
-}
+
 .userflows img {
-  width: 100vw;
+  width: 90vw;
   height: auto;
 }
 
@@ -1191,7 +1189,32 @@ font-weight: 800;
 |                                  |
 |__________________________________|*/
 
+
+/*--------LANDSCAPE---------*/
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
+
+
 @media (min-width: 640px) {
+
+  nav .logo{
+    padding-top: 2.5%;
+  }
+
+  .nav .menu-icon{
+    padding-top: 4%;
+  }
   /*-----Index-----*/
   .herotext{
     display: block;
@@ -1242,7 +1265,9 @@ font-weight: 800;
 
   /*_____USERFLOWS_____*/
 
-
+    .userflows img{
+      width: 90vw;
+    }
   .houndwatchsketches img{
     width: 90vw;
     padding: 0;
@@ -1445,7 +1470,7 @@ font-weight: 800;
 @media (min-width: 768px) {
 
   .nav .logo {
-    padding: 5% 0 0 10%;
+    padding: 2.5% 0 0 10%;
   }
 
   .nav img{
@@ -1453,7 +1478,7 @@ font-weight: 800;
   }
 
   .nav .menu-icon{
-    padding: 6% 5% 0 0;
+    padding: 4% 5% 0 0;
   }
 
   .herotext{
@@ -1471,6 +1496,10 @@ font-weight: 800;
   }
 
   /*-----|_Hound Watch_|-----*/
+
+  .casestudyhero{
+    height: 80vh;
+  }
   .herotexthoundwatch {
       padding-top: 15%;
   }
@@ -1801,7 +1830,7 @@ font-weight: 800;
   .nav li a {
     text-align: left;
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 400;
     padding: 0;
     width: 100%;
     text-align: center;
@@ -1972,7 +2001,7 @@ li > a:hover:before {
     padding: 3% 10%;
     justify-content: center;
     align-content: center;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0,0,0,.7);
   }
 
   .role-description div{
@@ -2018,6 +2047,7 @@ li > a:hover:before {
   }
 
   .content p{
+    color: #000;
     padding-left: 0;
     font-size: 2rem;
   }
@@ -2027,17 +2057,17 @@ li > a:hover:before {
   }
 
   .research .projectsectionlabel{
-    padding-left: 10%;
+    padding-left: 15%;
   }
 
   .content_research{
-    padding: 0% 10%;
+    padding: 0% 15%;
     margin-bottom: 5%;
   }
 
   .subsectionlabel{
     padding: 10% 0 5% 0;
-    margin: 0 10%;
+    margin: 0 15%;
   }
 
   /* SURVEY DATA */
@@ -2067,7 +2097,7 @@ li > a:hover:before {
 
   .swotanalysisflex{
     display: flex;
-    margin: 0 10%;
+    margin: 0 15%;
   }
 
   .swotanalysisflex .content{
@@ -2124,7 +2154,7 @@ li > a:hover:before {
     /* User Stories */
 
     .userstories .content{
-      margin-left: 10%;
+      margin: 0 15%;
       width: 40%;
       position: relative;
     }
@@ -2138,19 +2168,19 @@ li > a:hover:before {
       position: absolute;
       top: 5%;
       left: 100%;
-      width: 100%;
-      padding: 15% 5%;
+      width: 75%;
+      padding: 15% 3%;
       background-color: #f2f2f2;
     }
 
     .storieslist ul{
-      margin: 0 10%;
+      margin: 0 0%;
     }
 
-/* User Stories */
+/* User Flows */
 
 .userflows_content{
-margin: 0 10%;
+margin: 0 15%;
 margin-bottom: 5%;
 }
 
@@ -2191,7 +2221,7 @@ margin-bottom: 5%;
 /* Wireframes */
 
 .wireframes_content{
-  margin: 0 10%;
+  margin: 0 15%;
   padding: 0;
 }
 
@@ -2214,24 +2244,24 @@ margin-bottom: 5%;
 .content_flex{
   display: flex;
   flex-direction: row;
-  margin: 0 10%;
+  margin: 0 15%;
 }
 
 .content_flex_flip{
   display: flex;
   flex-direction: row-reverse;
-  margin: 0 10%;
+  margin: 0 15%;
 }
 
 .low-fidelity_content{
   padding: 0;
-  width: 50%;
+  width: 40%;
 }
 
 .low-fidelity_content p{
   padding: 0;
   margin: 0;
-  padding-right: 20%;
+  padding-right: 15%;
 }
 
 .lowfid_img{
@@ -2240,7 +2270,7 @@ margin-bottom: 5%;
 }
 
 .lowfid_img img{
-  width: 45vw;
+  width: 42vw;
   margin: 0;
 }
 
@@ -2248,23 +2278,24 @@ margin-bottom: 5%;
 
 .high-fidelity_content{
   padding: 0;
-  width: 50%;
+  width: 35%;
 }
 
 .high-fidelity_content p{
-  padding: 0;
-  margin: 0;
-  padding-left: 20%;
   text-align: right;
 }
 
 .highfid_img{
-  width: 60%;
+  width: 40%;
+  left: 15%;
+  transform: translatex(-60%);
+
 
 }
 
 .highfid_img img{
-  width: 50vw;
+  padding: 0;
+  width: 42vw;
   margin: 0;
 }
 
@@ -2272,7 +2303,7 @@ margin-bottom: 5%;
 
 .iterations_content{
   padding: 0;
-  width: 50%;
+  width: 40%;
 }
 
 .iterations_content p{
@@ -2286,20 +2317,20 @@ margin-bottom: 5%;
 }
 
 .iterations_img img{
-  width: 45vw;
+  width: 42vw;
   margin: 0;
 }
 
 /* Branding */
 
 .branding .projectsectionlabel{
-  margin-top: 10%;
-  padding-left: 10%;
+  margin-top: 12%;
+  padding-left: 15%;
 }
 
 .branding_content {
   padding: 0;
-  margin: 0 10%;
+  margin: 0 15%;
 }
 
 /*---- Fonts ----*/
@@ -2308,7 +2339,7 @@ margin-bottom: 5%;
 .hierarchy{
   background-color: #f2f2f2;
   padding: 0;
-  padding: 0 10%;
+  padding: 0 15%;
 }
 
 .fonts{
@@ -2331,12 +2362,16 @@ margin-bottom: 5%;
 }
 
 .color-list {
-  margin: 0 10%;
+  margin: 0 15%;
   flex-wrap: nowrap;
   overflow: visible;
   padding: 0;
   height: 50vh;
-  width: 80vw;
+  width: 70vw;
+}
+
+.hwcolors h3{
+  padding: 1% 0 2% 15%;
 }
 
 .color:hover {
@@ -2358,17 +2393,18 @@ margin-bottom: 5%;
 /* CONCLUSION */
 
 .conclusion .projectsectionlabel{
-  margin-left: 10%;
+  margin-left: 15%;
 }
 
 .conclusion .content{
-  margin: 0 10%;
+  margin: 0 15%;
 }
 
 .conclusion .content p{
   background-color: #fff;
   padding: 5% 0;
   padding-bottom: 10%;
+  line-height: 1.5;
 }
 
 
@@ -2940,21 +2976,133 @@ padding-bottom: 1%;
   .casestudyhero{
     height: 100vh;
   }
-.herotexthoundwatch{
-  padding-top: 12%;
-}
+  .herotexthoundwatch{
+    padding-top: 12%;
+  }
 
-.herotexthoundwatch img{
-  width: 28vw;
-}
+  .herotexthoundwatch img{
+    width: 30vw;
+  }
 
-.herotexthoundwatch h1{
-  font-size: 5rem;
-}
+  .herotexthoundwatch h1{
+    font-size: 8rem;
+  }
 
-.houndwatchimg{
-  padding-bottom: 2%;
-}
+  .houndwatchimg{
+    padding-bottom: 0;
+  }
+
+  /* role description */
+
+  .role-description{
+    padding: 5% 10%;
+  }
+
+  .role-description h2{
+    font-size: 2.5rem;
+  }
+
+  .role-description p{
+    font-size: 2rem;
+  }
+
+  /* section label */
+
+  .projectsectionlabel h2{
+    font-size: 3.5rem;
+  }
+
+  .content p{
+    font-size: 2.2rem;
+  }
+
+  /* sub-section label */
+
+  .subsectionlabel h2{
+    font-size: 3rem;
+  }
+
+  /* research */
+
+  .surveydata table{
+    width: 55vw;
+  }
+
+  .surveydata table td{
+    font-size: 1.8rem;
+  }
+
+  .surveydata>table td:first-child{
+    font-size: 2.5rem;
+  }
+
+  .chart h1{
+    margin-top: 4%;
+    font-size: 1.8rem;
+    line-height: 2;
+    font-weight: 600;
+  }
+
+  /* user persona */
+  .user,
+  .userimage{
+    width: 25vw;
+  }
+
+  .user{
+    margin: 0 2%;
+  }
+
+  .user .biography{
+    padding: 5% 5% 10% 5%;
+  }
+
+  .usercontent,
+  .goals{
+    padding: 5% 10%;
+  }
+
+  .user1 .biography{
+    width: 80%;
+  }
+
+  .user2 .biography{
+    width: 100%;
+  }
+
+  .user3 .biography{
+    width: 80%;
+  }
+
+
+
+  /* user stories */
+  .userstories .content a{
+    font-size: 2.2rem;
+  }
+
+  .storieslist ul {
+    margin: 0 5%;
+  }
+
+  /* typography */
+  .fonts h3,
+  .hierarchy h3{
+    font-size: 2.5rem;
+  }
+
+  #gothic,
+  #libre{
+    font-size: 4rem;
+  }
+
+  .hierarchy table{
+
+  }
+
+
+
+
 
 
 
