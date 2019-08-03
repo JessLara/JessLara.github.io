@@ -392,7 +392,7 @@ nav .logo {
   align-content: center;
   justify-content: center;
   text-align: center;
-  padding-top: 30%;
+  padding-top: 20vh;
 }
 
 .herotexthoundwatch  h1 {
@@ -405,7 +405,7 @@ nav .logo {
 }
 
 .houndwatchimg img{
-  height: 80vmin;
+  height: 35vh;
   width: auto;
 }
 
@@ -1192,17 +1192,6 @@ font-weight: 800;
 
 /*--------LANDSCAPE---------*/
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-}
 
 
 
@@ -1249,7 +1238,7 @@ font-weight: 800;
   }
 
   .houndwatchimg img{
-    height: 50vmin;
+    height: 45vmin;
   }
 
   /*_____PERSONAS_____*/
@@ -1455,10 +1444,6 @@ font-weight: 800;
 
 
 }
-
-
-
-
 
 
 
@@ -1778,6 +1763,19 @@ font-weight: 800;
   .title h1{
     font-size: 4rem;
   }
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+
+  .casestudyhero{
+    height: 100vh;
+  }
+
+  .herotexthoundwatch{
+    padding-top: 10%;
+  }
+
 
 }
 
