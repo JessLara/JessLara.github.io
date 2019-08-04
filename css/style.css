@@ -1113,7 +1113,7 @@ font-weight: 600;
 }
 
 .headerimg {
-  background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(255,255,255,.3) 0%), url("../images/jessimg.jpg") right no-repeat;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(255,255,255,.3) 0%), url("../images/jess.png") right no-repeat;
   background-size: contain;
   height: 45vh;
 }
@@ -2392,6 +2392,10 @@ margin-bottom: 5%;
 
   .footerlogo{
     padding-left: 10%;
+  }
+
+  .footlist li{
+    padding-left: 2rem;
   }
 
   /*------HoundWatch------*/
