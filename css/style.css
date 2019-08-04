@@ -67,7 +67,7 @@ p {
 }
 
 .nav li a {
-  font: 1.4rem 'Source Sans Pro', cursive;
+  font: 1.4rem 'Source Sans Pro' ;
   color: #000;
   text-transform: uppercase;
   letter-spacing: .2rem;
@@ -931,7 +931,7 @@ font-weight: 600;
 }
 
 .name {
-  font: 1.4rem "Source Sans Pro", cursive;
+  font: 1.4rem "Source Sans Pro", ;
 }
 
 .details {
@@ -943,7 +943,7 @@ font-weight: 600;
 
 .details li {
   line-height: 2em;
-  font: 1.4rem "Source Sans Pro", cursive;
+  font: 1.4rem "Source Sans Pro", ;
 }
 
 .hwcolors h3{
