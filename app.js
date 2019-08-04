@@ -22,8 +22,8 @@ $(document).ready(function(){
 //
 //
 let ctx = document.getElementById('CloudChart').getContext('2d');
-let labels = ['Cloud User', 'Non Cloud User'];
-let colorHex = ['#253D5B','#FB3640'];
+let labels = ['Non Cloud User', 'Cloud User'];
+let colorHex = ['#FB3640', '#253D5B'];
 
 var myChart = new Chart(ctx, {
   type: 'pie',

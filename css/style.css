@@ -316,7 +316,7 @@ nav .logo {
 
 .card__content-link {
   color: #BA3428;
-  font-size: 2.5vmin;
+  font-size: 4vmin;
   display: block;
   cursor: pointer;
   opacity: 0.7;
@@ -441,9 +441,9 @@ nav .logo {
   width: 100%;
   vertical-align: middle;
   color: #fff;
-  font: 2rem 'Montserrat', sans-serif;
+  font: 1.8rem 'Montserrat', sans-serif;
   letter-spacing: .1rem;
-  font-weight: 600;
+  font-weight: 300;
   text-transform: capitalize;
   text-align: center;
   text-align: left;
@@ -457,7 +457,7 @@ nav .logo {
   left: 9%;
   right: 0%;
   width: 30%;
-  border-bottom: 2px #fff solid;
+  border-bottom: 1.5px #fff solid;
   margin-bottom: 4%;
 }
 
@@ -569,9 +569,9 @@ canvas {
 }
 
 /*_____SWOT ANALYSIS_____*/
-.swotanalysis strong {
+.swotanalysisflex .content strong {
 font: 1.4rem 'Source Sans Pro', sans-serif;
-font-weight: 800;
+font-weight: 600;
 }
 
 .swottable {
@@ -634,6 +634,8 @@ font-weight: 800;
   border-top-left-radius: 3%;
   border-top-right-radius: 3%;
 }
+
+
 
  .user2 .userimage{
   background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,.85) 100%), url("../images/CaseStudy/HoundWatch/jake.jpg") center no-repeat;
@@ -857,6 +859,7 @@ font-weight: 800;
   font-weight: 800;
 }
 
+
 /*----Hierarchy---*/
 .hierarchy table{
   margin-top: 5%;
@@ -949,7 +952,7 @@ font-weight: 800;
   padding-top: 1%;
   text-transform: uppercase;
   color: #000;
-  padding: 10% 0 2% 10%;
+  padding: 3% 0 2% 10%;
 }
 /*primary colors*/
 #cello{
@@ -1031,39 +1034,39 @@ font-weight: 800;
 
 /*---------Case Study: ByteSpace---------*/
 
-
-/* .herotextcs {
-  max-height: 80%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.herotextcs article h1 {
-  padding-top: 35%;
-  font: 6.5rem 'Lobster', cursive;
-  text-transform: none;
-  color: #00765A;
-}
-
-.herotextcs p {
-  padding: 3.5rem 2rem;
-  font: 1.6rem/1.9 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-}
-
-.bytespacecompimg {
-  padding-bottom: 5rem;
+.bytespacehero{
+  height: 70vh;
 }
 
 .bytespacecompimg img {
   height: auto;
-  max-width: 65%;
+  max-width: 75%;
+  padding: 15% 0;
 }
-*/
+
+.herotextbytespace{
+  padding-top: 15vh;
+}
+
+.userimgbytespace{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,.85) 100%), url("../images/CaseStudy/ByteSpace/user1.jpg") center no-repeat;
+}
+
+.user2 .userimgbytespace{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,.85) 100%), url("../images/CaseStudy/ByteSpace/user2.jpg") center no-repeat;
+}
+
+/* BYTESPACE Typeface */
+
+#assistant{
+  font-family: 'Assistant', helvetica, sans-serif;
+  padding: 5% 5%;
+  font-size: 4rem;
+  color: #000;
+  font-weight: 600;
+}
+
+
 
 /* BYTESPACE COLORS */
 
@@ -1083,9 +1086,17 @@ font-weight: 800;
   background-color: #E7D6DA;
 }
 
+#twilight li,
+#mercury li,
+#norway li{
+  color: #232323;
+}
+
 #mercury {
   background-color: #E2E2E2;
 }
+
+
 
 
 /*****************About Me*************/
@@ -1102,7 +1113,7 @@ font-weight: 800;
 }
 
 .headerimg {
-  background: url("../images/Jess.png") right no-repeat;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,rgba(255,255,255,.3) 0%), url("../images/jessimg.jpg") right no-repeat;
   background-size: contain;
   height: 45vh;
 }
@@ -1135,15 +1146,9 @@ font-weight: 800;
    font-weight: 700;
 }
 
-.biography p {
-  padding: 0 10%;
-  font: 1.4rem "Source Sans Pro", sans-serif;
-  font-weight: 300;
-  line-height: 2.5rem;
-}
 
 .biotext {
-  padding: 10% 0%;
+  padding: 8% 0 5% 0;
 }
 
 .biotext p strong{
@@ -1151,24 +1156,14 @@ font-weight: 800;
   font-weight: 600;
 }
 
-.label {
-  width: 100%;
-  vertical-align: middle;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #232323;
-  padding: 4%;
-  width: 45%;
+.aboutmelabel{
+  width: 50%;
 }
 
-.label h2 {
-  color: #fff;
-  font: 1.5rem 'Source Sans Pro', sans-serif;
-  text-align: left;
-  padding: 0 5%;
-  line-height: 2rem;
+.aboutmelabel:after{
+  left: 8%;
 }
+
 
 .questions p {
   padding: 8% 10%;
@@ -1190,7 +1185,7 @@ font-weight: 800;
 |__________________________________|*/
 
 
-/*--------LANDSCAPE---------*/
+
 
 
 
@@ -1278,136 +1273,11 @@ font-weight: 800;
 
   /*-----Bytespace-----*/
 
-  /* .herotextcs article h1 {
-    padding-top: 25%;
-    font-size: 7.5rem;
-  }
-
-  .herotextcs p {
-    font-size: 2.2rem;
-    font-weight: 400;
-    padding: 2.5%;
-  }
-
   .bytespacecompimg img {
-    height: auto;
     max-width: 45%;
+    padding: 10% 0;
   }
 
-  .userdetail {
-    align-content: center;
-    align-self: center;
-    justify-content: center;
-  }
-
-  .userimg {
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-  }
-
-  .userimg img {
-    margin: 0 auto;
-  }
-
-  .userinfo {
-    margin: 0 auto;
-    padding: 1% 0;
-  }
-
-  .userbio {
-    padding: 0;
-  }
-
-  .role-description {
-    padding: 5% 8%;
-  }
-
-  .role-description h2 {
-    font-size: 2.2rem;
-    padding-bottom: 2rem;
-  }
-
-  .role-description p {
-    font-size: 2rem;
-  }
-
-  .projectsectionlabel {
-    width: 35%;
-    padding: 3% 3%;
-  }
-
-  .projectsectionlabel h2 {
-    font-size: 1.8rem;
-  }
-
-  .projectsectionlabel::after {
-    left: 8%;
-    margin: 3% 0;
-  }
-
-  .mainsection p {
-    padding: 2% 8%;
-    padding-top: 5%;
-    font-size: 1.6rem;
-  }
-
-  .subsectionlabel {
-    width: 23%;
-  }
-
-  .surveydata table {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 5%;
-  }
-
-  .swottable table {
-    font-size: 1.4rem;
-    width: 95%;
-    padding-left: 25%;
-  }
-
-  .swottable table td:first-child, .swottable table tr:first-child td {
-    font-size: 1.4rem;
-    width: 30%;
-  }
-
-  .userimg {
-    width: 30%;
-  }
-
-  .userinfo {
-    padding: 5% 0%;
-  }
-
-  .userinfo h2 {
-    font-size: 2.5rem;
-  }
-
-  .userinfo h3,
-  .userinfo strong {
-    font-size: 1.8rem;
-    line-height: 3rem;
-  }
-
-  .bio h3,
-  .usergoals h3 {
-    font-size: 1.9rem;
-  }
-
-  .bio p,
-  .usergoals li {
-    font-size: 1.6rem;
-  }
-
-  .bio p {
-    padding: 5% 5%;
-  }
-
-  .iterations_img img {
-    padding-top: 5%;
-  } */
 
 
 /*-----About Me-----*/
@@ -1427,12 +1297,26 @@ font-weight: 800;
     font-size: 1.6rem;
   }
 
-  .biography p{
+  .biotext p,
+  .questions p{
     font-size: 1.6rem;
+  }
+
+  .biotext p{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .aboutmelabel{
+    width: 35%;
   }
 
   .label h2{
     font-size: 1.8rem;
+  }
+
+  .questions p{
+    padding: 5% 10%;
   }
 
 
@@ -1478,6 +1362,24 @@ font-weight: 800;
   .herotext p,
   .herotext strong{
     font-size: 2.5rem;
+  }
+
+  /*-----|_FOOTER_|-----*/
+
+  .fcontainer{
+    height: 8vh;
+  }
+
+  .footerlogo{
+    padding-right: 25%;
+  }
+
+  .footerlogo img{
+    width: 50%;
+  }
+
+  .footlist li a{
+    font-size: 1.6rem;
   }
 
   /*-----|_Hound Watch_|-----*/
@@ -1624,135 +1526,12 @@ font-weight: 800;
     padding-top: 2%;
   }
 
+  /*-------BYTESPACE------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*--------BYTESPACE-------
-  .herotextcs article h1 {
-    padding-top: 20%;
+  .bytespacehero{
+    height: 45vh;
   }
 
-  .herotextcs p {
-    padding: 3% 5%;
-  }
-
-  .bytespacecompimg{
-    padding-bottom: 2%;
-  }
-
-  .bytespacecompimg img {
-    height: auto;
-    max-width: 35%;
-  }
-
-  .subsectionlabel {
-    width: 25%;
-  }
-
-  .subsectionlabel::after {
-    width: 25%;
-    left: 11%;
-  }
-
-  .researchdata {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    margin: 0;
-  }
-
-  .surveydata {
-    align-self: center;
-    padding-left: 5%;
-  }
-
-  .surveydata table {
-    width: 100%;
-  }
-
-  .chart {
-    width: 55%;
-    padding: 0%;
-  }
-
-  #personas {
-    display: flex;
-  }
-
-  .personas {
-    margin: 1%;
-    width: 50%;
-  }
-
-  .userdetail {
-    margin: 0 auto;
-  }
-
-  .userimg {
-    width: 40%;
-    margin: 0 auto;
-  }
-
-  .userflows {
-    padding: 0% 5%;
-  }
-
-  .userflows img {
-    width: 90vw;
-    margin: 0 auto;
-  }
-
-  .bytespacesketches {
-    padding: 5% 8%;
-  }
-
-  .bytespacesketches img {
-    width: 85vw;
-  }
-
-  .lowfid_img {
-    padding: 5% 8%;
-  }
-
-  .lowfid_img img {
-    width: 80vw;
-  }
-
-  .highfid_img {
-    padding: 5% 8%;
-  }
-
-  .highfid_img img {
-    width: 80vw;
-  }
-
-  .iterations_img {
-    padding: 0% 8%;
-  }
-
-  .iterations_img img {
-    width: 80vh;
-  }
-
-  .typefaceimg {
-    padding: 0% 15%;
-  }
-
-  .typefaceimg img {
-    width: 60vh;
-  } */
 
   /*-------ABOUT ME------*/
 
@@ -1766,6 +1545,9 @@ font-weight: 800;
 
 }
 
+
+/*--------LANDSCAPE---------*/
+
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
 
   .casestudyhero{
@@ -1774,6 +1556,31 @@ font-weight: 800;
 
   .herotexthoundwatch{
     padding-top: 10%;
+  }
+
+  .bytespacehero{
+    height: 100vh;
+  }
+
+  .bytespacecompimg img {
+    height: auto;
+    max-width: 28%;
+    padding: 2.5% 0;
+  }
+
+  .portfolio_works{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card{
+    height: 70vmin;
+  }
+
+  #houndwatch img{
+    height: 65%;
+    margin: 35% 15%;
+    padding: 0;
   }
 
 
@@ -1866,6 +1673,10 @@ li > a:hover:before {
     display: none;
   }
 
+#currentpage{
+  color: #000;
+  font-weight: 700;
+}
 
 /* Project Section */
 
@@ -2405,443 +2216,53 @@ margin-bottom: 5%;
   line-height: 1.5;
 }
 
+/*-------BYTESPACE--------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* .casestudyhero {
-    height: 85vh;
+  .bytespacehero{
+    height: 75vh;
   }
 
-  .herotextcs {
+  .bytespacecompimg img{
+    padding: 5% 0;
+  }
+
+  /* problem/solution */
+
+  .bytespaceproblemsolution .sub1{
+    width: 40vw;
     margin: 0;
+    padding: 5%;
   }
 
-  .herotextcs article h1 {
-    padding-top: 15%;
-  }
-
-  .herotextcs p {
-    padding: 2% 0 2% 0;
-  }
-
-  .bytespacecompimg {
-    padding-bottom: 3%;
-  }
-
-  .bytespacecompimg img {
-    height: auto;
-    max-width: 30%;
-  }
-
-  .problem-solution, .research, .branding  {
-    position: inherit;
-  }
-
-
-  .role-description div {
-    align-items: center;
-  }
-
-  .role-description h2 {
-    font-size: 1.8rem;
-  }
-
-  .role-description p {
-    width: 85%;
-    font-size: 1.6rem;
-  }
-
-  .main {
-    padding: 5% 15%;
-  }
-
-  .content {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 10%;
-    position: relative;
-    top: 0
-  }
-
-  .content p {
-    padding: 0;
-    padding-left: 30%;
-    position: relative;
-  }
-
-  .mainsection {
-    padding-top: 0;
-  }
-
-  .projectsectionlabel {
-    width: 20%;
-    height: 0rem;
-    position: absolute;
-    justify-content: center;
-    align-self: center;
-    padding: 5% 3%;
+  .bytespaceproblemsolution .sub2{
+    width: 40vw;
     margin: 0;
-    top: 0;
+    padding: 5%;
+    padding-left: 10%;
   }
 
-  .projectsectionlabel h2 {
-    font-size: 1.6rem;
-    padding: 0;
-    margin: 0;
-    top: 50%;
-    transform: translate(-3%, -50%);
-  }
-
-  .projectsectionlabel::after {
-    left: 10%;
-    top: 8%;
-    bottom: 8%;
-  }
-
-  .subsectionlabel {
-    width: 13%;
-    margin-top: 0%;
-    background-color: #fff;
-    padding: 0 3.5%;
-    padding-bottom: 4%;
-    top: 0%;
-    transform: none;
-    margin-left: 8%;
-    margin-top: 2%;
-  }
-
-  .subsectionlabel h2 {
-    color: #232323;
-    text-align: left;
-    padding: 0;
-    margin: 0;
-    font-weight: 600;
-  }
-
-  .subsectionlabel::after {
-    display: none;
-  }
-
-  .sketches {
-    margin-top: 15%;
-  }
-
-  .researchcontent {
-    padding-bottom: 5%;
-    position: relative;
-  }
-
-  .researchdata {
-    margin: 0 -21.3%;
-    padding: 0 height: 45%;
-    margin-bottom: 5%;
-  }
-
-  .surveydata {
-    justify-content: center;
-    padding-top: 0;
-  }
-
-  .surveydata table {
-    width: 100%;
-  }
-
-  .surveydata table tr {
-    height: 8rem;
-  }
-
-  .surveydata table td {
-    font-size: 1.6rem;
-  }
-
-  .surveydata>table td:first-child {
-    font-size: 3rem;
-  }
-
-  .chart {
-    padding-top: 5%;
-  }
-
-  .chart h1 {
-    font-size: 2rem;
-    padding: 0;
-    padding-bottom: 2%;
-    margin: 0;
-  }
-
-  .swottable {
-    margin: 0 -21.3%;
-    margin-bottom: 10%;
-  }
-
-  .swottable h2 {
-    font-weight: 700;
-  }
-
-  .swottable table {
-    padding-left: 30%;
-    padding-top: 2%;
-    font-size: 5rem;
-    width: 95%;
-  }
-
-  .swottable table td {
-    font-size: 1.8rem;
-    padding: 1%;
-    font-weight: 400;
-  }
-
-  .swottable table td:first-child,
-  .swottable table tr:first-child td {
-    font-size: 2rem;
-  }
-
-  #personas {
-    display: flex;
-    flex-direction: row;
-    margin-top: 15%;
-    justify-content: space-between;
-    margin-bottom: 10%;
-  }
-
-  .pesonas {
-    margin: 1%;
-  }
-
-  .bio p {
-    padding: 5% 4%;
-    margin: 0
-  }
-
-  .userimg {
-    width: 15%;
-    padding: 0;
-    margin:0 auto;
-  }
-
-
-  .userinfo {
-    padding-top: 5%;
-    margin: 0;
-  }
-
-  .userinfo h2 {
-    font-size: 2rem;
-  }
-
-  .userflows{
-    padding: 0;
-    margin-top: -6%;
-  }
-
-  .userflows img {
-    width: 70vw;
-  }
-
-  .sketches{
-    margin-top: 5%;
-  }
-
-  .bytespacesketches{
-    padding: 0;
-    padding-bottom: 10%;
-  }
-
-  .bytespacesketches img {
-    width: 70vw;
-  }
-
-  .lowfid_img{
-    padding: 0 8%;
-    padding-bottom: 10%;
-  }
-
-  .lowfid_img img {
-    width: 65vw;
-  }
-
-  .highfid_img {
-    padding-top: 0%;
-  }
-
-  .highfid_img img {
-    width: 65vw;
-  }
-
-  .iterations_img {
-    padding-bottom: 5%;
-  }
-
-  .iterations_img img {
-    width: 65vw;
-  }
-
-  .typeface {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .typefaceimg {
-    margin: 0;
+  .bytespaceproblemsolution .content p{
     padding: 0;
   }
 
-  .typefaceimg img{
-    width: 25vw;
-    top: 0;
-    left: -25;
-    transform: translate(-80%);
-  }
+  /* userflow */
 
-  .conclusion .content {
-    display: flex;
-    flex-direction: column;
-    height: 35rem;
-    padding-top: 5%;
-    flex-overflow: none;
-  }
-
-  .conclusion p {
-    margin: 0 -21.3%;
-    margin-top: 12%;
-    line-height: 3rem;
-    padding: 5% 15% 5% 15%;
-  }
-
-  .colors .content{
-    display: flex;
-    flex-direction: row;
-    width: 50vw;
-  }
-
-  */
-/*
-
-
-
-
-
-
-  .name {
-    font-size: 1.4em;
-    font: 1.5rem "Libre-Franklin", sans-serif;
-  }
-
-  .name {
-    font-size: 1.5rem;
-    color: #000;
-  }
-
-  #twilight,
-  #mercury {
-    color: #232323;
-  }
-
-
-
-  .details li {
-    line-height: 5rem;
-    font: 1.5rem "Source Sans Pro", sans-serif;
-  }
-
-  .subsectionlabel {
-    height: 0;
-  }
-
-  .userimg {
-    width: 40%;
-    margin: 0 auto;
-  }
-
-  .conclusion
-
-  .conclusion p{
-    padding-bottom: 8%;
-  }
-
-  currentpage{
-    font-weight: 800;
-  }
-
-  /*-----HoundWatch-----*/
-  /* .hwcontainer{
+  .bytespaceuserflow{
+    padding: 0 5%;
     background-color: #fff;
   }
 
-  .herotexthoundwatch{
-    padding-top: 25%;
+  .bytespaceuserflow img{
+    width: 90vw;
   }
 
-  .houndwatchimg img{
-    width: 45vw;
+  /* font */
+
+  .bytespacefont{
+    background-color: #fff;
+    padding-top: 0;
   }
 
-  .houndwatchsketches img,
-  .lowfid_img img,
-  .highfid_img img
-  {
-    width: 70vw;
-    padding: 0 0 10% 20%;
-  }
-
-  .userstories .content{
-    display: block;
-  }
-
-  .storieslist{
-    padding: 3% 0 3% 24%;
-    display: block;
-  }
-
-  .userflows{
-    padding-bottom: 10%;
-  }
-
-  .typeface{
-    display: block;
-    width: 100%;
-    margin-bottom: 5%;
-  }
-
-
- .hwcolors .content{
-  display: flex;
-  flex-direction: column;
-  margin: 0 10%;
-} */
-
-/* .hwcolors .content h3{
-padding-bottom: 1%;
-}
-
-.hwcolors .subsectionlabel{
-  margin: 0;
-  padding: 0;
-  margin-bottom: 5%;
-  display: block;
-  margin-left: -50%;
-}
-
-.conclusion .content{
-  display: block; */
 
 
 
@@ -2858,19 +2279,10 @@ padding-bottom: 1%;
   font-size: 8rem;
 }
 
-.biography{
-  padding: 0% 15%;
-}
 
-.questions{
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  padding-bottom: 10%;
-}
 
 .biotext{
-  padding: 5% -10%;
+  padding: 5% 15%;
 }
 
 .biotext p{
@@ -2880,31 +2292,38 @@ padding-bottom: 1%;
   padding: 0;
 }
 
+.biotext p strong{
+  font-size: 2rem;
+}
+
 .amintro p{
   font-size: 2rem;
   padding: 5% 15%;
   line-height: 3rem;
 }
 
-.aboutmelabel{
-  width: 20%;
-  padding: 7% 3%;
-  position: absolute;
+.amintro p strong{
+  font-size: 2rem;
 }
 
+.aboutmelabel{
+  padding-left: 15%;
+  width: 35%;
+  margin-bottom: 5%;
+}
+
+
 .aboutmelabel h2{
-  font-size: 2rem;
-  line-height: 2.5rem;
-  width: 10rem;
+  font-size: 2.5rem;
 }
 
 .questions p{
   font-size: 2rem;
   line-height: 3.5rem;
   font-weight: 400;
-  padding: 0 0 0 25%;
+  padding: 0 15%;
+  margin-bottom: 10%;
 }
-
 
 }
 
@@ -2967,6 +2386,12 @@ padding-bottom: 1%;
 
   .card__content-link {
     font-size: 2vmin;
+  }
+
+  /*------Footer------*/
+
+  .footerlogo{
+    padding-left: 10%;
   }
 
   /*------HoundWatch------*/
@@ -3098,173 +2523,38 @@ padding-bottom: 1%;
 
   }
 
-
-
-
-
-
-
-
-
-
-/*
-
-
-
-
-
-  /*-------BYTESPACE------*/
-  /* .casestudyhero{
-    height: 60vh;
+/*------BYTESPACE------*/
+  .bytespacehero{
+    height: 100vh;
   }
-  .herotextcs{
-    display: flex;
-    flex-direction: row;
-    height: 30vh;
-  }
-
-  .herotextcs article h1{
-    padding-top: 13vh;
-  }
-
-  .herotextcs p{
-    padding: 2% 0 2% 0;
-  }
-
-  .bytespacecompimg img{
-    width: 55vw;
-  }
-
-  .bytespacecompimg{
-    padding-bottom: 2%;
-  }
-
-  .role-description{
-    width: 70%;
-    padding: 5% 10%;
-    margin: 0 15%;
-  }
-
-  .role-description div{
-    padding: 0;
-  }
-  .researchdata{
-    justify-content: space-between;
-    height: 45vh;
-  }
-
-  .surveydata{
-    width: 45%;
-    padding-left: 20%;
-    padding-top: 4%;
-  }
-
-  .chart{
-    width: 35%;
-    left: 0;
-  }
-
-  .swottable{
-    height: 58vh;
-    margin-bottom: 5%;
-  }
-
-  .swottable h2{
-    padding-left: 15%
-  }
-
-  .swottable table{
-    padding-top: 0;
-    padding-left: 25%;
-    width: 80%;
-  }
-
-  #personas{
-    margin-bottom: 0%;
-  }
-
-  .bytespacesketches{
-    padding: 0 30%;
-    padding-bottom: 5%;
-  }
-
-  .bytespacesketches img{
-    width: 40vw;
-  }
-
-  .lowfid_img{
-    padding: 0 30%;
-    padding-bottom: 5%;
-  }
-
-  .lowfid_img img{
-    height: 60vh;
-    width: auto;
-  }
-
-  .highfid_img{
-    padding: 0 30%;
-    padding-bottom: 5%;
-  }
-
-  .highfid_img img{
-    height: 60vh;
-    width: auto;
-  }
-
-  .iterations_img{
-    padding: 0 30%;
-    padding-bottom: 5%;
-  }
-
-  .iterations_img img{
-    height: 60vh;
-    width: auto;
-  }
-
-  .color-list{
-    width: 50vw;
-    height: 45vh;
-    margin-left: 35%;
-  }
-
-  .conclusion p{
-    padding-bottom: 5%;
-  }
-
-  .content p{
-    font-size: 1.8rem;
-  }
-
-  .projectsectionlabel{
-    width: 18%;
-    padding: 3.5% 3%;
-    margin-left: 10%;
-  }
-
-  .projectsectionlabel h2{
-    font-size: 1.8rem;
-    font-weight: 800;
-    transform: translate(-10%, -50%);
-  }
-
-  .subsectionlabel{
-    margin-top: 0;
-    padding-top: 1%;
-  }  */
 
 
 
 
 /*------ABOUT ME------*/
 
-.aboutmelabel{
-  width: 12%;
-  padding: 5% 3%;
-  position: absolute;
-  margin-left: 5%;
+.headerimg{
+  margin-right: 18%;
+  height: 75vh;
 }
 
+.aboutmelabel{
+  width: 45%;
+  margin-bottom: 2%;
+}
+
+.amintro p,
+.amintro p strong{
+  font-size: 2.2rem;
+}
+
+.biotext{
+  padding-bottom: 2%;;
+}
+
+.questions p{
+  margin-bottom: 5%;
+}
 
 
 }
