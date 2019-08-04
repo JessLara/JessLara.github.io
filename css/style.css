@@ -2404,7 +2404,8 @@ margin-bottom: 5%;
   }
 
   .herotexthoundwatch img{
-    width: 30vw;
+    height: 25vw;
+    width: auto;
   }
 
   .herotexthoundwatch h1{
@@ -2507,6 +2508,13 @@ margin-bottom: 5%;
   .storieslist ul {
     margin: 0 5%;
   }
+
+    /* sketches */
+
+    .houndwatchsketches{
+      height: 67vh;
+    }
+
 
   /* typography */
   .fonts h3,
