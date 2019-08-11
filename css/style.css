@@ -391,21 +391,30 @@ nav .logo {
   align-content: center;
   justify-content: center;
   text-align: center;
-  padding-top: 20vh;
+  padding-top: 30vmin;
 }
 
-.herotexthoundwatch  h1 {
+.herotexthoundwatch h1{
   font-size: 3.5rem;
+  padding-bottom: 3vmin;
 }
+
+.herotexthoundwatch h2{
+  color: #494949;
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding: 5vmin 10vmin 8vmin 10vmin;
+}
+
 
 .houndwatchimg{
-  padding: 25% 0 15% 0;
   margin: 0 auto;
+  padding-bottom: 10vmin;
 }
 
 .houndwatchimg img{
-  height: 35vh;
-  width: auto;
+  height: auto;
+  width: 100vw;
 }
 
 .csbutton {
@@ -538,7 +547,8 @@ nav .logo {
 .surveydata h2{
   font: 2rem 'Source Sans Pro', sans-serif;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
+  padding: 3vmin 2vmin;
 }
 
 td {
@@ -555,15 +565,15 @@ td {
   justify-content: center;
 }
 
-.chart h1 {
-  margin-top: 2%;
-  padding-top: 5rem;
+.chart h2 {
+  font-weight: 700;
+  padding-top: 10vmin;
   align-self: center;
   text-align: center;
   width: 100%;
   color: #000;
-  padding-bottom: 1rem;
-  font: 1.4rem 'Source Sans Pro', sans-serif;
+  padding-bottom: 2vmin;
+  font: 1.6rem 'Source Sans Pro', sans-serif;
   text-transform: capitalize;
   line-height: 1.5;
   font-weight: 500;
@@ -657,7 +667,7 @@ font-weight: 600;
   font-weight: 900;
   position: absolute;
   left: 1%;
-  top: 70.8%;
+  top: 68%;
   text-align: left;
 }
 
@@ -671,6 +681,14 @@ font-weight: 600;
   padding-bottom: 8%;
   justify-content: space-between;
   width: 70%;
+}
+
+.user2 .biography{
+  width: 100%;
+}
+
+.user3 .biography{
+  width: 80%;
 }
 
 .biography h2{
@@ -1243,13 +1261,27 @@ font-weight: 600;
   }
 
   /*-----|_Hound Watch_|-----*/
-  .houndwatchimg{
-    padding: 5% 0 2.5% 0;
-    margin: 0 auto;
+
+  .herotexthoundwatch{
+    padding-top: 20vmin;
+  }
+
+  .herotexthoundwatch h1{
+    padding-bottom: 0;
+  }
+
+  .herotexthoundwatch h2{
+    font-size: 2rem;
+    padding: 5vmin 15vmin;
+  }
+
+  .houndwatchimg {
+    padding-top: 2vmin;
+    padding-bottom: 5vmin;
   }
 
   .houndwatchimg img{
-    height: 45vmin;
+    width: 90vmin;
   }
 
   /*_____PERSONAS_____*/
@@ -1400,7 +1432,7 @@ font-weight: 600;
   /*-----|_Hound Watch_|-----*/
 
   .casestudyhero{
-    height: 80vh;
+    height: 100vh;
   }
   .herotexthoundwatch {
       padding-top: 15%;
@@ -1408,14 +1440,15 @@ font-weight: 600;
 
   .herotexthoundwatch h1 {
     font-size: 4rem;
-}
-  .houndwatchimg{
-  padding: 2.5% 0 2.5% 0;
+  }
+
+  .herotexthoundwatch h2{
+    font-size: 2.2rem;
+    padding: 3vmin 12vmin;
   }
 
   .houndwatchimg img {
-    width: 40vmin;
-    height: auto;
+
   }
 
   .content p{
@@ -1651,7 +1684,7 @@ font-weight: 600;
   }
 
   .nav li a {
-    color: #FFF;
+    color: #000;
     text-emphasis-color: #000;
     text-align: left;
     font-size: 1.8rem;
@@ -1665,7 +1698,7 @@ font-weight: 600;
   }
 
   .nav li a:hover{
-  	color:#fff;
+  	color:#000;
   }
 
   li > a:before {
@@ -1675,7 +1708,7 @@ font-weight: 600;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #FFF;
+  background-color: #000;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -1719,8 +1752,8 @@ font-weight: 600;
 
 .heroimg{
   width: 50%;
-  background: #000;
-  opacity: 1;
+  background: #EDEDED;
+  opacity: .8;
 }
 
 .heroimg img{
@@ -1832,11 +1865,16 @@ font-weight: 600;
   }
 
   .herotexthoundwatch {
-    padding: 17vmax 0;
+    padding: 15vmax 0 0 0;
   }
 
   .herotexthoundwatch  h1{
     font-size: 4.5rem;
+  }
+
+  .herotexthoundwatch  h2{
+    font-size: 2.2rem;
+    padding: 5vmin 20vmin 0vmin 20vmin;
   }
 
   .houndwatchimg{
@@ -1844,7 +1882,8 @@ font-weight: 600;
   }
 
   .houndwatchimg img{
-    width: 60vmin;
+    height: 40vw;
+    width: auto;
   }
 
   .role-description {
@@ -2079,6 +2118,11 @@ margin-bottom: 5%;
 }
 
 /* sketches */
+ .sketches p{
+   margin: 0 15%;
+   padding: 0 0 3vmin 0;
+ }
+
 
 .houndwatchsketches{
   background: url("../images/CaseStudy/HoundWatch/hwsketchbckg.png") center no-repeat;
@@ -2134,9 +2178,6 @@ margin-bottom: 5%;
   width: 35%;
 }
 
-.high-fidelity_content p{
-  text-align: right;
-}
 
 .highfid_img{
   width: 40%;
@@ -2471,7 +2512,7 @@ margin-bottom: 5%;
   /*------HoundWatch------*/
 
   .herotexthoundwatch{
-    padding-top: 12%;
+    padding-top: 20vmin;
   }
 
 
@@ -2479,8 +2520,9 @@ margin-bottom: 5%;
     font-size: 5rem;
   }
 
-  .houndwatchimg{
-    padding-bottom: 0;
+  .houndwatchimg img{
+    height: 50vh;
+    width: auto;
   }
 
   /* role description */
@@ -2515,6 +2557,10 @@ margin-bottom: 5%;
 
   /* research */
 
+  .surveydata h2{
+    font-size: 2.5rem;
+  }
+
   .surveydata table{
     width: 55vw;
   }
@@ -2527,9 +2573,9 @@ margin-bottom: 5%;
     font-size: 2.5rem;
   }
 
-  .chart h1{
+  .chart h2{
     margin-top: 4%;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     line-height: 2;
     font-weight: 600;
   }
@@ -2544,8 +2590,36 @@ margin-bottom: 5%;
     margin: 0 2%;
   }
 
+
   .user .biography{
-    padding: 5% 5% 10% 5%;
+    padding: 5% 0 7% 0;
+  }
+
+  .biography h2,
+  .biography span{
+    font-size: 1.6rem;
+  }
+
+  .usercontent h3,
+  .goals h3{
+    font-size: 2rem;
+  }
+
+  .usercontent h3:after{
+    width: 80%;
+  }
+
+  .usercontent p{
+    font-size: 1.8rem;
+  }
+
+  .goals h3:after{
+    width: 70%;
+  }
+
+  .goalslist li{
+    color: #232323;
+    font-size: 1.8rem;
   }
 
   .usercontent,
@@ -2554,7 +2628,7 @@ margin-bottom: 5%;
   }
 
   .user1 .biography{
-    width: 80%;
+    width: 100%;
   }
 
   .user2 .biography{
@@ -2562,7 +2636,7 @@ margin-bottom: 5%;
   }
 
   .user3 .biography{
-    width: 80%;
+    width: 100%;
   }
 
 
