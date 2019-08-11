@@ -13,7 +13,7 @@ h1 {
   color: #000;
   text-transform: uppercase;
   letter-spacing: .3rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 h2 {
@@ -46,7 +46,7 @@ p {
 .hero {
   height: 100vh;
   overflow: hidden;
-  width: 100%;
+  width: 100vw;
   background-color: #fff;
 }
 
@@ -81,7 +81,7 @@ p {
 nav .logo {
   display: block;
   float: left;
-  padding: 5% 0 0 5%;
+  padding: 5% 0 2% 5%;
   text-decoration: none;
 }
 
@@ -173,46 +173,47 @@ nav .logo {
   overflow: hidden;
   display: flex;
   flex-direction: row;
+  height: 100vh;
   width: 100vw;
-  height: 100%;
   position: relative;
 }
 
 .herotext{
-  display: block;
-  padding: 45% 7%;
+  padding: 35vmin 5vmin;
 }
 
 .herotext h1{
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   line-height: 1.5;
   font-weight: 900;
+  padding: 5vmin 0;
 }
 
 .herotext h2{
-  padding-top: 20%;
   font-size: 2rem;
+  font-weight: 600;
   line-height: 1.5;
-  color: rgba(0,0,0,.8);
+  color: rgba(0,0,0,.9);
 }
 
+
 .herotext p{
-  padding-top: 15%;
-  font-size: 1.8rem;
-  line-height: 1.5;
+  color: rgba(0,0,0,.9);
+  font-size: 2rem;
   font-weight: 400;
-  padding-bottom: 25%;
-  color: rgba(0,0,0,.8);
+  line-height: 1.5;
+  padding: 5vmin 0 15vmin 0;
 }
 
 .herotext strong{
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: rgba(0,0,0,.9);
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(0,0,0,.95);
 }
 
 .heroimg {
   width: 90%;
+  background-color: #fff;
 }
 
 .heroimg img{
@@ -220,7 +221,7 @@ nav .logo {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.7;
+  opacity: .7;
 }
 
 .cmbutton {
@@ -258,41 +259,40 @@ nav .logo {
 .portfolio_works {
   display: flex;
   flex-direction: column;
-  cursor: pointer;
   justify-content: space-between;
-  padding: 5% 5%;
+  margin: 7vmin 6vmin;
 }
 
 .card {
-  width: 90vmin;
+  width: 88vmin;
   height: 55vmin;
   display: flex;
-  box-shadow: 0 3rem 4rem -1.5rem rgba(0, 0, 0, 0.7);
+  box-shadow: 0 3rem 4rem -1.5rem rgba(0, 0, 0, 0.9);
   background-color: #fff;
   justify-content: space-between;
-  margin-bottom: 5%;
+  margin: 4vmin 0;
 }
 
 .card__img{
   width: 35%;
   height: 100%;
-  background-color:rgba(0, 0, 0, .8) ;
+  background-color:rgba(0, 0, 0, .60);
 }
 
 .card__img img{
-  height: 100%;
+  height: 80%;
   width: auto;
-  padding: 10%;
+  margin: 20% 15%;
 }
 
 #bytespace img{
-  width: 100%;
+  width: 90%;
   height: auto;
-  padding: 60% 10%;
+  margin: 50% 5%;
 }
 
 .card__content {
-  padding: 10% 5%;
+  padding: 8% 0%;
   box-sizing: border-box;
   width: 60%;
 }
@@ -301,22 +301,21 @@ nav .logo {
   font-weight: 900;
   font-size: 5.4rem;
   font-size: 7vmin;
-  text-transform: capitalize;
   letter-spacing: 0.01rem;
-  line-height: 0.91;
-  margin: 3vmin 0 3.5vmin;
+  margin: 2vmin 0 3vmin 0;
 }
 
 .card__content-paragraph {
   font-size: 1.4rem;
   line-height: 1.2;
   font-weight: 300;
-  margin-bottom: 2.5vmin;
+  margin-bottom: 3vmin;
+  padding: 0 3vmin 0 0;
 }
 
 .card__content-link {
   color: #BA3428;
-  font-size: 4vmin;
+  font: 4vmin 'Source Sans Pro', sans-serif;
   display: block;
   cursor: pointer;
   opacity: 0.7;
@@ -536,6 +535,12 @@ nav .logo {
   font-weight: 500;
 }
 
+.surveydata h2{
+  font: 2rem 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
 td {
   text-emphasis: left;
   padding: 1rem;
@@ -559,7 +564,8 @@ td {
   color: #000;
   padding-bottom: 1rem;
   font: 1.4rem 'Source Sans Pro', sans-serif;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  line-height: 1.5;
   font-weight: 500;
 }
 
@@ -1193,16 +1199,20 @@ font-weight: 600;
 @media (min-width: 640px) {
 
   nav .logo{
-    padding-top: 2.5%;
+    padding: 3% 0 2% 8%;
+  }
+
+  .nav img{
+    width: 35%;
   }
 
   .nav .menu-icon{
-    padding-top: 4%;
+    padding-top: 5%;
   }
   /*-----Index-----*/
+
   .herotext{
-    display: block;
-    padding: 30% 5% 30% 10%;
+    padding: 30vmin 10vmin;
   }
 
   .herotext h1{
@@ -1212,18 +1222,24 @@ font-weight: 600;
   .herotext h2,
   .herotext p,
   .herotext strong{
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .herotext p{
+    padding-bottom: 10vmin;
   }
 
   /* project section */
 
-  .card__content-paragraph {
+  .card__content-paragraph{
     font-size: 1.8rem;
-    margin-bottom: 10%;
+    line-height: 1.4;
+    padding-right: 8vmin;
+    margin-bottom: 4vmin;
   }
 
-  .card__content-link {
-    font-size: 2.8vmin;
+  .card__content-link{
+    font-size: 3vmin;
   }
 
   /*-----|_Hound Watch_|-----*/
@@ -1339,7 +1355,7 @@ font-weight: 600;
 @media (min-width: 768px) {
 
   .nav .logo {
-    padding: 2.5% 0 0 10%;
+    padding: 2.5% 0 1% 10%;
   }
 
   .nav img{
@@ -1347,22 +1363,21 @@ font-weight: 600;
   }
 
   .nav .menu-icon{
-    padding: 4% 5% 0 0;
+    padding: 5% 5% 0 0;
   }
+
+  /* hero-text */
 
   .herotext{
-    padding: 25% 5% 30% 10%;
+    padding: 25vmin 10vmin;
   }
 
-  .herotext h1{
-    font-size: 4rem;
+  /* Project Section */
+
+  .card{
+    width: 90vmin;
   }
 
-  .herotext h2,
-  .herotext p,
-  .herotext strong{
-    font-size: 2.5rem;
-  }
 
   /*-----|_FOOTER_|-----*/
 
@@ -1594,16 +1609,15 @@ font-weight: 600;
 
 @media (min-width: 1024px) {
   .hero {
-    height: 80vh;
+    height: 100vh;
   }
-
 
   .nav{
     display: flex;
     align-content: center;
     justify-content: center;
     width: 100vw;
-    padding-top: 3%;
+    padding-top: 5vmin;
     margin: 0;
     position: absolute;
   }
@@ -1612,6 +1626,10 @@ font-weight: 600;
     margin-left: 5%;
     padding: 0%;
     float: left;
+  }
+
+  .nav img{
+    width: 45%;
   }
 
   .nav .menu {
@@ -1633,9 +1651,11 @@ font-weight: 600;
   }
 
   .nav li a {
+    color: #FFF;
+    text-emphasis-color: #000;
     text-align: left;
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 500;
     padding: 0;
     width: 100%;
     text-align: center;
@@ -1645,7 +1665,7 @@ font-weight: 600;
   }
 
   .nav li a:hover{
-  	color:#000;
+  	color:#fff;
   }
 
   li > a:before {
@@ -1655,7 +1675,7 @@ font-weight: 600;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #FFF;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -1663,7 +1683,7 @@ font-weight: 600;
   transition: all 0.3s ease-in-out 0s;
 }
 
-li > a:hover:before {
+.nav li > a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -1674,31 +1694,37 @@ li > a:hover:before {
   }
 
 #currentpage{
-  color: #000;
   font-weight: 700;
 }
 
 /* Project Section */
 
 .herotext{
-  padding: 10% 5% 30% 10%;
+  padding: 25vmin 10vmin 20vmin 15vmin;
 }
 
 .herotext h1{
-  font-size: 5rem;
+  font-size: 6.5rem;
+  padding: 2vmin 0;
 }
 
 .herotext h2{
-  padding-top: 5%;
+  font-size: 3.5rem;
 }
 
 .herotext p{
-  padding-top: 5%;
-  padding-bottom: 10%;
+  font-size: 2.5rem;
+  padding: 2vmin 0 6vmin 0;
 }
 
 .heroimg{
   width: 50%;
+  background: #000;
+  opacity: 1;
+}
+
+.heroimg img{
+  opacity: .45;
 }
 
 .cmbutton{
@@ -1710,18 +1736,20 @@ li > a:hover:before {
 }
 
 .line-title {
-  margin: 5% 5%;
+  margin: 5% 5% 3% 5%;
   font-size: 2.5rem;
+  font-weight: 600;
   text-align: center;
   display: block;
   position: relative;
   overflow: hidden;
   color: #000;
 }
+
 .line-title:before, .line-title:after {
   content: '';
   display: inline-block;
-  height: 1px;
+  height: 1.5px;
   background: #000;
   width: 50%;
   position: relative;
@@ -1741,43 +1769,38 @@ li > a:hover:before {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 5% 0 5%;
-    margin: 0;
+    margin: 0 8vmin;
   }
 
   .card{
-    width: 65vmin;
+    width: 58vmin;
     height: 40vmin;
     box-shadow: 0 3rem 4rem -1.5rem rgba(0, 0, 0, 0.8);
   }
 
   .card__img{
-    width: 45%;
+    width: 40%;
     height: 100%;
   }
 
-  .card__img{
-    padding: 5% 6%;
-  }
-
-  #bytespace img{
-    padding: 55% 0%;
-  }
-
   .card__content {
-    width: 65%;
+    width: 60%;
+    padding-left: 4vmin;
   }
 
   .card__content-header {
-    font-size: 4vmin;
+    font-size: 4.5vmin;
+    margin: 1vmin 0 2vmin 0;
   }
 
   .card__content-paragraph {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    padding-right: 4vmin;
+    margin-bottom: 2vmin;
   }
 
   .card__content-link {
-    font-size: 1.5vmin;
+    font-size: 1.6rem;
   }
 
   /* footer */
@@ -1799,8 +1822,29 @@ li > a:hover:before {
   }
   /*_______________Hound Watch______________*/
 
+
+  .casestudycontainer .nav li a{
+    color: #000;
+  }
+
+  .casestudyhero{
+    height: 100vh;
+  }
+
   .herotexthoundwatch {
-  padding-top: 12%;
+    padding: 17vmax 0;
+  }
+
+  .herotexthoundwatch  h1{
+    font-size: 4.5rem;
+  }
+
+  .houndwatchimg{
+    padding-bottom: 0;
+  }
+
+  .houndwatchimg img{
+    width: 60vmin;
   }
 
   .role-description {
@@ -2335,85 +2379,104 @@ margin-bottom: 5%;
 
 @media (min-width: 1200px) {
 
+/* NAV */
+  .nav .logo{
+    margin-left: 10vmin;
+  }
+
+  .nav img{
+    width: 50%;
+  }
+
   .nav .menu {
     margin-left: 40%;
   }
 
-  .portfolio_works {
-    padding: 0 10% 0 10%;
+
+/* HERO */
+  .herotext{
+    padding: 25vmin 15vmin 20vmin 20vmin;
   }
 
-  .line-title {
-    margin: 5% 8%;
+  .herotext h1{
+    font-size: 7rem;
+    padding: 5vmin 0;
   }
+
+  .herotext h2{
+    font-size: 4.5rem;
+  }
+
+  .herotext p,
+  .herotext strong{
+    font-size: 3rem;
+    padding: 3vmin 0 5vmin 0;
+  }
+
+
+/* PORTFOLIO */
+
+
+  .portfolio_works {
+    margin: 0 10vmin;
+  }
+
+
 
   .card{
-    width: 40vmax;
+    width: 42vmax;
     height: 25vmax;
-    box-shadow: 0 3rem 4rem -1.5rem rgba(0, 0, 0, 0.8);
-    margin: 1%;
-    margin-bottom: 8%;
+    margin-bottom: 10vmin;
   }
 
-  .card__img{
-    width: 40%;
-  }
+
 
   .card__img img{
-    height: 80%;
-    padding: 0;
-    margin-top: 25%;
+    margin: 5vmin 7vmin;
   }
 
-  #bytespace img{
-    width: 10vw;
-    padding-top: 50%;
-
-  }
-
-  .card__content-header {
-    font-size: 5vmin;
-  }
-
-  .card__content {
-    width: 100%;
-  }
+    .card__content-header {
+    font-size: 6vmin;
+    margin: 2vmin 0 4vmin 0;
+    }
 
   .card__content-paragraph {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 3vmin;
   }
 
   .card__content-link {
-    font-size: 2vmin;
+    font-size: 1.8rem;
   }
 
   /*------Footer------*/
 
+  .fcontainer{
+    height: 9vh;
+  }
+
   .footerlogo{
-    padding-left: 10%;
+    padding-left: 0;
+  }
+
+  .footlist{
+    margin-left: 20vmin;
   }
 
   .footlist li{
-    padding-left: 2rem;
+    padding-left: 10vmin;
   }
 
   /*------HoundWatch------*/
 
-  .casestudyhero{
-    height: 100vh;
-  }
   .herotexthoundwatch{
     padding-top: 12%;
   }
 
-  .herotexthoundwatch img{
-    height: 25vw;
-    width: auto;
-  }
 
   .herotexthoundwatch h1{
-    font-size: 8rem;
+    font-size: 5rem;
   }
 
   .houndwatchimg{
