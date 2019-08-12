@@ -2521,7 +2521,7 @@ margin-bottom: 5%;
   }
 
   .houndwatchimg img{
-    height: 50vh;
+    height: 45vh;
     width: auto;
   }
 
@@ -2675,6 +2675,12 @@ margin-bottom: 5%;
 /*------BYTESPACE------*/
   .bytespacehero{
     height: 100vh;
+  }
+
+  .bytespacecompimg img {
+    max-width: 50%;
+    padding-bottom: 2%;
+
   }
 
 
