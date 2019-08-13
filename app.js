@@ -1,4 +1,3 @@
-
 if($(window).width() < 1024) {
 $(document).ready(function(){
    var scroll_start = 0;
@@ -16,7 +15,6 @@ $(document).ready(function(){
    });
 });
 };
-
 
 
 //
