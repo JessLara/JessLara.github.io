@@ -267,7 +267,7 @@ nav .logo {
   width: 88vmin;
   height: 55vmin;
   display: flex;
-  box-shadow: 0 3rem 4rem -1.5rem rgba(0, 0, 0, 0.9);
+  box-shadow: 0 3rem 4rem -1.5rem rgba(0, 0, 0, 0.6);
   background-color: #fff;
   justify-content: space-between;
   margin: 4vmin 0;
@@ -632,7 +632,7 @@ font-weight: 600;
   margin: 10% 10%;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 3rem 4rem -1.5rem rgba(0, 0, 0, 0.7);
+  box-shadow: 0 3rem 4rem -1.5rem rgba(0, 0, 0, 0.5);
   background-color: #fff;
   border-bottom-left-radius: 3%;
   border-bottom-right-radius: 3%;
@@ -955,7 +955,7 @@ font-weight: 600;
 }
 
 .name {
-  font: 1.4rem "Source Sans Pro", ;
+  font: 1.4rem "Source Sans Pro" ;
 }
 
 .details {
@@ -967,7 +967,7 @@ font-weight: 600;
 
 .details li {
   line-height: 2em;
-  font: 1.4rem "Source Sans Pro", ;
+  font: 1.4rem "Source Sans Pro" ;
 }
 
 .hwcolors h3{
@@ -1059,13 +1059,13 @@ font-weight: 600;
 /*---------Case Study: ByteSpace---------*/
 
 .bytespacehero{
-  height: 70vh;
+  height: 100vh;
 }
 
 .bytespacecompimg img {
   height: auto;
-  max-width: 75%;
-  padding: 15% 0;
+  max-width: 80%;
+  padding: 5% 0 10% 0;
 }
 
 .herotextbytespace{
@@ -1322,8 +1322,8 @@ font-weight: 600;
   /*-----Bytespace-----*/
 
   .bytespacecompimg img {
-    max-width: 45%;
-    padding: 10% 0;
+    max-width: 70%;
+    padding-bottom: 5%;
   }
 
 
@@ -1576,9 +1576,7 @@ font-weight: 600;
 
   /*-------BYTESPACE------*/
 
-  .bytespacehero{
-    height: 45vh;
-  }
+
 
 
   /*-------ABOUT ME------*/
@@ -2183,8 +2181,6 @@ margin-bottom: 5%;
   width: 40%;
   left: 15%;
   transform: translatex(-60%);
-
-
 }
 
 .highfid_img img{
@@ -2303,13 +2299,8 @@ margin-bottom: 5%;
 
 /*-------BYTESPACE--------*/
 
-  .bytespacehero{
-    height: 75vh;
-  }
 
-  .bytespacecompimg img{
-    padding: 5% 0;
-  }
+
 
   /* problem/solution */
 
@@ -2673,14 +2664,10 @@ margin-bottom: 5%;
   }
 
 /*------BYTESPACE------*/
-  .bytespacehero{
-    height: 100vh;
-  }
 
   .bytespacecompimg img {
-    max-width: 50%;
-    padding-bottom: 2%;
-
+    max-width: 32%;
+    padding: 3% 0 2% 0;
   }
 
 
