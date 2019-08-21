@@ -40,13 +40,14 @@ p {
   background-color: #f2f2f2;
   overflow: hidden;
   width: 100%;
+  position: absolute;
 }
 
 /*_____HERO____*/
 .hero {
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   background-color: #fff;
 }
 
@@ -170,10 +171,8 @@ nav .logo {
 
 /*_HERO TEXT_*/
 .herocontent {
-  overflow: hidden;
   display: flex;
   flex-direction: row;
-  height: 100vh;
   width: 100vw;
   position: relative;
 }
@@ -261,34 +260,37 @@ nav .logo {
   flex-direction: column;
   justify-content: space-between;
   margin: 7vmin 6vmin;
+  height: 100%;
 }
 
 .card {
   width: 88vmin;
-  height: 55vmin;
+  height: 45vh;
   display: flex;
-  box-shadow: 0 3rem 4rem -1.5rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0 3rem 4rem -1.5rem rgba(0, 0, 0, 0.3);
   background-color: #fff;
   justify-content: space-between;
-  margin: 4vmin 0;
+}
+
+.cardhw{
+  margin-bottom: 4vh;
 }
 
 .card__img{
   width: 35%;
-  height: 100%;
   background-color:rgba(0, 0, 0, .60);
 }
 
 .card__img img{
-  height: 80%;
+  height: 70%;
   width: auto;
-  margin: 20% 15%;
+  margin: 30% 10%;
 }
 
 #bytespace img{
   width: 90%;
   height: auto;
-  margin: 50% 5%;
+  margin: 70% 5%;
 }
 
 .card__content {
@@ -302,7 +304,7 @@ nav .logo {
   font-size: 5.4rem;
   font-size: 7vmin;
   letter-spacing: 0.01rem;
-  margin: 2vmin 0 3vmin 0;
+  padding-bottom: 2vh;
 }
 
 .card__content-paragraph {
@@ -381,17 +383,19 @@ nav .logo {
 
 /*-----------CASE STUDY: Hound Watch-----------------*/
 .casestudyhero {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .herotexthoundwatch{
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   text-align: center;
-  padding-top: 30vmin;
 }
 
 .herotexthoundwatch h1{
@@ -409,12 +413,12 @@ nav .logo {
 
 .houndwatchimg{
   margin: 0 auto;
-  padding-bottom: 10vmin;
+  padding-bottom: 5vmin;
 }
 
 .houndwatchimg img{
+  width: 100%;
   height: auto;
-  width: 100vw;
 }
 
 .csbutton {
@@ -1058,19 +1062,16 @@ font-weight: 600;
 
 /*---------Case Study: ByteSpace---------*/
 
-.bytespacehero{
-  height: 100vh;
-}
 
-.bytespacecompimg img {
+ .bytespacecompimg img {
   height: auto;
-  max-width: 80%;
-  padding: 5% 0 10% 0;
+  max-width: 95vw;
 }
-
+/*
 .herotextbytespace{
   padding-top: 15vh;
-}
+  position: relative;
+} */
 
 .userimgbytespace{
   background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,.85) 100%), url("../images/CaseStudy/ByteSpace/user1.jpg") center no-repeat;
@@ -1262,10 +1263,6 @@ font-weight: 600;
 
   /*-----|_Hound Watch_|-----*/
 
-  .herotexthoundwatch{
-    padding-top: 20vmin;
-  }
-
   .herotexthoundwatch h1{
     padding-bottom: 0;
   }
@@ -1434,9 +1431,7 @@ font-weight: 600;
   .casestudyhero{
     height: 100vh;
   }
-  .herotexthoundwatch {
-      padding-top: 15%;
-  }
+
 
   .herotexthoundwatch h1 {
     font-size: 4rem;
@@ -1575,6 +1570,10 @@ font-weight: 600;
   }
 
   /*-------BYTESPACE------*/
+
+  .bytespacecomp img{
+    padding: 5% 0 0% 0;
+  }
 
 
 
@@ -1862,9 +1861,6 @@ font-weight: 600;
     height: 100vh;
   }
 
-  .herotexthoundwatch {
-    padding: 15vmax 0 0 0;
-  }
 
   .herotexthoundwatch  h1{
     font-size: 4.5rem;
@@ -2299,6 +2295,10 @@ margin-bottom: 5%;
 
 /*-------BYTESPACE--------*/
 
+.bytespacecompimg img {
+  width: 40rem;
+}
+
 
 
 
@@ -2427,7 +2427,7 @@ margin-bottom: 5%;
 
 /* HERO */
   .herotext{
-    padding: 25vmin 15vmin 20vmin 20vmin;
+    padding: 20vmin 15vmin 20vmin 20vmin;
   }
 
   .herotext h1{
@@ -2502,9 +2502,9 @@ margin-bottom: 5%;
 
   /*------HoundWatch------*/
 
-  .herotexthoundwatch{
+  /* .herotexthoundwatch{
     padding-top: 20vmin;
-  }
+  } */
 
 
   .herotexthoundwatch h1{
@@ -2666,8 +2666,8 @@ margin-bottom: 5%;
 /*------BYTESPACE------*/
 
   .bytespacecompimg img {
-    max-width: 32%;
-    padding: 3% 0 2% 0;
+    width: 65rem;
+    padding: 3% 0 0% 0;
   }
 
 
