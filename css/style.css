@@ -178,7 +178,9 @@ nav .logo {
 }
 
 .herotext{
-  padding: 35vmin 5vmin;
+  text-align: center;
+  justify-content: center;
+  padding: 35vmin 10%;
 }
 
 .herotext h1{
@@ -226,7 +228,7 @@ nav .logo {
 .cmbutton {
   background-color: #fff;
   border: .2rem solid #232323;
-  padding: 4.5% 8%;
+  padding: 3.5% 7%;
   color: #fff;
   font: 1.6rem 'Source Sans Pro', sans-serif;
   letter-spacing: .1rem;
@@ -264,12 +266,13 @@ nav .logo {
 }
 
 .card {
-  width: 88vmin;
-  height: 45vh;
+  width: 90vw;
+  height: 50vh;
   display: flex;
+  flex-direction: column;
   box-shadow: 0 3rem 4rem -1.5rem rgba(0, 0, 0, 0.3);
   background-color: #fff;
-  justify-content: space-between;
+  overflow: hidden;
 }
 
 .cardhw{
@@ -277,26 +280,31 @@ nav .logo {
 }
 
 .card__img{
-  width: 35%;
-  background-color:rgba(0, 0, 0, .60);
+  width: 100%;
+  height: 50%;
+  background-color:rgba(0, 0, 0, .20);
+  overflow: hidden;
 }
 
 .card__img img{
-  height: 70%;
+  position: relative;
+  height: 90%;
   width: auto;
-  margin: 30% 10%;
+  margin: 3% 40%;
 }
 
 #bytespace img{
-  width: 90%;
-  height: auto;
-  margin: 70% 5%;
+  position: relative;
+  height: 75%;
+  width: auto;
+  margin: 10% 12%;
 }
 
 .card__content {
-  padding: 8% 0%;
+  padding: 5vmin 10vmin;
   box-sizing: border-box;
-  width: 60%;
+  width: 100%;
+  height: 40%;
 }
 
 .card__content-header {
@@ -310,9 +318,9 @@ nav .logo {
 .card__content-paragraph {
   font-size: 1.4rem;
   line-height: 1.2;
+  font-size: 4vmin;
   font-weight: 300;
-  margin-bottom: 3vmin;
-  padding: 0 3vmin 0 0;
+  padding: 0 0 5vmin 0;
 }
 
 .card__content-link {
@@ -1231,7 +1239,7 @@ font-weight: 600;
   /*-----Index-----*/
 
   .herotext{
-    padding: 30vmin 10vmin;
+    padding: 30vmin 0;
   }
 
   .herotext h1{
@@ -1248,17 +1256,28 @@ font-weight: 600;
     padding-bottom: 10vmin;
   }
 
-  /* project section */
+  /* project section*/
+
+  .card__content{
+    padding-bottom: 0;
+  }
 
   .card__content-paragraph{
     font-size: 1.8rem;
     line-height: 1.4;
-    padding-right: 8vmin;
-    margin-bottom: 4vmin;
+    padding-bottom: 2vmin;
   }
 
   .card__content-link{
     font-size: 3vmin;
+  }
+
+  .card__img img{
+    margin: 2% 40%;
+  }
+
+  #bytespace img{
+    margin: 5% 25%;
   }
 
   /*-----|_Hound Watch_|-----*/
@@ -1730,7 +1749,7 @@ font-weight: 600;
 /* Project Section */
 
 .herotext{
-  padding: 25vmin 10vmin 20vmin 15vmin;
+  padding: 25vmin 15vmin;
 }
 
 .herotext h1{
@@ -1744,7 +1763,7 @@ font-weight: 600;
 
 .herotext p{
   font-size: 2.5rem;
-  padding: 2vmin 0 6vmin 0;
+  padding: 2vmin 0 10vmin 0;
 }
 
 .heroimg{
@@ -1797,40 +1816,36 @@ font-weight: 600;
 
   .portfolio_works {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin: 0 8vmin;
+    margin: 0 10%;
+    margin-bottom: 5%;
   }
 
   .card{
-    width: 58vmin;
-    height: 40vmin;
+    flex-direction: column;
+    width: 80vw;
+    height: 80vh;
     box-shadow: 0 3rem 4rem -1.5rem rgba(0, 0, 0, 0.8);
   }
 
-  .card__img{
-    width: 40%;
-    height: 100%;
-  }
 
   .card__content {
-    width: 60%;
-    padding-left: 4vmin;
+    padding: 5%  1% 0 10%;
   }
 
   .card__content-header {
-    font-size: 4.5vmin;
-    margin: 1vmin 0 2vmin 0;
+    font-size: 6vmin;
+    margin: 1vmin 0 1vmin 0;
   }
 
   .card__content-paragraph {
-    font-size: 1.8rem;
+    font-size: 2.6rem;
     padding-right: 4vmin;
-    margin-bottom: 2vmin;
   }
 
   .card__content-link {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
+    margin-bottom: 5vmin;
   }
 
   /* footer */
@@ -2427,7 +2442,7 @@ margin-bottom: 5%;
 
 /* HERO */
   .herotext{
-    padding: 20vmin 15vmin 20vmin 20vmin;
+    margin: 0 auto;
   }
 
   .herotext h1{
@@ -2442,7 +2457,7 @@ margin-bottom: 5%;
   .herotext p,
   .herotext strong{
     font-size: 3rem;
-    padding: 3vmin 0 5vmin 0;
+    padding: 3vmin 0 8vmin 0;
   }
 
 
@@ -2451,17 +2466,26 @@ margin-bottom: 5%;
 
   .portfolio_works {
     margin: 0 10vmin;
+    display: flex;
+    flex-direction: row;
   }
 
 
 
   .card{
-    width: 42vmax;
-    height: 25vmax;
+    width: 40vw;
     margin-bottom: 10vmin;
   }
 
+  .card__img img{
+    margin: 3% 35%;
+  }
 
+  #bytespace img{
+    margin: 8% 15%;
+  }
+
+/*
 
   .card__img img{
     margin: 5vmin 7vmin;
@@ -2480,7 +2504,7 @@ margin-bottom: 5%;
 
   .card__content-link {
     font-size: 1.8rem;
-  }
+  } */
 
   /*------Footer------*/
 
