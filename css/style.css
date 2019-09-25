@@ -1879,15 +1879,16 @@ font-weight: 600;
 
   .herotexthoundwatch  h1{
     font-size: 4.5rem;
+    padding-top: 10rem;
   }
 
   .herotexthoundwatch  h2{
     font-size: 2.2rem;
-    padding: 5vmin 20vmin 0vmin 20vmin;
+    padding: 5vmin 20vmin 1vmin 20vmin;
   }
 
   .houndwatchimg{
-    padding-bottom: 0;
+    padding-bottom: 3rem;
   }
 
   .houndwatchimg img{
